@@ -1,0 +1,44 @@
+	TreeFolder
+
+1. Overview
+
+TreeFolder is a software package that produces RNA 3D structure decoys based a
+ pre-trained conditional random field with a given RNA sequence and its secondary 
+structure.
+
+Zhiyong Wang and Jinbo Xu, A conditional random fields method for RNA sequence-
+structure relationship modeling and conformation sampling. Bioinformatics, (2011) 
+27(13): i102-i110
+
+This software has been compiled and tested on a Ubuntu 9.04 Linux server (kernel 
+2.6.28-19-server) with Quad-Core AMD Opteron(tm) Processors.
+
+2. Compile and Install
+
+Before installation, please make sure that Perl v5.10.0 is properly installed on 
+your computer systems. To install the package, first create a new folder and uncompress
+all the files in the package to the folder and compile it by following commands.
+
+> cd src; make treefolder
+
+Sometimes you need re-compile contrafold and ANN library to install this package. 
+See src/contrafold/doc/manual.pdf for compiling contrafold and src/ann_1.1.1/ReadMe.txt 
+for ANN library.
+
+Then, change the variable $HOME in bin/run_treefolder.pl to the path the package
+is installed.
+
+3. Run TreeFolder
+
+>./bin/run_treefolder.pl -fasta test/157d.seq -jobid 157d-1
+
+TreeFolder will generate a single result file 157d-1.decoy.pdb in current directory.
+
+4. File Formats
+
+The input file can be in a FASTA-formatted file or a plain text file. The nucleotides 
+of A,C,G,U are allowed in the input file. See test/157d.seq for an example.
+
+5. Contact: Zhiyong Wang (zywang@ttic.edu) and Jinbo Xu (jinboxu@gmail.com). Thanks for 
+using our software. Any opinions and comments are welcome.
+

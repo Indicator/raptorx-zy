@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src
+END
+crfsample.joint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/30493/zywang/proj.rna/rnasampler/release/src/crfsample.joint.cpp
+END
+geometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/30493/zywang/proj.rna/rnasampler/release/src/geometry.h
+END
+ScoreMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/ScoreMatrix.h
+END
+bCNF.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/bCNF.h
+END
+Solver.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/Solver.h
+END
+Score.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/Score.h
+END
+rs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/rs.cpp
+END
+bCNF_mpi_tp.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/bCNF_mpi_tp.h
+END
+rmsdp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/rmsdp.cpp
+END
+stdlinear.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/stdlinear.cpp
+END
+RNAbuilder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/RNAbuilder.cpp
+END
+rs.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/rs.h
+END
+rmsdp.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/30492/zywang/proj.rna/rnasampler/release/src/rmsdp.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/30493/zywang/proj.rna/rnasampler/release/src/Makefile
+END
+RNAbuilder.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/30493/zywang/proj.rna/rnasampler/release/src/RNAbuilder.h
+END

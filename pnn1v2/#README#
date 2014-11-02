@@ -1,0 +1,49 @@
+    Parallel Neuronal Network 0.1.0
+
+1. Introduction:
+
+This PNN package is a custom parallel artificial neuronal network for training and prediction the pairwise statistical energy of protein sequences.
+2. Features:
+
+2.1 Support multiple neuronal network layers
+2.2 Reading and writing features in HDF5 files
+2.3 Parallelization using MPI
+
+3. Installation
+
+3.1 Compilation
+Please make sure you have cmake package (version later than 2.4) installed on your system.
+
+$ mkdir build ; cd build ; cmake ..
+$ make 
+$ make install
+$ make doc
+
+3.2 To install to a user-defined folder, replace "cmake ." by
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=[your library folder] .
+
+3.3 Specify the directory of HDF5 library 
+
+You can change the variable of CMAKE_PREFIX_PATH in the CMakeLists.txt with your 
+packages path.
+
+set(CMAKE_PREFIX_PATH [your path to home of HDF5 library]
+n      		[your path to home of other library]
+		)
+
+4. Running the program
+
+Run pnn1v2 to see the usage and the definition of parameters.
+
+$ ./Nnpftrain
+
+
+5. Contact information
+Zhiyong Wang 
+zywang at ttic.edu
+Toyota Technological Institute at Chicago 
+
+6. Version ID: 
+Please include this version ID when reporting any problems.
+$Header:  $

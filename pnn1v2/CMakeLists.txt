@@ -1,0 +1,128 @@
+#--------------------------------------------------------------
+# Nnpf
+#--------------------------------------------------------------
+cmake_minimum_required(VERSION 2.4)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/)
+project(Nnpf)
+set (Nnpf_VERSION_MAJOR 2)
+set (Nnpf_VERSION_MINOR 0)
+set (Nnpf_VERSION_PATCH 2)
+
+
+#set(CMAKE_PREFIX_PATH /home/wzy/program/hdf5-1.8.10-linux-x86_64-static/)
+set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
+		      /home/zywang/work/MatrixLib 
+		      /home/zywang/work/dpln/src/bioh5/br.allin1
+		      /home/zywang/work//BALL-1.2/
+		      /opt/cray/mpt/6.0.2/gni/mpich2-gnu/48
+		      /home/zywang/work/allbio/contrib/hdf5
+		      /home/zywang/work/allbio/contrib/BALL
+		      /home/zywang/work/allbio/bioh5
+		      /home/zywang/work/allbio/MatrixLib
+                      /share/apps/matlab
+		      	)
+#--------------------------------------------------------------
+# global headers
+#--------------------------------------------------------------
+set(CMAKE_CXX_COMPILER /share/apps/gcc/4.7.3/bin/g++)
+set (CMAKE_CXX_FLAGS "-static-libstdc++")
+file(GLOB_RECURSE headers include/*.hxx)
+include_directories(include)
+
+set(Gsl_INCLUDE_DIRS $ENV{GSL_DIR}/include)
+set(Gsl_LIBRARY_DIRS $ENV{GSL_DIR}/lib)
+FIND_PACKAGE(GSL REQUIRED)
+FIND_PACKAGE(MPI REQUIRED)
+FIND_PACKAGE(MatrixLight REQUIRED)
+FIND_PACKAGE(BALL REQUIRED)
+FIND_PACKAGE(Bioh5 REQUIRED)
+FIND_PACKAGE(MPI REQUIRED)
+FIND_PACKAGE(Lapack REQUIRED)
+#message(STATUS ${MPI_INCLUDE_PATH})
+include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS} $ENV{GSL_DIR}/include ${MPI_INCLUDE_PATH} ${MatrixLight_INCLUDE_DIR} ${BALL_INCLUDE_DIR} ${BIOH5_INCLUDE_DIR})
+set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES} $ENV{GSL_DIR}/lib ${MatrixLight_LIBRARY_DIR} ${BALL_LIBRARY_DIRS} ${BIOH5_LIBRARY} ${MPI_LIBRARY} /home/zywang/work/lapack-3.5.0/build/lib)
+#mark_as_advanced(MPI_INCLUDE_PATH MPI_COMPILE_FLAGS MPI_LINK_FLAGS MPI_LIBRARY 
+  
+
+#OPTION(WITH_HDF5 "Include HDF5" ON)
+#--------------------------------------------------------------
+# HDF5
+#--------------------------------------------------------------
+find_package(HDF5)
+if(HDF5_FOUND)
+   message(STATUS "HDF5 Found")
+   # manually set hdf dirs if needed.
+   # set(HDF5_LIBRARY_DIRS "/opt/cray/hdf5/1.8.11/GNU/47/lib")
+   #   set(HDF5_LIBS hdf5 hdf5_hl hdf5_cpp hdf5_hl_cpp)
+   set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z sz)
+   #libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a
+   include_directories(${HDF5_INCLUDE_DIR})
+   add_definitions(${HDF5_CPPFLAGS})
+   add_definitions(-DH5_SUPPORT)
+else()
+   message(STATUS "build without HDF5")
+endif()
+set(LIBS ${LIBS} ${HDF5_LIBRARY_DIRS})
+
+#add_definitions(" -static -std=c++11 -DCLS=64 -D_MPI")
+add_definitions(" -std=c++11 -DCLS=64 ")
+
+message(STATUS ${LIBS})
+link_directories(${LIBS} )
+
+find_package(MATLAB)
+if(MATLAB_FOUND)
+   include_directories(${MATLAB_INCLUDE_DIR})
+link_directories(${MATLAB_LIBRARY_DIR} )
+add_definitions(-DMATLAB_ENGINE)
+endif()
+
+#--------------------------------------------------------------
+# testing with CTest
+#--------------------------------------------------------------
+
+add_executable (Nnpftrain.dbg nnpftrain.cpp ScoreMatrix.cpp optimizer.nompi.cpp pnnload_new.cpp Sequence.nompi.cpp Nnpf.cpp )
+set_target_properties(Nnpftrain.dbg PROPERTIES COMPILE_FLAGS "-g")
+target_link_libraries (Nnpftrain.dbg MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran ${MATLAB_LIBRARY}) 
+
+add_executable (Nnpftrain nnpftrain.cpp ScoreMatrix.cpp optimizer.cpp pnnload_new.cpp Sequence.cpp Nnpf.cpp )
+set_target_properties(Nnpftrain PROPERTIES COMPILE_FLAGS "-D_MPI -O3")
+target_link_libraries (Nnpftrain MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL  ${MPI_LIBRARY} lapack blas gfortran) 
+
+add_executable (Nnpftrain.nompi nnpftrain.cpp ScoreMatrix.cpp optimizer.nompi.cpp pnnload_new.cpp Sequence.nompi.cpp Nnpf.cpp )
+set_target_properties(Nnpftrain.nompi PROPERTIES COMPILE_FLAGS "-D_no_mpi -g " LINK_FLAGS "-D_no_mpi -g ")
+#set_target_properties(Nnpftrain.nompi PROPERTIES COMPILE_FLAGS "-D_no_mpi -O3" )
+target_link_libraries (Nnpftrain.nompi MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran ${MATLAB_LIBRARY}) 
+
+
+add_executable (Nnpfpredict nnpfpredict.cpp optimizer.nompi.cpp  Sequence.nompi.cpp pnnload_new.cpp ScoreMatrix.cpp Nnpf.cpp)
+set_target_properties(Nnpfpredict PROPERTIES COMPILE_FLAGS "-O3 -D_no_mpi")
+target_link_libraries(Nnpfpredict MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran ${MATLAB_LIBRARY}) 
+
+
+add_executable (Nnpfpredict.dbg nnpfpredict.cpp optimizer.nompi.cpp  Sequence.nompi.cpp pnnload_new.cpp ScoreMatrix.cpp Nnpf.cpp)
+set_target_properties(Nnpfpredict.dbg PROPERTIES COMPILE_FLAGS "-g -pg")
+set_target_properties(Nnpfpredict.dbg PROPERTIES LINK_FLAGS "-pg")
+target_link_libraries(Nnpfpredict.dbg MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran ${MATLAB_LIBRARY}) 
+
+
+
+#--------------------------------------------------------------
+# doxygen documentation
+#--------------------------------------------------------------
+find_package(Doxygen)
+if(DOXYGEN_FOUND)
+   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+   add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+      COMMENT "Generating API documentation with Doxygen" VERBATIM)
+endif()
+
+
+#--------------------------------------------------------------
+# install
+#--------------------------------------------------------------
+
+install(TARGETS Nnpftrain DESTINATION ${CMAKE_CURRENT_SOURCE_DIR} )
+install(TARGETS Nnpfpredict DESTINATION ${CMAKE_CURRENT_SOURCE_DIR} )
+

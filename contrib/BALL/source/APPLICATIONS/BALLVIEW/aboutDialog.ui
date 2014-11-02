@@ -1,0 +1,415 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>246</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>7</hsizetype>
+    <vsizetype>7</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>228</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="palette" >
+   <palette>
+    <active>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>236</red>
+      <green>233</green>
+      <blue>216</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>245</red>
+      <green>244</green>
+      <blue>235</blue>
+     </color>
+     <color>
+      <red>118</red>
+      <green>116</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>157</red>
+      <green>155</green>
+      <blue>143</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>232</red>
+      <green>232</green>
+      <blue>232</blue>
+     </color>
+    </active>
+    <inactive>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>236</red>
+      <green>233</green>
+      <blue>216</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>254</green>
+      <blue>249</blue>
+     </color>
+     <color>
+      <red>118</red>
+      <green>116</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>157</red>
+      <green>155</green>
+      <blue>143</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>232</red>
+      <green>232</green>
+      <blue>232</blue>
+     </color>
+    </inactive>
+    <disabled>
+     <color>
+      <red>128</red>
+      <green>128</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>236</red>
+      <green>233</green>
+      <blue>216</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>254</green>
+      <blue>249</blue>
+     </color>
+     <color>
+      <red>118</red>
+      <green>116</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>157</red>
+      <green>155</green>
+      <blue>143</blue>
+     </color>
+     <color>
+      <red>128</red>
+      <green>128</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>128</red>
+      <green>128</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>128</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>232</red>
+      <green>232</green>
+      <blue>232</blue>
+     </color>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle" >
+   <string>About BALLView</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="TextLabel1" >
+     <property name="text" >
+      <string>Andreas Moll
+Andreas Hildebrandt
+Heiko Klein
+Oliver Kohlbacher</string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" >
+    <widget class="QPushButton" name="PushButton1" >
+     <property name="text" >
+      <string>O&amp;K</string>
+     </property>
+     <property name="shortcut" >
+      <string>Alt+K</string>
+     </property>
+     <property name="default" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <widget class="QLabel" name="qt_version_label" >
+     <property name="text" >
+      <string>QT Version</string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="BALL_version_label" >
+     <property name="text" >
+      <string>(BALL 1.0)</string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="BALLView_version_label" >
+     <property name="text" >
+      <string>&lt;h1>&lt;b>BALLView 1.0&lt;/b>&lt;/h1></string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="PixmapLabel1" >
+     <property name="focusPolicy" >
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="pixmap" >
+      <pixmap>logo.png</pixmap>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>PixmapLabel1</tabstop>
+  <tabstop>PushButton1</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PushButton1</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>151</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>224</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

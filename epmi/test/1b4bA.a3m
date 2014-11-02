@@ -1,0 +1,1152 @@
+>ss_pred
+CCCHHHEEEECCCCEEEEEECCCCHHHHHHHHHCCCCCCEEEEEECCCEEEEEECCHHHHHHHHHHHHHCC
+>ss_conf
+92003102541287899981899188999887258998528985329869999569677999999998309
+>1b4bA
+ALVDVFIKLDGTGNLLVLRTLPGNAHAIGVLLDNLDWDEIVGTICGDDTCLIICRTPKDAKKVSNQLLSML
+>gi|4127534|emb|CAA09426.1|(79-149:149) arginine repressor [Geobacillus stearothermophilus]  E=4e-28 s/c=1.79 id=83% cov=101%
+ALMDAFVKLDGSGNLLVLKTLPGNAHAIGVLLDNLDWNEIVGTICGDDTCLIICRTAEDAEKVSGQLLGML
+>gi|212638791|ref|YP_002315311.1|(82-152:152) arginine repressor [Anoxybacillus flavithermus WK1] Arginine repressor [Anoxybacillus flavithermus WK1]  E=2e-25 s/c=1.66 id=74% cov=101%
+ALMDAFVKIDGAGHLLVMKTLPGNAHAIGVLLDHLEWDEIVGTICGDDTCLIICRTPEDTEVISKRLLDML
+>gi|311030986|ref|ZP_07709076.1|(79-149:149) arginine repressor [Bacillus sp. m3-13]  E=8e-23 s/c=1.54 id=64% cov=101%
+SLMDAFVKIDIAGHMIVMKTMPGNANAIGVLIDNLDWSEILGTICGDDTCLIICRTPEDAKELSDRFINML
+>gi|345019738|ref|ZP_08783351.1|(80-149:149) arginine repressor [Ornithinibacillus scapharcae TW25]  E=2e-22 s/c=1.54 id=63% cov=100%
+-IMDAFVKIDHTSHFIVLKTLPGNAHAVGVLIDNLDWDEIMGTICGDDTCLIICRTEEDTETIKDRFISML
+>gi|118479366|ref|YP_896517.1|(90-159:159) argR gene product [Bacillus thuringiensis str. Al Hakam] Arginine repressor [Bacillus thuringiensis serovar andalousiensis BGSC 4AW1] transcriptional regulator, ArgR family [Bacillus thuringiensis str. Al Hakam] Arginine repressor [Bacillus thuringiensis serovar andalousiensis BGSC 4AW1]  E=2e-22 s/c=1.54 id=68% cov=100%
+-LVDSFVKLDTAGHMLVLKTLPGNAHSLGALIDHLEWDEIIGTICGDDTCLIICRTPEDTGVVSDRFLNML
+>gi|294501197|ref|YP_003564897.1|(79-149:149) arginine repressor [Bacillus megaterium QM B1551] arginine repressor [Bacillus megaterium DSM 319] argR gene product [Bacillus megaterium WSH-002] arginine repressor [Bacillus megaterium QM B1551] arginine repressor [Bacillus megaterium DSM 319] Transketolase domain protein [Bacillus megaterium WSH-002]  E=2e-22 s/c=1.52 id=64% cov=101%
+SLMDAFVKIDSAGHMLVMKTLPGNANAIGALIDHLDWDEILGTICGDDTCLIICRTPEDTQIISDRFLEML
+>gi|23099330|ref|NP_692796.1|(80-149:149) ahrC gene product [Oceanobacillus iheyensis HTE831] RecName: Full=Arginine repressor arginine repressor (arginine metabolism regulator) [Oceanobacillus iheyensis HTE831]  E=2e-22 s/c=1.54 id=61% cov=100%
+-IVDTFVKIEHASHFIILHTLPGNAHAVGVLIDNLDWEEIMGTICGDDTCLIICRTPEQAEMIKNRFIEML
+>gi|149181866|ref|ZP_01860355.1|(80-150:150) arginine repressor [Bacillus sp. SG-1] arginine repressor [Bacillus sp. SG-1]  E=3e-22 s/c=1.52 id=65% cov=100%
+-LTDAFVKIDSAGHMLVMKTLPGNANAIGALIDNLDWEEILGTICGDDTCLIICKTEEDTEKISQQFLDML
+>gi|16079481|ref|NP_390305.1|(79-149:149) arginine repressor [Bacillus subtilis subsp. subtilis str. 168] arginine repressor [Bacillus subtilis subsp. subtilis str. 168] arginine repressor [Bacillus subtilis subsp. subtilis str. NCIB 3610] arginine repressor [Bacillus subtilis subsp. subtilis str. JH642] arginine repressor [Bacillus subtilis subsp. subtilis str. SMY] unnamed protein product [Bacillus subtilis BSn5] RecName: Full=Arginine repressor; AltName: Full=Arginine hydroxamate resistance protein Chain A, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis Chain B, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis Chain C, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis Chain D, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis Chain E, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis Chain F, Crystal Structure Of Ahrc, The Arginine RepressorACTIVATOR Protein From Bacillus Subtilis ahrC protein [Bacillus subtilis] AhrC [Bacillus subtilis] transcriptional regulator [Bacillus subtilis subsp. subtilis str. 168] arginine repressor [Bacillus subtilis subsp. natto BEST195] arginine repressor [Bacillus subtilis BSn5] arginine repressor [Bacillus subtilis subsp. subtilis str. SC-8]  E=1e-21 s/c=1.48 id=62% cov=101%
+ALMDAFVKIDSASHMIVLKTMPGNAQAIGALMDNLDWDEMMGTICGDDTILIICRTPEDTEGVKNRLLELL
+>gi|205374088|ref|ZP_03226888.1|(81-150:150) arginine repressor [Bacillus coahuilensis m4-4]  E=2e-21 s/c=1.50 id=66% cov=100%
+-MMDAFIKVDSAGHLLVMKTLPGNANAIGALIDNLEWEEILGTICGDDTCLIICRTEQDTVLISNRLLDML
+>gi|89099259|ref|ZP_01172137.1|(80-149:149) arginine repressor [Bacillus sp. NRRL B-14911] arginine repressor [Bacillus sp. NRRL B-14911]  E=2e-21 s/c=1.50 id=63% cov=100%
+-LMDAFVRIDTAGHLLVMKTLPGNAMAIGALIDNLDWEEILGTICGDDTCLIICKTPEDTEVISNRFIDML
+>gi|365157806|ref|ZP_09354051.1|(94-164:164) arginine repressor [Bacillus smithii 7_3_47FAA] arginine repressor [Bacillus smithii 7_3_47FAA]  E=3e-21 s/c=1.46 id=61% cov=101%
+ALLDAFVSIDSAGHFVVLKTLPGNAHAVGALLDNLDWEEILGTICGDDTCLIICREPEHTELLKKRFLEML
+>gi|157692924|ref|YP_001487386.1|(79-149:149) ahrC gene product [Bacillus pumilus SAFR-032] RecName: Full=Arginine repressor arginine repressor [Bacillus pumilus SAFR-032]  E=3e-21 s/c=1.46 id=62% cov=101%
+SLMDAFIKMDAASHLIVLKTMPGNAQAIGALMDNLDWEEIMGTICGDDTILIICRTPDDTETVSSKILELL
+>gi|222151412|ref|YP_002560568.1|(81-150:150) arginine repressor [Macrococcus caseolyticus JCSC5402] RecName: Full=Arginine repressor arginine repressor [Macrococcus caseolyticus JCSC5402]  E=4e-20 s/c=1.43 id=61% cov=100%
+-LMDSFVKLDGTDNLLVLKTLPGNAQSIGAIIDQLEWDEVIGTICGDDTCLLICRDESAAAQVTERIFNML
+>gi|373856761|ref|ZP_09599505.1|(79-149:149) arginine repressor [Bacillus sp. 1NLA3E] arginine repressor [Bacillus sp. 1NLA3E]  E=4e-20 s/c=1.41 id=61% cov=101%
+ALMDAFVKIDNSSHLLVMKTLPGNAMAIGALIDHLEWDEIMGTICGDDTILIICRTPENTEIISKRFLDML
+>gi|297584552|ref|YP_003700332.1|(79-149:149) unnamed protein product [Bacillus selenitireducens MLS10] arginine repressor, ArgR [Bacillus selenitireducens MLS10]  E=9e-20 s/c=1.41 id=59% cov=100%
+-LVDCFVSIDSTGNMIVMKTLPGNANAVGALIDNLEWEEVMGNICGDDTILIICREAKQAEQVSKRFLDML
+>gi|384074320|emb|CCG45813.1|(80-149:149) arginine repressor [Halobacillus halophilus DSM 2266]  E=2e-19 s/c=1.41 id=56% cov=100%
+-MMDAFVSIDRAGHFIILKTLPGNANAVGALVDNLEWEEIMGTICGDDTCLIICRSEHQTETISEQLLNML
+>gi|323488932|ref|ZP_08094169.1|(79-149:149) arginine repressor [Planococcus donghaensis MPA1U2] arginine repressor [Planococcus donghaensis MPA1U2]  E=2e-19 s/c=1.38 id=58% cov=101%
+ALTDAFVSIDGASHFLVMKTLPGNAHAIGSLIDHLDWEEILGTICGDDTCLIICRDTEHREVLKQRLIEML
+>gi|52080958|ref|YP_079749.1|(79-149:149) arginine repressor ArgR [Bacillus licheniformis ATCC 14580] arginine repressor [Bacillus licheniformis ATCC 14580] arginine repressor [Bacillus sp. BT1B_CT2] RecName: Full=Arginine repressor arginine repressor [Bacillus licheniformis] transcriptional regulator [Bacillus licheniformis ATCC 14580] AhrC [Bacillus licheniformis ATCC 14580] arginine repressor [Bacillus sp. BT1B_CT2] arginine repressor ArgR [Bacillus licheniformis WX-02]  E=2e-19 s/c=1.38 id=60% cov=101%
+SLMDAFVKIDSASHLIVLKTMPGNAQAIGALMDNLDWEEIMGTICGDDTILIICRTHDDTKVVQKKILELL
+>gi|56964225|ref|YP_175956.1|(80-149:149) arginine repressor ArgR [Bacillus clausii KSM-K16] RecName: Full=Arginine repressor transcriptional regulator of arginine metabolism expression [Bacillus clausii KSM-K16]  E=3e-19 s/c=1.40 id=61% cov=100%
+-LTDSFISIDRTGNLVVMKAMPGNANAIAVLIDNLDWNELMGTICGDDTILIICRTERDGQVVTERFLNML
+>gi|27468119|ref|NP_764756.1|(84-153:153) arginine repressor ArgR [Staphylococcus epidermidis ATCC 12228] arginine repressor [Staphylococcus epidermidis BCM-HMP0060] arginine repressor [Staphylococcus epidermidis ATCC 12228] arginine repressor [Staphylococcus epidermidis BCM-HMP0060]  E=6e-19 s/c=1.38 id=55% cov=100%
+-LMDSFVNIEGTGNLLVLKTLPGNAQSIGAILDQIDWDEVLGTICGDDTCLLICRDEEASEEIKTRIFNLL
+>gi|15615340|ref|NP_243643.1|(79-149:149) arginine repressor [Bacillus halodurans C-125] RecName: Full=Arginine repressor transcriptional regulator of arginine metabolism expression [Bacillus halodurans C-125]  E=7e-19 s/c=1.36 id=62% cov=100%
+-LVDSFVSIDRTDNLIVMKTLPGNAHAIGALIDNLDWTEIMGTICGDDTILIICKDKQDGPVVTERFLNML
+>gi|327439762|dbj|BAK16127.1|(79-149:149) arginine repressor [Solibacillus silvestris StLB046]  E=1e-18 s/c=1.35 id=58% cov=101%
+SLADAFVSIDGASHFLVMKTLPGNANAIGSLLDHLDWTEILGTICGDDTILIMCRTEDEREEIKNRLLDML
+>gi|317128433|ref|YP_004094715.1|(79-149:149) arginine repressor ArgR [Bacillus cellulosilyticus DSM 2522] arginine repressor, ArgR [Bacillus cellulosilyticus DSM 2522]  E=1e-18 s/c=1.35 id=58% cov=101%
+ALMDSFISIDHSNNLIVIKTLPGNANAVGALIDNLDWHEVMGTICGDDTILIICREVAETKNISERFLDML
+>gi|347753255|ref|YP_004860820.1|(79-149:149) arginine repressor ArgR [Bacillus coagulans 36D1] arginine repressor, ArgR [Bacillus coagulans 36D1]  E=1e-18 s/c=1.35 id=57% cov=101%
+ALTDAFVSIDTAGHLIVLKTLPGNAHAIGALIDILDWEEIIGSLCGDDTCLIICKNQDETETVSQRFLDLL
+>gi|319892505|ref|YP_004149380.1|(81-150:150) arginine repressor ArgR [Staphylococcus pseudintermedius HKU10-03] Arginine repressor ArgR, putative [Staphylococcus pseudintermedius HKU10-03] arginine repressor [Staphylococcus pseudintermedius ED99]  E=2e-18 s/c=1.36 id=56% cov=100%
+-LMDSFVKIDSANNLLVLKTLPGNAQSIGAILDQIDWEEVLGTICGDDTCLIICRDNPSADEIKERIFNML
+>gi|288553322|ref|YP_003425257.1|(79-149:149) unnamed protein product [Bacillus pseudofirmus OF4] arginine repressor [Bacillus pseudofirmus OF4]  E=3e-18 s/c=1.33 id=57% cov=101%
+ALMDSFVSIDRSDHMIVMKTLPGNANAIGALIDNLDWTEIMGTICGDDTILIICKHKEDAPQVTERFLEML
+>gi|161509749|ref|YP_001575408.1|(84-153:153) arginine repressor [Staphylococcus aureus subsp. aureus USA300_TCH1516] arginine repressor [Staphylococcus aureus subsp. aureus EMRSA16] arginine repressor [Staphylococcus aureus subsp. aureus USA300_TCH1516] arginine repressor [Staphylococcus aureus subsp. aureus EMRSA16] arginine repressor [Staphylococcus aureus O11] arginine repressor [Staphylococcus aureus O46] ArgR [Staphylococcus aureus subsp. aureus DR10] ArgR [Staphylococcus aureus subsp. aureus 71193]  E=5e-18 s/c=1.34 id=54% cov=100%
+-LMDSFVNIDGTDNLLVLKTLPGNAQSIGAILDQINWEEVLGTICGDDTCLIICRSKEASDEIKSRIFNLL
+>gi|224476631|ref|YP_002634237.1|(81-150:150) arginine repressor [Staphylococcus carnosus subsp. carnosus TM300] RecName: Full=Arginine repressor arginine repressor ArgR [Staphylococcus carnosus subsp. carnosus TM300]  E=6e-18 s/c=1.34 id=54% cov=100%
+-LMDSFVNIEGTGNLLVLKTLPGNAQSIGAILDQIDWEEVLGTICGDDTCLLICHDEESANAIKTRIFNLL
+>gi|381182125|ref|ZP_09890946.1|(79-149:149) arginine repressor [Listeriaceae bacterium TTU M1-001] arginine repressor [Listeriaceae bacterium TTU M1-001]  E=6e-17 s/c=1.27 id=60% cov=101%
+ALVDCFISVDTVQFILLLKVMPGNGNAIGALLDNLNWVEKAGTLCGDDTCLIICRSEADAKIVSERLIEML
+>gi|299822991|ref|ZP_07054877.1|(79-149:149) arginine repressor [Listeria grayi DSM 20601] arginine repressor [Listeria grayi DSM 20601]  E=1e-16 s/c=1.25 id=50% cov=101%
+ALIDCFISVDRVQFMIIMKVMPGNGNSVGALMDNLAWEEKVGTLCGDDTCLIICRSEKDAEIVAQRFIEML
+>gi|169828967|ref|YP_001699125.1|(82-152:152) arginine repressor [Lysinibacillus sphaericus C3-41] Arginine repressor [Lysinibacillus sphaericus C3-41]  E=2e-16 s/c=1.24 id=57% cov=101%
+ALADAFISIDGASHFLVMKALPGNANAIASLLDHLDWPEILGTISGDDTILIICRDENERENTKNRLLDML
+>gi|357012963|ref|ZP_09077962.1|(78-148:149) arginine repressor [Paenibacillus elgii B69]  E=3e-16 s/c=1.24 id=57% cov=101%
+ALNDHFVHIDHTENLVVLKSLPGTANAIAALLDSLEWNEIMGTISGDDTILIICRTKDHSSHIVNQILGML
+>gi|16803407|ref|NP_464892.1|(79-149:149) arginine repressor [Listeria monocytogenes EGD-e] argR gene product [Listeria monocytogenes serotype 4b str. F2365] arginine repressor [Listeria monocytogenes str. 4b H7858] arginine repressor [Listeria monocytogenes str. 1/2a F6854] argR gene product [Listeria monocytogenes HCC23] arginine repressor [Listeria monocytogenes serotype 4b str. CLIP 80459] arginine repressor [Listeria monocytogenes FSL J1-194] arginine repressor [Listeria monocytogenes FSL N3-165] arginine repressor [Listeria monocytogenes FSL R2-503] arginine repressor [Listeria monocytogenes J2818] arginine repressor [Listeria monocytogenes HPB2262] arginine repressor [Listeria monocytogenes F6900] arginine repressor [Listeria monocytogenes FSL J2-064] arginine repressor [Listeria monocytogenes FSL J2-003] arginine repressor [Listeria monocytogenes FSL J1-175] unnamed protein product [Listeria monocytogenes 08-5578] arginine repressor [Listeria monocytogenes 08-5923] arginine repressor [Listeria monocytogenes FSL J2-071] arginine repressor [Listeria monocytogenes FSL N1-017] arginine repressor [Listeria marthii FSL S4-120] RecName: Full=Arginine repressor RecName: Full=Arginine repressor RecName: Full=Arginine repressor RecName: Full=Arginine repressor lmo1367 [Listeria monocytogenes EGD-e] arginine repressor [Listeria monocytogenes serotype 4b str. F2365] arginine repressor [Listeria monocytogenes str. 1/2a F6854] arginine repressor [Listeria monocytogenes str. 4b H7858] arginine repressor [Listeria monocytogenes HCC23] Putative arginine repressor [Listeria monocytogenes serotype 4b str. CLIP 80459] arginine repressor [Listeria monocytogenes FSL N3-165] arginine repressor [Listeria monocytogenes FSL R2-503] arginine repressor [Listeria monocytogenes F6900] arginine repressor [Listeria monocytogenes 08-5578] arginine repressor [Listeria monocytogenes 08-5923] arginine repressor [Listeria monocytogenes FSL J2-071] arginine repressor [Listeria monocytogenes HPB2262] arginine repressor [Listeria monocytogenes J2818] arginine repressor [Listeria monocytogenes FSL J1-194] arginine repressor [Listeria monocytogenes FSL N1-017] argR [Listeria monocytogenes L99] arginine repressor [Listeria monocytogenes FSL F2-208] arginine repressor [Listeria marthii FSL S4-120] arginine repressor [Listeria monocytogenes J1816] arginine repressor [Listeria monocytogenes J1-220] putative arginine metabolism repressor [Listeria monocytogenes M7] arginine repressor [Listeria monocytogenes J0161] arginine repressor [Listeria monocytogenes 10403S] arginine repressor [Listeria monocytogenes FSL R2-561] arginine repressor [Listeria monocytogenes Finland 1998] Arginine pathway regulatory protein ArgR [Listeria monocytogenes FSL J1-208] arginine repressor [Listeria monocytogenes 07PF0776]  E=6e-16 s/c=1.22 id=50% cov=101%
+ALIDCFIGIDNVQFMIILKVMPGNGNSVGALIDNLDWPEKAGTICGDDTCLIICRSEENAKTLTDRFIDML
+>gi|334137159|ref|ZP_08510604.1|(78-148:148) arginine repressor [Paenibacillus sp. HGF7] arginine repressor [Paenibacillus sp. HGF7]  E=7e-16 s/c=1.22 id=56% cov=101%
+ALSDHFINIDFTENLVVMKCMPGTANTICALIDNLEWNEIMGTICGDDTILIICRTKDVSQKVVNQIMSLI
+>gi|229916247|ref|YP_002884893.1|(80-149:149) arginine repressor [Exiguobacterium sp. AT1b] RecName: Full=Arginine repressor arginine repressor, ArgR [Exiguobacterium sp. AT1b]  E=1e-15 s/c=1.23 id=54% cov=100%
+-LSDSFVSVDSAQNLVVMKVLPGNADAIGVLIDHLSWDELIGTVCGDDTILMIARDEEKAKQIIDRLLGML
+>gi|337746953|ref|YP_004641115.1|(78-148:149) ArgR [Paenibacillus mucilaginosus KNP414] unnamed protein product [Paenibacillus mucilaginosus 3016] ArgR [Paenibacillus mucilaginosus KNP414] ArgR [Paenibacillus mucilaginosus 3016] arginine repressor [Paenibacillus mucilaginosus K02]  E=1e-15 s/c=1.20 id=56% cov=101%
+ALNDHFVHIDYTENLVVLKSLPGTANTIAALIDSLEWNEIMGTICGDDTVLIICRNRDHSTHVVNQVLGML
+>gi|374603545|ref|ZP_09676523.1|(78-144:149) arginine repressor [Paenibacillus dendritiformis C454] arginine repressor [Paenibacillus dendritiformis C454]  E=3e-15 s/c=1.26 id=54% cov=96%
+SLLDNFISIDSTENLVVIKCLPGTANAIAVLMDNIEWPEIMGTVCGDDTILIICRTKQQSDQVVAQI----
+>gi|251796326|ref|YP_003011057.1|(79-149:150) unnamed protein product [Paenibacillus sp. JDR-2] arginine repressor, ArgR [Paenibacillus sp. JDR-2]  E=4e-15 s/c=1.19 id=53% cov=101%
+ALIDHFTHIDFTENLVVMKCLPGTANAIGALIDNMEWPEVMGTICGDDTILIICRTKEKSGELVEKLLDLL
+>gi|333370569|ref|ZP_08462563.1|(79-148:148) arginine repressor [Desmospora sp. 8437] arginine repressor [Desmospora sp. 8437]  E=6e-15 s/c=1.19 id=49% cov=100%
+-LTEAFVGIDLSENLIVMRTMPGNAHAIAVLIDHLAWPDILGTIAGDDTIMLICRDREQAPHIKNRFIEML
+>gi|253576326|ref|ZP_04853656.1|(78-148:149) arginine repressor [Paenibacillus sp. oral taxon 786 str. D14] arginine repressor [Paenibacillus sp. oral taxon 786 str. D14]  E=3e-14 s/c=1.15 id=47% cov=101%
+ALVDSFVHIDYTGNLVVMKCLPGTANSVAVLLDNMEWPDLLGTICGDDTILLICRNEDYSRYLIDQIMGYI
+>gi|308069594|ref|YP_003871199.1|(79-148:149) arginine repressor [Paenibacillus polymyxa E681] Arginine repressor [Paenibacillus polymyxa E681]  E=3e-14 s/c=1.16 id=49% cov=100%
+-LVDNFLHIDYTTNLIVMKCLPGTANSIAALLDNIEWSEIMGTISGDDTILIICRSEENSEAIVNRLMGYI
+>gi|295695411|ref|YP_003588649.1|(79-148:148) unnamed protein product [Kyrpidia tusciae DSM 2912] arginine repressor, ArgR [Kyrpidia tusciae DSM 2912]  E=5e-14 s/c=1.15 id=48% cov=100%
+-LPESFVSLDRAENLIVMKTLPGNAHAVAALVDAVGWSEIMGTIAGDDTILVICRSAVQAAAVEERFRQMV
+>gi|357005034|ref|ZP_09070033.1|(78-148:148) arginine repressor [Paenibacillus larvae subsp. larvae B-3650]  E=9e-14 s/c=1.12 id=47% cov=101%
+ALADHFVQIDYTENMIVMKCLPGTANTICALIDNMEWSEIMGSICGDDTVLLIIRNKEQTSHVVNQILSLM
+>gi|226311932|ref|YP_002771826.1|(80-149:149) arginine repressor [Brevibacillus brevis NBRC 100599] RecName: Full=Arginine repressor transcriptional regulator of arginine metabolism [Brevibacillus brevis NBRC 100599]  E=1e-13 s/c=1.13 id=49% cov=100%
+-LVDSFISIDQADHFIVLKTLSGHANAVAELIDNLPWEEIMGTISGDNTILIICRSKENTNEVTKRLMEML
+>gi|229083656|ref|ZP_04215981.1|(82-148:152) Arginine regulator [Bacillus cereus Rock3-44] Arginine regulator [Bacillus cereus Rock3-44]  E=4e-13 s/c=1.16 id=51% cov=94%
+-LREVVVKVDYVEQLTIIKTLPGNAHVIGALLDSLDWKEKVGCICGNDTCLVISQSQSDRKVLAERL----
+>gi|75758691|ref|ZP_00738808.1|(82-145:149) Arginine repressor, argR [Bacillus thuringiensis serovar israelensis ATCC 35646] Arginine regulator [Bacillus thuringiensis IBL 4222] Arginine repressor, argR [Bacillus thuringiensis serovar israelensis ATCC 35646] Arginine regulator [Bacillus thuringiensis IBL 4222]  E=2e-12 s/c=1.18 id=49% cov=92%
+---EVVVKIDYINQLTIIKTLPGNAHVIGVLLDSVDWKEKVGCICGNDTCLVISKSQSDREILEERL----
+>gi|152974183|ref|YP_001373700.1|(79-145:149) arginine repressor ArgR [Bacillus cytotoxicus NVH 391-98] arginine repressor, ArgR [Bacillus cytotoxicus NVH 391-98]  E=3e-12 s/c=1.11 id=51% cov=94%
+-LEEVVVKVDYVDRLTVIKTLPGNAHVIGALLDSLDWKEKIGCVCGNDTCLIISHSLSDRKILEERL----
+>gi|381177566|ref|ZP_09886516.1|(80-148:150) arginine repressor, ArgR [Desulfosporosinus acidiphilus SJ4] arginine repressor, ArgR [Desulfosporosinus acidiphilus SJ4]  E=2e-11 s/c=1.04 id=44% cov=99%
+-LRETVISMNDTESLIVIRTIPGNAHALAAVMDNTNWDEVIGTVAGDDTILLVIK-PKEAVAVVLERLTTL
+>gi|218288791|ref|ZP_03493054.1|(81-149:150) arginine repressor, ArgR [Alicyclobacillus acidocaldarius LAA1] arginine repressor, ArgR [Alicyclobacillus acidocaldarius LAA1]  E=2e-10 s/c=1.00 id=46% cov=99%
+-LAEVFISHARANNLIVIKVAPGNAHAIGALMDALDPPGLLGTICGDDTMLLVCQDEETAVRLLNETLNI-
+>gi|220929316|ref|YP_002506225.1|(79-148:150) unnamed protein product [Clostridium cellulolyticum H10] RecName: Full=Arginine repressor arginine repressor, ArgR [Clostridium cellulolyticum H10]  E=4e-10 s/c=0.97 id=39% cov=100%
+-LTEAYVSSDYANNIVVVKTLSGMAQAAGSAIDSLKWNEILGTIAGDDTLIMVCRAEKIAEDIVNKFNKMI
+>gi|345861740|ref|ZP_08813993.1|(62-131:132) arginine repressor [Desulfosporosinus sp. OT] arginine repressor [Desulfosporosinus sp. OT]  E=1e-09 s/c=0.94 id=37% cov=100%
+-LRETVVSINDTESLIVIRTIPGNAHALAAVMDNSNWEEVIGTVAGDDTILLVIKPKEVVPAVLERLTTLL
+>gi|315221825|ref|ZP_07863737.1|(80-145:157) arginine repressor protein [Streptococcus anginosus F0211] arginine repressor protein [Streptococcus anginosus F0211]  E=4e-09 s/c=0.97 id=45% cov=94%
+-MEDALIMLRPVQNQVVMKTLPGLAQSFGSILDALEFSEIVATVCGDDVCLIICEDNQKAQDCFNKL----
+>gi|46199496|ref|YP_005163.1|(84-151:164) transcriptional repressor [Thermus thermophilus HB27] arginine repressor/activator [Thermus thermophilus HB8] arginine repressor/activator [Thermus sp. RLM] unnamed protein product [Thermus thermophilus SG0.5JP17-16] RecName: Full=Arginine repressor RecName: Full=Arginine repressor ArgR-like protein [Thermus thermophilus] transcriptional repressor [Thermus thermophilus HB27] arginine repressor/activator [Thermus thermophilus HB8] arginine repressor, ArgR [Thermus thermophilus SG0.5JP17-16] arginine repressor/activator [Thermus sp. RL]  E=5e-09 s/c=0.94 id=44% cov=96%
+----LFVRdVDRGGNLLVVKTAEGHASGIAYLLDRLRRDEIVGTLAGDDTILVVARTEEAAQALEDEFAGLL
+>gi|125973333|ref|YP_001037243.1|(83-144:153) ArgR family transcriptional regulator [Clostridium thermocellum ATCC 27405] arginine repressor, ArgR [Clostridium thermocellum DSM 2360] arginine repressor, ArgR [Clostridium thermocellum JW20] RecName: Full=Arginine repressor arginine repressor, ArgR [Clostridium thermocellum ATCC 27405] arginine repressor, ArgR [Clostridium thermocellum DSM 2360] arginine repressor, ArgR [Clostridium thermocellum JW20] arginine repressor, ArgR [Clostridium thermocellum DSM 1313] Arginine repressor [Clostridium thermocellum YS] Arginine repressor [Clostridium thermocellum AD2]  E=6e-09 s/c=1.03 id=43% cov=89%
+-----YVSSDYANNIVVVKTLPGMAPAAASAIDSMNYPEIVGSIAGDDTVLIVCRSEKIAKEFVEKL----
+>gi|300787891|ref|YP_003768182.1|(88-156:170) ArgR family transcriptional regulator [Amycolatopsis mediterranei U32] unnamed protein product [Amycolatopsis mediterranei S699] transcriptional regulator ArgR [Amycolatopsis mediterranei U32] ArgR family transcriptional regulator [Amycolatopsis mediterranei S699]  E=2e-08 s/c=0.90 id=36% cov=99%
+-LAELMVSADSSGNLMVLRTPPGAAQFLASAIDRAALEEVVGSIAGDDTVAVIAREPLNGKELAERFAAL-
+>gi|363423853|ref|ZP_09311907.1|(110-178:179) arginine repressor [Rhodococcus pyridinivorans AK37] arginine repressor [Rhodococcus pyridinivorans AK37]  E=2e-08 s/c=0.90 id=39% cov=99%
+-LGELLVSTDSSGNIAVLRTPPGAAHYLASALDRASLPEVVGTIAGDDTIAVIAREPTTGAELAAKIESL-
+>gi|359425112|ref|ZP_09216214.1|(110-175:179) arginine repressor [Gordonia amarae NBRC 15530] arginine repressor [Gordonia amarae NBRC 15530]  E=3e-08 s/c=0.93 id=40% cov=94%
+-LSELLVSTDASGNLAVLRTPPGAAHYLASAIDRASLPDIVGTIAGDDTILVVAREPLDGAGLARRI----
+>gi|343928301|ref|ZP_08767753.1|(101-164:168) arginine repressor [Gordonia alkanivorans NBRC 16433] arginine repressor [Gordonia alkanivorans NBRC 16433]  E=5e-08 s/c=0.95 id=38% cov=92%
+---ELLVSTDSSGNLAVLRTPPGAAHYLAAALDRARLPDVVGTIAGDDTIFVVAREPLDGAELAKRI----
+>gi|290581361|ref|YP_003485753.1|(79-144:156) arginine repressor [Streptococcus mutans NN2025] putative arginine repressor [Streptococcus mutans NN2025]  E=7e-08 s/c=0.91 id=42% cov=94%
+-MEDALVMLKPVQNQVILKTLPGLAQSFGSILDSMQLVEITATVCGDDTCLIICKDKETALKCFDHL----
+>gi|383823126|ref|ZP_09978339.1|(76-144:150) arginine repressor [Mycobacterium phlei RIVM601174] arginine repressor [Mycobacterium phlei RIVM601174]  E=7e-08 s/c=0.87 id=34% cov=99%
+-MAELLVSTDASGNLAILRTPPGAAHYLASAIDRAALPYVVGTVAGDDTILVVAREPMTGAELASKLESI-
+>gi|374612512|ref|ZP_09685289.1|(90-158:164) arginine repressor, ArgR [Mycobacterium tusciae JS617] arginine repressor, ArgR [Mycobacterium tusciae JS617]  E=8e-08 s/c=0.87 id=39% cov=99%
+-LADLLVSTDSSANLAVLRTPPGAAHYLASAMDRAALPYVVGTVAGDDTILVIAREPMTGAELAAKLESI-
+>gi|373454724|ref|ZP_09546588.1|(82-137:151) arginine repressor [Dialister succinatiphilus YIT 11850] arginine repressor [Dialister succinatiphilus YIT 11850]  E=1e-07 s/c=1.07 id=42% cov=80%
+---EAVVKIDSAMNMVVLHTIPGSASSVAFAIDHSKNDVIIGTLAGDDTVLIILKTPED------------
+>gi|313889881|ref|ZP_07823522.1|(80-139:157) arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus SPIN 20026] arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus SPIN 20026] arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus LQ 940-04]  E=1e-07 s/c=0.99 id=48% cov=86%
+-MEDALVMLKIVQNQIVLKTLPGLAQSFGSILDAMQITEIVATVCGDDTCLIICEDNDGAK----------
+>gi|379708368|ref|YP_005263573.1|(102-167:171) argR gene product [Nocardia cyriacigeorgica GUH-2] arginine repressor [Nocardia cyriacigeorgica GUH-2]  E=1e-07 s/c=0.90 id=40% cov=94%
+-LGDLLVSTDASGNLAVLRTPPGAAHFLASALDRASLPYVVGTIAGDDTIAVIAREPMTGAELAAEI----
+>gi|320096272|ref|ZP_08027851.1|(107-163:173) arginine repressor [Actinomyces sp. oral taxon 178 str. F0338] arginine repressor [Actinomyces sp. oral taxon 178 str. F0338]  E=1e-07 s/c=1.04 id=50% cov=82%
+------------GNQLVLRTPVGAANLLGSALDAVRLDGVAGTIAGDDTILVICRAPDEARAVERRLLA--
+>gi|366166892|ref|ZP_09466647.1|(79-147:154) ArgR family transcriptional regulator [Acetivibrio cellulolyticus CD2]  E=2e-07 s/c=0.85 id=40% cov=99%
+-FAESYASSDYANNIVVVKTLPAMAQAAASAIDSLKWPEIVGSIAGDDTVMIICRAEKIAEELVNKFNKM-
+>gi|29349170|ref|NP_812673.1|(88-152:157) arginine repressor ArgR [Bacteroides thetaiotaomicron VPI-5482] arginine repressor [Bacteroides sp. 1_1_14] arginine repressor ArgR [Bacteroides faecis MAJ27] arginine repressor [Bacteroides sp. 1_1_6] RecName: Full=Arginine repressor arginine repressor, transcriptional regulator of arginine metabolism [Bacteroides thetaiotaomicron VPI-5482] arginine repressor [Bacteroides sp. 1_1_6] arginine repressor [Bacteroides sp. 1_1_14]  E=2e-07 s/c=0.91 id=44% cov=93%
+-----FISLQFSGNIAVIRTRPGYASSMAYDIDNNEFSEILGTIAGDDTIMLVLREGVATSKV-RQLLSLI
+>gi|15675446|ref|NP_269620.1|(80-139:157) arginine repressor [Streptococcus pyogenes M1 GAS] arginine repressor ArgR [Streptococcus pyogenes MGAS8232] arginine repressor [Streptococcus pyogenes MGAS315] arginine repressor ArgR [Streptococcus pyogenes MGAS10394] ahrC.2 gene product [Streptococcus pyogenes MGAS5005] arginine repressor [Streptococcus pyogenes MGAS9429] ahrC2 gene product [Streptococcus pyogenes MGAS2096] arginine repressor [Streptococcus pyogenes str. Manfredo] arginine repressor [Streptococcus pyogenes NZ131] RecName: Full=Arginine regulator RecName: Full=Arginine regulator RecName: Full=Arginine regulator RecName: Full=Arginine repressor RecName: Full=Arginine regulator putative arginine repressor [Streptococcus pyogenes M1 GAS] putative arginine repressor [Streptococcus pyogenes MGAS8232] putative arginine repressor [Streptococcus pyogenes MGAS315] Arginine repressor, argR [Streptococcus pyogenes MGAS10394] arginine repressor [Streptococcus pyogenes MGAS5005] arginine repressor [Streptococcus pyogenes MGAS9429] Arginine repressor, argR [Streptococcus pyogenes MGAS2096] arginine repressor [Streptococcus pyogenes str. Manfredo] Putative arginine repressor [Streptococcus pyogenes NZ131] arginine regulator [Streptococcus pyogenes Alab49] Arginine pathway regulatory protein ArgR,repressor of arg regulon [Streptococcus pyogenes NS88.2]  E=2e-07 s/c=0.98 id=43% cov=86%
+-MEDALVMLKIVQHQIILKTLPGLAQSFGSILDAMQIPEIVATVCGDDTCLIVCEDNEQAK----------
+>gi|375096134|ref|ZP_09742399.1|(86-154:173) arginine repressor [Saccharomonospora marina XMU15] arginine repressor [Saccharomonospora marina XMU15]  E=2e-07 s/c=0.85 id=34% cov=99%
+-LAELMVSVEPSGNLMVLRTPPGAAQFMASAIDRAALEEVVGSIAGDDTVAVIAREPLTGKDLAERFAAL-
+>gi|271967351|ref|YP_003341547.1|(96-160:167) unnamed protein product [Streptosporangium roseum DSM 43021] arginine repressor [Streptosporangium roseum DSM 43021]  E=2e-07 s/c=0.90 id=36% cov=93%
+---ELLVSAEASANLVIVRTPPGAAQFLASAIDHADWKSILGTVAGDDTILVISRDPMGGDAVAEALL---
+>gi|342214169|ref|ZP_08706874.1|(82-149:151) arginine repressor [Veillonella sp. oral taxon 780 str. F0422] arginine repressor [Veillonella sp. oral taxon 780 str. F0422]  E=2e-07 s/c=0.86 id=35% cov=97%
+---DSILRIDHVLNQVVLHTLPGSAQSVAFAIDHAKWHEVIGTIAGDDTILLICNSVESVEMVLDRIQDLM
+>gi|222153456|ref|YP_002562633.1|(80-139:157) arginine repressor ArgR [Streptococcus uberis 0140J] arginine repressor [Streptococcus uberis 0140J]  E=2e-07 s/c=0.97 id=44% cov=86%
+-MEDALVMLRVVQHQIVLKTLPGLAQSFGSILDAMQIPEIVATVCGDDTCLIICEDHEAAQ----------
+>gi|169629427|ref|YP_001703076.1|(93-158:162) arginine repressor ArgR [Mycobacterium abscessus ATCC 19977] arginine repressor ArgR [Mycobacterium massiliense CCUG 48898] Arginine repressor ArgR [Mycobacterium abscessus] arginine repressor ArgR [Mycobacterium abscessus 47J26] arginine repressor ArgR [Mycobacterium massiliense CCUG 48898] arginine repressor ArgR [Mycobacterium abscessus subsp. bolletii BD] arginine repressor ArgR [Mycobacterium abscessus M94] arginine repressor ArgR [Mycobacterium abscessus M93]  E=2e-07 s/c=0.88 id=39% cov=94%
+-LGELLVSTDASGNLAVLRTPPGAAHYLASAIDRAALPDVVGTIAGDDTIAVIAREPLTGAQLAAQF----
+>gi|296140100|ref|YP_003647343.1|(92-160:161) unnamed protein product [Tsukamurella paurometabola DSM 20162] arginine repressor, ArgR [Tsukamurella paurometabola DSM 20162]  E=3e-07 s/c=0.84 id=39% cov=99%
+-LGELLVSTDHSGNICVLRTPPGAANFLASALDRSSLPEVVGTVAGDDTVLVIAREPLTGKDLAERLVAL-
+>gi|342218509|ref|ZP_08711120.1|(82-149:151) arginine repressor [Megasphaera sp. UPII 135-E] arginine repressor [Megasphaera sp. UPII 135-E]  E=3e-07 s/c=0.85 id=35% cov=97%
+---DSVVRVDSALNQVVIHTLPGSANPVAAAIDHARWEHVLGTLAGDDTILIIMRSEEAVKPLVKLLFSLM
+>gi|270292877|ref|ZP_06199088.1|(80-139:156) arginine repressor [Streptococcus sp. M143] arginine repressor [Streptococcus sp. M143]  E=3e-07 s/c=0.96 id=39% cov=86%
+-MEDGLVMLRPVQHQVVLKTLPGLAQSFGAVLDALNFKQIIATVCGDDVCLLICENAEEAQ----------
+>gi|359772794|ref|ZP_09276209.1|(97-154:166) arginine repressor [Gordonia effusa NBRC 100432] arginine repressor [Gordonia effusa NBRC 100432]  E=3e-07 s/c=1.00 id=44% cov=83%
+-LGELLVSADASGNLAVLRTPPGAAQYLASALDRASLPDIVGTIAGDDTVFVVAREPAD------------
+>gi|225022594|ref|ZP_03711786.1|(96-155:162) hypothetical protein CORMATOL_02636 [Corynebacterium matruchotii ATCC 33806] hypothetical protein CORMATOL_02636 [Corynebacterium matruchotii ATCC 33806]  E=4e-07 s/c=0.96 id=41% cov=86%
+---DLLVSSDHSGNIAVLRTPPGAAAFLASFIDRVSMDEVVGTIAGDDTVFVLARDPLTGKEL--------
+>gi|342163563|ref|YP_004768202.1|(80-145:156) unnamed protein product [Streptococcus pseudopneumoniae IS7493] arginine repressor [Streptococcus pseudopneumoniae IS7493]  E=5e-07 s/c=0.87 id=39% cov=94%
+-MEDALIMLRPIQHQVLLKTLPGLAQSFATIIDALDFQYIIATLCGDDVCLIICEDAEAAQKCFEEL----
+>gi|357402815|ref|YP_004914740.1|(107-173:178) argR gene product [Streptomyces cattleya NRRL 8057 = DSM 46488] Arginine repressor [Streptomyces cattleya NRRL 8057 = DSM 46488]  E=5e-07 s/c=0.86 id=37% cov=96%
+---ELLISAEASANLVVLRTPPGAAQFLASAIDQAEVHDILGTIAGDDTVLLISRAPAGGQALAEHLLKL-
+>gi|229492693|ref|ZP_04386494.1|(102-170:171) arginine repressor [Rhodococcus erythropolis SK121] arginine repressor [Rhodococcus erythropolis SK121]  E=6e-07 s/c=0.83 id=36% cov=99%
+-LGELLVSTDFSGNMAILRTPPGAAHYLASALDRSSMPDIVGTIAGDDTIFVVAREPLSGAELAAMIESL-
+>gi|262202735|ref|YP_003273943.1|(108-168:172) unnamed protein product [Gordonia bronchialis DSM 43247] arginine repressor [Gordonia bronchialis DSM 43247]  E=6e-07 s/c=0.93 id=37% cov=87%
+------VSTDASGNMAVLRTPPGAAHYLASALDRANLPDVLGTIAGDDTIFVVARDPVSGAEVARRI----
+>gi|261880942|ref|ZP_06007369.1|(89-146:156) arginine repressor [Prevotella bergensis DSM 17361] arginine repressor [Prevotella bergensis DSM 17361]  E=7e-07 s/c=0.98 id=46% cov=83%
+-----FRSVDFSGNMAVIKTRPGYASSIAYNIDNSDVKEILGTIAGDDTILIVLREGTDREDV--------
+>gi|328951131|ref|YP_004368466.1|(85-151:152) arginine repressor ArgR [Marinithermus hydrothermalis DSM 14884] arginine repressor, ArgR [Marinithermus hydrothermalis DSM 14884]  E=8e-07 s/c=0.84 id=42% cov=94%
+-----FVRdVDRGENVLVVKTAEGHASGIALLIDKLRRDDIVGTLAGEDTILVVARTVEDAKNLLEELEGFL
+>gi|256379456|ref|YP_003103116.1|(86-141:164) arginine repressor, ArgR [Actinosynnema mirum DSM 43827] arginine repressor, ArgR [Actinosynnema mirum DSM 43827]  E=9e-07 s/c=1.01 id=46% cov=80%
+-LEELLVSVDHSGNLAVLRTPPGAAQFLASALDRAALHDIVGTIAGDDTILVVAREP--------------
+>gi|332799342|ref|YP_004460841.1|(80-143:148) arginine repressor ArgR [Tepidanaerobacter sp. Re1] arginine repressor, ArgR [Tepidanaerobacter sp. Re1]  E=1e-06 s/c=0.88 id=43% cov=89%
+---ESIISFDTAENLIVIKTSSGTASAVGEAIDGLNWSDIVGTVAGDNTILVIAKS----KKVVNDILK--
+>gi|166030421|ref|ZP_02233250.1|(79-148:152) hypothetical protein DORFOR_00082 [Dorea formicigenerans ATCC 27755] hypothetical protein DORFOR_00082 [Dorea formicigenerans ATCC 27755]  E=1e-06 s/c=0.80 id=35% cov=100%
+-LRDGYMSMDMAQNILVIKTVAGMAMAVCLAIDAMNWSEVVGSIAGDDTIMCAIRTTEDTPKVMDKIRKIV
+>gi|329939025|ref|ZP_08288399.1|(116-183:188) arginine repressor [Streptomyces griseoaurantiacus M045] arginine repressor [Streptomyces griseoaurantiacus M045]  E=1e-06 s/c=0.82 id=36% cov=97%
+--AELLISAEASANLVVLRTPPGAAQFLASAIDQAELHDILGTIAGDDTLLLISRDPTGGQNLADHLLRL-
+>gi|134101769|ref|YP_001107430.1|(87-142:169) arginine repressor (partial match) [Saccharopolyspora erythraea NRRL 2338] arginine repressor (partial match) [Saccharopolyspora erythraea NRRL 2338] arginine repressor (partial match) [Saccharopolyspora erythraea NRRL 2338]  E=1e-06 s/c=1.00 id=44% cov=80%
+-LGELLVSADGSGNLTVLRTPPGAAQFLASAIDRSALLEVVGSIAGDDTVMVIAREP--------------
+>gi|118467361|ref|YP_888065.1|(89-154:158) argR gene product [Mycobacterium smegmatis str. MC2 155] arginine repressor [Mycobacterium smegmatis str. MC2 155]  E=1e-06 s/c=0.85 id=36% cov=94%
+-LGELLVSTDASANLAVLRTPPGAAHYLAAAIDRAALPYVVGTVAGDDTILVVAREPMTGAELAGTL----
+>gi|311113279|ref|YP_003984501.1|(114-179:183) arginine repressor [Rothia dentocariosa ATCC 17931] arginine repressor [Rothia dentocariosa ATCC 17931]  E=2e-06 s/c=0.85 id=36% cov=94%
+---ELLITAEGSGNIAVLRTPPGAAQFLASSIDQSGLEAILGTIAGDDTVMVISRDPAGGQELAASFLA--
+>gi|373464426|ref|ZP_09555965.1|(82-149:152) arginine repressor protein [Lactobacillus kisonensis F0435] arginine repressor protein [Lactobacillus kisonensis F0435]  E=2e-06 s/c=0.82 id=39% cov=97%
+---DSFVSVDSQDKFVFLKVLPGSGPIISSLLYQMNYSEIFGTIGDDNTVLIICKTEADTLSFRGQINSML
+>gi|312899126|ref|ZP_07758504.1|(82-149:151) arginine repressor [Megasphaera micronuciformis F0359] arginine repressor [Megasphaera micronuciformis F0359]  E=2e-06 s/c=0.81 id=32% cov=97%
+---DSIVRVDSCLNQIVIHTVPGSASMVASAVDHAKWERVIGTVAGDDTVLIITNNPDSVPKLVKLIISLM
+>gi|379735873|ref|YP_005329379.1|(90-145:178) argR gene product [Blastococcus saxobsidens DD2] Arginine repressor [Blastococcus saxobsidens DD2]  E=3e-06 s/c=0.98 id=42% cov=80%
+-LADLLTGSEGSANLAVLRTPPGAAQFLASALDKVGLPDVLGTIAGDDTLLVVSREP--------------
+>gi|348026259|ref|YP_004766064.1|(82-149:151) arginine repressor ArgR [Megasphaera elsdenii DSM 20460] arginine repressor [Megasphaera elsdenii DSM 20460]  E=3e-06 s/c=0.80 id=30% cov=97%
+---DSIVRVDSAYNQIIVHTLPGSANPIAAAIDHARWENVIGTLAGDDTVLLIVKDTETVPKLVKLIVSLM
+>gi|354807004|ref|ZP_09040481.1|(80-143:150) arginine repressor [Lactobacillus curvatus CRL 705] arginine repressor [Lactobacillus curvatus CRL 705]  E=4e-06 s/c=0.85 id=40% cov=87%
+-LRDAYITHKQQDYFVVIKALPGNGTAIANLLDQMQLSGVFGTIGGDDTVLVICKSEENAKQ---------
+>gi|323484860|ref|ZP_08090216.1|(78-135:149) hypothetical protein HMPREF9474_01967 [Clostridium symbiosum WAL-14163] arginine repressor [Clostridium symbiosum WAL-14673] arginine repressor [Clostridium sp. 7_3_54FAA] hypothetical protein HMPREF9474_01967 [Clostridium symbiosum WAL-14163] arginine repressor [Clostridium symbiosum WAL-14673] arginine repressor [Clostridium sp. 7_3_54FAA]  E=5e-06 s/c=0.93 id=46% cov=83%
+-LHDSFLSMDMAQNILVIKTVSGMAMAVGAALDSLHFGEIVGCIAGDDTVMCAVRTVDD------------
+>gi|269956132|ref|YP_003325921.1|(100-168:172) arginine repressor, ArgR [Xylanimonas cellulosilytica DSM 15894] arginine repressor, ArgR [Xylanimonas cellulosilytica DSM 15894]  E=5e-06 s/c=0.78 id=34% cov=99%
+-LADLLVSAEASANLVVLRTPPGAANFLGSAIDHSLFPGVLGCIAGDDTILVISRDPAGGDELAQRFLAL-
+>gi|336325498|ref|YP_004605464.1|(71-136:142) Arginine repressor [Corynebacterium resistens DSM 45100] Arginine repressor [Corynebacterium resistens DSM 45100]  E=5e-06 s/c=0.82 id=34% cov=94%
+-LAELLVERDWSGNIAVLRTPPGAAQYLASILDRTEIGRVVATIAGDDTVFVLAREPLTGKELAEYF----
+>gi|365842253|ref|ZP_09383282.1|(85-149:150) arginine repressor protein [Flavonifractor plautii ATCC 29863] arginine repressor [Lachnospiraceae bacterium 7_1_58FAA] arginine repressor protein [Flavonifractor plautii ATCC 29863] arginine repressor [Lachnospiraceae bacterium 7_1_58FAA]  E=5e-06 s/c=0.83 id=36% cov=93%
+------ISFDLAQNIIVLKTMPGVASAACAAIDGMEITGLVGSLAGDDTAMLVMRTNEDAQEFCNEIHTML
+>gi|315652069|ref|ZP_07905070.1|(78-135:150) arginine repressor [Eubacterium saburreum DSM 3986] arginine repressor [Eubacterium saburreum DSM 3986] arginine repressor [Eubacterium saburreum F0468]  E=6e-06 s/c=0.93 id=44% cov=83%
+-LKEAFISMDMAQNILVLKTVSGMAMAVAAALDSLQMNEIVGCIAGDDTIMAAIRSVDD------------
+>gi|333919182|ref|YP_004492763.1|(95-150:164) unnamed protein product [Amycolicicoccus subflavus DQS3-9A1] Arginine repressor [Amycolicicoccus subflavus DQS3-9A1]  E=6e-06 s/c=0.96 id=42% cov=80%
+-LSDLLVSAEPSANLAVLRTPPGAAQFVASAIDKAALPEIAGTIAGDDTIVVIAREP--------------
+>gi|383824782|ref|ZP_09979954.1|(95-163:164) arginine repressor [Mycobacterium xenopi RIVM700367] arginine repressor [Mycobacterium xenopi RIVM700367]  E=6e-06 s/c=0.78 id=37% cov=99%
+-LGELLVSTDATGNLAVLRTPPGAADYLASAIDRAALPYVVGTIAGDDTIFVAAREPMTGAELAATLQSL-
+>gi|380001165|gb|AFD26355.1|(66-136:138) Arginine repressor [Deinococcus gobiensis I-0]  E=7e-06 s/c=0.75 id=37% cov=100%
+-LFQNFVQdVDRGENLLVIRTAEGHASGVALLLDRWQRDDIVGTIAGEDTIFVVARTTTEGEALMEELNALM
+>gi|296129493|ref|YP_003636743.1|(97-164:168) unnamed protein product [Cellulomonas flavigena DSM 20109] arginine repressor, ArgR [Cellulomonas flavigena DSM 20109]  E=1e-05 s/c=0.78 id=35% cov=97%
+--AELLVTAEASGNLVVLRTPPGAAQFLASAIDHSVLPTVLGTIAGDDTVLVISRDPDGGDALAARFLSL-
+>gi|158313578|ref|YP_001506086.1|(92-161:189) unnamed protein product [Frankia sp. EAN1pec] arginine repressor, ArgR [Frankia sp. EAN1pec]  E=1e-05 s/c=0.75 id=38% cov=96%
+---ELLVSAEANGDLVVLRTPPGAAQLFASALDRAALPEVMGTIAGDDTVLVVCRagpTGPGGPAFAGRLLSL-
+>gi|357388431|ref|YP_004903270.1|(112-178:184) argR gene product [Kitasatospora setae KM-6054] putative arginine repressor ArgR [Kitasatospora setae KM-6054]  E=1e-05 s/c=0.79 id=35% cov=96%
+---ELMVSATASGNLVVLRTPPGAAQFLASAIDTAEVFEILGTIAGDDTVLLISRDAAGGQALADHLMQL-
+>gi|163839538|ref|YP_001623943.1|(107-173:179) arginine repressor ArgR [Renibacterium salmoninarum ATCC 33209] RecName: Full=Arginine repressor arginine repressor [Renibacterium salmoninarum ATCC 33209]  E=1e-05 s/c=0.79 id=34% cov=94%
+---ELLVTAEASANLVVLRTPPGAANFLAMAIDHSVLPDILGTIAGDDTVLVIARDPFGGAAIAERFLQ--
+>gi|269219362|ref|ZP_06163216.1|(95-161:162) arginine repressor [Actinomyces sp. oral taxon 848 str. F0332] arginine repressor [Actinomyces sp. oral taxon 848 str. F0332]  E=1e-05 s/c=0.79 id=37% cov=96%
+---EVLVSAQCAGSQLVLRTPPGAANILAVGIDRAMIDGVLGCLAGDDTILVITSSPERAEEIRSELLSL-
+>gi|225570640|ref|ZP_03779663.1|(79-144:149) hypothetical protein CLOHYLEM_06740 [Clostridium hylemonae DSM 15053] hypothetical protein CLOHYLEM_06740 [Clostridium hylemonae DSM 15053]  E=2e-05 s/c=0.79 id=34% cov=94%
+-LKDGYVSMDMAQNILVIKTVAGMAMAVCAAIDAMKWNEVVGSIAGDDTIMCAIRSVDDTVRVMDKI----
+>gi|331701505|ref|YP_004398464.1|(79-149:152) arginine repressor ArgR [Lactobacillus buchneri NRRL B-30929] arginine repressor, ArgR [Lactobacillus buchneri NRRL B-30929]  E=2e-05 s/c=0.74 id=35% cov=101%
+SIRDSFVSVDSQDKLVFMKVLPGSGPVISSLMYQMNYSGIFGTLGDDNTVLIIGKTEADAINMRNQINSML
+>gi|313896566|ref|ZP_07830115.1|(82-148:150) arginine repressor [Selenomonas sp. oral taxon 137 str. F0430] arginine repressor [Selenomonas sp. oral taxon 137 str. F0430]  E=2e-05 s/c=0.78 id=33% cov=89%
+---DNVVHCDFSENIVLVKTVPGGANTVASALDATDWKEMLGTVAGDDTIFVLVK-PKEAAEIVAE-----
+>gi|334336854|ref|YP_004542006.1|(99-166:169) arginine repressor ArgR [Isoptericola variabilis 225] arginine repressor, ArgR [Isoptericola variabilis 225]  E=2e-05 s/c=0.76 id=33% cov=97%
+--ADLLVSAEASGNLVVLRTPPGAANYLASAIDHSVFPGVLGCIAGDDTILVIARDPDGGDELARRFLEL-
+>gi|325661668|ref|ZP_08150291.1|(79-144:149) arginine repressor [Lachnospiraceae bacterium 4_1_37FAA] arginine repressor [Lachnospiraceae bacterium 9_1_43BFAA] arginine repressor [Lachnospiraceae bacterium 4_1_37FAA] arginine repressor [Lachnospiraceae bacterium 9_1_43BFAA]  E=2e-05 s/c=0.79 id=33% cov=94%
+-LKDGYVSMEMAQNILVVKTVSGMAMAVAASIDSMQWYEVVGCIAGDDTIMCAVRSTEETKIVMEKI----
+>gi|119962828|ref|YP_947402.1|(104-170:178) arginine repressor [Arthrobacter aurescens TC1] Arginine repressor [Arthrobacter aurescens TC1]  E=2e-05 s/c=0.78 id=32% cov=96%
+---ELLVTAEASGNIVVLRTPPGAANFLALAVDHSVMPSVLGTIAGDDTLLLVARDPDGGAELAARFLRM-
+>gi|325283719|ref|YP_004256260.1|(89-151:153) arginine repressor ArgR [Deinococcus proteolyticus MRP] arginine repressor, ArgR [Deinococcus proteolyticus MRP]  E=2e-05 s/c=0.83 id=36% cov=90%
+--------IDHGENILVINTAEGHASGVALILDRLRRDDIVGTLAGENTILLVARTTADAEALVEELHELM
+>gi|302866859|ref|YP_003835496.1|(97-157:170) arginine repressor [Micromonospora aurantiaca ATCC 27029] arginine repressor [Micromonospora aurantiaca ATCC 27029]  E=2e-05 s/c=0.85 id=40% cov=87%
+--------VDSSGNIAVLRTPPGAAQYLASALDRAGLSEIVGTIAGDDTILVVAREADGGAALGERLAA--
+>gi|296164554|ref|ZP_06847125.1|(95-163:166) arginine repressor [Mycobacterium parascrofulaceum ATCC BAA-614] arginine repressor [Mycobacterium parascrofulaceum ATCC BAA-614]  E=2e-05 s/c=0.75 id=34% cov=99%
+-LGELLVSADASANLAVLRTPPGGANYLASAIDRAALPYVVGTIAGDDTVFVAAREPMTGAELARTLESL-
+>gi|317504068|ref|ZP_07962071.1|(89-154:157) arginine repressor [Prevotella salivae DSM 15606] arginine repressor [Prevotella salivae DSM 15606]  E=2e-05 s/c=0.78 id=33% cov=94%
+-----FISINFSGNIAVIKTRPGYASSIAYNIDTSEMPEILGTIAGDDTIIVVIKEGVSHEEVTESLSQLM
+>gi|257869060|ref|ZP_05648713.1|(84-139:149) arginine repressor ArgR [Enterococcus gallinarum EG2] arginine repressor [Enterococcus saccharolyticus 30_1] arginine repressor ArgR [Enterococcus gallinarum EG2] arginine repressor [Enterococcus saccharolyticus 30_1]  E=2e-05 s/c=0.92 id=40% cov=80%
+-----FVSVDRMDKFVILRTLPGNASALANLIDKQYAKELFGTLNDDDNVLMITKTEADAE----------
+>gi|227510474|ref|ZP_03940523.1|(82-149:151) arginine catabolic regulator [Lactobacillus brevis subsp. gravesensis ATCC 27305] arginine catabolic regulator [Lactobacillus buchneri ATCC 11577] arginine catabolic regulator [Lactobacillus hilgardii ATCC 8290] arginine catabolic regulator [Lactobacillus buchneri ATCC 11577] arginine catabolic regulator [Lactobacillus hilgardii ATCC 8290] arginine catabolic regulator [Lactobacillus brevis subsp. gravesensis ATCC 27305]  E=3e-05 s/c=0.76 id=32% cov=97%
+---DSFVSVDSQDKFVFMKVLPGSGPVISTLLYQMNYSEIFATIGDDSTVFIVCKTDEDAADFRGRINSMV
+>gi|167037519|ref|YP_001665097.1|(81-137:151) arginine repressor [Thermoanaerobacter pseudethanolicus ATCC 33223] arginine repressor [Thermoanaerobacter brockii subsp. finnii Ako-1] RecName: Full=Arginine repressor arginine repressor, ArgR [Thermoanaerobacter pseudethanolicus ATCC 33223] arginine repressor [Thermoanaerobacter brockii subsp. finnii Ako-1]  E=3e-05 s/c=0.90 id=36% cov=82%
+-LSESIVSVDYAGNIIVIKTLSGTAPAAAEAIDTLNWKNIVGTLAGDNTIFVLVRNEE-------------
+>gi|297616628|ref|YP_003701787.1|(79-148:151) arginine repressor ArgR [Syntrophothermus lipocalidus DSM 12680] arginine repressor, ArgR [Syntrophothermus lipocalidus DSM 12680]  E=3e-05 s/c=0.73 id=28% cov=100%
+-FADAVVAVERNESLIVIKTLPGTAQAVASAIDNSEIEGVLGTVAGDDTILVVMKARKYLRQVFGRFKELI
+>gi|291296471|ref|YP_003507869.1|(85-151:152) unnamed protein product [Meiothermus ruber DSM 1279] arginine repressor, ArgR [Meiothermus ruber DSM 1279]  E=3e-05 s/c=0.76 id=36% cov=94%
+-----FVRdVDRGENIVVLKVSEGHASGIALLIDRLRRDDIVGTIAGEDSILVVGRTVQAAEALQEEFEALL
+>gi|374310896|ref|YP_005057326.1|(98-162:173) unnamed protein product [Granulicella mallensis MP5ACTX8] arginine repressor, ArgR [Granulicella mallensis MP5ACTX8]  E=4e-05 s/c=0.78 id=35% cov=93%
+------IRVRRAGNLLIVLTRTGGAQPVAASVDREEWEIVVGTVAGDDTVLIVCHDGERAAELQMRLESYI
+>gi|380303116|ref|ZP_09852809.1|(103-166:185) transcriptional regulator, ArgR family protein [Brachybacterium squillarum M-6-3]  E=4e-05 s/c=0.79 id=34% cov=92%
+----LLVSAEASANMVVVRTPPGAAQYLASALDRSVMPDVLGTIAGDDTVLLIARDPVGGERLAARLL---
+>gi|15805768|ref|NP_294465.1|(99-169:171) arginine repressor/activator [Deinococcus radiodurans R1] arginine repressor/activator [Deinococcus radiodurans R1]  E=4e-05 s/c=0.72 id=32% cov=100%
+-LFQSFVQdVDRGENILVIRTADGHASGVALLLDRWKRDDIVGTLAGEDTIMVVARSTHDGESLMEEFNALM
+>gi|15900776|ref|NP_345380.1|(80-145:156) transcriptional repressor [Streptococcus pneumoniae TIGR4] hypothetical protein SpneT_02001073 [Streptococcus pneumoniae TIGR4] thiamine biosynthesis protein ThiI [Streptococcus pneumoniae SP3-BS71] thiamine biosynthesis protein ThiI [Streptococcus pneumoniae SP9-BS68] transcriptional repressor, putative [Streptococcus pneumoniae SP11-BS70] arginine repressor [Streptococcus pneumoniae CDC1873-00] arginine repressor [Streptococcus pneumoniae CDC1087-00] arginine repressor [Streptococcus pneumoniae SP195] arginine repressor [Streptococcus pneumoniae CDC0288-04] arginine repressor [Streptococcus pneumoniae CDC3059-06] arginine repressor [Streptococcus pneumoniae MLV-016] arginine repressor [Streptococcus pneumoniae Hungary19A-6] arginine repressor [Streptococcus pneumoniae JJA] arginine repressor [Streptococcus pneumoniae AP200] arginine repressor [Streptococcus pneumoniae 670-6B] putative transcriptional repressor [Streptococcus pneumoniae TIGR4] transcriptional repressor, putative [Streptococcus pneumoniae SP11-BS70] thiamine biosynthesis protein ThiI [Streptococcus pneumoniae SP3-BS71] thiamine biosynthesis protein ThiI [Streptococcus pneumoniae SP9-BS68] arginine repressor [Streptococcus pneumoniae Hungary19A-6] arginine repressor [Streptococcus pneumoniae CDC1873-00] arginine repressor [Streptococcus pneumoniae CDC1087-00] arginine repressor [Streptococcus pneumoniae SP195] arginine repressor [Streptococcus pneumoniae CDC0288-04] arginine repressor [Streptococcus pneumoniae CDC3059-06] arginine repressor [Streptococcus pneumoniae MLV-016] arginine repressor [Streptococcus pneumoniae JJA] arginine repressor [Streptococcus pneumoniae OXC141] Arginine repressor [Streptococcus pneumoniae AP200] arginine repressor [Streptococcus pneumoniae 670-6B] arginine regulator [Streptococcus pneumoniae GA04375] arginine regulator [Streptococcus pneumoniae GA17570] arginine regulator [Streptococcus pneumoniae GA17545] arginine regulator [Streptococcus pneumoniae GA47368] arginine regulator [Streptococcus pneumoniae 4027-06] arginine regulator [Streptococcus pneumoniae GA11184] arginine regulator [Streptococcus pneumoniae 6735-05] arginine regulator [Streptococcus pneumoniae GA47033] arginine regulator [Streptococcus pneumoniae GA43265] arginine regulator [Streptococcus pneumoniae GA44452] arginine regulator [Streptococcus pneumoniae 6901-05] arginine regulator [Streptococcus pneumoniae GA44500] arginine regulator [Streptococcus pneumoniae GA41410] arginine regulator [Streptococcus pneumoniae GA49447] arginine regulator [Streptococcus pneumoniae GA41538] arginine regulator [Streptococcus pneumoniae 5787-06] arginine regulator [Streptococcus pneumoniae 6963-05] arginine regulator [Streptococcus pneumoniae GA44511] arginine regulator [Streptococcus pneumoniae GA07643] arginine regulator [Streptococcus pneumoniae GA11304] arginine regulator [Streptococcus pneumoniae GA13856] arginine regulator [Streptococcus pneumoniae GA16242] arginine regulator [Streptococcus pneumoniae GA17328] arginine regulator [Streptococcus pneumoniae GA17971] arginine regulator [Streptococcus pneumoniae GA19077] arginine regulator [Streptococcus pneumoniae GA41277] arginine regulator [Streptococcus pneumoniae GA41437] arginine regulator [Streptococcus pneumoniae GA47283] arginine regulator [Streptococcus pneumoniae GA47360] arginine regulator [Streptococcus pneumoniae GA47388] arginine regulator [Streptococcus pneumoniae GA47439] arginine regulator [Streptococcus pneumoniae GA47976] arginine regulator [Streptococcus pneumoniae GA52306] arginine regulator [Streptococcus pneumoniae GA54644] arginine regulator [Streptococcus pneumoniae Netherlands15B-37] arginine regulator [Streptococcus pneumoniae NP127] arginine regulator [Streptococcus pneumoniae GA47751] arginine regulator [Streptococcus pneumoniae NP112] arginine regulator [Streptococcus pneumoniae 3063-00] arginine regulator [Streptococcus pneumoniae GA07228] arginine regulator [Streptococcus pneumoniae GA08780] arginine regulator [Streptococcus pneumoniae EU-NP01] arginine regulator [Streptococcus pneumoniae GA19690] arginine regulator [Streptococcus pneumoniae NorthCarolina6A-23] arginine regulator [Streptococcus pneumoniae GA11426] arginine regulator [Streptococcus pneumoniae GA02714] arginine regulator [Streptococcus pneumoniae GA04175] arginine regulator [Streptococcus pneumoniae GA07914] arginine regulator [Streptococcus pneumoniae GA06083] arginine regulator [Streptococcus pneumoniae GA13224] arginine repressor, DNA binding domain protein [Streptococcus pneumoniae GA14373] arginine repressor, DNA binding domain protein [Streptococcus pneumoniae GA17457] arginine regulator [Streptococcus pneumoniae GA18068] arginine regulator [Streptococcus pneumoniae GA19101] arginine repressor, DNA binding domain protein [Streptococcus pneumoniae GA40028] arginine regulator [Streptococcus pneumoniae GA40183] arginine regulator [Streptococcus pneumoniae GA40410] arginine regulator [Streptococcus pneumoniae GA40563] arginine regulator [Streptococcus pneumoniae GA43257] arginine regulator [Streptococcus pneumoniae GA44386] arginine regulator [Streptococcus pneumoniae GA43264] arginine regulator [Streptococcus pneumoniae GA47210] arginine regulator [Streptococcus pneumoniae GA47522] arginine regulator [Streptococcus pneumoniae GA47597] arginine regulator [Streptococcus pneumoniae GA47760] arginine regulator [Streptococcus pneumoniae GA49542] arginine regulator [Streptococcus pneumoniae EU-NP04] arginine regulator [Streptococcus pneumoniae EU-NP05] arginine regulator [Streptococcus pneumoniae NP141] arginine regulator [Streptococcus pneumoniae GA05578] arginine regulator [Streptococcus pneumoniae GA02506]  E=5e-05 s/c=0.77 id=33% cov=94%
+-MEDALVWMRPVQHQVLLKTLPGLAQSFGSIIDTLSFPDAIATLCGNDVCLIICEDADTAQKCFEEL----
+>gi|359420807|ref|ZP_09212738.1|(98-163:167) arginine repressor [Gordonia araii NBRC 100433] arginine repressor [Gordonia araii NBRC 100433]  E=5e-05 s/c=0.77 id=34% cov=94%
+-LGEMLVDTDASGPLAVLRTPPGAAGYLASALDRASLPQVAGTIAGDDTIFVLAREPMTGAELAQHL----
+>gi|297565751|ref|YP_003684723.1|(89-151:152) unnamed protein product [Meiothermus silvanus DSM 9946] arginine repressor, ArgR [Meiothermus silvanus DSM 9946]  E=8e-05 s/c=0.80 id=47% cov=90%
+--------VDRGENLLVLRTAEGHASGIALLLDRLRRDDIVGTIAGEDTILVVARSTADAEKLQDEMEGYL
+>gi|359405354|ref|ZP_09198129.1|(89-150:159) arginine repressor [Prevotella stercorea DSM 18206] arginine repressor [Prevotella stercorea DSM 18206]  E=0.0001 s/c=0.79 id=35% cov=89%
+-----FLSINFSGNIGVIRTRPGYASSIAYNIDNGHIEDILGTIAGDDTIFIVVKEGVSQQQLVSKL----
+>gi|357637339|ref|ZP_09135214.1|(75-145:145) arginine repressor [Streptococcus macacae NCTC 11558] arginine repressor [Streptococcus macacae NCTC 11558]  E=0.0002 s/c=0.69 id=37% cov=94%
+-----ILKVSRAGFMLVLHTNLGEADVLANLIDDNESPEILGTIAGADTLLVVCKDEASANRLENDILSHL
+>gi|307709385|ref|ZP_07645843.1|(80-139:156) transcriptional regulator [Streptococcus mitis SK564] transcriptional regulator [Streptococcus mitis SK564]  E=0.0002 s/c=0.81 id=33% cov=86%
+-MEDALVLMRPVQHQVLLKTLPGLAQSFGSIIDALSFPDAIATLCGDDVCLVICEDVEAAQ----------
+>gi|220912270|ref|YP_002487579.1|(104-170:176) arginine repressor [Arthrobacter chlorophenolicus A6] arginine repressor, ArgR [Arthrobacter chlorophenolicus A6]  E=0.0002 s/c=0.73 id=32% cov=96%
+---ELLVTAEASANLVVLRTPPGAANFLALAIDHSVMPSILGTIAGDDTVLLVSRDPLGGPDLAARFLQL-
+>gi|297181884|gb|ADI18062.1|(84-150:153) arginine repressor [uncultured actinobacterium HF0200_20K23]  E=0.0002 s/c=0.72 id=29% cov=96%
+---DWVVEAQHSQNLVVLTTPPGSAHVVASAIDRSDSEDVIGTVAGDDTILVVAAPHTTGEAVAEHFREL-
+>gi|15827741|ref|NP_302004.1|(102-165:167) argR gene product [Mycobacterium leprae TN] arginine repressor ArgR [Mycobacterium leprae Br4923] RecName: Full=Arginine repressor RecName: Full=Arginine repressor arginine repressor [Mycobacterium leprae] arginine repressor [Mycobacterium leprae Br4923]  E=0.0003 s/c=0.75 id=35% cov=92%
+------VSADSSANLAVLRTPPGAADYLASAIDRAALPYVVGTIAGDDTVFVAAREPMTGSELATVLESL-
+>gi|310828532|ref|YP_003960889.1|(86-148:150) unnamed protein product [Eubacterium limosum KIST612] arginine repressor [Eubacterium limosum KIST612]  E=0.0004 s/c=0.76 id=33% cov=90%
+--------VDTATFLVVLHTLPAMAQAAALAIDSMEWSEVVGTVAGDDTIFVAVREQNDVNEIVSRFKKLM
+>gi|352518666|ref|YP_004887983.1|(99-157:161) arginine repressor [Tetragenococcus halophilus NBRC 12172] arginine repressor [Tetragenococcus halophilus NBRC 12172]  E=0.0006 s/c=0.80 id=47% cov=80%
+-------------NLLTV--LPGNGNAIGVLIDKVRVEvnsKIVGCIAGDDTILILSKNEEDARMVNEYFQQYL
+>gi|374296367|ref|YP_005046558.1|(79-147:155) unnamed protein product [Clostridium clariflavum DSM 19732] transcriptional regulator, ArgR family [Clostridium clariflavum DSM 19732]  E=6e-21 s/c=1.49 id=40% cov=99%
+-FAESYVSSDYANNIVVVKTLPGMAQASASAIDSLNWPEIVGSIAGDDTVMIVCRAEKIAEELVNKFDKM-
+>gi|261405959|ref|YP_003242200.1|(78-148:149) arginine repressor [Paenibacillus sp. Y412MC10] arginine repressor, ArgR [Paenibacillus sp. Y412MC10]  E=2e-20 s/c=1.42 id=53% cov=101%
+ALVDNFVYIDRTGNLVVMKCLPGTANSVAVLLDNMEWSQIMGTICGDDTILLICRTEADGEHVVSQIKNFI
+>gi|296269999|ref|YP_003652631.1|(98-165:185) arginine repressor ArgR [Thermobispora bispora DSM 43833] arginine repressor, ArgR [Thermobispora bispora DSM 43833]  E=4e-19 s/c=1.43 id=35% cov=96%
+---ELLVSAEASANLVILRTPPGAAQFLASAIDHADWESILGTVAGDDTILVISRDPQGGEALAKALLDL-
+>gi|348175456|ref|ZP_08882350.1|(87-152:263) arginine repressor (partial match) [Saccharopolyspora spinosa NRRL 18395]  E=7e-19 s/c=1.46 id=37% cov=94%
+-LGELLVGADGAGNLTVLRTPPGAAQFLASAIDRAVLPEVVGSIAGDDTVMIVAREPLTGHQLAERF----
+>gi|309811029|ref|ZP_07704827.1|(93-160:193) arginine repressor [Dermacoccus sp. Ellin185] arginine repressor [Dermacoccus sp. Ellin185]  E=9e-19 s/c=1.41 id=34% cov=96%
+---ELLVTAESSANLVILRTPPGAANFLASAIDHAEFTDVLGTIAGDDTIMVICRDPQGAAPVAKRFLEL-
+>gi|119716699|ref|YP_923664.1|(99-166:180) unnamed protein product [Nocardioides sp. JS614] transcriptional regulator, ArgR family [Nocardioides sp. JS614]  E=2e-18 s/c=1.39 id=35% cov=96%
+---ELLVSADASANLVVLRTPPGAAQFLASAFDKAEFPEILGTIAGDDTVLVIGRGASSGDALARRFLAL-
+>gi|354615290|ref|ZP_09033078.1|(100-168:201) arginine repressor, ArgR [Saccharomonospora paurometabolica YIM 90007] arginine repressor, ArgR [Saccharomonospora paurometabolica YIM 90007]  E=3e-18 s/c=1.36 id=36% cov=99%
+-LAELMVSAEGSGNLTVLRTPPGAAQFLASAIDRAALEEVVGSIAGDDTVAVIAREPLTGTQVAERFTAL-
+>gi|324998017|ref|ZP_08119129.1|(102-165:183) arginine repressor, ArgR [Pseudonocardia sp. P1]  E=4e-18 s/c=1.47 id=38% cov=92%
+------VSADASGNLAVLRTPPGAAHYLASALDRAALHDVVGTIAGDDTIIVVAREPRTGAELAQRLQEL-
+>gi|83590351|ref|YP_430360.1|(80-148:151) ArgR family transcriptional regulator [Moorella thermoacetica ATCC 39073] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Moorella thermoacetica ATCC 39073]  E=5e-18 s/c=1.35 id=40% cov=99%
+-FADSVTKIDDSENLILIRTLPGTAHAVASCLDSLDWPEVIGTVAGDDTILVIVKPKEAVATVLQRFREL-
+>gi|300781260|ref|ZP_07091114.1|(91-158:169) arginine repressor [Corynebacterium genitalium ATCC 33030] arginine repressor [Corynebacterium genitalium ATCC 33030]  E=1e-17 s/c=1.35 id=32% cov=97%
+-LAELVVSVDYTGNIAVLRTPAGAAQYLASYIDRVALEKVVGTIAGDDTIFVLAREPLSGRQLAEEFMG--
+>gi|222099276|ref|YP_002533844.1|(90-157:157) Arginine repressor [Thermotoga neapolitana DSM 4359] Arginine repressor [Thermotoga neapolitana DSM 4359]  E=1e-17 s/c=1.35 id=44% cov=96%
+----SFVeSIDRAGNLIVIKTIPGTASGIARVIDRLDIDEIVGTLAGDDTIFVAVRDPESCEKIVEKLSSIL
+>gi|210063521|gb|ACJ06536.1|(106-171:176) dominant negative ArgR' [Corynebacterium glutamicum]  E=2e-17 s/c=1.39 id=36% cov=94%
+-LDELLVSTDHSGNIAMLRTPPGAAQYLASFIDRVGLKEVVGTIAGDDTVFVLARDPLTGKELGELL----
+>gi|315924843|ref|ZP_07921060.1|(79-148:152) arginine repressor [Pseudoramibacter alactolyticus ATCC 23263] arginine repressor [Pseudoramibacter alactolyticus ATCC 23263]  E=3e-17 s/c=1.30 id=34% cov=100%
+-FRESVLTVDTAAFLVVIHTLPAMGQAAAIAIDGLEWPEIVGTIAGDDTIFVAVRNEKDVLHVADRFRKLM
+>gi|163790194|ref|ZP_02184627.1|(80-149:149) arginine catabolic regulator [Carnobacterium sp. AT7] arginine catabolic regulator [Carnobacterium sp. AT7]  E=3e-17 s/c=1.30 id=37% cov=100%
+-FKDAFVSMDTQDCFLLIRTIPGNAFALGSLIDSSNFESVFGAISGDDTVLIICRSHEETLQLKNHFIQLI
+>gi|295395452|ref|ZP_06805651.1|(109-177:186) arginine repressor [Brevibacterium mcbrellneri ATCC 49030] arginine repressor [Brevibacterium mcbrellneri ATCC 49030]  E=4e-17 s/c=1.30 id=39% cov=99%
+-LEELLVSATWSANLAVLRTPPGAAQFLASTIDHSVIPEIIGTIAGDDTVLIISADPQGGKDIANQFICL-
+>gi|331002436|ref|ZP_08325954.1|(78-147:151) arginine repressor [Lachnospiraceae oral taxon 107 str. F0167] arginine repressor [Lachnospiraceae oral taxon 107 str. F0167]  E=5e-17 s/c=1.29 id=35% cov=100%
+-LREAFVSMDMAQNILVLKTVSGMAMAVAAALDSMQMSEIVGCIAGDDTIMAAIRSTDDTVVVMERIRKLV
+>gi|290968315|ref|ZP_06559857.1|(80-149:151) arginine repressor [Megasphaera genomosp. type_1 str. 28L] arginine repressor [Megasphaera genomosp. type_1 str. 28L]  E=5e-17 s/c=1.29 id=32% cov=100%
+-FQDSIIRVDAAVNQIVIHTLPGSANPVAAAIDHARWENVIGTLAGDDTILIITNGEEAVPQLVKLILSLM
+>gi|269795522|ref|YP_003314977.1|(103-170:175) ArgR family transcriptional regulator [Sanguibacter keddieii DSM 10542] transcriptional regulator, ArgR family [Sanguibacter keddieii DSM 10542]  E=7e-17 s/c=1.32 id=31% cov=96%
+---ELLVSAEASGNLVVLRTPPGAAQYLASAIDHSVFTGVLGTIAGDDTVLVIARDVSGGDELAARFVGL-
+>gi|302541240|ref|ZP_07293582.1|(118-185:190) arginine repressor [Streptomyces hygroscopicus ATCC 53653] arginine repressor [Streptomyces himastatinicus ATCC 53653]  E=8e-17 s/c=1.31 id=35% cov=97%
+--AELLISAEASANLVVLRTPPGAAQFLASAIDSAELHVILGSIAGDDTVLLISRDPAGGQALADHLLRL-
+>gi|153810469|ref|ZP_01963137.1|(30-99:102) hypothetical protein RUMOBE_00850 [Ruminococcus obeum ATCC 29174] hypothetical protein RUMOBE_00850 [Ruminococcus obeum ATCC 29174]  E=1e-16 s/c=1.27 id=41% cov=100%
+-LQDTLTSLDVGQNMLVIRTVPGMAMGVAAALDALKWKEILGSIAGDDTVMCVARDAEQAEIVAEKLKGIL
+>gi|213966320|ref|ZP_03394502.1|(89-156:160) arginine repressor [Corynebacterium amycolatum SK46] arginine repressor [Corynebacterium amycolatum SK46]  E=1e-16 s/c=1.31 id=33% cov=97%
+-LDELLVSIDHSGTIAVVRTPPGAAQYLASVIDRAGLKEIVGTIAGDDTVMCLAREPLSGADLAQRLAA--
+>gi|297626558|ref|YP_003688321.1|(99-166:184) arginine repressor ArgR [Propionibacterium freudenreichii subsp. shermanii CIRM-BIA1] Arginine repressor, ArgR [Propionibacterium freudenreichii subsp. shermanii CIRM-BIA1]  E=1e-16 s/c=1.30 id=33% cov=97%
+--AEVLVSADASANLAVLKTPPGAAQYFASAIDRVALDSVAGTIAGDDTVMVISRSGDGGAQMAEYFVSM-
+>gi|268608475|ref|ZP_06142202.1|(74-143:147) arginine repressor [Ruminococcus flavefaciens FD-1]  E=1e-16 s/c=1.26 id=38% cov=97%
+---EAVISVDYAMNTIVLKCRAGMAQGTCAAIDSVNHQGVVGTIAGDDTIFILVRTEDDAKKLSKKFRSEL
+>gi|68535921|ref|YP_250626.1|(83-151:154) hypothetical protein jk0846 [Corynebacterium jeikeium K411] unnamed protein product [Corynebacterium jeikeium K411]  E=2e-16 s/c=1.28 id=34% cov=99%
+-LAELLVDHDHSGNIAVLRTPPGAAQYLASILDRSDVNRVVATIAGDDTVFVLAREPLNGKELGEYFFQL-
+>gi|172040792|ref|YP_001800506.1|(89-157:160) hypothetical protein cur_1112 [Corynebacterium urealyticum DSM 7109] unnamed protein product [Corynebacterium urealyticum DSM 7109]  E=2e-16 s/c=1.28 id=33% cov=99%
+-LSELLVAHDDSGNIAVLRTPPGAAQYLASVLDRSELPQTVGTIAGDDTVFVLAREGHSGAQVAEYFAEL-
+>gi|256394602|ref|YP_003116166.1|(97-155:168) arginine repressor [Catenulispora acidiphila DSM 44928] arginine repressor, ArgR [Catenulispora acidiphila DSM 44928]  E=2e-16 s/c=1.49 id=37% cov=85%
+-LGELLVSAEASANLVVVRTPPGAAQFLASAFDKAQIPEILGSIAGDDTVLLISRDPDGG-----------
+>gi|116670062|ref|YP_830995.1|(103-170:186) unnamed protein product [Arthrobacter sp. FB24] transcriptional regulator, ArgR family [Arthrobacter sp. FB24]  E=3e-16 s/c=1.28 id=33% cov=94%
+---ELLVTAEASANIVVLRTPPGAANFLALAIDHSVMPSILGTIAGDDTVLLVTRDPQGGGEVAARFLQ--
+>gi|291300553|ref|YP_003511831.1|(98-158:186) arginine repressor ArgR [Stackebrandtia nassauensis DSM 44728] arginine repressor, ArgR [Stackebrandtia nassauensis DSM 44728]  E=5e-16 s/c=1.42 id=44% cov=87%
+--------ADHSGNLAVLRTPPGAAQFLASVIDRSGLADIVGTIAGDDTILVVARDGLSGAELAEQLLS--
+>gi|359838858|gb|AEV87299.1|(86-153:167) Arginine repressor [Actinoplanes sp. SE50/110]  E=6e-16 s/c=1.27 id=37% cov=94%
+-LKELLTGVDSSGNIAVLRTPPGAAQFLASALDRSGLADVVGTIAGDDTILVVARDsgPTAGADLAEKL----
+>gi|373106590|ref|ZP_09520892.1|(78-147:149) arginine repressor [Lachnospiraceae bacterium ACC2] arginine repressor [Lachnospiraceae bacterium ACC2]  E=7e-16 s/c=1.23 id=35% cov=100%
+-LRDSYQGMDRAQNLLVVKTVSGMAMAVAASLDAMHLHEVVGCVAGDDTVFCATRSTDDTLLLMEQIRKML
+>gi|384438915|ref|YP_005653639.1|(84-151:165) unnamed protein product [Thermus sp. CCB_US3_UF1] Arginine repressor [Thermus sp. CCB_US3_UF1]  E=2e-15 s/c=1.25 id=41% cov=96%
+----LFVKdVDRGGNILVVKTAEGHASGIALLMDRLRRDEIVGTLAGEDTILVVARSEEGAKALEEEFGELL
+>gi|86741856|ref|YP_482256.1|(97-159:234) ArgR family transcriptional regulator [Frankia sp. CcI3] transcriptional regulator, ArgR family [Frankia sp. CcI3]  E=3e-15 s/c=1.33 id=33% cov=89%
+---ELLVSAEANGDLVVLRTPSGAAQLFASVLDREALPGVMGTIAGDDTVLVVCRSAPAAEALVR------
+>gi|297571520|ref|YP_003697294.1|(92-158:169) arginine repressor ArgR [Arcanobacterium haemolyticum DSM 20595] arginine repressor, ArgR [Arcanobacterium haemolyticum DSM 20595]  E=1e-14 s/c=1.23 id=32% cov=96%
+--RELLVSAQHAENQIVLRTPPGAAQLLASSLDRAVIDGVLGCIAGDDTVLVITASAERAVELKGELLD--
+>gi|206900579|ref|YP_002250796.1|(72-147:149) arginine repressor [Dictyoglomus thermophilum H-6-12] arginine repressor [Dictyoglomus thermophilum H-6-12]  E=3e-14 s/c=1.06 id=39% cov=100%
+SLKDLFhrvvVNIDFAENLILVKTLPGNAQAVAFLLDNylNSYDYFVGSVAGDDTILIVLRSKDKTQEALERLEEL-
+>gi|111224576|ref|YP_715370.1|(93-152:243) argR gene product [Frankia alni ACN14a] Arginine repressor (partial match) [Frankia alni ACN14a]  E=8e-14 s/c=1.32 id=37% cov=85%
+---ELLVSAEANGDLVVLRTPPGAAQLFASALDREALPAVMGTIAGDDTVLVVCRAQLPAPA---------
+>gi|375255519|ref|YP_005014686.1|(95-158:169) argR gene product [Tannerella forsythia ATCC 43037] arginine repressor [Tannerella forsythia ATCC 43037]  E=2e-13 s/c=1.23 id=40% cov=92%
+-------AVEFSGHLAVLKTPPGYAMAIASDIDRIAPGEILATIAGDDTILVIPRDGYSNKQVAKALEPFL
+>gi|320335688|ref|YP_004172399.1|(89-151:153) unnamed protein product [Deinococcus maricopensis DSM 21211] arginine repressor, ArgR [Deinococcus maricopensis DSM 21211]  E=3e-13 s/c=1.23 id=38% cov=90%
+--------IDRGENLLVVKTAEGHANGVAFFLDKLRRDDIVGTLAGQDTIMIVARTVAEGEALLEELHSLM
+>gi|366088615|ref|ZP_09455088.1|(80-148:152) arginine repressor [Lactobacillus acidipiscis KCTC 13900]  E=3e-12 s/c=1.08 id=29% cov=99%
+-LQDVYVSSDIHNEMCVLKVQPGNGPTVSGLFQQMNYPEVFACISDDDTIMIFNRSTQAASKVQEKIRKL-
+>gi|154491663|ref|ZP_02031289.1|(84-147:147) hypothetical protein PARMER_01274 [Parabacteroides merdae ATCC 43184] hypothetical protein PARMER_01274 [Parabacteroides merdae ATCC 43184]  E=3e-12 s/c=1.16 id=38% cov=92%
+-------NIEFSGNLAVVKTRPGYAMGIASDIDTHAPCEILGTIAGDDTILIIPREGISRDKIVKALAHFI
+>gi|90961514|ref|YP_535430.1|(80-149:152) arginine repressor [Lactobacillus salivarius UCC118] arginine repressor [Lactobacillus salivarius ATCC 11741] arginine repressor, C-terminal domain protein [Lactobacillus salivarius ACS-116-V-Col5a] Arginine repressor [Lactobacillus salivarius UCC118] arginine repressor [Lactobacillus salivarius ATCC 11741] arginine repressor, C-terminal domain protein [Lactobacillus salivarius ACS-116-V-Col5a] arginine pathway regulatory protein ArgR, repressor of arg regulon [Lactobacillus salivarius NIAS840] arginine repressor [Lactobacillus salivarius GJ-24] arginine repressor [Lactobacillus salivarius SMXD51]  E=3e-12 s/c=1.06 id=27% cov=100%
+-LSESYVSSAQNRELCVFKVLPGSGPAVANLIEQAKYPEVFATLGDDATVMIFAYSEEDAIKMENKLLNLI
+>gi|313905339|ref|ZP_07838705.1|(79-148:151) arginine repressor, ArgR [Eubacterium cellulosolvens 6] arginine repressor, ArgR [Eubacterium cellulosolvens 6]  E=3e-12 s/c=1.06 id=37% cov=100%
+-LKDAVLGMDTADNLLVVKTVAGMAMAAAAVIDEMNWGEIVGCIAGDNTIFCAVRSREEAIRVMDKFRKML
+>gi|187779517|ref|ZP_02995990.1|(82-151:153) hypothetical protein CLOSPO_03113 [Clostridium sporogenes ATCC 15579] hypothetical protein CLOSPO_03113 [Clostridium sporogenes ATCC 15579]  E=6e-12 s/c=1.04 id=27% cov=100%
+-FAQTVINVENIDKLIIIKTISGSAPAAAEAIDTLGFDGVAGTIAGDNTIFVMARTNEKAQEITMKLRKII
+>gi|150016583|ref|YP_001308837.1|(79-148:150) arginine repressor [Clostridium beijerinckii NCIMB 8052] RecName: Full=Arginine repressor arginine repressor, ArgR [Clostridium beijerinckii NCIMB 8052]  E=7e-12 s/c=1.04 id=24% cov=100%
+-LANTVLSVENVDKMVVIKTITGSAPITAEAIDNLESADIAGTVAGDNTIFILVRSLESAEDLVDKIRKRM
+>gi|300769161|ref|ZP_07079049.1|(92-161:165) arginine repressor [Lactobacillus plantarum subsp. plantarum ATCC 14917] arginine repressor [Lactobacillus plantarum subsp. plantarum ATCC 14917]  E=2e-11 s/c=1.03 id=27% cov=100%
+-LHDVVTSIDRVEFMNIIHTLPSNGNLLAAIIDDLNLPEVSGTLAGHDTIFVVSPNTTVAKQLYESFASHI
+>gi|380342999|gb|EIA31424.1|(85-154:156) Arginine repressor, partial [Candidatus Arthromitus sp. SFB-5]  E=2e-11 s/c=1.02 id=24% cov=100%
+-IASSILSMEQIDKTLVIRTLPGAASVVGEVIDSLNIEDIAGNVAGDNTIFVMVRNENSIASIQEKINYLI
+>gi|293115590|ref|ZP_05792195.2|(72-141:142) arginine repressor [Butyrivibrio crossotus DSM 2876] arginine repressor [Butyrivibrio crossotus DSM 2876]  E=2e-11 s/c=1.02 id=34% cov=100%
+-LKEGFVSMDMAQNILVIKTVSGMAMAVAAALDAMNFHELVGTIAGDDTIMCVIRTIEDTRLIMDKIQKII
+>gi|330719239|ref|ZP_08313839.1|(30-100:102) arginine repressor [Leuconostoc fallax KCTC 3537]  E=4e-11 s/c=0.99 id=28% cov=101%
+ALQQSFLSVRAQKQMLLMKVQPGNGPLVSKLLEQVQLPEIFGTISDDDSVLVLLKDGYTAQQAISMIQKML
+>gi|373499555|ref|ZP_09589963.1|(89-153:175) hypothetical protein HMPREF9140_00081 [Prevotella micans F0438] hypothetical protein HMPREF9140_00081 [Prevotella micans F0438]  E=5e-11 s/c=1.08 id=32% cov=93%
+-----YLSIRFAGHLAIIKTRPGCATSLAYELDNSDLPEILGTIAGYDTVFLATKEGYNHREIL-RLLSYV
+>gi|365924410|ref|ZP_09447173.1|(79-149:154) arginine repressor [Lactobacillus mali KCTC 3596 = DSM 20444]  E=6e-11 s/c=0.99 id=32% cov=101%
+AISDSVTDVTLVQTMNVVHTLPRTANVLSAIIDDLKKEEVVGTIAGYDTILVISKNKEDAKIMNDLFNKYL
+>gi|256372425|ref|YP_003110249.1|(83-151:160) arginine repressor, ArgR [Acidimicrobium ferrooxidans DSM 10331] arginine repressor, ArgR [Acidimicrobium ferrooxidans DSM 10331]  E=9e-11 s/c=1.00 id=30% cov=99%
+-LSEWLVEVAVARDLVLAKTPPGCAHVVAAALDRAKPDGVLGTVAGDDTLLIVVSQGSTAPEVAALLHNL-
+>gi|297622574|ref|YP_003704008.1|(84-151:152) unnamed protein product [Truepera radiovictrix DSM 17093] arginine repressor, ArgR [Truepera radiovictrix DSM 17093]  E=9e-11 s/c=1.02 id=34% cov=96%
+----LFVRdLKRGENIIVINTDEGHAVGIAYVIDKLDRDEIIGSLAGQNTIMVVTRSSGEAEKVLHELEALL
+>gi|355672441|ref|ZP_09058371.1|(79-148:150) arginine repressor [Clostridium citroniae WAL-17108] arginine repressor [Clostridium citroniae WAL-17108]  E=1e-10 s/c=0.98 id=37% cov=100%
+-LKDGFMSMDMAQNILVIKTVSGMAMAVAAALDAIQFTEIVGCIAGDDTIMCAIRSVDDTIIVMEKIKKMV
+>gi|262091701|gb|ACY25291.1|(83-151:162) arginine repressor [uncultured actinobacterium]  E=1e-10 s/c=1.00 id=27% cov=99%
+-LSEWVADIQISDPIVIIRTPPGCAHVVASALDRSRIEGLAGTVAGDDTMFCVSSANYGAKKLAAHLGKL-
+>gi|257868287|ref|ZP_05647940.1|(79-149:168) arginine repressor ArgR [Enterococcus casseliflavus EC30] arginine repressor ArgR [Enterococcus casseliflavus EC10] arginine repressor ArgR [Enterococcus casseliflavus EC20] arginine repressor ArgR [Enterococcus casseliflavus EC30] arginine repressor ArgR [Enterococcus casseliflavus EC10] arginine repressor ArgR [Enterococcus casseliflavus EC20]  E=1e-10 s/c=0.97 id=31% cov=101%
+SMYEYLKKITQIDFLVVVHTAENGADVIANYLDEMELPEIVGTIAGFDILLIITPSQEAAAEVVERLNHYV
+>gi|256826682|ref|YP_003150641.1|(72-139:144) arginine repressor [Cryptobacterium curtum DSM 15641] arginine repressor [Cryptobacterium curtum DSM 15641]  E=1e-10 s/c=1.01 id=32% cov=97%
+--AELVEEVYTAGYLVVVRTFPGGAAGVAGSIDNAGLVGSLGTVAGDNTIMIAARTPEDAESIREILDGL-
+>gi|261867799|ref|YP_003255721.1|(80-150:155) arginine repressor [Aggregatibacter actinomycetemcomitans D11S-1] unnamed protein product [Aggregatibacter actinomycetemcomitans ANH9381] arginine repressor [Aggregatibacter actinomycetemcomitans D11S-1] arginine repressor [Aggregatibacter actinomycetemcomitans serotype c str. SCC2302] arginine repressor [Aggregatibacter actinomycetemcomitans D17P-2] arginine repressor [Aggregatibacter actinomycetemcomitans ANH9381]  E=2e-10 s/c=0.96 id=32% cov=100%
+SLRDLVLDIDHNGILIVIRTSPGAAQLIARLLDSIsKVEGILGNIAGDDTIFVTPTKNTDINNLMLRIQDL-
+>gi|332298443|ref|YP_004440365.1|(86-148:157) arginine repressor ArgR [Treponema brennaborense DSM 12168] arginine repressor, ArgR [Treponema brennaborense DSM 12168]  E=3e-10 s/c=1.07 id=35% cov=89%
+-----YISIDFSGNLVVIKTYSGHADVVSAALDAMAMDEILGTVAGKDNCIFVClREGITGDQFLDAL----
+>gi|328947862|ref|YP_004365199.1|(103-166:173) arginine repressor ArgR [Treponema succinifaciens DSM 2489] arginine repressor, ArgR [Treponema succinifaciens DSM 2489]  E=4e-10 s/c=1.05 id=25% cov=92%
+-----YVSIEASGNIIVIKTFGGHGDSVANALDAMNLNEIIGTIAGENCIFACLREGVQVKNFLEKLKE--
+>gi|81428230|ref|YP_395230.1|(81-150:156) unnamed protein product [Lactobacillus sakei subsp. sakei 23K] Putative transcriptional regulator, ArgR family [Lactobacillus sakei subsp. sakei 23K]  E=4e-10 s/c=0.96 id=25% cov=100%
+-LREVALTITQVQVMNVIKTVPSNGNLLAALIDDLGYEDVVGTLAGHDTIVVISPDEAHAADLNQRFSAHL
+>gi|257784814|ref|YP_003180031.1|(71-139:146) arginine repressor ArgR [Atopobium parvulum DSM 20469] arginine repressor, ArgR [Atopobium parvulum DSM 20469]  E=5e-10 s/c=0.96 id=31% cov=99%
+-LSEFVVGATAAENLIVIRCHPGTASAVAFALDDVELDHVVGTVAGDDTVLMIVDKTVHAADTVRIITQL-
+>gi|352516920|ref|YP_004886237.1|(80-149:150) arginine repressor [Tetragenococcus halophilus NBRC 12172] arginine repressor [Tetragenococcus halophilus NBRC 12172]  E=5e-10 s/c=0.95 id=30% cov=100%
+-LKNAFVSIDQMDKFVSLKTLPGNASAIANLIDKRFDEALFAILNDDDNILMIAKTMQDREILFQSLQKYV
+>gi|160880640|ref|YP_001559608.1|(79-148:152) arginine repressor ArgR [Clostridium phytofermentans ISDg] RecName: Full=Arginine repressor arginine repressor, ArgR [Clostridium phytofermentans ISDg]  E=6e-10 s/c=0.95 id=35% cov=100%
+-LRDGFVSMDMAQNIIIVKTVSGMAMAVAAALDALHIEGIVGCIAGDDTIMCAIRTVPDTISVMEKLSKLI
+>gi|375337362|ref|ZP_09778706.1|(89-151:161) arginine repressor [Succinivibrionaceae bacterium WG-1]  E=7e-10 s/c=1.05 id=33% cov=89%
+--------IDYNDNIIVIHTSPGSAQMIARMLDSIRKTEgILGTIAGDDTIFVTPRKGITIEDLSRSIEDL-
+>gi|229496237|ref|ZP_04389957.1|(87-152:159) arginine repressor [Porphyromonas endodontalis ATCC 35406] arginine repressor [Porphyromonas endodontalis ATCC 35406]  E=1e-09 s/c=0.99 id=34% cov=94%
+-----FRSIHYSGSFVVLKTRSGYAHSICVDIDSIANNAIVGTIAGNDTILVIPADGVSREEVVSVLAQII
+>gi|194333894|ref|YP_002015754.1|(82-145:148) arginine repressor ArgR [Prosthecochloris aestuarii DSM 271] RecName: Full=Arginine repressor arginine repressor, ArgR [Prosthecochloris aestuarii DSM 271]  E=2e-09 s/c=1.01 id=37% cov=92%
+-------SISSNETAIVIKTLPGRAHGVASFLDQLKDIAILGTIAGDDTVLVIPLSIKDIASIIHDIQSNL
+>gi|335357502|ref|ZP_08549372.1|(79-147:155) arginine repressor [Lactobacillus animalis KCTC 3501]  E=2e-09 s/c=0.94 id=26% cov=99%
+AISDAVTAITTVEFMNVIHTTPRNANVLAAILDDLSLPEVAGTLAGFDTVVVISPSREAAAQLYALFME--
+>gi|307564988|ref|ZP_07627505.1|(86-154:161) arginine repressor [Prevotella amnii CRIS 21A-A] arginine repressor [Prevotella amnii CRIS 21A-A]  E=2e-09 s/c=0.94 id=30% cov=93%
+------LSFSMSGQLAVLKTCKGYASALAYDIDSAHIDGILGTIAGYDTIFIAVREGMSKEEVEAKFAMII
+>gi|154483648|ref|ZP_02026096.1|(79-148:149) hypothetical protein EUBVEN_01352 [Eubacterium ventriosum ATCC 27560] hypothetical protein EUBVEN_01352 [Eubacterium ventriosum ATCC 27560]  E=2e-09 s/c=0.92 id=34% cov=100%
+-LNDGIITMDTAGNILVVKTVSGMAMAVAAALDAMQIKEILGCIAGDDTIMCVVKHAEETDRVKEHIESFI
+>gi|91792186|ref|YP_561837.1|(87-158:160) arginine repressor [Shewanella denitrificans OS217] transcriptional regulator, ArgR family [Shewanella denitrificans OS217]  E=3e-09 s/c=0.89 id=36% cov=94%
+----LVLDVDHNQAMIVVRTSPGAAQLIARLLDSIGKPEgILGTIAGDDTIFICpasIKTIDDTLETVKSLFNY-
+>gi|239632091|ref|ZP_04675122.1|(80-140:152) arginine regulator [Lactobacillus paracasei subsp. paracasei 8700:2] arginine regulator [Lactobacillus paracasei subsp. paracasei 8700:2]  E=3e-09 s/c=1.05 id=29% cov=87%
+SIREVGLSITRVHFMNVIKTLPSNGNLLAAIIDDIGFEQVVGTIAGHDTIVVISPDEKQAK----------
+>gi|258647427|ref|ZP_05734896.1|(89-151:159) arginine repressor [Prevotella tannerae ATCC 51259] arginine repressor [Prevotella tannerae ATCC 51259]  E=3e-09 s/c=1.01 id=31% cov=90%
+--------VRKSGNLLVLHTRPGYARGLAADIDISHMPSVAGTIAGYDTIFVARLDGKTEQELIDDLAELL
+>gi|257867705|ref|ZP_05647358.1|(85-152:156) arginine repressor ArgR [Enterococcus casseliflavus EC30] arginine repressor ArgR [Enterococcus casseliflavus EC10] arginine repressor ArgR [Enterococcus casseliflavus EC20] arginine repressor ArgR [Enterococcus casseliflavus EC30] arginine repressor ArgR [Enterococcus casseliflavus EC10] arginine repressor ArgR [Enterococcus casseliflavus EC20]  E=2e-08 s/c=0.90 id=25% cov=97%
+-IEDVVTKVDRVQFMTLIHTVADNAPLLSAAIDEVTMPEKVCSLAGFDTVAVISRSDEDAETFYQFIRN--
+>gi|365903025|ref|ZP_09440848.1|(79-147:156) arginine repressor [Lactobacillus malefermentans KCTC 3548]  E=2e-08 s/c=0.89 id=27% cov=99%
+AIHDTVIKVEQVQFLNIVHTLPSYANLLAAIIDDLSIEDISGTLAGHDTIVLVSKDAITAKSINKLIVD--
+>gi|27469136|ref|NP_765773.1|(93-149:153) arginine repressor ArgR [Staphylococcus epidermidis ATCC 12228] ArgR family transcriptional regulator [Staphylococcus epidermidis RP62A] arginine repressor [Staphylococcus epidermidis BCM-HMP0060] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis SK135] ArgR family transcriptional regulator [Staphylococcus epidermidis M23864:W2(grey)] arginine repressor [Staphylococcus epidermidis ATCC 12228] transcriptional regulator, ArgR family [Staphylococcus epidermidis RP62A] arginine repressor [Staphylococcus epidermidis BCM-HMP0060] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis SK135] ArgR family transcriptional regulator [Staphylococcus epidermidis M23864:W2(grey)] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU144] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU028] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU045] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU037] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU105] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU109] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU071] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU057] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU041] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU065] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU081] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU117] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU120] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU125] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU126] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU127] arginine repressor, C-terminal domain protein [Staphylococcus aureus subsp. aureus IS-250] arginine repressor, C-terminal domain protein [Staphylococcus aureus subsp. aureus IS-K]  E=2e-08 s/c=1.08 id=31% cov=82%
+------------ESYILIKTTPGFAQSINYYIDQLQLKEIIGTISGNDTIMILTHSQSIAEYVYYKIFN--
+>gi|333896029|ref|YP_004469903.1|(81-150:162) arginine repressor ArgR [Thermoanaerobacterium xylanolyticum LX-11] arginine repressor, ArgR [Thermoanaerobacterium xylanolyticum LX-11]  E=2e-08 s/c=0.87 id=32% cov=100%
+-LSKVIVDIDYSGNIIAIKTLSGAASSAAEAIDELNWSEIVGTIAGNNTIFVLIDKDDNVKEVIDRLRKIV
+>gi|148544403|ref|YP_001271773.1|(80-149:150) ArgR family transcriptional regulator [Lactobacillus reuteri DSM 20016] arginine catabolic regulator [Lactobacillus reuteri JCM 1112] arginine repressor [Lactobacillus reuteri MM2-3] ArgR family transcriptional regulator [Lactobacillus reuteri MM4-1A] transcriptional regulator, ArgR family [Lactobacillus reuteri DSM 20016] arginine catabolic regulator [Lactobacillus reuteri JCM 1112] arginine repressor [Lactobacillus reuteri MM2-3] ArgR family transcriptional regulator [Lactobacillus reuteri MM4-1A]  E=3e-08 s/c=0.87 id=30% cov=100%
+-LQDSLEQLKRNDCFLALTVHPGNGPVVATLIRKMDFPTVFTTIGDDGNVLVVCMSPEAAIKLEEKLNAML
+>gi|56459582|ref|YP_154863.1|(78-147:157) arginine repressor ArgR [Idiomarina loihiensis L2TR] Arginine repressor [Idiomarina loihiensis L2TR]  E=5e-08 s/c=0.86 id=29% cov=99%
+-LSQLVLDIQHNDVMVIIRTSPGAAQLIARLLDSVGKKEgVLGTIAGDDTIFIAPLKVADIEFTLRKVREL-
+>gi|18310798|ref|NP_562732.1|(79-148:150) arginine repressor ArgR [Clostridium perfringens str. 13] RecName: Full=Arginine repressor probable arginine repressor [Clostridium perfringens str. 13]  E=6e-08 s/c=0.86 id=28% cov=100%
+-LANTVTSVENVDKMVVVKTISGSASAAAEAIDTLHLGEIAGTIAGGNTIFILVRSLEKAETLVSRILEMI
+>gi|339634201|ref|YP_004725842.1|(91-151:152) unnamed protein product [Weissella koreensis KACC 15510] ArgR family transcriptional regulator [Weissella koreensis KACC 15510]  E=8e-08 s/c=0.97 id=26% cov=87%
+----------QVEFMISVKTTPGSGNRLAALIDANQIDEVVSTIAGHDTIHVLCKSKAASDSLINKLITWI
+>gi|257457755|ref|ZP_05622916.1|(86-150:157) arginine repressor [Treponema vincentii ATCC 35580] arginine repressor [Treponema vincentii ATCC 35580]  E=9e-08 s/c=0.91 id=29% cov=92%
+-----YISIDYSGNMAVIKTYSGHTELISMALENMGFESVLGIIAGRDNCVFIClREGVSGEQFLRELKD--
+>gi|108757003|ref|YP_633257.1|(82-142:144) arginine repressor ArgR [Myxococcus xanthus DK 1622] arginine repressor [Myxococcus xanthus DK 1622]  E=9e-08 s/c=0.97 id=38% cov=82%
+-------------NLLVIRTAPGFAPVLALALDKErELPGLAGTVAGDDTIFVAVTDPAllrDVRAAVERLLSL-
+>gi|146319779|ref|YP_001199491.1|(83-146:147) arginine repressor [Streptococcus suis 05ZYH33] Arginine repressor [Streptococcus suis 05ZYH33] Arginine repressor [Streptococcus suis GZ1] arginine repressor [Streptococcus suis JS14] arginine repressor [Streptococcus suis SS12] arginine repressor [Streptococcus suis D9] arginine repressor [Streptococcus suis D12] arginine repressor [Streptococcus suis A7]  E=1e-07 s/c=0.92 id=31% cov=92%
+-------KVDRASFILVLHSELGEAALMANIIDAEKPETILGTLAGANTLLVICRDDVAAQQVEAEINYYL
+>gi|241896415|ref|ZP_04783711.1|(85-154:155) arginine repressor [Weissella paramesenteroides ATCC 33313] arginine repressor [Weissella paramesenteroides ATCC 33313]  E=1e-07 s/c=0.84 id=18% cov=100%
+-FADMAVEITPVSFMVVVKTTQGNGNRLAAMIDAAEMPNVIGTLAGHNTIYVTTPTADAAVALVEQFNNWM
+>gi|300854111|ref|YP_003779095.1|(79-148:151) unnamed protein product [Clostridium ljungdahlii DSM 13528] predicted arginine repressor [Clostridium ljungdahlii DSM 13528]  E=1e-07 s/c=0.84 id=27% cov=94%
+-----IIDVQTMKNFVVIKTLSGSAKAAAEAADSLAFSGVIGTVAGNNTLFVITTDEKAALSLAKKIKNMI
+>gi|15674021|ref|NP_268196.1|(83-150:152) arginine catabolic regulator [Lactococcus lactis subsp. lactis Il1403] ArgR family transcriptional regulator [Lactococcus lactis subsp. cremoris SK11] arginine operon repressor [Lactococcus lactis subsp. lactis KF147] RecName: Full=Arginine repressor RecName: Full=Arginine repressor arginine catabolic regulator [Lactococcus lactis subsp. lactis Il1403] transcriptional regulator, ArgR family [Lactococcus lactis subsp. cremoris SK11] Arginine operon repressor [Lactococcus lactis subsp. lactis KF147] arginine operon repressor [Lactococcus lactis subsp. lactis CV56] hypothetical protein LLCRE1631_00410 [Lactococcus lactis subsp. cremoris CNCM I-1631] epressor of arg regulon [Lactococcus lactis subsp. cremoris A76] arginine catabolic regulator [Lactococcus lactis subsp. lactis IO-1]  E=2e-07 s/c=0.85 id=34% cov=94%
+-----VISAKSVGALVVIRTKLGEADVLANALDdeRDSRTDILGTIAGADTLLVICASEKAANILTAEIKYIL
+>gi|366089375|ref|ZP_09455848.1|(80-149:151) arginine repressor [Lactobacillus acidipiscis KCTC 13900]  E=3e-07 s/c=0.82 id=23% cov=100%
+-ISDIVTNVTNVQFVNIVQTTPRNANVLAALIDDNELPGVVGTLAGYDTVVLFSPNNETAQEVSRFFIANI
+>gi|227529617|ref|ZP_03959666.1|(80-151:156) arginine metabolism transcriptional regulator [Lactobacillus vaginalis ATCC 49540] arginine metabolism transcriptional regulator [Lactobacillus vaginalis ATCC 49540]  E=8e-07 s/c=0.78 id=28% cov=100%
+-IRENVRTIETVQFINVVKTAlnSSYATILGGMFDELDIPEVVGTIAGNDTLIIISKNNNDARAIYNLIMKHI
+>gi|304413349|ref|ZP_07394822.1|(82-132:163) arginine repressor [Candidatus Regiella insecticola LSR1] arginine repressor [Candidatus Regiella insecticola LSR1]  E=1e-06 s/c=1.09 id=37% cov=72%
+-LKNLVLDIKHNHSLVVIHTSAGAAQLIARLLDSLRETEgILGNIAGDDTIF--------------------
+>gi|116495116|ref|YP_806850.1|(88-149:150) arginine repressor [Lactobacillus casei ATCC 334] arginine repressor [Lactobacillus paracasei subsp. paracasei ATCC 25302] arginine repressor [Lactobacillus paracasei subsp. paracasei 8700:2] transcriptional regulator, ArgR family [Lactobacillus casei ATCC 334] arginine repressor [Lactobacillus paracasei subsp. paracasei ATCC 25302] arginine repressor [Lactobacillus paracasei subsp. paracasei 8700:2]  E=4e-06 s/c=0.87 id=40% cov=89%
+---------EAMDNFIHLALLPGTAAAVETLIEQLDDQRIFATISGDASILIICRSAKYATAVLAELEAMV
+>gi|227530532|ref|ZP_03960581.1|(81-150:154) arginine repressor [Lactobacillus vaginalis ATCC 49540] arginine repressor [Lactobacillus vaginalis ATCC 49540]  E=1e-05 s/c=0.75 id=23% cov=100%
+-LSNNMLSLERQTEFLSIVMRPGNGPVMASLIRQLEIDDVFSVIGDDAGVLVVCRSADAAVNVEEMFQNLM
+>gi|256847379|ref|ZP_05552825.1|(76-148:149) arginine repressor [Lactobacillus coleohominis 101-4-CHN] arginine repressor [Lactobacillus coleohominis 101-4-CHN]  E=2e-05 s/c=0.71 id=29% cov=99%
+-LADAVTndlqSLKRSDRFLSLTMRPGHAPMAAVLIKRLNFPEVFTAIGDDTSVLVVCQSAEDAVKFEQIITSL-
+>gi|212696082|ref|ZP_03304210.1|(80-149:150) hypothetical protein ANHYDRO_00618 [Anaerococcus hydrogenalis DSM 7454] arginine repressor, C-terminal domain protein [Anaerococcus hydrogenalis ACS-025-V-Sch4] hypothetical protein ANHYDRO_00618 [Anaerococcus hydrogenalis DSM 7454] arginine repressor, C-terminal domain protein [Anaerococcus hydrogenalis ACS-025-V-Sch4]  E=3e-05 s/c=0.73 id=23% cov=100%
+-FKESVLSVERSYQLVVIKTISYTATVCGLFITNAKLENIGGIVTGLDTIFITPKNLDDIDDLIETLRSMV
+>gi|377831224|ref|ZP_09814205.1|(80-148:149) arginine repressor [Lactobacillus mucosae LM1] arginine repressor [Lactobacillus mucosae LM1]  E=3e-05 s/c=0.73 id=21% cov=89%
+--------MKRSDRFVSLSMRPGNGPVAAMLINQMKYPTVFTAIGDDATVLIVCHSAGAAVEFERTLQAL-
+>gi|18309154|ref|NP_561088.1|(81-149:151) arginine repressor ArgR [Clostridium perfringens str. 13] arginine repressor ArgR [Clostridium perfringens ATCC 13124] arginine repressor [Clostridium perfringens B str. ATCC 3626] arginine repressor [Clostridium perfringens CPE str. F4969] arginine repressor [Clostridium perfringens NCTC 8239] RecName: Full=Arginine regulator arginine repressor [Clostridium perfringens str. 13] arginine repressor [Clostridium perfringens ATCC 13124] arginine repressor [Clostridium perfringens B str. ATCC 3626] arginine repressor [Clostridium perfringens CPE str. F4969] arginine repressor [Clostridium perfringens NCTC 8239] arginine repressor [Clostridium perfringens F262]  E=4e-05 s/c=0.73 id=24% cov=94%
+----SVRSISMQEYFISVNTLDGMASLIGEFIDRLGDGRIAGTVAKKNHILVLCRSVNATQQIFKELDSL-
+>gi|170018008|ref|YP_001728927.1|(42-96:98) arginine repressor domain-containing protein [Leuconostoc citreum KM20] Arg_repressor_C domain containing protein [Leuconostoc citreum KM20]  E=0.0003 s/c=0.86 id=29% cov=79%
+---------------LLVRTSNYAGSIVAAHIDELNIPEIVSTLAGINNIMIICQSDNDADIVLQAFKAI-
+>gi|271498961|ref|YP_003331986.1|(88-157:164) arginine repressor ArgR [Dickeya dadantii Ech586] arginine repressor, ArgR [Dickeya dadantii Ech586]  E=0.0005 s/c=0.67 id=17% cov=100%
+-IADMVVHVVHNEEFILVSVVSGYARAVARVIDHRALPEVLGVVATSNIVWIAPRDTRNILRLHRQILHTL
+>gi|88857474|ref|ZP_01132117.1|(80-148:153) arginine repressor [Pseudoalteromonas tunicata D2] arginine repressor [Pseudoalteromonas tunicata D2]  E=0.0006 s/c=0.67 id=24% cov=96%
+---ELVIEVHHNEALVVVQTLPGAADIISRVLEkQSKKLHILAAIAGDDSVMILPNKIDGIDLLVKKIRQI-
+>gi|335038529|ref|ZP_08531764.1|(72-141:141) arginine repressor, ArgR [Caldalkalibacillus thermarum TA2.A1] arginine repressor, ArgR [Caldalkalibacillus thermarum TA2.A1]  E=7e-21 s/c=1.47 id=56% cov=100%
+-LVDCFVSIDHTENLIVLKTLPGNANTIGVLIDHLDWPEVMGNISGDDTILIICKKKEDAPRVAERFLDLL
+>gi|379325163|gb|EHY92295.1|(100-169:169) arginine repressor [Staphylococcus saprophyticus subsp. saprophyticus KACC 16562]  E=2e-20 s/c=1.44 id=58% cov=100%
+-LIDSFVNIDGTGNLLVLKTLPGNAQSIGAILDQIDWEEVLGTICGDDTCLIICRDDAASEKIKKRIFNLL
+>gi|340354579|ref|ZP_08677282.1|(80-149:149) arginine repressor [Sporosarcina newyorkensis 2681] arginine repressor [Sporosarcina newyorkensis 2681]  E=8e-20 s/c=1.42 id=55% cov=100%
+-LEDAFVGIDSASHFITLKTLPGNAQAVGSLIDNLDWEEMLGTICGDDTCLIICREESMTDYVKDKLLAML
+>gi|225573691|ref|ZP_03782446.1|(79-148:152) hypothetical protein RUMHYD_01887 [Blautia hydrogenotrophica DSM 10507] hypothetical protein RUMHYD_01887 [Blautia hydrogenotrophica DSM 10507]  E=6e-19 s/c=1.38 id=42% cov=100%
+-LRDAFLSMDMAQNILVIKTVPGMAMAVGAALDELNWKEIVGCIAGDDTIMCAIKTADDTLLIMERLRKIL
+>gi|111017965|ref|YP_700937.1|(133-201:202) arginine repressor [Rhodococcus jostii RHA1] arginine repressor [Rhodococcus jostii RHA1]  E=2e-18 s/c=1.38 id=37% cov=99%
+-LGELLVSTDASGNMAVLRTPPGAAHYLASALDRASLPDVVGTIAGDDTILVVAREPLSGAELAAKIESL-
+>gi|116621621|ref|YP_823777.1|(75-142:145) unnamed protein product [Candidatus Solibacter usitatus Ellin6076] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Candidatus Solibacter usitatus Ellin6076]  E=2e-18 s/c=1.40 id=42% cov=97%
+---EFLRDVLRAQNLVVLKTSPGHANSVAVALDNEEWPEVVGTIAGDDTILVIAPDTPTAEAVQEKLLGLL
+>gi|339629298|ref|YP_004720941.1|(81-147:159) argR gene product [Sulfobacillus acidophilus TPY] unnamed protein product [Sulfobacillus acidophilus DSM 10332] arginine repressor, ArgR [Sulfobacillus acidophilus TPY] transcriptional regulator, ArgR family [Sulfobacillus acidophilus DSM 10332]  E=2e-18 s/c=1.42 id=39% cov=94%
+-LAESYVSVRRANNLVVLKVLPGNAHAVAAILDQMELPHLLGTVAGDDTLLIICEDDVSARSMETRL----
+>gi|329121099|ref|ZP_08249730.1|(86-155:157) arginine repressor [Dialister micraerophilus DSM 19965] arginine repressor [Dialister micraerophilus DSM 19965]  E=2e-18 s/c=1.35 id=35% cov=100%
+-FQEAITKIDSTMNFVVIHTLPGSANSVAYIIDQGHEKEVLGTIAGDDTILVILRSPEDIEVFMKRIQQLL
+>gi|81428296|ref|YP_395296.1|(80-149:150) unnamed protein product [Lactobacillus sakei subsp. sakei 23K] Putative transcriptional regulator, ArgR family [Lactobacillus sakei subsp. sakei 23K]  E=3e-18 s/c=1.34 id=39% cov=100%
+-LRDAYVTHNQQDYFVVIKAHPGNAPAIASLLDQLQSEDIFGTIGGDDTVLIICKSEEQAKQLRVFIEDLL
+>gi|121534491|ref|ZP_01666314.1|(80-149:150) arginine repressor, ArgR [Thermosinus carboxydivorans Nor1] arginine repressor, ArgR [Thermosinus carboxydivorans Nor1]  E=5e-18 s/c=1.33 id=32% cov=100%
+-FQDSVIGLDFSTNIIVIKTLPGTAQAVASTIDHAKWPEVIGSVAGDDTIFVLVKPPEAVNEVLAKFQALL
+>gi|339443484|ref|YP_004709489.1|(79-148:150) arginine repressor [Clostridium sp. SY8519] arginine repressor [Clostridium sp. SY8519]  E=6e-18 s/c=1.33 id=34% cov=100%
+-FREGAVSIETAQNILVIHTVTGMAMAVAVALDSMDCEEIVGTIAGDDTIMCAVKTCEEAETLKERLRGIM
+>gi|260424659|ref|ZP_05732851.2|(74-143:145) arginine repressor [Dialister invisus DSM 15470] arginine repressor [Dialister invisus DSM 15470]  E=7e-18 s/c=1.32 id=34% cov=100%
+-FQEAVIGIESSMNLIVIHTLPGSAQSVAAAIDQTRYSEIMGTLAGDDTILLIMRNPDDVELFKKKIQELL
+>gi|167770731|ref|ZP_02442784.1|(80-149:150) hypothetical protein ANACOL_02077 [Anaerotruncus colihominis DSM 17241] hypothetical protein ANACOL_02077 [Anaerotruncus colihominis DSM 17241]  E=1e-17 s/c=1.31 id=34% cov=100%
+-FSESVREIDSAGNMLVIKCFTGMANAVCAALDTLHWSGVVGTLAGDDTIFMVMRDEQNAHELVSQLRRMM
+>gi|15841113|ref|NP_336150.1|(101-169:201) arginine repressor ArgR [Mycobacterium tuberculosis CDC1551] arginine repressor [Mycobacterium tuberculosis CDC1551]  E=2e-17 s/c=1.32 id=36% cov=97%
+-LGELLVSTDDSGNLAVLRTPPGAAHYLASAIDRAALPQVVGTIAGDDTILVVAREPTTGAQLAGMFEN--
+>gi|94971188|ref|YP_593236.1|(78-147:148) unnamed protein product [Candidatus Koribacter versatilis Ellin345] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Candidatus Koribacter versatilis Ellin345]  E=3e-17 s/c=1.30 id=28% cov=100%
+-IREFVYDVKIAQNTVVVKTSAGSAQPVAAALDAEGWPEVVGTVGGDDTIFVVTPSNKDAEKLQSRIKELI
+>gi|269797987|ref|YP_003311887.1|(80-149:151) unnamed protein product [Veillonella parvula DSM 2008] arginine repressor [Veillonella parvula ATCC 17745] arginine repressor [Veillonella sp. 6_1_27] arginine repressor [Veillonella sp. 3_1_44] arginine repressor [Veillonella sp. oral taxon 158 str. F0412] arginine repressor, ArgR [Veillonella parvula DSM 2008] arginine repressor [Veillonella parvula ATCC 17745] arginine repressor [Veillonella sp. 3_1_44] arginine repressor [Veillonella sp. 6_1_27] arginine repressor [Veillonella sp. oral taxon 158 str. F0412] arginine repressor [Veillonella parvula ACS-068-V-Sch12]  E=4e-17 s/c=1.29 id=32% cov=100%
+-FQDSLIKVDHSLNQVVLHTIPGSAQSVAFSIDHAKWTEIIGTLAGDDTILLIAKSEAEVPAILAKIQDLM
+>gi|257069305|ref|YP_003155560.1|(102-167:185) transcriptional regulator, ArgR family [Brachybacterium faecium DSM 4810] transcriptional regulator, ArgR family [Brachybacterium faecium DSM 4810]  E=4e-17 s/c=1.37 id=33% cov=94%
+----LLVSAEASGNLVVVRTPPGGAQYLASAMDRSVMPDVLGTIAGDDTVLLVSRDPAGGDRLAARLLDL-
+>gi|160934288|ref|ZP_02081675.1|(79-148:150) hypothetical protein CLOLEP_03159 [Clostridium leptum DSM 753] hypothetical protein CLOLEP_03159 [Clostridium leptum DSM 753]  E=1e-16 s/c=1.27 id=28% cov=100%
+-FADSVLSVEFAGNMVALKCMTGMAQAVCAAMDSMQWDGVVATLAGDDTIFILVRNEAAAINLVTELKKIM
+>gi|152967100|ref|YP_001362884.1|(100-167:184) arginine repressor [Kineococcus radiotolerans SRS30216] arginine repressor, ArgR [Kineococcus radiotolerans SRS30216]  E=1e-16 s/c=1.30 id=34% cov=96%
+---ELLVSAEASANLVVLRTPPGAAQFLASAIDHSVMPAVLGSIAGDDTVLVISRDPLGGDAVAARFLAM-
+>gi|117928465|ref|YP_873016.1|(90-156:184) ArgR family transcriptional regulator [Acidothermus cellulolyticus 11B] transcriptional regulator, ArgR family [Acidothermus cellulolyticus 11B]  E=2e-16 s/c=1.32 id=34% cov=96%
+---ELLISAEPSGNLVVVRTPPGGAHLLASAMDQAGLPDLLGTVAGDDTVLCVVRRPDGGAALARRLLDL-
+>gi|296133195|ref|YP_003640442.1|(81-149:154) arginine repressor ArgR [Thermincola potens JR] arginine repressor, ArgR [Thermincola potens JR]  E=2e-16 s/c=1.28 id=33% cov=99%
+-FRDSVVKLDYSENIIVVKTLPGTAQAVASTIDGANDPHIIGTVAGDDTILVVVKPIQALLSVFNKFTAL-
+>gi|284991450|ref|YP_003410004.1|(90-158:178) arginine repressor ArgR [Geodermatophilus obscurus DSM 43160] arginine repressor, ArgR [Geodermatophilus obscurus DSM 43160]  E=2e-16 s/c=1.28 id=34% cov=99%
+-LGDLLTSAEGSANLAVVRTPPGAAQFLASALDKVGLPDVLGTIAGDDTLLVVSRRPDGGAALADRLRAL-
+>gi|365826267|ref|ZP_09368210.1|(140-208:215) hypothetical protein HMPREF0045_01846 [Actinomyces graevenitzii C83] hypothetical protein HMPREF0045_01846 [Actinomyces graevenitzii C83]  E=3e-16 s/c=1.26 id=33% cov=99%
+-IQDLLVSVDQAYNQLVLRTPAGAAQLLASAMDNAMIPGVLGCIAGDDTILVIATKDEVASELRGRLLEL-
+>gi|118444192|ref|YP_878059.1|(79-148:151) argR gene product [Clostridium novyi NT] RecName: Full=Arginine repressor arginine repressor [Clostridium novyi NT]  E=1e-15 s/c=1.22 id=31% cov=94%
+-----VISVENVQNFVVVKTLSGSGSAAAESIDSMNFDGIAGTIAGDNTIFILTINENKAEEIVKKLKKML
+>gi|227495382|ref|ZP_03925698.1|(99-166:168) possible arginine repressor [Actinomyces coleocanis DSM 15436] possible arginine repressor [Actinomyces coleocanis DSM 15436]  E=1e-15 s/c=1.25 id=34% cov=94%
+---ELLVGVAPAQNLLVLRTPAGAANFLASAIDAARYESVVGCVAGDDTILVICTSAETAQEFADKLLS--
+>gi|320107259|ref|YP_004182849.1|(76-145:146) arginine repressor ArgR [Terriglobus saanensis SP1PR4] arginine repressor, ArgR [Terriglobus saanensis SP1PR4]  E=2e-15 s/c=1.21 id=41% cov=93%
+------LKVRQAQNLLVVITTTGSAQPIAAALDYEDWPEVIGTIAGDDTVLVICKDSKEAGTLKARMEGMI
+>gi|284048218|ref|YP_003398557.1|(80-147:151) arginine repressor ArgR [Acidaminococcus fermentans DSM 20731] arginine repressor, ArgR [Acidaminococcus fermentans DSM 20731]  E=4e-15 s/c=1.23 id=38% cov=97%
+-LRSYTLTISSAENLIVLHTLPGTAQAVAYALDHLSWKELLGTVGGDDTVLLIVDSKDHVETVKRRLTA--
+>gi|168333593|ref|ZP_02691858.1|(81-150:152) arginine repressor, ArgR [Epulopiscium sp. 'N.t. morphotype B']  E=5e-15 s/c=1.19 id=33% cov=94%
+-----FLTIDIAQNILVIKTLPGMSQAVASAIDTFNYKDIVGTIAGDDTIFCAIKDIDRASYIIKEFNKIL
+>gi|28211238|ref|NP_782182.1|(79-148:153) arginine repressor ArgR [Clostridium tetani E88] RecName: Full=Arginine repressor arginine repressor [Clostridium tetani E88]  E=5e-15 s/c=1.19 id=29% cov=96%
+----SVVSVENINNFVVVKTLSGSGNAAAEAIDSLNFKEIAGTIAGDNTIFIMARTSEQAFEIVKKMKRVI
+>gi|334565044|ref|ZP_08518035.1|(79-147:150) hypothetical protein CbovD2_10764 [Corynebacterium bovis DSM 20582]  E=9e-15 s/c=1.20 id=31% cov=99%
+-LQELLVGTDHSGNTAVLRTPPGAAQYLASVIDRTAIVHVVATLAGDDTVFVLAREPMDGRGLAEHLHRL-
+>gi|358446697|ref|ZP_09157240.1|(90-155:168) arginine repressor [Corynebacterium casei UCMA 3821] arginine repressor [Corynebacterium casei UCMA 3821]  E=1e-14 s/c=1.24 id=32% cov=92%
+---ELVVSSDNSGNIAMLRTPAGAAQYLASFIDRVGLDDVVGCIAGDDTIFVLAREPLSGKGLAQRL----
+>gi|343389664|gb|EGV02249.1|(80-148:187) arginine repressor, C-terminal domain protein [Streptococcus oralis SK313]  E=2e-14 s/c=1.18 id=33% cov=99%
+-MEDALVMLRPVQHQVILKTLPGLAQSFGSVIDSLDFPDVIATLCGDDVCMIICEDATKAQACFENLKKY-
+>gi|283458446|ref|YP_003363071.1|(113-181:185) arginine repressor [Rothia mucilaginosa DY-18] arginine repressor [Rothia mucilaginosa DY-18]  E=2e-14 s/c=1.18 id=32% cov=97%
+-FKELLITAEGSANITVLRTPPGAAQFLASSIDQGGLEAIMGTIAGDDTVIVVTRDPNGGAALAESFLD--
+>gi|253994050|gb|ACT52893.1|(35-102:206) arginine repressor [Polyporus grammocephalus]  E=2e-14 s/c=1.19 id=28% cov=92%
+------IAVNYNNGAVVIKTPPGAAQYLGSAIDTSGVHTVLGTIAGDDTVLVVCKVGVEGEDLARLFREM-
+>gi|281420941|ref|ZP_06251940.1|(89-154:162) arginine repressor [Prevotella copri DSM 18205] arginine repressor [Prevotella copri DSM 18205]  E=4e-14 s/c=1.22 id=33% cov=94%
+-----FQSINFSGNMVVIKTRPGYASSIAYNIDNSDISQILGTIAGDDTIFLVKKKGTTEEEIINALAEVI
+>gi|384107695|ref|ZP_10008593.1|(86-151:156) Arginine repressor [Treponema sp. JC4] Arginine repressor [Treponema sp. JC4]  E=4e-14 s/c=1.22 id=27% cov=94%
+-----YVSIDFSGNIVVIKTFSGHANTVCNAVDNLNLDDIIGTVAGDNCMFACLREGVTGELFMEHLRKII
+>gi|183601737|ref|ZP_02963107.1|(109-177:181) arginine repressor [Bifidobacterium animalis subsp. lactis HN019] arginine repressor [Bifidobacterium animalis subsp. lactis AD011] arginine repressor ArgR [Bifidobacterium animalis subsp. lactis Bl-04] arginine repressor ArgR [Bifidobacterium animalis subsp. lactis DSM 10140] unnamed protein product [Bifidobacterium animalis subsp. lactis BB-12] unnamed protein product [Bifidobacterium animalis subsp. lactis CNCM I-2494] unnamed protein product [Bifidobacterium animalis subsp. lactis BLC1] unnamed protein product [Bifidobacterium animalis subsp. lactis V9] arginine repressor [Bifidobacterium animalis subsp. lactis HN019] arginine repressor [Bifidobacterium animalis subsp. lactis AD011] arginine repressor [Bifidobacterium animalis subsp. lactis Bl-04] arginine repressor [Bifidobacterium animalis subsp. lactis DSM 10140] ArgR [Bifidobacterium animalis subsp. lactis BB-12] arginine repressor [Bifidobacterium animalis subsp. lactis V9] ArgR [Bifidobacterium animalis subsp. lactis CNCM I-2494] arginine repressor [Bifidobacterium animalis subsp. lactis BLC1] arginine repressor [Bifidobacterium animalis subsp. lactis BS 01]  E=4e-14 s/c=1.16 id=29% cov=92%
+-LTGLVVSVAHASNFVIVHTPAGAAQYVASGIDKHSIDGVLGTIAGDDTILIICSDDTTAGRRAE------
+>gi|332288355|ref|YP_004419207.1|(142-211:216) arginine repressor [Gallibacterium anatis UMN179] arginine repressor [Gallibacterium anatis UMN179]  E=7e-14 s/c=1.14 id=29% cov=99%
+-LKNLVLDIDHNNHLIVIKTSPGAAQLIARLLDSVsKAEGILGTIAGDDTIFVSPTRDIQIDQLIENIQAL-
+>gi|297181121|gb|ADI17319.1|(82-150:154) arginine repressor [uncultured actinobacterium HF0070_17F14] arginine repressor [uncultured Verrucomicrobiales bacterium HF0070_30L02]  E=8e-14 s/c=1.15 id=31% cov=99%
+-MSDWVADVNHSLNLVVLRTPPGSAHVVASALDRAGMADILGTVAGDDTLIVVAAESLGGAELAERLRSL-
+>gi|119025938|ref|YP_909783.1|(100-167:172) arginine repressor [Bifidobacterium adolescentis ATCC 15703] hypothetical protein BIFADO_01952 [Bifidobacterium adolescentis L2-32] RecName: Full=Arginine repressor arginine repressor [Bifidobacterium adolescentis ATCC 15703] hypothetical protein BIFADO_01952 [Bifidobacterium adolescentis L2-32]  E=8e-14 s/c=1.17 id=30% cov=97%
+-LSGLVTSVAAARNLVVVHTPSGAAQYVASVIDKQPIEGVLGTIAGDDTVMVICSEDDVAKRRAQWLLD--
+>gi|91792186|ref|YP_561837.1|(87-155:160) arginine repressor [Shewanella denitrificans OS217] transcriptional regulator, ArgR family [Shewanella denitrificans OS217]  E=3e-13 s/c=1.12 id=34% cov=94%
+----LVLDVDHNQAMIVVRTSPGAAQLIARLLDSIGKPEgILGTIAGDDTIFICPASIKTIDDTLETVKSL-
+>gi|313836594|gb|EFS74308.1|(105-172:191) arginine repressor [Propionibacterium acnes HL037PA2] arginine repressor [Propionibacterium acnes HL044PA1] arginine repressor [Propionibacterium acnes HL037PA3]  E=3e-13 s/c=1.14 id=32% cov=97%
+--KELCAGVRNNEYLVVLKTPPGAAQYYGSAIDKAGLDIVLGTVAGDDTIALMCATGVDAGEVADAFSQM-
+>gi|298345149|ref|YP_003717836.1|(95-160:163) arginine repressor [Mobiluncus curtisii ATCC 43063] arginine repressor [Mobiluncus curtisii subsp. curtisii ATCC 35241] arginine repressor [Mobiluncus curtisii ATCC 43063] arginine repressor [Mobiluncus curtisii subsp. curtisii ATCC 35241]  E=5e-13 s/c=1.16 id=28% cov=94%
+----LLIQATQAMNQVVLRTPPATAGTLASVIDKENLDHVLGCLAGDNTILVICDSVESATELCDKLRGL-
+>gi|255524164|ref|ZP_05391124.1|(79-148:150) arginine repressor, ArgR [Clostridium carboxidivorans P7] arginine repressor [Clostridium carboxidivorans P7] arginine repressor, ArgR [Clostridium carboxidivorans P7] arginine repressor [Clostridium carboxidivorans P7]  E=6e-13 s/c=1.09 id=27% cov=94%
+-----VISAENVDNFIIVKTIGGSANAAAEAIDSLNFYGIAGTVAGSNTIFIVARDVDKAKTITQNIKKMI
+>gi|381395447|ref|ZP_09921145.1|(85-154:158) arginine repressor [Glaciecola punicea DSM 14233 = ACAM 611] arginine repressor [Glaciecola punicea DSM 14233 = ACAM 611]  E=8e-13 s/c=1.09 id=29% cov=99%
+-LKQLVLDIVHNNVMVIIRTSPGAAQLIARLLDSLSHtDGVLGTIAGDDTIFIAPADITKIEELRQRVQDL-
+>gi|119357135|ref|YP_911779.1|(80-145:149) ArgR family transcriptional regulator [Chlorobium phaeobacteroides DSM 266] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Chlorobium phaeobacteroides DSM 266]  E=8e-13 s/c=1.15 id=34% cov=94%
+-----VLSVKANETSIIIRTLPGRAHGVGSFLDELKSPMILGTIAGDDTVLVIPGSIKQISELVSYIKDNL
+>gi|322435512|ref|YP_004217724.1|(81-145:146) arginine repressor ArgR [Granulicella tundricola] arginine repressor, ArgR [Granulicella tundricola]  E=9e-13 s/c=1.16 id=41% cov=93%
+------LEVRQALNQLVVIAVTGGAQPIAAGVDYEDWPEVVGTIAGDDTVLIICPDDKQAKTLKKRIESYL
+>gi|229815739|ref|ZP_04446064.1|(79-146:151) hypothetical protein COLINT_02788 [Collinsella intestinalis DSM 13280] hypothetical protein COLINT_02788 [Collinsella intestinalis DSM 13280]  E=1e-12 s/c=1.11 id=29% cov=89%
+--SELVIGVQRTENLVIIKAQPGTALGIAAAIDAAELPDVLGSLAGNDTILVITRTASDGEQFE-------
+>gi|330995860|ref|ZP_08319756.1|(90-154:158) arginine repressor protein [Paraprevotella xylaniphila YIT 11841] arginine repressor protein [Paraprevotella xylaniphila YIT 11841]  E=2e-12 s/c=1.15 id=32% cov=93%
+------LSVKFSGNLAVVHTLPGHASHIAYDIDNKRFEEILGTLAGDDTIILVLAEGVSSELALRRLAEVI
+>gi|366052962|ref|ZP_09450684.1|(80-149:157) arginine repressor [Lactobacillus suebicus KCTC 3549]  E=2e-12 s/c=1.07 id=25% cov=94%
+---EVVTNITQVEFMNIVRTLPSDGNLLAAIIDDLNLPEVAGTLAGHDTIFIVSPNENVAKQFNDKIVS--
+>gi|269217082|ref|ZP_06160936.1|(87-153:156) arginine repressor [Slackia exigua ATCC 700122] arginine repressor [Slackia exigua ATCC 700122]  E=2e-12 s/c=1.11 id=28% cov=96%
+---ELVETVEVVNNFIVLRTPSGIASGVTVAFDSARLNGVVGSLAGDDTVFVMTRSDEDALRVADIIRNL-
+>gi|163816794|ref|ZP_02208157.1|(79-147:149) hypothetical protein COPEUT_02984 [Coprococcus eutactus ATCC 27759] hypothetical protein COPEUT_02984 [Coprococcus eutactus ATCC 27759]  E=2e-12 s/c=1.08 id=29% cov=99%
+-LSAGILSMVPAENLIVIKTVSGMAMAVAAALDNVEINGLLGSIAGDDTIFLAVRSRDMTDAVMKTIDRM-
+>gi|21673939|ref|NP_662004.1|(81-146:149) arginine repressor ArgR [Chlorobium tepidum TLS] RecName: Full=Arginine repressor arginine repressor [Chlorobium tepidum TLS]  E=2e-12 s/c=1.13 id=37% cov=94%
+-----VLSVASNETSIIIRTLPGRAHGVGSFLDRLTNDNILGTIAGDDTVLVIPSTVRKISSVKSYIQKIL
+>gi|149923072|ref|ZP_01911488.1|(78-143:147) transcriptional regulator, ArgR [Plesiocystis pacifica SIR-1] transcriptional regulator, ArgR [Plesiocystis pacifica SIR-1]  E=4e-12 s/c=1.12 id=30% cov=93%
+-----VLAVEFNEVMIVVRTRVGRAPAVGIELDGLRHPDILGTVAGDDTVLVVPRSTRHIERLARVLIEL-
+>gi|282600049|ref|ZP_05972824.2|(94-163:168) arginine repressor [Providencia rustigianii DSM 4541] arginine repressor [Providencia rustigianii DSM 4541]  E=8e-12 s/c=1.04 id=30% cov=99%
+-LKNLVLDVDYNHSVVVIRTSPGAAQLIARLLDSLgKAEGILGSIAGDDTIFSTPTNDFTTRELYESILVL-
+>gi|323339712|ref|ZP_08079982.1|(79-149:161) arginine repressor [Lactobacillus ruminis ATCC 25644] arginine repressor [Lactobacillus ruminis ATCC 25644] arginine repressor [Lactobacillus ruminis ATCC 25644]  E=6e-11 s/c=0.98 id=27% cov=93%
+AIYDFVIEITQVEFVNVVKTMPRNANVLAAIIDDLKPECVAGTIAGYDTLVVISPSADAALEFKK------
+>gi|115379544|ref|ZP_01466635.1|(70-133:137) arginine repressor [Stigmatella aurantiaca DW4/3-1] arginine repressor [Stigmatella aurantiaca DW4/3-1] arginine repressor [Stigmatella aurantiaca DW4/3-1] Arginine repressor [Stigmatella aurantiaca DW4/3-1]  E=3e-10 s/c=1.05 id=38% cov=90%
+--------MEAPPNMLVLKTAPGYAQIVGVMVDRAvGMEGVAGTIAGDDTVFIAVKHPSRLGEVREQLEQSL
+>gi|315221534|ref|ZP_07863454.1|(80-145:146) arginine repressor [Streptococcus anginosus F0211] arginine repressor [Streptococcus anginosus SK52 = DSM 20563] arginine repressor [Streptococcus anginosus F0211] arginine repressor [Streptococcus anginosus SK52 = DSM 20563]  E=1e-09 s/c=0.99 id=33% cov=90%
+--------VSRAEFSLVLHTRLGDASILANFVDANKGELILGTVAGANTLLVICRDTAAAKQMEEQLLEKM
+>gi|319946043|ref|ZP_08020292.1|(83-143:147) arginine repressor [Streptococcus australis ATCC 700641] arginine repressor [Streptococcus australis ATCC 700641] arginine repressor [Streptococcus australis ATCC 700641]  E=9e-09 s/c=1.03 id=31% cov=87%
+--------VSRAEFTLVVRTELGEAAILANAVDEILDDQILGTVAGANTLLIVCKDQEVAQTVQQTILQ--
+>gi|90580742|ref|ZP_01236545.1|(98-143:163) hypothetical arginine repressor [Vibrio angustum S14] hypothetical arginine repressor [Vibrio angustum S14]  E=1e-08 s/c=1.36 id=38% cov=55%
+---------------IVVKTHPGSAQLIARIIDLHPHQEILGTIAGNDTVMVA------------------
+>gi|347522505|ref|YP_004780076.1|(96-148:148) arginine repressor ArgR [Lactococcus garvieae ATCC 49156] arginine repressor [Lactococcus garvieae ATCC 49156] arginine repressor [Lactococcus garvieae Lg2]  E=2e-08 s/c=1.16 id=30% cov=76%
+------------------HTHLGEADLLANAFDDEQRPEILGTLAGADTLLLICKDEAAAERLALEIEDAL
+>gi|322386536|ref|ZP_08060163.1|(76-143:146) arginine repressor [Streptococcus cristatus ATCC 51100] arginine repressor [Streptococcus cristatus ATCC 51100] arginine repressor [Streptococcus cristatus ATCC 51100]  E=2e-08 s/c=0.90 id=28% cov=90%
+-LASHVQAVSRAEFTLVFRTGLGEATVLANVVDGSLDSRILGTVAGANTLLVICRDQDAAREIE-------
+>gi|116492589|ref|YP_804324.1|(80-149:152) ArgR family transcriptional regulator [Pediococcus pentosaceus ATCC 25745] transcriptional regulator, ArgR family [Pediococcus pentosaceus ATCC 25745]  E=1e-07 s/c=0.84 id=18% cov=94%
+-LSSALISIKVQEKFVFIDLKPGNGASISATLKQVHYGFVFAAVSDDNGVLVICTDDEHAVRLKDRI----
+>gi|339634228|ref|YP_004725869.1|(80-139:149) unnamed protein product [Weissella koreensis KACC 15510] arginine catabolic regulator [Weissella koreensis KACC 15510]  E=2e-07 s/c=0.96 id=23% cov=86%
+-LNEDQTKIKAQNNMVLIQVRPGTGPVLKISLETMDLPEVFGVLGDDSTVLVIVKEGYTGK----------
+>gi|241894938|ref|ZP_04782234.1|(80-142:147) arginine catabolic regulator [Weissella paramesenteroides ATCC 33313] arginine catabolic regulator [Weissella paramesenteroides ATCC 33313]  E=8e-05 s/c=0.79 id=26% cov=82%
+-------TIRTQDNFVMITVLPGTGPALKLALEEADFDELFGMLGDDSDVLIILKKNIQATEFV-------
+>gi|51892974|ref|YP_075665.1|(80-149:150) transcriptional regulator [Symbiobacterium thermophilum IAM 14863] RecName: Full=Arginine repressor transcriptional regulator [Symbiobacterium thermophilum IAM 14863]  E=7e-19 s/c=1.37 id=28% cov=100%
+-FREAVLTIDHSGNLVVIKSLPGTAQGVAAAIDHAGWPEMIGTVAGDDTVIVVVKPADATGEVAERLKGLM
+>gi|302392480|ref|YP_003828300.1|(80-148:150) unnamed protein product [Acetohalobium arabaticum DSM 5501] transcriptional regulator, ArgR family [Acetohalobium arabaticum DSM 5501]  E=3e-18 s/c=1.37 id=34% cov=99%
+-FKDSVVDFDHSENLIVINTLPGTANGVASLIDNADWEGVLSTLAGDDTILIIVKPKEMVEEILEKLHQL-
+>gi|357038606|ref|ZP_09100403.1|(80-148:151) arginine repressor, ArgR [Desulfotomaculum gibsoniae DSM 7213] arginine repressor, ArgR [Desulfotomaculum gibsoniae DSM 7213]  E=4e-18 s/c=1.36 id=34% cov=99%
+-FRDSVVSLDYSENLIIIKTPPGEAQGVASTIDNAGWPEIIGTVAGDDTILIIIKPKKMTHATMKKFIAL-
+>gi|333979341|ref|YP_004517286.1|(80-148:151) arginine repressor ArgR [Desulfotomaculum kuznetsovii DSM 6115] arginine repressor, ArgR [Desulfotomaculum kuznetsovii DSM 6115]  E=5e-18 s/c=1.35 id=37% cov=99%
+-LRSSVQLIDFSENLVVVKTLPGEAQGVASAIDQAAWPEIIGTVAGDDTILIIVKPKKLVTTVLQRLNQL-
+>gi|167628431|ref|YP_001678930.1|(81-150:151) argR gene product [Heliobacterium modesticaldum Ice1] RecName: Full=Arginine repressor arginine repressor [Heliobacterium modesticaldum Ice1]  E=6e-18 s/c=1.33 id=35% cov=93%
+-LRDTVTHVDSSLNIVVIRTLPGHAHAVAGAIDHSHWPEVLGTVAGDDTIFIVVKPVEAVEALMDK-----
+>gi|147677535|ref|YP_001211750.1|(80-148:151) arginine repressor [Pelotomaculum thermopropionicum SI] RecName: Full=Arginine repressor arginine repressor [Pelotomaculum thermopropionicum SI]  E=6e-18 s/c=1.35 id=33% cov=99%
+-FRDSVIGLDSSENLIIVKTHPGGAQGVASAIDQAGWREIIGTVGGDDTILVVVKPKRAAGAVLKRFEEL-
+>gi|114566132|ref|YP_753286.1|(79-148:153) arginine repressor [Syntrophomonas wolfei subsp. wolfei str. Goettingen] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Syntrophomonas wolfei subsp. wolfei str. Goettingen]  E=8e-18 s/c=1.32 id=34% cov=100%
+-IEDSVLGLDYSENLIIIKTLPGSAHAVASLIDSAEWPTIIGTVAGDDTILAVVKPKEAAPGIVEEFEQLM
+>gi|238917011|ref|YP_002930528.1|(79-148:151) transcriptional regulator of arginine metabolism [Eubacterium eligens ATCC 27750] RecName: Full=Arginine repressor transcriptional regulator of arginine metabolism [Eubacterium eligens ATCC 27750]  E=9e-18 s/c=1.32 id=39% cov=100%
+-LKEGFVSMDMAQNILVIKTAPGMAMAVCAAIDALEWNEIVGSIAGDDTIMCAVRTVNDTLLVMNKIKKLI
+>gi|72162452|ref|YP_290109.1|(105-172:177) unnamed protein product [Thermobifida fusca YX] transcriptional regulator, ArgR family [Thermobifida fusca YX]  E=3e-17 s/c=1.33 id=35% cov=93%
+---DLLVSAEASANIVVVRTPPGAAQYLASAIDHSDIPAILGTIAGDDTILVVARDPQGGEELAATLL---
+>gi|340350063|ref|ZP_08673065.1|(150-219:224) arginine repressor [Prevotella nigrescens ATCC 33563] arginine repressor [Prevotella nigrescens ATCC 33563]  E=7e-17 s/c=1.28 id=32% cov=100%
+-LQSGYLSIQFSGQMAIIKTRPGYASAIAYNLDNSDLPEVLGTIAGDDTIFIVFKEGCSHEEVLQSLSNVI
+>gi|336179122|ref|YP_004584497.1|(149-207:250) unnamed protein product [Frankia symbiont of Datisca glomerata] arginine repressor, ArgR [Frankia symbiont of Datisca glomerata]  E=4e-16 s/c=1.48 id=41% cov=83%
+---ELLVSAEANGDLLVLRTPPGAAQLFASALDRASLPEVMGTIAGDDTVLVVCRSARVAA----------
+>gi|160945190|ref|ZP_02092416.1|(90-159:162) hypothetical protein FAEPRAM212_02709 [Faecalibacterium prausnitzii M21/2] hypothetical protein FAEPRAM212_02709 [Faecalibacterium prausnitzii M21/2] transcriptional regulator, ArgR family [Faecalibacterium prausnitzii SL3/3]  E=2e-15 s/c=1.21 id=32% cov=97%
+---ESVLGVDYAGHVVLVKCYSGMANAACEVFDALQWKNVVGTLSGDDTFLIVARSERDAKTICSELTRYV
+>gi|256832348|ref|YP_003161075.1|(103-170:195) arginine repressor ArgR [Jonesia denitrificans DSM 20603] arginine repressor, ArgR [Jonesia denitrificans DSM 20603]  E=4e-15 s/c=1.23 id=33% cov=97%
+--AELLISAQSSGQLVVLRTPPGAAQFLGSAIDTSAMDGVMGTIAGDDTVLVITREDTNGTDIAQRFMVL-
+>gi|340359819|ref|ZP_08682292.1|(122-188:195) arginine repressor [Actinomyces sp. oral taxon 448 str. F0400] arginine repressor [Actinomyces sp. oral taxon 448 str. F0400]  E=6e-15 s/c=1.24 id=29% cov=96%
+---DLLVTAEWADNQVILRTPAGAAQLLASVVDDAVLPGVLGCIAGDDTVLVVTRSEDVASRLVAHLLSL-
+>gi|83595900|gb|ABC25261.1|(92-159:162) arginine repressor [uncultured marine bacterium Ant4E12]  E=7e-15 s/c=1.21 id=28% cov=97%
+--SEWVVQVSQSNNIVVLTTPPGSAHVVASAIDRSGIEGVIGTIAGDDTILVIASEETGGNEIASNLQYL-
+>gi|308176925|ref|YP_003916331.1|(96-163:167) arginine repressor [Arthrobacter arilaitensis Re117] arginine repressor [Arthrobacter arilaitensis Re117]  E=2e-14 s/c=1.20 id=29% cov=97%
+--AEQLVTAEASGNIVVLRTPPGAANLLALAIDHSQMPSILGCIAGDDTIMVTTRAVDGGADVAARFLQL-
+>gi|84496722|ref|ZP_00995576.1|(94-161:167) arginine repressor [Janibacter sp. HTCC2649] arginine repressor [Janibacter sp. HTCC2649]  E=2e-14 s/c=1.20 id=34% cov=96%
+---ELLVSAEVSANLVVLRTPPGAANFLASAIDHTTVPGIVGTIAGDDTIMVITTGTAASRKVASRLMAY-
+>gi|336321051|ref|YP_004601019.1|(113-168:200) arginine repressor ArgR [[Cellvibrio] gilvus ATCC 13127] arginine repressor, ArgR [[Cellvibrio] gilvus ATCC 13127]  E=3e-14 s/c=1.45 id=37% cov=80%
+---ELLLTAESSGNLVVLRTPPGAAQFLASAIDHSVLPAVLGTIAGDDTILVVSRDPDG------------
+>gi|346223986|ref|ZP_08845128.1|(88-151:159) arginine repressor [Anaerophaga thermohalophila DSM 12881]  E=4e-14 s/c=1.25 id=38% cov=86%
+-------SIEFSGNMAVLKTRPGFANSIASVIDSHAPFEVLGTIAGDDTILLISKEGVSRPDVINAL----
+>gi|332686137|ref|YP_004455911.1|(80-150:151) arginine pathway regulatory protein ArgR [Melissococcus plutonius ATCC 35311] arginine pathway regulatory protein ArgR, repressor of arg regulon [Melissococcus plutonius ATCC 35311]  E=4e-14 s/c=1.13 id=25% cov=101%
+SIRDFVNSIEQIKFMVVIHTELGNAHVVTNLLDQAAYQEVAGTVAGEDTIIVLLHNEKEANYFTQKIKRLM
+>gi|227497661|ref|ZP_03927875.1|(114-181:188) arginine repressor [Actinomyces urogenitalis DSM 15434] arginine repressor [Actinomyces urogenitalis DSM 15434]  E=9e-14 s/c=1.16 id=33% cov=97%
+--ADLLVTAEWAGQQLVLRTPAGAAQLLASAVDDAMLPGVLGCIAGDDTVLVVTRSQDVASQVGTHLLSL-
+>gi|373458456|ref|ZP_09550223.1|(81-146:148) arginine repressor, ArgR [Caldithrix abyssi DSM 13497] arginine repressor, ArgR [Caldithrix abyssi DSM 13497]  E=1e-13 s/c=1.20 id=25% cov=94%
+-----IVNVLHNEHMIVVKTMPGRAQGVAVYFDRLSDSHILGTVAGDDTIFVVPDTVKNIPQIVERIREIM
+>gi|333029752|ref|ZP_08457813.1|(84-153:158) arginine repressor, ArgR [Bacteroides coprosuis DSM 18011] arginine repressor, ArgR [Bacteroides coprosuis DSM 18011]  E=1e-13 s/c=1.13 id=36% cov=94%
+-----FISLDYSGNIAVIKTKPGYASSMAYDIDNRIYDNILGTIAGDDTIMLILKEGASHYDIGEFLSQII
+>gi|154509120|ref|ZP_02044762.1|(101-166:175) hypothetical protein ACTODO_01639 [Actinomyces odontolyticus ATCC 17982] hypothetical protein ACTODO_01639 [Actinomyces odontolyticus ATCC 17982]  E=1e-13 s/c=1.19 id=42% cov=94%
+----LLVTSAKVGNQLVLRTQVGAANLLASSIDAVRRDEIAGTIAGDDTILVICRSEEGAADVERSLLAL-
+>gi|333382253|ref|ZP_08473925.1|(95-160:164) arginine repressor [Dysgonomonas gadei ATCC BAA-286] arginine repressor [Dysgonomonas gadei ATCC BAA-286]  E=1e-13 s/c=1.19 id=34% cov=94%
+-----FVNIEFSGQLAVIKTRPGYAMAIAGEIDRRATRYILGTVAGDDTILLIPRENISREEVIASLSEFI
+>gi|297182187|gb|ADI18358.1|(82-150:153) arginine repressor [uncultured actinobacterium HF4000_04C13]  E=1e-13 s/c=1.14 id=29% cov=96%
+---EWVVEVESSGNLVVLRTPPGSAHVVASALDRTGIEGSIGTVAGDDTLMMVAAEGTTGENLAVTLRNL-
+>gi|308234413|ref|ZP_07665150.1|(73-140:147) arginine repressor [Atopobium vaginae DSM 15829] arginine repressor [Atopobium vaginae DSM 15829] arginine repressor [Atopobium vaginae DSM 15829]  E=2e-13 s/c=1.15 id=25% cov=97%
+--SEFVTNIDQAGNLIVIHSQPGTAPGVAAAVDAASLPEIKGSVAGNDTVLVVADDMEAAEDFVSLINKL-
+>gi|333395869|ref|ZP_08477686.1|(79-149:152) arginine repressor [Lactobacillus coryniformis subsp. coryniformis KCTC 3167]  E=2e-13 s/c=1.10 id=25% cov=101%
+SIAEVVVAVKLVEFVNVIHTAPGNGNSLAAIIDDLAFPQVAGTLAGHDTILIISPDRDSAQYVHDYFAERM
+>gi|270284208|ref|ZP_05965743.2|(122-190:191) arginine repressor [Bifidobacterium gallicum DSM 20093] arginine repressor [Bifidobacterium gallicum DSM 20093]  E=2e-13 s/c=1.13 id=34% cov=99%
+-LVGLVTSVARAFNQVVVHTNSGAAQYVGSIIDRNSSDDVLGTIAGDDTILLICTDAASAQSIAQWLLSL-
+>gi|193215980|ref|YP_001997179.1|(80-145:148) arginine repressor ArgR [Chloroherpeton thalassium ATCC 35110] RecName: Full=Arginine repressor arginine repressor, ArgR [Chloroherpeton thalassium ATCC 35110]  E=4e-13 s/c=1.16 id=28% cov=94%
+-----ILSIQANEIFVIIKTLPGRASGVASFIDSFENPMIIGTLAGDDTVMVIPKTIKETKKVHQFIRNSI
+>gi|25012093|ref|NP_736488.1|(78-144:148) hypothetical protein gbs2055 [Streptococcus agalactiae NEM316] Unknown [Streptococcus agalactiae NEM316]  E=5e-13 s/c=1.14 id=34% cov=96%
+ALRSYILKVSRASFMLVLNTNLGEASVLANFIDEKGLPEILGTMAGADTLLVICQNEDIAKVFEKEL----
+>gi|189500274|ref|YP_001959744.1|(82-145:148) arginine repressor ArgR [Chlorobium phaeobacteroides BS1] RecName: Full=Arginine repressor arginine repressor, ArgR [Chlorobium phaeobacteroides BS1]  E=7e-13 s/c=1.19 id=34% cov=92%
+-------SIESNESSIVIKTLPGRAHGVGSFIDHLKNPGILGTIAGDDTVLVIPSSVHDIRSILDYMQTNL
+>gi|330718771|ref|ZP_08313371.1|(84-154:158) arginine catabolic regulator [Leuconostoc fallax KCTC 3537]  E=8e-13 s/c=1.07 id=26% cov=101%
+AISEYAVKMTHIQFMIVIKTTDSSGNVLAGVLDDAHLPEIVGTLAGFDTIYVTSHDEQEAKTLYNKWLPYL
+>gi|163789620|ref|ZP_02184058.1|(81-151:169) arginine catabolic regulator [Carnobacterium sp. AT7] arginine catabolic regulator [Carnobacterium sp. AT7]  E=8e-13 s/c=1.07 id=31% cov=101%
+ALHQYARSVTAVQFLVTILVTPNYPNVIASLIDELKMPSIVGTIASFDTCLIILHNENDARLLCDSFSSII
+>gi|330444607|ref|YP_004377593.1|(76-142:147) arginine repressor [Chlamydophila pecorum E58] arginine repressor [Chlamydophila pecorum E58]  E=8e-13 s/c=1.14 id=28% cov=96%
+----LVSSVRYNLFMIVIRTAPGSASWVAGILDKQFPKEILGTLAGDDTIFIAPAKDQNLPDLAQTLANFL
+>gi|325953944|ref|YP_004237604.1|(81-145:153) unnamed protein product [Weeksella virosa DSM 16922] arginine repressor, ArgR [Weeksella virosa DSM 16922]  E=9e-13 s/c=1.16 id=36% cov=93%
+------VSLEFTANLGVLKTKPGYALGLAFEIDNHQLPSLLGTIAGNDTILLILRENISRKKFIEEIQTIL
+>gi|302345906|ref|YP_003814259.1|(96-164:168) arginine repressor, C-terminal domain protein [Prevotella melaninogenica ATCC 25845] arginine repressor, C-terminal domain protein [Prevotella melaninogenica ATCC 25845]  E=9e-13 s/c=1.10 id=35% cov=89%
+-----YISVNISGQLAIVKTRPGYASALAYDIDNSDSHYILGSIAGDDTIFIALREGASRGQVLEAL----
+>gi|304389257|ref|ZP_07371223.1|(96-163:167) arginine repressor [Mobiluncus curtisii subsp. curtisii ATCC 35241] arginine repressor [Mobiluncus curtisii subsp. holmesii ATCC 35242] arginine repressor [Mobiluncus curtisii subsp. curtisii ATCC 35241] arginine repressor [Mobiluncus curtisii subsp. holmesii ATCC 35242]  E=2e-12 s/c=1.10 id=36% cov=82%
+-------------NQVILRTHPAAASPLASIVDKENLEGVLGTIAGDNTLLIICRDEAAAQALHTLILSI-
+>gi|339444473|ref|YP_004710477.1|(93-160:163) hypothetical protein EGYY_08840 [Eggerthella sp. YY7918] hypothetical protein EGYY_08840 [Eggerthella sp. YY7918]  E=2e-12 s/c=1.10 id=25% cov=97%
+--SELVEEVHVAGNMVVVKTFSGGAAGVSAALDKANLRGALGTVAGDNTIMIAAESPEAAVDVERAIDRL-
+>gi|333447714|ref|ZP_08482656.1|(79-149:170) arginine repressor [Leuconostoc inhae KCTC 3774]  E=2e-12 s/c=1.05 id=26% cov=101%
+ALQQSFLSQRAQRGQIILKVQPGNGQLIANLLEQVKFPEIFGTLSDDGSVLVLLKDGVVASQMTNTIQKLL
+>gi|308235809|ref|ZP_07666546.1|(136-203:207) arginine repressor [Gardnerella vaginalis ATCC 14018 = JCM 11026] arginine repressor [Gardnerella vaginalis ATCC 14019] arginine repressor [Gardnerella vaginalis ATCC 14019] arginine repressor, C-terminal domain protein [Gardnerella vaginalis 315-A]  E=3e-12 s/c=1.09 id=28% cov=97%
+-LSGLITEVGFANNIVVIHTPSGAAQYVASVIDRQPLKGILGSVAGDDTVLMVCVSNEEAEDRANWMLS--
+>gi|383787938|ref|YP_005472506.1|(81-149:151) argR gene product [Caldisericum exile AZM16c01] arginine repressor [Caldisericum exile AZM16c01]  E=4e-12 s/c=1.07 id=35% cov=80%
+------------DNLILVKTTPGNANSVAWLIDKYEIKGILGTVAGDDTILVVTKRG-TTKDIIKQLED--
+>gi|29840302|ref|NP_829408.1|(72-142:147) argR gene product [Chlamydophila caviae GPIC] RecName: Full=Arginine repressor arginine repressor [Chlamydophila caviae GPIC]  E=5e-12 s/c=1.03 id=29% cov=101%
+SIKHLVFSIRHNSSLIVIRTAPGSASWIASLIDNKFAESILGTLAGDDTIFITPITESTISLTAKDIENFL
+>gi|374325183|ref|YP_005078312.1|(87-146:150) unnamed protein product [Paenibacillus terrae HPL-003] arginine repressor [Paenibacillus terrae HPL-003]  E=8e-12 s/c=1.21 id=48% cov=86%
+--------IDYINQLTIIKTLPGNANVIGVLLDNSNWREVVGCVCGNDTCLVISQTLSDRRVLQERLN---
+>gi|227551767|ref|ZP_03981816.1|(85-152:159) arginine repressor [Enterococcus faecium TX1330] arginine repressor, C-terminal domain protein [Enterococcus faecium PC4.1] arginine repressor [Enterococcus faecium E980] arginine repressor [Enterococcus faecium TX1330] arginine repressor [Enterococcus faecium E980] arginine repressor, C-terminal domain protein [Enterococcus faecium PC4.1]  E=9e-12 s/c=1.07 id=37% cov=92%
+-IEDIVLKVERVHFLTIVNTLPDNAHLFASVLDEIKPPPIVSTIAGFDTIMIISENEEDAKRVEE------
+>gi|357060498|ref|ZP_09121266.1|(88-153:161) hypothetical protein HMPREF9332_00823 [Prevotella sp. oral taxon 302 str. F0323] hypothetical protein HMPREF9332_00823 [Prevotella sp. oral taxon 302 str. F0323]  E=1e-11 s/c=1.09 id=24% cov=94%
+-----VVGITFSGTLAVLHTRPGYAAGLAADIDSHHLPEVAGTVAGYDTLFVAQAEGIERQQLIDALSHVI
+>gi|227518010|ref|ZP_03948059.1|(90-160:170) arginine repressor [Enterococcus faecalis TX0104] arginine repressor [Enterococcus faecalis ATCC 29200] arginine repressor [Enterococcus faecalis TX0104] arginine repressor [Enterococcus faecalis ATCC 29200] arginine repressor protein [Enterococcus faecalis TX1342]  E=1e-11 s/c=1.01 id=26% cov=101%
+AIREVVTKVERVAFLLVVHTLPDNATLFSAVLDEVSLCEKKCSVAGFDTVIIVSSSEEKAQELEQYFQQFI
+>gi|225377096|ref|ZP_03754317.1|(79-148:150) hypothetical protein ROSEINA2194_02741 [Roseburia inulinivorans DSM 16841] hypothetical protein ROSEINA2194_02741 [Roseburia inulinivorans DSM 16841]  E=1e-11 s/c=1.03 id=34% cov=100%
+-FRDAFVSMDMAQNILVIKTVSGMAMAVAAAIDAMHLHEIVGCIAGDDTIMCAVRSVDDTIAVMSRLRKLV
+>gi|257868898|ref|ZP_05648551.1|(79-149:150) arginine repressor ArgR [Enterococcus gallinarum EG2] hypothetical protein HMPREF9478_00977 [Enterococcus saccharolyticus 30_1] arginine repressor ArgR [Enterococcus gallinarum EG2] hypothetical protein HMPREF9478_00977 [Enterococcus saccharolyticus 30_1]  E=2e-11 s/c=1.01 id=22% cov=101%
+SMNEYLKSIEQVEFITVIHTVSNGADVIANYLDEMDLEGIVATMAGFDVLLILSPSKEQATQLIHHLEKYI
+>gi|26251154|ref|NP_757194.1|(108-178:184) hypothetical protein c5346 [Escherichia coli CFT073] hypothetical protein UTI89_C4853 [Escherichia coli UTI89] unnamed protein product [Escherichia coli APEC O1] putative arginine repressor [Escherichia coli ED1a] putative arginine repressor [Escherichia coli IAI39] arginine repressor [Escherichia coli 83972] conserved hypothetical protein [Escherichia sp. 3_2_53FAA] arginine repressor protein [Escherichia coli MS 45-1] arginine repressor protein [Escherichia coli MS 200-1] arginine repressor protein [Escherichia coli MS 185-1] Hypothetical protein c5346 [Escherichia coli CFT073] hypothetical protein UTI89_C4853 [Escherichia coli UTI89] putative arganine repressor [Escherichia coli APEC O1] putative arginine repressor [Escherichia coli IAI39] putative arginine repressor [Escherichia coli ED1a] conserved hypothetical protein [Escherichia sp. 3_2_53FAA] arginine repressor [Escherichia coli 83972] arginine repressor protein [Escherichia coli MS 185-1] arginine repressor protein [Escherichia coli MS 200-1] arginine repressor protein [Escherichia coli MS 45-1] arginine repressor protein [Escherichia coli MS 110-3] arginine repressor protein [Escherichia coli MS 153-1] arginine repressor protein [Escherichia coli MS 16-3] arginine repressor protein [Escherichia coli MS 57-2] arginine repressor protein [Escherichia coli MS 60-1] putative arginine repressor [Escherichia coli O7:K1 str. CE10] hypothetical protein i02_4851 [Escherichia coli str. 'clone D i2'] hypothetical protein i14_4851 [Escherichia coli str. 'clone D i14']  E=2e-11 s/c=1.00 id=22% cov=101%
+SVAEMVLSVEHNGEFILIHTVAGYGRAVARILDFHALPEILGVIAGSNIVWVAPRVVKRTALVHKQINYLL
+>gi|366090452|ref|ZP_09456818.1|(26-98:100) ArgR family transcriptional regulator [Lactobacillus acidipiscis KCTC 13900]  E=3e-11 s/c=0.97 id=33% cov=101%
+AIHDNVTSVERIAWLNIVRMPlnSNYANALGSLLDTSNIPEIVGTLAGNDTLVIISKSEDDAAKIKQFILESI
+>gi|77361574|ref|YP_341149.1|(91-158:164) arginine repressor [Pseudoalteromonas haloplanktis TAC125] transcriptional repressor of arginine synthesis (ArgR familiy) [Pseudoalteromonas haloplanktis TAC125]  E=3e-11 s/c=1.04 id=40% cov=75%
+-LRQLVIDIMHNEMMIIIRTSPGAAQLIARLLDSLgKADGVLGTIAGDDTIFIA------------------
+>gi|383789437|ref|YP_005474011.1|(86-151:156) unnamed protein product [Spirochaeta africana DSM 8902] arginine repressor [Spirochaeta africana DSM 8902]  E=5e-11 s/c=1.06 id=29% cov=92%
+-----YISLEFSRPVGVIRTLTGHANSVAIALDSLHLEGLIGTIAGDDAVLVVLAENITGEQFLETLRT--
+>gi|322834580|ref|YP_004214607.1|(88-156:168) arginine repressor ArgR [Rahnella sp. Y9602] unnamed protein product [Rahnella aquatilis HX2] arginine repressor, ArgR [Rahnella sp. Y9602] arginine repressor ArgR [Rahnella aquatilis HX2]  E=7e-11 s/c=1.01 id=20% cov=99%
+--SEMVTDVDHNPQFVVVHVMPGYGRAVGRIIDQHRLPEVLGVIASSTSVLVAPREMTELDRVCRIIRRIL
+>gi|374261208|ref|ZP_09619795.1|(81-150:153) hypothetical protein LDG_6175 [Legionella drancourtii LLAP12] hypothetical protein LDG_6175 [Legionella drancourtii LLAP12]  E=2e-10 s/c=0.98 id=25% cov=89%
+-----VLDISSNETLIIIHTTPGAASMVARIIDQHRINlDILGTIAGDDTIFIAAKCNAQIALIINKI----
+>gi|71279285|ref|YP_267447.1|(83-154:160) arginine repressor [Colwellia psychrerythraea 34H] putative arginine repressor [Colwellia psychrerythraea 34H]  E=2e-10 s/c=0.94 id=24% cov=101%
+SIESVVLSVKHNQMQIILKTGIGAAPLISRMLDSMGESaGILGTLAGDDTIFIAPVDVDNIEEITVSIRNLL
+>gi|209364120|ref|YP_001424934.2|(118-179:195) arginine repressor [Coxiella burnetii Dugway 5J108-111] arginine repressor [Coxiella burnetii Dugway 5J108-111]  E=3e-10 s/c=1.09 id=34% cov=79%
+-LTQLVLDITANETLIFVKTSPGSAPLIARLLDYHKKDSmILATIAGDDTIFIAPKS---------------
+>gi|256848452|ref|ZP_05553894.1|(79-151:154) arginine repressor [Lactobacillus coleohominis 101-4-CHN] arginine repressor [Lactobacillus coleohominis 101-4-CHN]  E=4e-10 s/c=0.92 id=29% cov=101%
+AIHDSVESCTTVQFMNVIKTTPNssYATVLAGMLDDSDLTEIVGTLAGNDTFITISKTNESALAISRLVHEHM
+>gi|227431636|ref|ZP_03913672.1|(94-164:165) arginine repressor [Leuconostoc mesenteroides subsp. cremoris ATCC 19254] arginine repressor [Leuconostoc mesenteroides subsp. cremoris ATCC 19254]  E=4e-10 s/c=0.94 id=17% cov=90%
+--------VTNVEFLTIIKTTDGSGNSVAGIIDDANLPEVITTLAGFNTIYVTSKNETDAAKLADHWAELI
+>gi|377809877|ref|YP_005005098.1|(79-149:149) unnamed protein product [Pediococcus claussenii ATCC BAA-344] arginine repressor, DNA binding domain protein [Pediococcus claussenii ATCC BAA-344]  E=6e-10 s/c=0.94 id=21% cov=101%
+AFEESVLEVTQVQFVNIIKTTPNDGNRIAAVLDDAKLGEIKGTLAGYDTVITFSSDAESAISLNKILKYYI
+>gi|339480401|ref|ZP_08656060.1|(85-155:156) ArgR family transcriptional regulator [Leuconostoc pseudomesenteroides KCTC 3652]  E=6e-10 s/c=0.94 id=19% cov=87%
+----------SVAFMTIVKTTDGSGNAVAGIIDDANLPEVVATLAGFNTIYVTSTTAQSAEQLANHWAALI
+>gi|328958255|ref|YP_004375641.1|(81-151:167) transcriptional repressor [Carnobacterium sp. 17-4] transcriptional repressor [Carnobacterium sp. 17-4]  E=7e-10 s/c=0.94 id=26% cov=101%
+SLHNYAVSTLCVHFFVILFVSPTHPKIIASLMDELKIPAIAGTIASFDTCLIVLNTEQEAQLLCACLSDII
+>gi|218710846|ref|YP_002418467.1|(103-167:176) arginine repressor ArgR [Vibrio splendidus LGP32] hypothetical arginine repressor [Vibrio splendidus LGP32]  E=7e-10 s/c=1.02 id=28% cov=82%
+--------ITHNQAMVIVKTNPGCAQLVARLVDIDPHTEIIGTVGGNDTVLIIPKDTTNIDACEQ------
+>gi|377832514|ref|ZP_09815472.1|(79-150:153) arginine repressor [Lactobacillus mucosae LM1] arginine repressor [Lactobacillus mucosae LM1]  E=7e-10 s/c=0.92 id=28% cov=92%
+-------KVTNVQFINVIQTTlnSNYATVLAGLFDNAQLPEVVGTLAGNDTLLTISKNNEDAQAINRLIKEHM
+>gi|149188428|ref|ZP_01866721.1|(126-190:199) hypothetical arginine repressor [Vibrio shilonii AK1] hypothetical arginine repressor [Vibrio shilonii AK1]  E=1e-09 s/c=1.01 id=31% cov=76%
+------------QSLVVVKTHPGSAQLIARLIDIDPHADILATIGGNDTILVIPKQASEVSRCER------
+>gi|358053355|ref|ZP_09147117.1|(82-149:153) arginine repressor [Staphylococcus simiae CCM 7213] arginine repressor [Staphylococcus simiae CCM 7213]  E=1e-09 s/c=0.96 id=22% cov=97%
+--QDEIIDILLKDSYVLVKTSPGFAQCINYYVDQLQMEEVLGSIGGNDMFMLLTSSNEMAQYIYYKMQKL-
+>gi|90961215|ref|YP_535131.1|(80-151:156) arginine repressor ArgR [Lactobacillus salivarius UCC118] Arginine repressor, argR [Lactobacillus salivarius UCC118]  E=2e-09 s/c=0.90 id=25% cov=97%
+---DNVLGIQRINFINLIRTTvnSSYANILAAKLDDLELAEIAGTLAGNDTVVVFSKNEEDAEIVYKMIYEHM
+>gi|108805670|ref|YP_645607.1|(79-146:159) ArgR family transcriptional regulator [Rubrobacter xylanophilus DSM 9941] transcriptional regulator, ArgR family [Rubrobacter xylanophilus DSM 9941]  E=3e-09 s/c=0.94 id=32% cov=97%
+-LPSFVLGLTPAQNLVVIHTRDGTAGAVSSVLDRVKGLKIVGTIAGQDTVLAVTPDSAAAEEVASLIAD--
+>gi|108757003|ref|YP_633257.1|(82-140:144) arginine repressor ArgR [Myxococcus xanthus DK 1622] arginine repressor [Myxococcus xanthus DK 1622]  E=9e-09 s/c=1.06 id=34% cov=83%
+-------------NLLVIRTAPGFAPVLALALDkERELPGLAGTVAGDDTIFVAVTDPALLRDVRAAVERLL
+>gi|58698601|ref|ZP_00373498.1|(69-143:151) arginine repressor, transcriptional regulator of arginine metabolism [Wolbachia endosymbiont of Drosophila ananassae] arginine repressor, putative [Wolbachia sp. wRi] arginine repressor, transcriptional regulator of arginine metabolism [Wolbachia endosymbiont of Drosophila ananassae] arginine repressor, putative [Wolbachia sp. wRi]  E=5e-08 s/c=0.80 id=33% cov=90%
+----LILNMQISDFgLIVLHTQPGQASSLAYFLDQkyviyslnnSKNIGIIGTIAGDDTVLLIIKSKTELNKVLQSI----
+>gi|312864658|ref|ZP_07724889.1|(83-152:156) arginine repressor, C-terminal domain protein [Streptococcus downei F0415] arginine repressor, C-terminal domain protein [Streptococcus downei F0415]  E=1e-06 s/c=0.79 id=28% cov=82%
+------------ERMIAISVVPGNTRYLKRLLIKDYQEEIFSIIADDDSILLIMKSAKQAKELGQNLRN--
+>gi|350548503|ref|ZP_08917823.1|(78-148:154) arginine repressor, ArgR [Thermobacillus composti KWC4] arginine repressor, ArgR [Thermobacillus composti KWC4]  E=3e-19 s/c=1.37 id=50% cov=101%
+AMLDHFVHIDSADNLIVMKCLPGTANAIGSLIDAMEWNEVMGTICGDDTILIICRTKAQSKTVVDRLIGLL
+>gi|304407038|ref|ZP_07388692.1|(79-149:152) arginine repressor, ArgR [Paenibacillus curdlanolyticus YK9] arginine repressor, ArgR [Paenibacillus curdlanolyticus YK9]  E=3e-19 s/c=1.37 id=51% cov=101%
+SLIDHFIHIDFTDNLVVMKCSPGTANTLGALIDNMEWSEVMGTICGDDTILIICRTREQSGEVTERLLSLL
+>gi|269126390|ref|YP_003299760.1|(115-182:187) arginine repressor, ArgR [Thermomonospora curvata DSM 43183] arginine repressor, ArgR [Thermomonospora curvata DSM 43183]  E=2e-18 s/c=1.39 id=30% cov=97%
+--QELLVSAEASANLVIVRTPPGAAQYLASAIDHAEWPEVLGTVAGDDSILVISRDPQGGQALADALLRL-
+>gi|311742391|ref|ZP_07716200.1|(101-168:177) arginine repressor [Aeromicrobium marinum DSM 15272] arginine repressor [Aeromicrobium marinum DSM 15272]  E=6e-18 s/c=1.37 id=33% cov=97%
+--RELLVSAESSANLVVLRTPPGGAQYLASAVDHADLPDLLGTIAGDDTVVLICRDPTGGAEVARRFTAL-
+>gi|291542893|emb|CBL16003.1|(79-148:148) transcriptional regulator, ArgR family [Ruminococcus bromii L2-63]  E=2e-17 s/c=1.31 id=40% cov=92%
+-------SIDVAQNLVVIKTLSGMAQAVCAALDSADYPSVVGTIAGDDTIFIACRTADLAVSLTEELKKLI
+>gi|323140950|ref|ZP_08075862.1|(80-148:149) arginine repressor [Phascolarctobacterium succinatutens YIT 12067] arginine repressor [Phascolarctobacterium succinatutens YIT 12067]  E=2e-17 s/c=1.33 id=29% cov=96%
+---DSIVSVRASDSMVVIRTLPGTAQAVAFAVDYMKWPEILGSIAGDDTVFIALPNKEAVITLLERFKNY-
+>gi|260887333|ref|ZP_05898596.1|(80-148:151) arginine repressor [Selenomonas sputigena ATCC 35185] arginine repressor, ArgR [Selenomonas sputigena ATCC 35185] arginine repressor [Selenomonas sputigena ATCC 35185] arginine repressor, ArgR [Selenomonas sputigena ATCC 35185]  E=5e-17 s/c=1.30 id=37% cov=94%
+---DSVVSLDYSENIIVVKTLPGAANAVAAVLDHTPWQEIVGTVAGDDSILVVVKPREAAPEVVRRMEK--
+>gi|134298947|ref|YP_001112443.1|(87-149:152) arginine repressor ArgR [Desulfotomaculum reducens MI-1] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Desulfotomaculum reducens MI-1]  E=1e-16 s/c=1.41 id=30% cov=89%
+--------INSSENLIIIKTPPGEAQGMASAIDHVHWPQIIGTVAGDDTILVIVKPKEATPEVVQRFLEL-
+>gi|169831192|ref|YP_001717174.1|(79-148:150) arginine repressor ArgR [Candidatus Desulforudis audaxviator MP104C] RecName: Full=Arginine repressor arginine repressor, ArgR [Candidatus Desulforudis audaxviator MP104C]  E=1e-16 s/c=1.27 id=30% cov=100%
+-FRDYVWEVNANESLVIVKTLPGAAQGVASALDYARWPEILGTVAGDDTIFVAVKSQRDVGGIRERLAGLL
+>gi|354563530|ref|ZP_08982738.1|(80-149:150) arginine repressor, ArgR [Desulfosporosinus meridiei DSM 13257] arginine repressor, ArgR [Desulfosporosinus meridiei DSM 13257]  E=1e-16 s/c=1.27 id=37% cov=100%
+-LREAMVSINDTDNLIVIRTIPGNAHALAAIMDNSNWEELIGTVAGDDTILLVIKPKEAVQTVLERISALL
+>gi|304316770|ref|YP_003851915.1|(79-149:150) arginine repressor ArgR [Thermoanaerobacterium thermosaccharolyticum DSM 571] arginine repressor, ArgR [Thermoanaerobacterium thermosaccharolyticum DSM 571]  E=1e-16 s/c=1.25 id=33% cov=101%
+ALLSGIVSIDYAGNTIVIKTLSGTAPAAAEALDTLNWNEVVGTLAGDNTIFMLVRSEDSIKEIIDRINELI
+>gi|333395963|ref|ZP_08477780.1|(91-160:162) arginine repressor ArgR [Lactobacillus coryniformis subsp. coryniformis KCTC 3167] arginine repressor ArgR [Lactobacillus coryniformis subsp. torquens KCTC 3535]  E=2e-16 s/c=1.26 id=41% cov=100%
+-LFDAYVSMDVQDYFIVLKALPGNGTAIATLIDQMDFSDTFGTIGGDDTVLIIAKTPAAAQDLYQTLTNLL
+>gi|238924564|ref|YP_002938080.1|(84-153:154) arginine repressor [Eubacterium rectale ATCC 33656] arginine repressor [Eubacterium rectale ATCC 33656]  E=2e-16 s/c=1.25 id=34% cov=100%
+-LREGFLSMDMAQNILVIKTVSGMASAVCAAIDAMKMREIVGSIAGDDTIMCAIRTVDDTYAVMKKIRRIV
+>gi|167746995|ref|ZP_02419122.1|(79-148:154) hypothetical protein ANACAC_01707 [Anaerostipes caccae DSM 14662] hypothetical protein ANACAC_01707 [Anaerostipes caccae DSM 14662]  E=3e-16 s/c=1.25 id=34% cov=100%
+-LNDAIVSMETSGNLLVIKTASGMAMACAAALDDLDLPGLMGSIAGDDTIFCAVREQENGSDVIREIRLMM
+>gi|169334430|ref|ZP_02861623.1|(79-148:151) hypothetical protein ANASTE_00830 [Anaerofustis stercorihominis DSM 17244] hypothetical protein ANASTE_00830 [Anaerofustis stercorihominis DSM 17244]  E=3e-16 s/c=1.25 id=37% cov=100%
+-FREAVLTIDYAANFVCLHTITGMAQAAGVAIDALKLNEIIGTVAGDDTLFILVRTEDNAKALVKKFESLL
+>gi|238926864|ref|ZP_04658624.1|(80-149:150) arginine repressor [Selenomonas flueggei ATCC 43531] arginine repressor [Selenomonas flueggei ATCC 43531]  E=4e-16 s/c=1.24 id=30% cov=100%
+-FKDNVQSCDFSENIVVVRTAPGAAGTVASALDASAWSEVIGTIAGDDHIFVLIRPKEAAADIVARIQKLM
+>gi|225874546|ref|YP_002756005.1|(83-147:148) arginine repressor [Acidobacterium capsulatum ATCC 51196] RecName: Full=Arginine repressor arginine repressor [Acidobacterium capsulatum ATCC 51196]  E=5e-16 s/c=1.34 id=39% cov=93%
+------LKVKQAQNQLVLVTTAGSAQPVALAIDHEDWPEVVGTLAGDDTVLIICPDQKRATVLAERLEKII
+>gi|154498040|ref|ZP_02036418.1|(80-149:150) hypothetical protein BACCAP_02021 [Bacteroides capillosus ATCC 29799] hypothetical protein BACCAP_02021 [Bacteroides capillosus ATCC 29799]  E=5e-16 s/c=1.24 id=32% cov=100%
+-FKEGVTSFDMAQNIVVVKTMPGLASAACAAVDGMEIPDLVGSLAGDDTALLIMRTNEAAAEFCNEIHKML
+>gi|226225562|ref|YP_002759668.1|(82-151:153) arginine repressor [Gemmatimonas aurantiaca T-27] arginine repressor [Gemmatimonas aurantiaca T-27]  E=5e-16 s/c=1.24 id=35% cov=100%
+-LPELLVAVEGVQVLVVARTMKSGAQPVAEALDQLEWPDVAGTIAGDDTVLIICRSTEGRERVLRKLRTYI
+>gi|15895344|ref|NP_348693.1|(79-148:150) argR gene product [Clostridium acetobutylicum ATCC 824] arginine repressor ArgR [Clostridium acetobutylicum DSM 1731] argR gene product [Clostridium acetobutylicum EA 2018] RecName: Full=Arginine repressor Arginine repressor, argR [Clostridium acetobutylicum ATCC 824] arginine repressor [Clostridium acetobutylicum EA 2018] arginine repressor [Clostridium acetobutylicum DSM 1731]  E=6e-16 s/c=1.24 id=30% cov=100%
+-FAQTVLNVDRVNNMVVVKTISGSANAAAEAIDSLNLDGIAGSIAGDNTIFILSRSEETAFNIVQKLKKMI
+>gi|292670721|ref|ZP_06604147.1|(80-149:150) arginine repressor [Selenomonas noxia ATCC 43541] arginine repressor [Selenomonas noxia ATCC 43541] arginine repressor [Selenomonas noxia F0398]  E=6e-16 s/c=1.24 id=27% cov=100%
+-FKDNVVLCDFSENIVLIKTIPGGASTVASALDSSGWTEVLGTVAGDDSIFLLVKPKYAAESVAARIQALL
+>gi|340794220|ref|YP_004759683.1|(49-117:129) arginine repressor [Corynebacterium variabile DSM 44702] Arginine repressor [Corynebacterium variabile DSM 44702]  E=7e-16 s/c=1.25 id=34% cov=99%
+-LAELLVGTDWSGSTAVLRTPPGAAQYLASVVDRSDLPDVVGTIAGDDTVFVLAREPADGRGLAERLARL-
+>gi|326790854|ref|YP_004308675.1|(81-150:152) arginine repressor ArgR [Clostridium lentocellum DSM 5427] arginine repressor, ArgR [Clostridium lentocellum DSM 5427]  E=7e-16 s/c=1.23 id=34% cov=100%
+-FKDAFVSIDYAGNTIVIRTLVGMGNAVAAAVDAFNMEEIIGTLAGDDTIFCVVKHEDHIKAVIDQFKEIL
+>gi|29375274|ref|NP_814427.1|(80-150:151) argR gene product [Enterococcus faecalis V583] arginine repressor [Enterococcus faecalis HH22] arginine repressor [Enterococcus faecalis JH1] arginine repressor [Enterococcus faecalis T11] arginine repressor [Enterococcus faecalis PC1.1] arginine repressor [Enterococcus faecalis TUSoD Ef11] RecName: Full=Arginine repressor arginine repressor [Enterococcus faecalis V583] arginine repressor [Enterococcus faecalis HH22] arginine repressor [Enterococcus faecalis JH1] arginine repressor [Enterococcus faecalis T11] arginine repressor [Enterococcus faecalis PC1.1] arginine repressor [Enterococcus faecalis TUSoD Ef11] arginine repressor [Enterococcus faecalis TX0017] arginine repressor [Enterococcus faecalis TX2141] arginine repressor [Enterococcus faecalis TX1341] arginine repressor [Enterococcus faecalis TX0309B] arginine repressor [Enterococcus faecalis TX0309A]  E=8e-16 s/c=1.21 id=26% cov=101%
+SVKDSVVRMERVQFIVILHTEMGNADVVSNFLDEVAYPEVAGTVAGADTIIVITRSEEDAEHFIERIENMI
+>gi|253578520|ref|ZP_04855792.1|(79-148:152) conserved hypothetical protein [Ruminococcus sp. 5_1_39B_FAA] conserved hypothetical protein [Ruminococcus sp. 5_1_39BFAA]  E=8e-16 s/c=1.23 id=34% cov=100%
+-LEDTLLSIDVGQNIIVIKTVSGMAMGVAAALDALKWPEILGCIAGDDTIMCAAKTADMALGAAEKLRSFV
+>gi|229828865|ref|ZP_04454934.1|(79-148:161) hypothetical protein GCWU000342_00950 [Shuttleworthia satelles DSM 14600] hypothetical protein GCWU000342_00950 [Shuttleworthia satelles DSM 14600]  E=9e-16 s/c=1.22 id=38% cov=100%
+-FRDGFLSMDNAMNILVIRTVSGMAMAVAAALDNMQLGEIVGSIAGDDTVMCAVRSIDDTAALMTRLRHVL
+>gi|227873685|ref|ZP_03991919.1|(79-148:150) arginine repressor [Oribacterium sinus F0268] arginine repressor [Oribacterium sinus F0268]  E=1e-15 s/c=1.22 id=30% cov=100%
+-MRDGTVSMAVAGNILVIKTLSGMANGVAMAIDQHHFSEIVGSLAGDDTIFCVTSGEKDSQALKDSIESLM
+>gi|325289999|ref|YP_004266180.1|(80-148:150) ArgR family transcriptional regulator [Syntrophobotulus glycolicus DSM 8271] transcriptional regulator, ArgR family [Syntrophobotulus glycolicus DSM 8271]  E=1e-15 s/c=1.24 id=36% cov=99%
+-FKEVVTAYDFSENLVVVRTIPGNAQALALLLDNVNWKEIIGSVAGDDTIILVVKPIENITEIMDRLTKL-
+>gi|220931500|ref|YP_002508408.1|(80-149:150) arginine repressor ArgR [Halothermothrix orenii H 168] RecName: Full=Arginine repressor arginine repressor, ArgR [Halothermothrix orenii H 168]  E=1e-15 s/c=1.22 id=31% cov=100%
+-FQDFVIDMDFSENIIVVQTMPGTAEGLGSAIDNAEIEGVIGTVAGDDTIMIVTKPIEKTPEIFNKLQDLL
+>gi|52787839|ref|YP_093668.1|(80-145:146) hypothetical protein BLi04162 [Bacillus licheniformis ATCC 14580] transcriptional regulator of arginine metabolism expression [Bacillus licheniformis ATCC 14580] hypothetical protein HMPREF1012_03575 [Bacillus sp. BT1B_CT2] hypothetical protein BLi04162 [Bacillus licheniformis ATCC 14580] transcriptional regulator of arginine metabolism expression [Bacillus licheniformis ATCC 14580] hypothetical protein HMPREF1012_03575 [Bacillus sp. BT1B_CT2] transcriptional regulator of arginine metabolism expression [Bacillus licheniformis WX-02]  E=1e-15 s/c=1.29 id=48% cov=94%
+-ISDVVLHVHRTDNLIIIKTMPGNAHAIGVLLDKLGSPEMLGCICGNDTCLVISQSPEAAQSFYDHL----
+>gi|336397939|ref|ZP_08578739.1|(149-214:216) arginine repressor, ArgR [Prevotella multisaccharivorax DSM 17128] arginine repressor, ArgR [Prevotella multisaccharivorax DSM 17128]  E=1e-15 s/c=1.29 id=37% cov=94%
+-----FQSINFSGNIGVIHTRPGYASSIAFNIDNSDIPEIMGTIAGDDTIFIAVKEGADHNAIMDSLRENL
+>gi|373252006|ref|ZP_09540124.1|(95-159:167) arginine repressor [Nesterenkonia sp. F]  E=2e-15 s/c=1.31 id=30% cov=93%
+--RDLLVSAEASANLVILRTPPGAAQFLASAVDHAGLEEVLGTIAGDDTIMLVTTDPSGGETVAARF----
+>gi|225025929|ref|ZP_03715121.1|(79-148:152) hypothetical protein EUBHAL_00165 [Eubacterium hallii DSM 3353] hypothetical protein EUBHAL_00165 [Eubacterium hallii DSM 3353]  E=2e-15 s/c=1.21 id=25% cov=100%
+-LSEGILHMDNAENILVIKTVPGMAMACAAAIDSISLHGVLGCIAGDDTIMCVVKETPMVEEVMKEIDTIM
+>gi|350270754|ref|YP_004882062.1|(80-149:151) arginine repressor [Oscillibacter valericigenes Sjm18-20] arginine repressor [Oscillibacter valericigenes Sjm18-20]  E=2e-15 s/c=1.21 id=27% cov=100%
+-FRESITSIDSAQNIVVVKTMPGLASAACAALDDMDLNYMMGSLAGDDTAFLVMKDTASAETFCNEIQEMI
+>gi|189463251|ref|ZP_03012036.1|(89-154:161) hypothetical protein BACCOP_03968 [Bacteroides coprocola DSM 17136] hypothetical protein BACCOP_03968 [Bacteroides coprocola DSM 17136]  E=2e-15 s/c=1.29 id=33% cov=94%
+-----FVSIEFSDNIAVIKTRPGYASSLAYDIDNNHFHEIIGTIAGDDTIMLIVREGCTRTSVKQALAHVI
+>gi|163791003|ref|ZP_02185425.1|(80-149:151) Putative transcriptional regulator, ArgR family protein [Carnobacterium sp. AT7] Putative transcriptional regulator, ArgR family protein [Carnobacterium sp. AT7]  E=2e-15 s/c=1.21 id=46% cov=100%
+-LGDVVIRLTQVQFTNVLMTIPGNAHVVAALLDAIDFPEMVGTVGGNDTCLIISKDEEDAKKMHDYLKKWI
+>gi|75759588|ref|ZP_00739675.1|(83-152:152) Arginine repressor, argR [Bacillus thuringiensis serovar israelensis ATCC 35646] Arginine regulator [Bacillus thuringiensis IBL 4222] Arginine repressor, argR [Bacillus thuringiensis serovar israelensis ATCC 35646] Arginine regulator [Bacillus thuringiensis IBL 4222]  E=3e-15 s/c=1.20 id=48% cov=100%
+-LREVVVKIDCVDQLMVIKTLPGNAHVIGVLFDELDWTEKIGCICGNDTCLIISQSKSDREIIEERLNLII
+>gi|291544842|emb|CBL17951.1|(74-143:145) transcriptional regulator, ArgR family [Ruminococcus champanellensis 18P13]  E=4e-15 s/c=1.19 id=34% cov=100%
+-LTDTVIGVDYAMNTVVIKCHTGMAQAACAALDMMQHADIVGTLAGDDTIFVLTRTEQNAADLTEALKAMI
+>gi|332653022|ref|ZP_08418767.1|(79-148:149) arginine repressor [Ruminococcaceae bacterium D16] arginine repressor [Ruminococcaceae bacterium D16]  E=5e-15 s/c=1.19 id=31% cov=100%
+-FKEGVVSVDLAQNIVVVRTMPGLASAACSALDSMDIPGMVGSLAGDDTGILIMRDNASAEQFNREVHKLL
+>gi|325680862|ref|ZP_08160400.1|(82-151:157) arginine repressor [Ruminococcus albus 8] arginine repressor [Ruminococcus albus 8]  E=7e-15 s/c=1.18 id=35% cov=100%
+-LHSAVVSVDHAMNTVVIKCHVGMAQAVCAKLDGTDIENSVGTIAGDDTIFMLMRTQKDAERLVRELNIIL
+>gi|374311025|ref|YP_005057455.1|(76-145:146) unnamed protein product [Granulicella mallensis MP5ACTX8] arginine repressor, ArgR [Granulicella mallensis MP5ACTX8]  E=1e-14 s/c=1.17 id=34% cov=100%
+-LRNFSLEVRQAQNLLVVLTTTGGAQPVAAGMDYEEWDEVVGTIAGDNTVLIICADARRAEILKTRIEAYI
+>gi|254518738|ref|ZP_05130794.1|(79-148:149) arginine repressor [Clostridium sp. 7_2_43FAA] arginine repressor [Clostridium sp. 7_2_43FAA]  E=2e-14 s/c=1.16 id=28% cov=100%
+-LSNAAVSVENVDKFVVVKTLTGSAMAVAEAIDTLFDTEVAGTIAGDNTIFILVRNLDKAEELVEKVRKMI
+>gi|167750995|ref|ZP_02423122.1|(76-145:145) hypothetical protein EUBSIR_01980 [Eubacterium siraeum DSM 15702] hypothetical protein EUBSIR_01980 [Eubacterium siraeum DSM 15702]  E=2e-14 s/c=1.16 id=30% cov=100%
+-ISEAVVNIDYAMNIVSIKCHSGLANAACAGLDMMNLSYVVGTIAGDDTIFVLTRTEGDARMLTRHLKELL
+>gi|365134901|ref|ZP_09343460.1|(81-150:152) arginine repressor [Subdoligranulum sp. 4_3_54A2FAA] arginine repressor [Subdoligranulum sp. 4_3_54A2FAA]  E=2e-14 s/c=1.16 id=27% cov=100%
+-FRESVLKADFAGHFVLVKCYTGMANAACEVFDAMVWNDVVGTLSGDDTFLVLMRSEDAARTLVGELAKYI
+>gi|366053060|ref|ZP_09450782.1|(80-149:150) arginine catabolic regulator [Lactobacillus suebicus KCTC 3549]  E=3e-14 s/c=1.16 id=32% cov=100%
+-LVDALISLDQQEKFIVLHVQPGNGPALSTLLSQMNYSDVFCTLGDDSTVLVICRSDEGATNVKEIIQKFV
+>gi|313680379|ref|YP_004058118.1|(82-151:152) unnamed protein product [Oceanithermus profundus DSM 14977] transcriptional regulator, ArgR family [Oceanithermus profundus DSM 14977]  E=3e-14 s/c=1.16 id=38% cov=100%
+-FREFVKDIDRGENVLVIRTEDGHATGIALLIDKLHRDDIVGTLAGEDTILVVARTSDDAEKLVDDFAAFL
+>gi|254556512|ref|YP_003062929.1|(80-149:152) arginine catabolic regulator [Lactobacillus plantarum JDM1] arginine repressor [Lactobacillus plantarum subsp. plantarum ATCC 14917] arginine catabolic regulator [Lactobacillus plantarum subsp. plantarum ST-III] argR2 gene product [Lactobacillus plantarum WCFS1] RecName: Full=Arginine repressor ArgR2 [Lactobacillus plantarum subsp. plantarum] arginine catabolic regulator [Lactobacillus plantarum JDM1] arginine repressor [Lactobacillus plantarum subsp. plantarum ATCC 14917] arginine catabolic regulator [Lactobacillus plantarum subsp. plantarum ST-III] arginine catabolic regulator [Lactobacillus plantarum WCFS1] arginine catabolic regulator [Lactobacillus plantarum subsp. plantarum NC8]  E=4e-14 s/c=1.15 id=27% cov=100%
+-LKDAYVSYATQDKFVLIKVLPGNGPALATLIEAMHYDEIFGTLGDDAHVLIICKSLAMTLELQQKIQRLL
+>gi|258654248|ref|YP_003203404.1|(95-157:162) arginine repressor ArgR [Nakamurella multipartita DSM 44233] arginine repressor, ArgR [Nakamurella multipartita DSM 44233]  E=8e-14 s/c=1.26 id=39% cov=90%
+-------SFDGSANLAVLRTPPGAAQYLASAIDRASLADIVGTIAGDDTILVVARDGLTGAQVGRMLAGL-
+>gi|365902842|ref|ZP_09440665.1|(80-149:150) arginine catabolic regulator [Lactobacillus malefermentans KCTC 3548]  E=1e-13 s/c=1.13 id=31% cov=100%
+-LRDAFVSFAIQDKNTFLKVLPGNGPAIAALIYQMNYDFVFGTIGDDNTVFTICKSDDDAVRFQEAISLLL
+>gi|86157014|ref|YP_463799.1|(82-148:163) ArgR family transcriptional regulator [Anaeromyxobacter dehalogenans 2CP-C] RecName: Full=Arginine repressor transcriptional regulator, ArgR family [Anaeromyxobacter dehalogenans 2CP-C]  E=1e-13 s/c=1.17 id=28% cov=96%
+----LVSSIAANASMVVIRTHPGSAPAIARAIDLAQPPEVLGTIAGDDTIFVAPAGELRPRRLAARLAELL
+>gi|227550448|ref|ZP_03980497.1|(92-161:161) arginine repressor [Enterococcus faecium TX1330] arginine repressor [Enterococcus faecium TX1330]  E=2e-13 s/c=1.12 id=35% cov=100%
+-LKDAFVAVDQMEKFVILKTLPGNASAAANLIDKRYKKELFSIINDDDNVLMITRTEDQAVLLKKDFLHYL
+>gi|55820151|ref|YP_138593.1|(87-152:152) arginine repressor ArgR [Streptococcus thermophilus LMG 18311] arginine repressor [Streptococcus thermophilus CNRZ1066] arginine repressor [Streptococcus thermophilus LMG 18311] arginine repressor [Streptococcus thermophilus CNRZ1066]  E=2e-13 s/c=1.18 id=29% cov=93%
+--KDYVKSVSRAQFMLVLHTELGEADVLANIIDSDENPEILGTVAGADTLLVICKDAVVAERLESEF----
+>gi|377575423|ref|ZP_09804417.1|(93-159:163) arginine repressor [Mobilicoccus pelagius NBRC 104925] arginine repressor [Mobilicoccus pelagius NBRC 104925]  E=3e-13 s/c=1.16 id=40% cov=96%
+---DLLVSAVAAGNQAVLRTPPGAAQYLASALDTTPGLGVLGTIAGDDTVLLILATPEDAGSCVERLLTL-
+>gi|322515297|ref|ZP_08068294.1|(92-161:166) arginine repressor [Actinobacillus ureae ATCC 25976] arginine repressor [Actinobacillus ureae ATCC 25976]  E=3e-13 s/c=1.11 id=30% cov=99%
+-LKNLVVDIDYNDVLIVVKTSPGAAQLIARLLDSMGKgEGILGTIAGDDTIFITPTRSTAMEDLIQNITEL-
+>gi|302389860|ref|YP_003825681.1|(78-149:150) ArgR family transcriptional regulator [Thermosediminibacter oceani DSM 16646] transcriptional regulator, ArgR family [Thermosediminibacter oceani DSM 16646]  E=3e-13 s/c=1.07 id=35% cov=100%
+-FRDSIVSIDSAENLVVIKTLSGTaQAAAAAAIDGLNWRDIvVGTVAGDDTILVVTRSKSAVKELVEKLESLI
+>gi|20807750|ref|NP_622921.1|(81-150:151) arginine repressor ArgR [Thermoanaerobacter tengcongensis MB4] RecName: Full=Arginine repressor Arginine repressor [Thermoanaerobacter tengcongensis MB4]  E=4e-13 s/c=1.10 id=32% cov=100%
+-LSESIVNVDYAGNIIVIKTLSGSASAAAEAIDTLNWKNIVGTIAGDNTIFVLVRNQEDIQELVEKFRKLM
+>gi|379011179|ref|YP_005268991.1|(79-148:149) unnamed protein product [Acetobacterium woodii DSM 1030] transcriptional regulator [Acetobacterium woodii DSM 1030]  E=4e-13 s/c=1.10 id=35% cov=100%
+-FKESVLTIDYVENTVVLRTLPAMAQAAALAIDSMDWCEIVGTIAGDDTIFVLVRNRDMVGEVVGKFKKLM
+>gi|37197390|dbj|BAC93230.1|(135-205:210) arginine repressor [Vibrio vulnificus YJ016]  E=6e-13 s/c=1.08 id=28% cov=100%
+SLRELVLDVDHNQALVVIHTGPGAAQLIARMLDSLGKSEgILGVVAGDDTIFITPTLTITTEQLFKSVCEL-
+>gi|323340826|ref|ZP_08081078.1|(80-149:152) arginine repressor [Lactobacillus ruminis ATCC 25644] arginine repressor [Lactobacillus ruminis SPM0211] arginine repressor [Lactobacillus ruminis ATCC 25644] arginine repressor [Lactobacillus ruminis SPM0211] arginine repressor [Lactobacillus ruminis ATCC 25644]  E=8e-13 s/c=1.09 id=28% cov=100%
+-LKEAYVSSDFLRDMCVFKVLPGNGPVITSLITQMAYDEVFAAMGDDDTVMLFAKSDEDAQKIHHKLLDMI
+>gi|48429290|gb|AAT42450.1|(79-149:152) arginine repressor [Edwardsiella ictaluri]  E=8e-13 s/c=1.07 id=30% cov=100%
+-LKSSIVKISMNEHMVITHTIPGAAPLISRLLDSCGLaDGILGTVAGDDTIFIAPVMGVTSQQVYERIKKIL
+>gi|29375565|ref|NP_814719.1|(80-149:149) unnamed protein product [Enterococcus faecalis V583] arginine repressor [Enterococcus faecalis TX0104] arginine repressor [Enterococcus faecalis HH22] arginine repressor [Enterococcus faecalis T2] arginine repressor [Enterococcus faecalis T3] arginine Cro/CI family transcriptional regulator [Enterococcus faecalis DS5] arginine repressor [Enterococcus faecalis Merz96] arginine repressor [Enterococcus faecalis JH1] arginine repressor [Enterococcus faecalis E1Sol] arginine repressor [Enterococcus faecalis Fly1] arginine repressor [Enterococcus faecalis D6] arginine Cro/CI family transcriptional regulator [Enterococcus faecalis AR01/DG] arginine repressor [Enterococcus faecalis T11] arginine repressor [Enterococcus faecalis R712] arginine repressor [Enterococcus faecalis S613] arginine repressor, C-terminal domain protein [Enterococcus faecalis PC1.1] arginine repressor, C-terminal domain protein [Enterococcus faecalis TUSoD Ef11] arginine repressor protein [Enterococcus faecalis TX4248] arginine repressor protein [Enterococcus faecalis TX2134] arginine repressor protein [Enterococcus faecalis TX0860] arginine repressor protein [Enterococcus faecalis TX0109] arginine repressor protein [Enterococcus faecalis TX0470] arginine repressor protein [Enterococcus faecalis DAPTO 512] arginine repressor, C-terminal domain protein [Enterococcus faecalis DAPTO 516] unnamed protein product [Enterococcus faecalis 62] transcriptional regulator, ArgR family [Enterococcus faecalis V583] arginine repressor [Enterococcus faecalis TX0104] arginine repressor [Enterococcus faecalis HH22] arginine repressor [Enterococcus faecalis T2] arginine repressor [Enterococcus faecalis T3] arginine Cro/CI family transcriptional regulator [Enterococcus faecalis DS5] arginine repressor [Enterococcus faecalis Merz96] arginine repressor [Enterococcus faecalis JH1] arginine repressor [Enterococcus faecalis E1Sol] arginine repressor [Enterococcus faecalis Fly1] arginine repressor [Enterococcus faecalis D6] arginine Cro/CI family transcriptional regulator [Enterococcus faecalis ARO1/DG] arginine repressor [Enterococcus faecalis T11] arginine repressor [Enterococcus faecalis R712] arginine repressor [Enterococcus faecalis S613] arginine repressor, C-terminal domain protein [Enterococcus faecalis PC1.1] transcriptional regulator, ArgR family [Enterococcus sp. 7L76] arginine repressor, C-terminal domain protein [Enterococcus faecalis TUSoD Ef11] arginine repressor protein [Enterococcus faecalis TX0109] arginine repressor protein [Enterococcus faecalis TX0860] arginine repressor protein [Enterococcus faecalis TX2134] arginine repressor protein [Enterococcus faecalis TX4248] arginine repressor protein [Enterococcus faecalis DAPTO 512] arginine repressor, C-terminal domain protein [Enterococcus faecalis DAPTO 516] arginine repressor protein [Enterococcus faecalis TX0470] arginine repressor protein [Enterococcus faecalis TX2137] arginine repressor protein [Enterococcus faecalis TX0017] arginine repressor protein [Enterococcus faecalis TX0027] arginine repressor protein [Enterococcus faecalis TX2141] arginine repressor protein [Enterococcus faecalis TX4244] arginine repressor protein [Enterococcus faecalis TX0012] arginine repressor protein [Enterococcus faecalis TX0645] arginine repressor protein [Enterococcus faecalis TX1302] arginine repressor protein [Enterococcus faecalis TX1341] arginine repressor protein [Enterococcus faecalis TX1342] arginine repressor protein [Enterococcus faecalis TX1346] arginine repressor protein [Enterococcus faecalis TX0309B] arginine repressor protein [Enterococcus faecalis TX0309A] ArgR family transcriptional regulator [Enterococcus faecalis 62] arginine repressor protein [Enterococcus faecalis TX1467]  E=8e-13 s/c=1.09 id=38% cov=100%
+-LKDAFVAAEQMEKYVVLRTIPGNAAACGSLIEKNYQEKLFAVINDDDSVLMIARTEEAAEKLHKELLSYL
+>gi|69244838|ref|ZP_00603062.1|(80-149:151) Arginine repressor [Enterococcus faecium DO] arginine repressor ArgR [Enterococcus faecium 1,230,933] arginine repressor ArgR [Enterococcus faecium 1,231,502] arginine repressor ArgR [Enterococcus faecium 1,231,501] arginine repressor ArgR [Enterococcus faecium 1,231,410] arginine repressor [Enterococcus faecium DO] arginine repressor ArgR [Enterococcus faecium C68] arginine repressor ArgR [Enterococcus faecium TC 6] arginine repressor [Enterococcus faecium D344SRF] arginine repressor [Enterococcus faecium E1162] arginine repressor [Enterococcus faecium E1071] arginine repressor [Enterococcus faecium E1636] arginine repressor [Enterococcus faecium E1679] arginine repressor [Enterococcus faecium U0317] arginine repressor protein [Enterococcus faecium TX0133a04] arginine repressor protein [Enterococcus faecium TX0133C] arginine repressor protein [Enterococcus faecium TX0082] arginine repressor protein [Enterococcus faecium TX0133A] arginine repressor protein [Enterococcus faecium TX0133B] arginine repressor protein [Enterococcus faecium TX0133a01] unnamed protein product [Enterococcus faecium Aus0004] Arginine repressor [Enterococcus faecium DO] arginine repressor ArgR [Enterococcus faecium 1,230,933] arginine repressor ArgR [Enterococcus faecium 1,231,502] arginine repressor ArgR [Enterococcus faecium 1,231,501] arginine repressor ArgR [Enterococcus faecium 1,231,410] arginine repressor ArgR [Enterococcus faecium C68] arginine repressor ArgR [Enterococcus faecium TC 6] arginine repressor [Enterococcus faecium D344SRF] arginine repressor [Enterococcus faecium E1071] arginine repressor [Enterococcus faecium E1636] arginine repressor [Enterococcus faecium E1679] arginine repressor [Enterococcus faecium U0317] arginine repressor [Enterococcus faecium E1162] arginine repressor protein [Enterococcus faecium TX0133a01] arginine repressor protein [Enterococcus faecium TX0133B] arginine repressor protein [Enterococcus faecium TX0133A] arginine repressor protein [Enterococcus faecium TX0133C] arginine repressor protein [Enterococcus faecium TX0133a04] arginine repressor protein [Enterococcus faecium TX0082] arginine repressor [Enterococcus faecium E4452] arginine repressor [Enterococcus faecium E4453] arginine repressor protein [Enterococcus faecium Aus0004]  E=9e-13 s/c=1.08 id=27% cov=100%
+AIRREVLRIQSVQFMVIVLTERNGADVVTNWLDEVAYPEVVGTMAGVDTFIIICRSEEEAQRFAEKLEKM-
+>gi|336451685|ref|ZP_08622122.1|(110-180:184) arginine repressor [Idiomarina sp. A28L] arginine repressor [Idiomarina sp. A28L]  E=1e-12 s/c=1.07 id=25% cov=100%
+SVRQLVLDVEHNDVMVIIRTTPGAAQLIARLLDSVgKKEGVLGTIAGDDTIFIAPVKVSDIDETLHNIQRL-
+>gi|116333610|ref|YP_795137.1|(80-149:151) arginine repressor [Lactobacillus brevis ATCC 367] transcriptional regulator, ArgR family [Lactobacillus brevis ATCC 367]  E=2e-12 s/c=1.07 id=28% cov=100%
+-LQNAYISFAVQDQFTILKVLPGNGPVIASLLDQMRYEFVFGTVGDDSSVLTICVSHQGALQLEKTIDRML
+>gi|291520801|emb|CBK79094.1|(79-148:150) transcriptional regulator, ArgR family [Coprococcus catus GD/7]  E=2e-12 s/c=1.06 id=27% cov=100%
+-LKEGYISSMEASNLMVVKTATGMAMAVATALDAMELPGFAGCIAGDDTVMCALHSGADVEMLLNRINKVV
+>gi|146296902|ref|YP_001180673.1|(79-148:152) unnamed protein product [Caldicellulosiruptor saccharolyticus DSM 8903] RecName: Full=Arginine repressor arginine repressor, ArgR [Caldicellulosiruptor saccharolyticus DSM 8903]  E=3e-12 s/c=1.06 id=32% cov=100%
+-FSESIIKYDTADNLVIIKTITGAAQGAAAAIDSLNWPEVIGTIAGDDTIFIATKGNAAAEKIVERIKAIL
+>gi|373494999|ref|ZP_09585592.1|(79-148:154) hypothetical protein HMPREF0380_01230 [Eubacterium infirmum F0142] hypothetical protein HMPREF0380_01230 [Eubacterium infirmum F0142]  E=4e-12 s/c=1.05 id=27% cov=100%
+-FRETITSFASAQNLIIIKTLSGCGAAAGEAIDNIGLPHVVGSIAGDNTLLLIIDNEDHVEEILSIFNNML
+>gi|315641207|ref|ZP_07896284.1|(90-159:161) arginine repressor [Enterococcus italicus DSM 15952] arginine repressor [Enterococcus italicus DSM 15952]  E=1e-11 s/c=1.03 id=32% cov=100%
+-MNEFVTKVDVAQFLTVLHTLPNNAQLLSASLDDYPLPGKVATIAGFDTIVIITKSNDDALAVADFFNQQI
+>gi|70725367|ref|YP_252281.1|(88-149:154) hypothetical protein SH0366 [Staphylococcus haemolyticus JCSC1435] unnamed protein product [Staphylococcus haemolyticus JCSC1435]  E=2e-11 s/c=1.15 id=29% cov=82%
+------------DSYILIKTSPGFAQCINYFIDRMNINEILGTVGGNDTLMVLTNSEEMAKYVHYKLFN--
+>gi|322390458|ref|ZP_08063978.1|(76-145:146) arginine repressor [Streptococcus parasanguinis ATCC 903] arginine repressor [Streptococcus parasanguinis ATCC 15912] arginine repressor [Streptococcus parasanguinis ATCC 903] arginine repressor [Streptococcus parasanguinis ATCC 15912]  E=3e-11 s/c=1.01 id=32% cov=92%
+-------SVSRAEFTLVLRTELGEAALLANGVDEMSDERILGTVAGANTLLIVCRDQDAAIEIQNEILGMM
+>gi|332637443|ref|ZP_08416306.1|(82-151:152) ArgR family transcriptional regulator [Weissella cibaria KACC 11862]  E=3e-11 s/c=1.01 id=15% cov=100%
+-FAETAVSITRVEFMTIVKTTQGNGNRLAAIIDDANIPEVVATLAGHNTIYVTSPSVTAAEKLAADFDNWM
+>gi|270290465|ref|ZP_06196690.1|(82-151:154) arginine metabolism transcriptional regulator [Pediococcus acidilactici 7_4] arginine metabolism transcriptional regulator [Pediococcus acidilactici 7_4]  E=3e-11 s/c=1.01 id=21% cov=100%
+-FQESVTKITQVQFINIVKTEPNHGNRVAAVIDDADIEEIRGTLAGFDTLVIFSADVDEATVLNQKLNALM
+>gi|332686262|ref|YP_004456036.1|(80-149:149) arginine pathway regulatory protein ArgR [Melissococcus plutonius ATCC 35311] arginine pathway regulatory protein ArgR, repressor of arg regulon [Melissococcus plutonius ATCC 35311]  E=4e-11 s/c=1.00 id=28% cov=100%
+-LQDALISVDQMEKYVILHTIPGNAAASSTLIQKNFKQKIFSAINDDTGVLIIARSEVAAEWLKQKFIQYI
+>gi|302670350|ref|YP_003830310.1|(79-148:149) arginine repressor ArgR [Butyrivibrio proteoclasticus B316] arginine repressor ArgR [Butyrivibrio proteoclasticus B316]  E=5e-11 s/c=1.00 id=38% cov=100%
+-LKAGFVKMDVAQNILVIKTVSGMAMALAAAIDAIDMPEIVGCIAGDDTIMMVIKTNEEAIEVMEKFREML
+>gi|157150461|ref|YP_001451305.1|(76-145:145) arginine repressor [Streptococcus gordonii str. Challis substr. CH1] arginine repressor [Streptococcus sp. 2_1_36FAA] arginine repressor [Streptococcus gordonii str. Challis substr. CH1] arginine repressor [Streptococcus sp. 2_1_36FAA]  E=5e-11 s/c=1.00 id=30% cov=100%
+-LSYHLRGVARAEFTLVLHTRLGEAAVLANIIDENRDERILGSLAGADTLLLICRNQDTAKEIEEQILAKM
+>gi|194336465|ref|YP_002018259.1|(80-145:148) arginine repressor ArgR [Pelodictyon phaeoclathratiforme BU-1] RecName: Full=Arginine repressor arginine repressor, ArgR [Pelodictyon phaeoclathratiforme BU-1]  E=6e-11 s/c=1.06 id=31% cov=94%
+-----VLSVNANETSIIIMTLPGRAHGVGSWLDQLKSPLILGTIAGDDTVLVIPSSVLNISALKSYIHKNL
+>gi|255505891|ref|ZP_05348683.3|(84-153:155) arginine repressor [Bryantella formatexigens DSM 14469] arginine repressor [Bryantella formatexigens DSM 14469]  E=7e-11 s/c=0.99 id=37% cov=100%
+-LRDGFVSMDMAQNILVIRTVSGMAMAVAAAMDAMHWKEIAGCIAGDDTIMCAVRSADDTLLVMDKIRKIL
+>gi|353793406|gb|EHD73770.1|(82-151:154) arginine repressor [Streptococcus pneumoniae GA18523]  E=8e-11 s/c=0.99 id=30% cov=100%
+-LSHHLEGVARAEFTLVLHTKLGEASVLANIVDVNKDKWILGTVAGANTLLVICRDQHVAKLMEDRLLDLM
+>gi|153814708|ref|ZP_01967376.1|(79-148:152) hypothetical protein RUMTOR_00923 [Ruminococcus torques ATCC 27756] arginine repressor [Lachnospiraceae bacterium 8_1_57FAA] hypothetical protein HMPREF1025_00047 [Lachnospiraceae bacterium 3_1_46FAA] hypothetical protein HMPREF0990_01971 [Lachnospiraceae bacterium 1_1_57FAA] hypothetical protein RUMTOR_00923 [Ruminococcus torques ATCC 27756] arginine repressor [Lachnospiraceae bacterium 8_1_57FAA] hypothetical protein HMPREF1025_00047 [Lachnospiraceae bacterium 3_1_46FAA] hypothetical protein HMPREF0990_01971 [Lachnospiraceae bacterium 1_1_57FAA]  E=9e-11 s/c=0.99 id=34% cov=100%
+-LKDGYVAMDMAQNILVIKTVSGMAMAVAAAVDAMKWHEVVGCIAGDDTIMCAIRTVEDTAAVMDKIRKIV
+>gi|239635906|ref|ZP_04676929.1|(84-147:158) arginine repressor [Staphylococcus warneri L37603] arginine repressor [Staphylococcus warneri L37603] arginine repressor, C-terminal domain protein [Staphylococcus epidermidis VCU121]  E=9e-11 s/c=1.08 id=31% cov=92%
+---DEIEKVTIKDHYLIVKTSPGFAQSVNFYIDQLNLNEVLGTVGGNDTILILVSSADVTEFVHYQL----
+>gi|352518666|ref|YP_004887983.1|(85-157:161) arginine repressor [Tetragenococcus halophilus NBRC 12172] arginine repressor [Tetragenococcus halophilus NBRC 12172]  E=1e-10 s/c=0.95 id=37% cov=100%
+-IMETGVSLTQIEFTNLLTVLPGNGNAIGVLIDKVRVEvnsKIVGCIAGDDTILILSKNEEDARMVNEYFQQYL
+>gi|377556719|ref|ZP_09786408.1|(79-151:151) Arginine repressor [Lactobacillus gastricus PS3] Arginine repressor [Lactobacillus gastricus PS3]  E=2e-10 s/c=0.94 id=26% cov=92%
+-------SVTTVQFMNVVKTTPNSnfAMIVAGEFDGDENEKIVGTLAGNDTLIIISPDEEAARAVAEFINQYL
+>gi|167626773|ref|YP_001677273.1|(77-147:151) arginine repressor [Francisella philomiragia subsp. philomiragia ATCC 25017] predicted protein [Francisella philomiragia subsp. philomiragia ATCC 25015] arginine repressor [Francisella philomiragia subsp. philomiragia ATCC 25017] predicted protein [Francisella philomiragia subsp. philomiragia ATCC 25015]  E=2e-10 s/c=0.96 id=31% cov=96%
+----LVIKIDANEAVVVIDTAPGAAQLVARTLDYNKNSfEIIGIVAGDDTIFVAPSSIKNIKKLKTNIENFL
+>gi|227514095|ref|ZP_03944144.1|(88-158:162) arginine repressor [Lactobacillus fermentum ATCC 14931] arginine repressor [Lactobacillus fermentum ATCC 14931]  E=2e-10 s/c=0.96 id=31% cov=99%
+AIANRVVSYTTVEFVNVVKTTPdsSYATILGGMFDELSMPEVVGTIAGNDTLLIISPDAQGAQKIGQLLAD--
+>gi|260588130|ref|ZP_05854043.1|(79-148:152) arginine repressor [Blautia hansenii DSM 20583] arginine repressor [Lachnospiraceae bacterium 6_1_63FAA] arginine repressor [Blautia hansenii DSM 20583] arginine repressor [Lachnospiraceae bacterium 6_1_63FAA]  E=5e-10 s/c=0.95 id=32% cov=100%
+-LRDAYLSMDIAQNILVIKTTAGMANAAAAALDHISFQEIVGSLAGDDTIACFCKNEGQAMTLMNKIKKVI
+>gi|54307684|ref|YP_128704.1|(90-154:164) hypothetical protein PBPRA0471 [Photobacterium profundum SS9] hypothetical arginine repressor [Photobacterium profundum SS9]  E=5e-10 s/c=1.03 id=29% cov=72%
+---------------VVVKTHPGGAQLVARLIDIQPHAEILGTVGGNDTVMVAPRDIMRIEECEK------
+>gi|116492439|ref|YP_804174.1|(82-151:152) ArgR family transcriptional regulator [Pediococcus pentosaceus ATCC 25745] transcriptional regulator, ArgR family [Pediococcus pentosaceus ATCC 25745]  E=6e-10 s/c=0.95 id=18% cov=100%
+-FKESVNGITQVQFINIIQTDPNDGSRVAAVIDDAEIDGVKGTLAGYDTLVVFSADAEAAEALHQKLKSFL
+>gi|270290379|ref|ZP_06196604.1|(80-149:152) arginine metabolism transcriptional regulator [Pediococcus acidilactici 7_4] arginine repressor [Pediococcus acidilactici DSM 20284] arginine metabolism transcriptional regulator [Pediococcus acidilactici 7_4] arginine repressor [Pediococcus acidilactici DSM 20284] ArgR family transcriptional regulator [Pediococcus acidilactici MA18/5M]  E=1e-09 s/c=0.93 id=18% cov=100%
+-LATSLITIKAQDQLVYIDLKPGNGPSVAATLKQVNYSFVFAVIADDDGVLVVCKDNERAIQLRKRITKAI
+>gi|157644511|gb|ABV58984.1|(78-147:150) putative ArgR [uncultured Acidobacteria bacterium cosmid p2H8]  E=2e-09 s/c=0.93 id=32% cov=100%
+ATAEFLRYVERVQQLVVVRTGRAQAQALAEALDRAALPEVVGTIAGDDTILLIARGGRGAAALVKRLKEY-
+>gi|54296521|ref|YP_122890.1|(70-144:152) hypothetical protein lpp0552 [Legionella pneumophila str. Paris] arginine repressor [Legionella pneumophila str. Corby] argR arginine repressor [Legionella pneumophila 2300/99 Alcoy] hypothetical protein lpp0552 [Legionella pneumophila str. Paris] arginine repressor [Legionella pneumophila str. Corby] argR arginine repressor [Legionella pneumophila 2300/99 Alcoy]  E=2e-09 s/c=0.86 id=33% cov=93%
+----LVLNVQISDFgLIILQTHPGNANSLAYYIDRkyvsfsikdSSNSGILGTIAGDDTVLLIIKSKSDQQKVLDILMK--
+>gi|150390273|ref|YP_001320322.1|(79-147:149) argR gene product [Alkaliphilus metalliredigens QYMF] RecName: Full=Arginine repressor arginine repressor, ArgR [Alkaliphilus metalliredigens QYMF]  E=3e-09 s/c=0.93 id=27% cov=99%
+-FKDSILSIEYAGNIMVMKTLAGAAQAAASAIDAVDLKGVMGTIAGDDTIFVVVRDQDQMQEIEEKFRRL-
+>gi|259503551|ref|ZP_05746453.1|(80-149:150) arginine repressor [Lactobacillus antri DSM 16041] arginine repressor [Lactobacillus antri DSM 16041]  E=3e-09 s/c=0.92 id=31% cov=100%
+-IHDSLVKLKRSDRLLALAVRPGNGPVVANLLRRRTDRGVFTTIGDDSNVLVVCDTAADAEKLADYLNSLV
+>gi|377809781|ref|YP_005005002.1|(80-149:152) unnamed protein product [Pediococcus claussenii ATCC BAA-344] arginine repressor, DNA binding domain protein [Pediococcus claussenii ATCC BAA-344]  E=4e-09 s/c=0.91 id=17% cov=100%
+-LKRAMVAIRLQDKLIFIELRPGYGPSISAAFKQINYNFVFGILNDDNGVLVICNDADRASSLRQRITDMI
+>gi|358067017|ref|ZP_09153503.1|(78-147:147) hypothetical protein HMPREF9333_00383 [Johnsonella ignava ATCC 51276] hypothetical protein HMPREF9333_00383 [Johnsonella ignava ATCC 51276]  E=5e-09 s/c=0.90 id=24% cov=100%
+-LKEGLLSVEQAQNMVVIKTVAGMAMAVAAAVDALELGEVIGCIAGDDTIMCATKGNEEAVILIDKIKKIM
+>gi|169824535|ref|YP_001692146.1|(80-149:150) ArgR family transcriptional regulator [Finegoldia magna ATCC 29328] arginine repressor [Finegoldia magna ATCC 53516] arginine repressor, C-terminal domain protein [Finegoldia magna ACS-171-V-Col3] arginine repressor, C-terminal domain protein [Finegoldia magna BVS033A4] RecName: Full=Arginine repressor transcriptional regulator ArgR family [Finegoldia magna ATCC 29328] arginine repressor [Finegoldia magna ATCC 53516] arginine repressor, C-terminal domain protein [Finegoldia magna ACS-171-V-Col3] arginine repressor, C-terminal domain protein [Finegoldia magna BVS033A4] arginine repressor, C-terminal domain protein [Finegoldia magna SY403409CC001050417]  E=6e-09 s/c=0.90 id=18% cov=100%
+-FRSAVLTIKHNEDMVIIKTISHTATVCGMAITNAKLDNIAGILTGNDTIYITVEDKSGLEKLVSEIKSII
+>gi|167766569|ref|ZP_02438622.1|(78-147:152) hypothetical protein CLOSS21_01075 [Clostridium sp. SS2/1] arginine repressor [Lachnospiraceae bacterium 5_1_63FAA] hypothetical protein CLOSS21_01075 [Clostridium sp. SS2/1] transcriptional regulator, ArgR family [butyrate-producing bacterium SSC/2] arginine repressor [Lachnospiraceae bacterium 5_1_63FAA]  E=3e-08 s/c=0.87 id=30% cov=100%
+-LAEAIISMELAENMLVVKTVSGMAMASAAALDSLNIIGMVGTIAGDDTIMCVMKDKNIGRTAIAEIDHMI
+>gi|160947158|ref|ZP_02094325.1|(83-149:150) hypothetical protein PEPMIC_01090 [Parvimonas micra ATCC 33270] hypothetical protein PEPMIC_01090 [Parvimonas micra ATCC 33270]  E=5e-08 s/c=0.90 id=18% cov=96%
+----AILSIKHNGDVILIKTIPYTASVCGSYIENAKLKMVSGIVTGNDTIFIAIDDKTFLDSVVEDIRKLV
+>gi|319947468|ref|ZP_08021700.1|(76-143:143) arginine repressor [Streptococcus australis ATCC 700641] arginine repressor [Streptococcus australis ATCC 700641] arginine repressor, C-terminal domain protein [Streptococcus australis ATCC 700641]  E=3e-07 s/c=0.85 id=22% cov=89%
+-------SFERMGSFLTLKLVPGTAYLVKRHLQEDFDAIIFSMISDDNSIFIVARSEEKAQFIEQRLME--
+>gi|355366318|gb|EHG14036.1|(77-143:143) hypothetical protein HMPREF9177_00090 [Streptococcus intermedius F0413]  E=2e-06 s/c=0.82 id=26% cov=80%
+-------------NMINLLLVPGSTAFVKRQIVEDFSDDIFSILADDDTILLIFRNEEMAHKVLEEIKN--
+>gi|157151702|ref|YP_001449999.1|(76-143:143) transcriptional regulator [Streptococcus gordonii str. Challis substr. CH1] transcription regulator [Streptococcus gordonii str. Challis substr. CH1]  E=0.0002 s/c=0.71 id=20% cov=92%
+-----ILEASSLGNMINLNLVPGSTAVIKRQITEAFSEKIFSIITDDDSILMILKDKEDISRILDVIEN--
+>gi|339010256|ref|ZP_08642826.1|(80-149:149) arginine repressor [Brevibacillus laterosporus LMG 15441] arginine repressor [Brevibacillus laterosporus LMG 15441]  E=5e-22 s/c=1.51 id=56% cov=100%
+-LLDSFVSIDFSENLIVLKTMPGNANSVAVLIDNLHWNEIMGCVCGDDTILIICRTKENAKEVSQRFLDML
+>gi|381210302|ref|ZP_09917373.1|(80-149:149) arginine repressor [Lentibacillus sp. Grbi]  E=5e-20 s/c=1.41 id=59% cov=100%
+-IRDAFVKIEHTSHFIVLKTLPGNAHAIGALIDNLEWDEIMGTICGDDTCLIICRTEDASAVIEQRFLGML
+>gi|172056947|ref|YP_001813407.1|(80-149:149) arginine repressor [Exiguobacterium sibiricum 255-15] RecName: Full=Arginine repressor arginine repressor, ArgR [Exiguobacterium sibiricum 255-15]  E=8e-20 s/c=1.42 id=52% cov=100%
+-LGDSFISIDSAQNLIVMHVLPGNANALGVLLDHLNWPELLGTVCGDDTILMITRNEEAATEVTERILGML
+>gi|256824862|ref|YP_003148822.1|(97-163:188) ArgR family transcriptional regulator [Kytococcus sedentarius DSM 20547] transcriptional regulator, ArgR family [Kytococcus sedentarius DSM 20547]  E=6e-19 s/c=1.44 id=35% cov=96%
+---ELLVSAEHSGNQVVLRTPPGAAQYLASAFDRAGLDDVLGTIAGDDTVLLICRDPHGGERLARRCLEL-
+>gi|78044720|ref|YP_360800.1|(80-149:150) argR gene product [Carboxydothermus hydrogenoformans Z-2901] RecName: Full=Arginine repressor arginine repressor [Carboxydothermus hydrogenoformans Z-2901]  E=1e-18 s/c=1.36 id=37% cov=100%
+-FADAVSSYDQSENLIVIKTLPGAAQGVASAIDQVAFPEILGTIAGDDTILIIARDREQVPKILARFDEFL
+>gi|89895090|ref|YP_518577.1|(80-149:150) hypothetical protein DSY2344 [Desulfitobacterium hafniense Y51] arginine repressor ArgR [Desulfitobacterium hafniense DCB-2] RecName: Full=Arginine repressor RecName: Full=Arginine repressor hypothetical protein [Desulfitobacterium hafniense Y51] arginine repressor, ArgR [Desulfitobacterium hafniense DCB-2] arginine repressor [Desulfitobacterium hafniense DP7]  E=5e-18 s/c=1.33 id=34% cov=100%
+-LRETVVTVNDSENLVVLRTIPGNAQALASLIDHSNWEEVIGTVAGDDTILLVVKPAGAVPSVRERIAKLM
+>gi|383754048|ref|YP_005432951.1|(80-149:150) unnamed protein product [Selenomonas ruminantium subsp. lactilytica TAM6421] putative ArgR family transcriptional regulator [Selenomonas ruminantium subsp. lactilytica TAM6421]  E=2e-17 s/c=1.30 id=35% cov=100%
+-FRDTVVNCDFSENIVVVKTLPGGANTVASALDHANWPEVLGTVAGDDNIFIIVKPKAAAEIVTKRLMSFL
+>gi|375085379|ref|ZP_09732022.1|(80-149:150) arginine repressor [Megamonas funiformis YIT 11815] transcriptional regulator, ArgR family [Megamonas hypermegale ART12/1] arginine repressor [Megamonas funiformis YIT 11815]  E=4e-17 s/c=1.29 id=34% cov=100%
+-FRDSVVGLNFSENIIVVKTLPGAANAVASTLDYAKWPEIIGTVAGDDNIFIVVKPISAVEDIMKRLQDML
+>gi|378550298|ref|ZP_09825514.1|(96-163:165) hypothetical protein CCH26_09428 [Citricoccus sp. CH26A]  E=5e-17 s/c=1.32 id=30% cov=97%
+--RELLVSAESSGNLVILRTPPGAAQFLASAIDQSRLPDVLGTIAGDDTIMIVARATDGGVAVAGRFLGY-
+>gi|255658175|ref|ZP_05403584.1|(80-149:151) arginine repressor [Mitsuokella multacida DSM 20544] arginine repressor [Mitsuokella multacida DSM 20544]  E=5e-17 s/c=1.28 id=39% cov=97%
+---DTIIDCDYSENILVVKTLPGGANTVAAALDYCKWPEIIGTVAGDDSILVVIKPKETAPVVRKRILDML
+>gi|336117376|ref|YP_004572143.1|(98-165:175) arginine repressor ArgR [Microlunatus phosphovorus NM-1] arginine repressor ArgR [Microlunatus phosphovorus NM-1]  E=6e-17 s/c=1.32 id=38% cov=97%
+--SEVLVSAEASANLVVLRTPPGAAQYFASAIDRVSWDSILGTIAGDDTILLITRDPAGGDAIAARFLEL-
+>gi|326331254|ref|ZP_08197546.1|(100-167:175) arginine repressor [Nocardioidaceae bacterium Broad-1] arginine repressor [Nocardioidaceae bacterium Broad-1]  E=8e-17 s/c=1.31 id=38% cov=97%
+--RELLVSADGSANLVVLRTPAGGAQYFASAIDRAEYPDILGTIAGDDTVLVIGREPKGGAALVERFLSL-
+>gi|229820854|ref|YP_002882380.1|(97-164:184) arginine repressor ArgR [Beutenbergia cavernae DSM 12333] arginine repressor, ArgR [Beutenbergia cavernae DSM 12333]  E=8e-17 s/c=1.31 id=33% cov=97%
+--AELLVSAEASANLAVLRTPPGAAQFFASAIDHSVLPGVLGTIAGDDTVLVISRDPAGGADVADRFLTL-
+>gi|237785433|ref|YP_002906138.1|(90-155:164) ArgR family transcriptional regulator [Corynebacterium kroppenstedtii DSM 44385] transcriptional regulator, ArgR family [Corynebacterium kroppenstedtii DSM 44385]  E=8e-17 s/c=1.35 id=31% cov=94%
+-LAELLVSTDFSGNFAVLRTPPGGAQYLASVIDRAPLTQVVGTVAGDDTIFVLSREPMNGEQLARYF----
+>gi|345882038|ref|ZP_08833548.1|(89-154:157) arginine repressor [Prevotella oulorum F0390] arginine repressor [Prevotella oulorum F0390]  E=2e-16 s/c=1.33 id=36% cov=94%
+-----FISIHFSGNMGVIKTRPGYASSLAYNIDNADFPEILGTIAGDDTIFIVIDEKSNPEELEVNLNDIL
+>gi|260893250|ref|YP_003239347.1|(79-147:152) arginine repressor ArgR [Ammonifex degensii KC4] arginine repressor, ArgR [Ammonifex degensii KC4]  E=3e-16 s/c=1.27 id=33% cov=94%
+----AVVGIEVSGNLVVVKTLPGAAQGVASAVDRANWPEVIGTVAGDDTFIVVVRSARGlAQAVKARLYNL-
+>gi|284033312|ref|YP_003383243.1|(109-176:189) arginine repressor, ArgR [Kribbella flavida DSM 17836] arginine repressor, ArgR [Kribbella flavida DSM 17836]  E=3e-16 s/c=1.29 id=30% cov=97%
+--SELLVSAEGSANLVILRTPPGAAQYFASAIDHVGLDDVLGTIAGDDTVMVVSRNPTGGEALAARFLNL-
+>gi|379058616|ref|ZP_09849142.1|(90-157:167) arginine repressor ArgR [Serinicoccus profundi MCCC 1A05965]  E=3e-16 s/c=1.28 id=36% cov=97%
+--QELLVSARSVGNQVVLRTPPGAAQFLASAIDRSDAEDILGTIAGDDTILVITTDPAGGPDTAQRLLSL-
+>gi|313901857|ref|ZP_07835277.1|(81-146:148) transcriptional regulator, ArgR family [Thermaerobacter subterraneus DSM 13965] transcriptional regulator, ArgR family [Thermaerobacter subterraneus DSM 13965]  E=3e-16 s/c=1.32 id=37% cov=94%
+----SLLDIDVSENLVVVKTLRGTAAAAGEAIDQLGWTEIVGTVAGDNTVLVVVRSRELAPAVAERFREL-
+>gi|227548146|ref|ZP_03978195.1|(91-156:163) arginine repressor [Corynebacterium lipophiloflavum DSM 44291] arginine repressor [Corynebacterium lipophiloflavum DSM 44291]  E=4e-16 s/c=1.32 id=31% cov=94%
+-IEELVVSVDHSGPMAVLRTPPGAAQYLASYIDRVGLDQVAGCIAGDDTIFVLARDPSTGKDLAEKL----
+>gi|377557992|ref|ZP_09787614.1|(125-189:189) arginine repressor [Gordonia otitidis NBRC 100426] arginine repressor [Gordonia otitidis NBRC 100426]  E=5e-16 s/c=1.34 id=36% cov=93%
+------VSTDASGNLAVLRTPPGAAHYLASAIDRASLPDVVGTIAGDDTIFVCARAPIDGAELARRIEGLV
+>gi|325281359|ref|YP_004253901.1|(82-149:159) arginine repressor, ArgR [Odoribacter splanchnicus DSM 20712] arginine repressor, ArgR [Odoribacter splanchnicus DSM 20712]  E=5e-16 s/c=1.27 id=39% cov=97%
+-ITDTILSIDFSGNMAVIKTLPGYANAVTVLIDSENYFEILGTIAGDDTIFIVMREGVSRSELIEALTS--
+>gi|184201198|ref|YP_001855405.1|(95-162:164) arginine repressor ArgR [Kocuria rhizophila DC2201] arginine repressor ArgR [Kocuria rhizophila DC2201]  E=5e-16 s/c=1.27 id=32% cov=97%
+--RELLVTAEGSANLVLLRTPPGAAQYFASAIDHSVSPEILGTIAGDDTIMVVSRDPQGGEQLARKFLDL-
+>gi|317132185|ref|YP_004091499.1|(79-148:150) arginine repressor ArgR [Ethanoligenens harbinense YUAN-3] arginine repressor, ArgR [Ethanoligenens harbinense YUAN-3]  E=7e-16 s/c=1.23 id=32% cov=97%
+-LEESVVKMEAVFNQIVIKCYSGLANAVCAAMDTMHFQGLVGTLAGDDTILVIMRTEEDAQNLCALLEK--
+>gi|225018818|ref|ZP_03708010.1|(80-149:152) hypothetical protein CLOSTMETH_02768 [Clostridium methylpentosum DSM 5476] hypothetical protein CLOSTMETH_02768 [Clostridium methylpentosum DSM 5476]  E=9e-16 s/c=1.22 id=29% cov=97%
+---ESVLSIDYAKNIVAIKCRHGMANAACATLDGMDWNGVVGTLAGDDTIFVLMRNDDDAATFTKEIYKFL
+>gi|22538294|ref|NP_689145.1|(84-152:161) ArgR family transcriptional regulator [Streptococcus agalactiae 2603V/R] hypothetical protein gbs2119 [Streptococcus agalactiae NEM316] arginine repressor [Streptococcus agalactiae A909] transcriptional regulator, ArgR family [Streptococcus agalactiae H36B] transcriptional regulator, ArgR family [Streptococcus agalactiae COH1] transcriptional regulator, ArgR family [Streptococcus agalactiae CJB111] transcriptional regulator, ArgR family [Streptococcus agalactiae 515] ArgR family transcriptional regulator [Streptococcus agalactiae ATCC 13813] transcriptional regulator, ArgR family [Streptococcus agalactiae 2603V/R] Unknown [Streptococcus agalactiae NEM316] arginine repressor, putative [Streptococcus agalactiae A909] transcriptional regulator, ArgR family [Streptococcus agalactiae 515] transcriptional regulator, ArgR family [Streptococcus agalactiae CJB111] transcriptional regulator, ArgR family [Streptococcus agalactiae COH1] transcriptional regulator, ArgR family [Streptococcus agalactiae H36B] ArgR family transcriptional regulator [Streptococcus agalactiae ATCC 13813] arginine repressor [Streptococcus agalactiae FSL S3-026]  E=1e-15 s/c=1.24 id=41% cov=99%
+-MEDALVMLFPVQNQIVLKTLPGLAQSFGSILDSILLPEILATVCGDDTCLIICNNSEEAQKCFEKLSQY-
+>gi|260907478|ref|ZP_05915800.1|(107-175:183) arginine repressor [Brevibacterium linens BL2]  E=3e-15 s/c=1.22 id=29% cov=99%
+-LEELLVSAAAQKDMVVLRTPPGAAQYLASAIDRSSMTGIFGTIAGDDTVLVIADSTVGGQALAETFLEY-
+>gi|229825484|ref|ZP_04451553.1|(77-145:149) hypothetical protein GCWU000182_00844 [Abiotrophia defectiva ATCC 49176] hypothetical protein GCWU000182_00844 [Abiotrophia defectiva ATCC 49176]  E=4e-15 s/c=1.21 id=36% cov=99%
+-LKEGFVSMLSSGNLIVLKTVVGMAMAVATAIDALEMPEIIGCIAGDDTIFIAVSENNSTMDVMNKLKKL-
+>gi|145594436|ref|YP_001158733.1|(97-158:172) unnamed protein product [Salinispora tropica CNB-440] transcriptional regulator, ArgR family [Salinispora tropica CNB-440]  E=5e-15 s/c=1.35 id=42% cov=85%
+--------VDASGNIAVLRTPPGAAQFLASALDRAGLPEVVGTIAGDDTILVVAREADGGAALGDQL----
+>gi|282600837|ref|ZP_05979839.2|(84-152:156) arginine repressor [Subdoligranulum variabile DSM 15176] arginine repressor [Subdoligranulum variabile DSM 15176]  E=6e-15 s/c=1.20 id=30% cov=99%
+-FRESVLKVDYAGHMVLVKCFSGMANAACEVFDAKQWNNVVGTLSGDDTFFILMRTEEDAAEICQALQQY-
+>gi|357590887|ref|ZP_09129553.1|(86-154:166) hypothetical protein CnurS_11854 [Corynebacterium nuruki S6-4]  E=8e-15 s/c=1.20 id=33% cov=99%
+-LQELLVGADHSGTIAVLRTPPGAAQYLASVLDRSELPEVVATIAGDDTVFVLARGPVTGAVLAGHLQAL-
+>gi|317124686|ref|YP_004098798.1|(89-157:161) ArgR family transcriptional regulator [Intrasporangium calvum DSM 43043] transcriptional regulator, ArgR family [Intrasporangium calvum DSM 43043]  E=8e-15 s/c=1.20 id=28% cov=97%
+---ELLVSATPAQNLVVLRTPPGAANYLASAIDQTRDPAVIGTLAGDDTIMLVAASPSKAAAIATRLQGLV
+>gi|365122851|ref|ZP_09339745.1|(90-155:161) arginine repressor [Tannerella sp. 6_1_58FAA_CT1] arginine repressor [Tannerella sp. 6_1_58FAA_CT1]  E=2e-14 s/c=1.23 id=36% cov=94%
+-----FLSIEFSGQLAVIKTRPGYASGIAWDIDTHSAEEILGTIAGDDTILLILREGITRPQVLETLKTII
+>gi|365925005|ref|ZP_09447768.1|(80-148:150) arginine catabolic regulator [Lactobacillus mali KCTC 3596 = DSM 20444]  E=3e-14 s/c=1.18 id=31% cov=99%
+-LRNAYLSSRIQNELLLIKVSPGNGPVIASLIDQMHYEEIFGTLGDDDTVLVIAKSVDEAKAAQELVLGM-
+>gi|300726239|ref|ZP_07059692.1|(113-178:182) arginine repressor [Prevotella bryantii B14] arginine repressor [Prevotella bryantii B14]  E=3e-14 s/c=1.22 id=40% cov=94%
+-----FLSIVFSGNLGVIKTRPGYASSIAYNIDNSDVTEILGTIAGDDTIFIVKKENVSEKAVMDKLSSVI
+>gi|262091791|gb|ACY25379.1|(85-152:160) arginine repressor [uncultured actinobacterium]  E=5e-14 s/c=1.18 id=28% cov=94%
+----LILSVDHSANLAVIHTPPGAAQFLASSLDHAGLTGVIGTIAGDDTIILVSKKATGGAHLAKELLAY-
+>gi|221194600|ref|ZP_03567657.1|(110-178:182) arginine repressor, C- domain [Atopobium rimae ATCC 49626] arginine repressor, C- domain [Atopobium rimae ATCC 49626]  E=5e-14 s/c=1.16 id=30% cov=99%
+-LSEFVTEISFAGNLVVIHCRPSTAPAVASAIDDVDLDFCVGTIAGDDTVFLAVDDASHTKNVLKIIEQL-
+>gi|307719678|ref|YP_003875210.1|(87-152:158) arginine repressor [Spirochaeta thermophila DSM 6192] arginine repressor [Spirochaeta thermophila DSM 6192]  E=9e-14 s/c=1.20 id=31% cov=94%
+-----FRSLEFSGNLVVIRTLPGHANSVAFALDTFQIPTLLGTVAGDDTIIAVLKEGTSRNTFLESLSRYI
+>gi|347756169|ref|YP_004863732.1|(78-146:169) unnamed protein product [Candidatus Chloracidobacterium thermophilum B] Arginine repressor [Candidatus Chloracidobacterium thermophilum B]  E=1e-13 s/c=1.14 id=33% cov=99%
+-LSRLVRRVADAGNLVVVHTDAANAHPVAEALDRLAFPEVVGTVAGDNTVLVVVKTAGKARRVMERIMTI-
+>gi|160893237|ref|ZP_02074025.1|(79-147:147) hypothetical protein CLOL250_00783 [Clostridium sp. L2-50] hypothetical protein CLOL250_00783 [Clostridium sp. L2-50]  E=1e-13 s/c=1.14 id=31% cov=99%
+-LSTGIISVDAAENLIVIKTISGVAMAVAAALDHMDIDGLMGCIAGDDTIFLAVKDKSLTMSIKAQIEKM-
+>gi|260909664|ref|ZP_05916359.1|(89-154:157) arginine repressor [Prevotella sp. oral taxon 472 str. F0295] arginine repressor [Prevotella sp. oral taxon 472 str. F0295]  E=2e-13 s/c=1.19 id=34% cov=94%
+-----FLNISYSGNLGVMKTRPGYASSIAYNIDNGGIEEILGTISGNDTIFIAFKEPYDQEEMTRRMQNVI
+>gi|15602414|ref|NP_245486.1|(106-175:180) arginine repressor [Pasteurella multocida subsp. multocida str. Pm70] ArgR [Pasteurella multocida subsp. multocida str. Pm70]  E=2e-13 s/c=1.11 id=30% cov=99%
+-LKNLVLDIDHNHFVVVIRTTPGAAQLIARLLDSIgKADGILGTIAGDDTIFVTPTLDANIADLIKSIRNL-
+>gi|296393961|ref|YP_003658845.1|(94-162:170) arginine repressor ArgR [Segniliparus rotundus DSM 44985] arginine repressor, ArgR [Segniliparus rotundus DSM 44985]  E=3e-13 s/c=1.12 id=27% cov=99%
+-LAQLLVAVDSSGSLAVLRVPIGAAQYLASAIDRAALPQVAGTIAGDDTIFVAARGPFTGEELVEVFQQL-
+>gi|146318285|ref|YP_001197997.1|(84-152:161) arginine repressor [Streptococcus suis 05ZYH33] unnamed protein product [Streptococcus suis 98HAH33] Arginine repressor [Streptococcus suis 05ZYH33] Arginine repressor [Streptococcus suis 98HAH33] Arginine regulator [Streptococcus suis GZ1]  E=3e-13 s/c=1.12 id=39% cov=94%
+-MEDALVMLKPIQHQVVLKTLPGLANSFGSILDAMEIPQIVATVCGDDVCLIICEDVEGAQACFEHL----
+>gi|313204362|ref|YP_004043019.1|(86-146:156) arginine repressor, argr [Paludibacter propionicigenes WB4] arginine repressor, ArgR [Paludibacter propionicigenes WB4]  E=3e-13 s/c=1.27 id=35% cov=87%
+----AVLSMEFSGQLGVVKTKPGYASAIAWDIDNKATDHVLGTIAGDDTILVIPREGVTRDDILE------
+>gi|310658645|ref|YP_003936366.1|(80-148:148) transcriptional regulator [Clostridium sticklandii DSM 519] transcriptional regulator [[Clostridium] sticklandii]  E=3e-13 s/c=1.12 id=26% cov=99%
+--KEVLLSIDYSENIICLKTVDGAGNLVAKVIDSLEEKEILGTIGGTDTVFVLMKNREDIPGFVERFGKLL
+>gi|39753481|gb|AAR30327.1|(77-147:147) ArcR [Streptococcus ratti FA-1]   E=2e-12 s/c=1.05 id=40% cov=92%
+-------KVSHSESLLVLHTNLGEADVLANLIDEAGSSEILGTVAGADTLLVICRDKETASQLENDVLSSL
+>gi|377573408|ref|ZP_09802470.1|(96-166:181) arginine repressor [Mobilicoccus pelagius NBRC 104925] arginine repressor [Mobilicoccus pelagius NBRC 104925]  E=2e-12 s/c=1.05 id=34% cov=96%
+---DLLVAATSSANLAVLRTPPGAANYLASAIDRTEVKrqtGIIGTVAGDDTVLVVAADPDGGALVAERLLAL-
+>gi|161338458|emb|CAK55533.1|(81-146:149) arginine repressor [Staphylococcus capitis]  E=2e-12 s/c=1.13 id=34% cov=94%
+-FSDEIIEFTTLSNYVLIKTAPGFAQSISYYIDQLQMKEILGTIGGNDTLMILTSSNEKAEFVCYQL----
+>gi|15618117|ref|NP_224402.1|(74-142:147) arginine repressor ArgR [Chlamydophila pneumoniae CWL029] argR gene product [Chlamydophila pneumoniae J138] arginine repressor [Chlamydophila pneumoniae AR39] arginine repressor ArgR [Chlamydophila pneumoniae TW-183] argR gene product [Chlamydophila pneumoniae LPCoLN] RecName: Full=Arginine repressor Arginine Repressor [Chlamydophila pneumoniae CWL029] arginine repressor [Chlamydophila pneumoniae AR39] arginine repressor [Chlamydophila pneumoniae J138] arginine repressor protein [Chlamydophila pneumoniae TW-183] arginine repressor [Chlamydophila pneumoniae LPCoLN]  E=3e-12 s/c=1.07 id=31% cov=96%
+----LVLSIRHNASLIVIRTVPGSASWIAALLDQGLKDEILGTLAGDDTIFVTPIDEGRLPLLMVSIANLL
+>gi|319893684|ref|YP_004150559.1|(83-149:159) arginine pathway regulatory protein ArgR [Staphylococcus pseudintermedius HKU10-03] Arginine pathway regulatory protein ArgR, repressor of arg regulon [Staphylococcus pseudintermedius HKU10-03]  E=3e-12 s/c=1.11 id=29% cov=96%
+--QEEIISLSIKDTYLIIKTTPGFAQTVNFYIDQMNLKEVIGTIGGNDTILVITHSNELSKFVHYKLFD--
+>gi|282859829|ref|ZP_06268923.1|(86-154:166) arginine repressor, C-terminal domain protein [Prevotella bivia JCVIHMP010] arginine repressor, C-terminal domain protein [Prevotella bivia JCVIHMP010]  E=4e-12 s/c=1.07 id=28% cov=94%
+-----YLTFNISGQLAILKTRPGYASALAYDFDAAGFGCVLGTIAGDDTIFVALREGVSREEVIDTFASAI
+>gi|206895971|ref|YP_002247473.1|(88-154:156) arginine repressor [Coprothermobacter proteolyticus DSM 5265] arginine repressor [Coprothermobacter proteolyticus DSM 5265]  E=8e-12 s/c=1.08 id=24% cov=96%
+----SILDMQYRSPILVIKTVPGTARSVARAIDSLQLKKAIGSIAGDDTVFVLAQDDVGAFEIKEKLHDIM
+>gi|158320637|ref|YP_001513144.1|(79-148:149) arginine repressor [Alkaliphilus oremlandii OhILAs] RecName: Full=Arginine repressor arginine repressor, ArgR [Alkaliphilus oremlandii OhILAs]  E=2e-11 s/c=1.01 id=34% cov=96%
+----SVVSIDYAGNLIVIKTLTGSAQAAAAAIDAGDMNDVVGTIAGDDTIFIVIRDEKNVPSTIEHFRKLM
+>gi|383454389|ref|YP_005368378.1|(73-135:139) argR gene product [Corallococcus coralloides DSM 2259] arginine repressor [Corallococcus coralloides DSM 2259]  E=3e-11 s/c=1.13 id=33% cov=90%
+--------IEAPPNMLVLKTAPGYAQIFGLALDREEVEGLAGTVAGDDTIFIAVRDPSYLRDVREAVEELI
+>gi|224477566|ref|YP_002635172.1|(83-149:150) putative transcriptional regulator protein [Staphylococcus carnosus subsp. carnosus TM300] putative transcriptional regulator protein [Staphylococcus carnosus subsp. carnosus TM300]  E=3e-11 s/c=1.06 id=24% cov=96%
+--QDSVNSIIVKDSYILIKTEPGFARTINYCIDQMQLPHVLGTVSGNDVIMVLLKSPEEAEYVKYLLLE--
+>gi|257457755|ref|ZP_05622916.1|(86-152:157) arginine repressor [Treponema vincentii ATCC 35580] arginine repressor [Treponema vincentii ATCC 35580]  E=3e-11 s/c=1.06 id=26% cov=92%
+-----YISIDYSGNMAVIKTYSGHTELISMALENMGFESVLGIIAGrDNCVFICLREGVSGEQFLRELKD--
+>gi|117620436|ref|YP_858513.1|(116-188:190) unnamed protein product [Aeromonas hydrophila subsp. hydrophila ATCC 7966] arginine repressor [Aeromonas hydrophila subsp. hydrophila ATCC 7966]  E=4e-11 s/c=0.96 id=28% cov=96%
+SIHDMVREVVHNQQMVLIHTTPGAATVVARLLDRNANPEIMGAVAGNDVVLVaprhISRTRQAHAAVVRTL----
+>gi|330448748|ref|ZP_08312395.1|(90-153:163) arginine repressor, C-terminal domain protein [Photobacterium leiognathi subsp. mandapamensis svers.1.1.] arginine repressor, C-terminal domain protein [Photobacterium leiognathi subsp. mandapamensis svers.1.1.]  E=6e-11 s/c=1.09 id=24% cov=82%
+-------SVTHNQLLVVVKTRPGCAQLVARIIDLHPHTTVLGTIAGNDTIMVAPHDIKQIGECE-------
+>gi|352518667|ref|YP_004887984.1|(83-151:162) arginine repressor [Tetragenococcus halophilus NBRC 12172] arginine repressor [Tetragenococcus halophilus NBRC 12172]  E=9e-11 s/c=1.00 id=25% cov=96%
+---DIVTKIEHVQFLTIVHTLPDNASLLASMIDEIHLPEVKCSLAGFDTVVLIVSDETRAIEMENYFNSI-
+>gi|373486642|ref|ZP_09577314.1|(75-132:132) transcriptional regulator, ArgR family [Holophaga foetida DSM 6591] transcriptional regulator, ArgR family [Holophaga foetida DSM 6591]  E=1e-10 s/c=1.18 id=37% cov=83%
+-------------NLLVVRVPPGQASAIALRLDQSALPGLAGTIAGDDTILVVVAPPELLEETRTKLMEIM
+>gi|304413349|ref|ZP_07394822.1|(82-151:163) arginine repressor [Candidatus Regiella insecticola LSR1] arginine repressor [Candidatus Regiella insecticola LSR1]  E=2e-10 s/c=0.97 id=35% cov=72%
+-LKNLVLDIKHNHSLVVIHTSAGAAQLIARLLDSLrETEGILGNIAGDDTIF--------------------
+>gi|312865812|ref|ZP_07726034.1|(84-149:149) arginine repressor [Streptococcus downei F0415] arginine repressor [Streptococcus downei F0415]  E=6e-10 s/c=1.01 id=30% cov=94%
+--RDYIKKISRASFILVLSTELGEADVLANIIDREGRSDILGTVAGADTLLVICQDAVKAQTIEEELN---
+>gi|149910355|ref|ZP_01898998.1|(41-103:112) hypothetical arginine repressor [Moritella sp. PE36] hypothetical arginine repressor [Moritella sp. PE36]  E=2e-09 s/c=1.03 id=22% cov=90%
+--------ITHNQSVVVIKTPPGCAQLIARVLDLSPHPEILGAVAGNDMVMVAPKSINRIEDCEHVVRLLL
+>gi|239917928|ref|YP_002957486.1|(93-160:162) transcriptional regulator, ArgR family [Micrococcus luteus NCTC 2665] transcriptional regulator, ArgR family [Micrococcus luteus NCTC 2665]  E=2e-09 s/c=0.95 id=35% cov=97%
+--RELLVSAEPTANLVVLRTPPGAAQFLASVIDQARVEHVMGTIAGDDTILLITTGTTSAPAVAAHLLGL-
+>gi|307700334|ref|ZP_07637374.1|(107-174:177) arginine repressor [Mobiluncus mulieris FB024-16] arginine repressor [Mobiluncus mulieris FB024-16]  E=5e-09 s/c=0.93 id=33% cov=97%
+--AQLLVRATAVTHQIVLRTPPAAAPALAAAIDKENLAEVLGCVAGDDTVLVICATPQEAEKLCADLQNM-
+>gi|184155734|ref|YP_001844074.1|(80-148:149) arginine repressor [Lactobacillus fermentum IFO 3956] arginine repressor [Lactobacillus fermentum ATCC 14931] arginine repressor [Lactobacillus fermentum 28-3-CHN] arginine repressor [Lactobacillus fermentum IFO 3956] arginine repressor [Lactobacillus fermentum ATCC 14931] arginine repressor [Lactobacillus fermentum 28-3-CHN]  E=6e-09 s/c=0.91 id=20% cov=93%
+-----LVELKRSDRMVGLVMQPGHGPLMALLVNSLKFPEVFMAIGDDANVLVVCQSQTAAAEFEERIDSL-
+>gi|326771632|ref|ZP_08230917.1|(121-188:195) arginine repressor [Actinomyces viscosus C505] arginine repressor [Actinomyces viscosus C505]  E=3e-08 s/c=0.90 id=30% cov=97%
+--AELLVTAEWAGPQVVLRTPAGAAQLLAGAVDDAMMPGVMGCIAGDDTVLVITRGAQVAADVARHLLAL-
+>gi|255994582|ref|ZP_05427717.1|(81-147:154) arginine repressor [Eubacterium saphenum ATCC 49989] arginine repressor [Eubacterium saphenum ATCC 49989]  E=4e-08 s/c=0.90 id=22% cov=96%
+----SLVDFATSENIILLKTISGFGSAVGEAIDCLKFKHIIGSVAGDNTLLLVIDSSKNTASTLAEIKKVV
+>gi|312867225|ref|ZP_07727435.1|(345-410:413) ribosomal RNA large subunit methyltransferase J [Streptococcus parasanguinis F0405] ribosomal RNA large subunit methyltransferase J [Streptococcus parasanguinis F0405]  E=2e-07 s/c=0.88 id=19% cov=89%
+-----ILSHRRMGEYVNFTMVPGTAPLVKRRLREIYKEHIFSIVADDDTILLIAYSAPEAENILKSI----
+>gi|15903128|ref|NP_358678.1|(76-143:143) arginine metabolism transcriptional regulator [Streptococcus pneumoniae R6] unnamed protein product [Streptococcus pneumoniae D39] Transcriptional regulator of arginine metabolism expression [Streptococcus pneumoniae R6] transcriptional regulator of arginine metabolism expression, putative [Streptococcus pneumoniae D39]  E=4e-06 s/c=0.79 id=21% cov=94%
+---DNIESAELMDKMINLQVIPGNTAFVKAQLIETFADKIFSCLTDDGSILVIARSGSLAEEIFEQVKN--
+>gi|171778671|ref|ZP_02919767.1|(94-152:156) hypothetical protein STRINF_00619 [Streptococcus infantarius subsp. infantarius ATCC BAA-102] unnamed protein product [Streptococcus infantarius subsp. infantarius CJ18] hypothetical protein STRINF_00619 [Streptococcus infantarius subsp. infantarius ATCC BAA-102] arginine repressor ArgR [Streptococcus infantarius subsp. infantarius CJ18]  E=8e-06 s/c=0.89 id=25% cov=85%
+------------ENMINLDVIPGNSRLIKRFLLEDFKDSLFSVIADDDSLLVVAKTAEDAAAIRQEVRKWM
+>gi|270317447|gb|EFA28945.1|(81-114:143) Arginine repressor [Haemophilus influenzae HK1212]  E=0.0002 s/c=1.41 id=35% cov=48%
+-LKNLVLDVDYNDMLIVIKTSPGAAQLIARLLDS-------------------------------------
+>gi|313890758|ref|ZP_07824383.1|(99-152:157) arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus SPIN 20026] arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus SPIN 20026] arginine repressor, C-terminal domain protein [Streptococcus pseudoporcinus LQ 940-04]  E=0.0002 s/c=0.89 id=30% cov=70%
+-----------------LKVVPGNAMVMKRYLYTDFAERIFGVIEDDDSILLLAKTEADADYIRDE-----
+>gi|125717533|ref|YP_001034666.1|(76-143:143) ArgR family transcriptional regulator [Streptococcus sanguinis SK36] Transcriptional regulator, ArgR family, putative [Streptococcus sanguinis SK36]  E=0.0002 s/c=0.70 id=20% cov=85%
+-----ILSCQVLRNMINLSLVPGSTALVKRHLRNEFAEDIFSILADNDSILMVMMTEEAAARVA-------
+>gi|146319306|ref|YP_001199018.1|(80-147:147) arginine repressor [Streptococcus suis 05ZYH33] unnamed protein product [Streptococcus suis 98HAH33] Arginine repressor [Streptococcus suis 05ZYH33] Arginine repressor [Streptococcus suis 98HAH33] Arginine repressor [Streptococcus suis GZ1]  E=0.0004 s/c=0.69 id=16% cov=82%
+--------VSVMDKMINLRLVPGSSAVVKRQILEQFQEHVFSVIADDDSILLIVTNEGIISQIEQ------
+>gi|347521185|ref|YP_004778756.1|(83-146:148) transcription regulator [Lactococcus garvieae ATCC 49156] transcription regulator [Lactococcus garvieae ATCC 49156] transcription regulator [Lactococcus garvieae Lg2]  E=0.0004 s/c=0.74 id=28% cov=92%
+---EAILELKMHDNMISIIAKPGTTSVIKKSLLNRYNKKIFSIMTDDDSILIICETRRQANTVYDEL----
+>gi|291459860|ref|ZP_06599250.1|(79-147:149) arginine repressor [Oribacterium sp. oral taxon 078 str. F0262] arginine repressor [Oribacterium sp. oral taxon 078 str. F0262]  E=5e-17 s/c=1.30 id=41% cov=99%
+-LREGLSGMDTAGHLLVLRTLPGMANAVAMAIDELPFERLVGTLAGDDTILCAMKTEGDAEKLKRELRKL-
+>gi|319948170|ref|ZP_08022330.1|(92-160:165) arginine repressor [Dietzia cinnamea P4] arginine repressor [Dietzia cinnamea P4]  E=1e-16 s/c=1.29 id=37% cov=99%
+-LGELLVSADHSGNIAVLRTPPGAANFLASALDRANPDDVVGTIAGDDTIFVMAREPVSGAELANRLAAL-
+>gi|258515774|ref|YP_003191996.1|(81-149:152) arginine repressor ArgR [Desulfotomaculum acetoxidans DSM 771] arginine repressor, ArgR [Desulfotomaculum acetoxidans DSM 771]  E=2e-16 s/c=1.27 id=36% cov=99%
+-LRDSVISIDFSENLVIIKTLPGEAQGVASAVDNAGFPEIIGTVGGDDTILIVVKPKNAVLDIINRLKDI-
+>gi|38233762|ref|NP_939529.1|(91-158:163) arginine repressor [Corynebacterium diphtheriae NCTC 13129] argR gene product [Corynebacterium diphtheriae 241] argR gene product [Corynebacterium diphtheriae INCA 402] argR gene product [Corynebacterium diphtheriae CDCE 8392] argR gene product [Corynebacterium diphtheriae HC01] argR gene product [Corynebacterium diphtheriae HC04] argR gene product [Corynebacterium diphtheriae HC03] argR gene product [Corynebacterium diphtheriae PW8] argR gene product [Corynebacterium diphtheriae VA01] argR gene product [Corynebacterium diphtheriae 31A] argR gene product [Corynebacterium diphtheriae BH8] argR gene product [Corynebacterium diphtheriae C7 (beta)] argR gene product [Corynebacterium diphtheriae HC02] RecName: Full=Arginine repressor Arginine repressor [Corynebacterium diphtheriae] arginine repressor [Corynebacterium diphtheriae 31A] arginine repressor [Corynebacterium diphtheriae 241] arginine repressor [Corynebacterium diphtheriae INCA 402] arginine repressor [Corynebacterium diphtheriae BH8] arginine repressor [Corynebacterium diphtheriae C7 (beta)] arginine repressor [Corynebacterium diphtheriae CDCE 8392] arginine repressor [Corynebacterium diphtheriae HC01] arginine repressor [Corynebacterium diphtheriae HC02] arginine repressor [Corynebacterium diphtheriae HC03] arginine repressor [Corynebacterium diphtheriae HC04] arginine repressor [Corynebacterium diphtheriae PW8] arginine repressor [Corynebacterium diphtheriae VA01]  E=4e-16 s/c=1.28 id=38% cov=92%
+-LDDLLVSVDHSGNIAVLRTPPAGAPFLASFIDRVGMDEVVGTIAGDDTVFVLARDPMTGKELGE------
+>gi|302339729|ref|YP_003804935.1|(82-151:156) arginine repressor ArgR [Spirochaeta smaragdinae DSM 11293] arginine repressor, ArgR [Spirochaeta smaragdinae DSM 11293]  E=7e-16 s/c=1.23 id=26% cov=92%
+-----VVSMEFSGNLGVIKTRQGHADSVAFALDKLNLPEVLGSVAGDDTIFVVLREGVTKEDLLQTFRE--
+>gi|332981372|ref|YP_004462813.1|(79-147:150) ArgR family transcriptional regulator [Mahella australiensis 50-1 BON] transcriptional regulator, ArgR family [Mahella australiensis 50-1 BON]  E=2e-15 s/c=1.23 id=36% cov=99%
+-FSEAILSIDYTGNLIVLKTLQGSAQVTAAAVDAMSWPGVLGTIAGDDTVLIIARNEKTVETLIRGFNDI-
+>gi|325972716|ref|YP_004248907.1|(83-151:156) unnamed protein product [Sphaerochaeta globus str. Buddy] arginine repressor, ArgR [Sphaerochaeta globus str. Buddy]  E=3e-15 s/c=1.22 id=32% cov=92%
+-----ILSIEFSGNFGVIKTRPGHANSVGIALDVLAIPEILGTLAGDDTIFVILREGMSKEDLQESFKT--
+>gi|302874815|ref|YP_003843448.1|(79-148:150) arginine repressor ArgR [Clostridium cellulovorans 743B] arginine repressor [Clostridium cellulovorans 743B] arginine repressor, ArgR [Clostridium cellulovorans 743B]  E=1e-14 s/c=1.17 id=30% cov=94%
+-----VIGTEQVENFVVIKTITGSANAAAEALDSLNFHGIAGTIAGDNTIFVLTRDKSDATEIVQRIKKII
+>gi|15675892|ref|NP_270066.1|(79-143:145) arginine repressor [Streptococcus pyogenes M1 GAS] arginine repressor [Streptococcus pyogenes MGAS6180] argR2 gene product [Streptococcus pyogenes MGAS5005] arginine repressor [Streptococcus pyogenes MGAS9429] argR2 gene product [Streptococcus pyogenes MGAS10270] argR2 gene product [Streptococcus pyogenes MGAS2096] arginine repressor, argR [Streptococcus pyogenes MGAS10750] arginine repressor [Streptococcus pyogenes str. Manfredo] arginine repressor [Streptococcus pyogenes ATCC 10782] argR.3 gene product [Streptococcus pyogenes MGAS15252] argR.3 gene product [Streptococcus pyogenes MGAS1882] RecName: Full=Arginine repressor putative arginine repressor [Streptococcus pyogenes M1 GAS] arginine repressor [Streptococcus pyogenes MGAS6180] arginine repressor [Streptococcus pyogenes MGAS5005] arginine repressor [Streptococcus pyogenes MGAS9429] Arginine repressor, argR [Streptococcus pyogenes MGAS10270] Arginine repressor, argR [Streptococcus pyogenes MGAS2096] Arginine repressor, argR [Streptococcus pyogenes MGAS10750] putative arginine repressor [Streptococcus pyogenes str. Manfredo] arginine repressor [Streptococcus pyogenes ATCC 10782] arginine repressor protein ArgR [Streptococcus pyogenes MGAS15252] arginine repressor protein ArgR [Streptococcus pyogenes MGAS1882]  E=1e-13 s/c=1.21 id=40% cov=92%
+-----VLKVDRAGFMLVLHTNLGEADVLANLIDNDAIEDILGTIAGADTLLVICRDEEIAKRFEKDLAA--
+>gi|328906807|gb|EGG26575.1|(125-192:243) arginine repressor [Propionibacterium humerusii P08]  E=1e-13 s/c=1.15 id=35% cov=89%
+--------VNCNDSAVVIKTPPGAAQYLGSAIDTSGIDAIIGTIAGDDTVLIICRPSVGGDDLAKSFRLM-
+>gi|288800275|ref|ZP_06405733.1|(89-152:158) arginine repressor [Prevotella sp. oral taxon 299 str. F0039] arginine repressor [Prevotella sp. oral taxon 299 str. F0039]  E=5e-13 s/c=1.20 id=31% cov=90%
+-----FLSIRFSGNMAVIKTRPGYASSIAFNIDDANLPDILGTVAGADTILMVIKAGKMPEEIIHQLQ---
+>gi|332298443|ref|YP_004440365.1|(86-149:157) arginine repressor ArgR [Treponema brennaborense DSM 12168] arginine repressor, ArgR [Treponema brennaborense DSM 12168]  E=8e-13 s/c=1.19 id=32% cov=89%
+-----YISIDFSGNLVVIKTYSGHADVVSAALDAMAMDEILGTVAGkDNCIFVCLREGITGDQFLDAL----
+>gi|116334091|ref|YP_795618.1|(80-149:155) arginine repressor [Lactobacillus brevis ATCC 367] transcriptional regulator, ArgR family [Lactobacillus brevis ATCC 367]  E=1e-12 s/c=1.08 id=36% cov=94%
+---EVVIGLTQVDFVNVLKTLPSNGNLLAAIFDDLNLPEIVGTLAGHDTILIISANADVAKQLHDKIAA--
+>gi|294787539|ref|ZP_06752792.1|(120-177:195) arginine repressor [Parascardovia denticolens F0305] arginine repressor [Parascardovia denticolens F0305]  E=2e-11 s/c=1.23 id=31% cov=83%
+----LVTSVDFANNLIVVKTSEGAAEYVGSAINRQILSDILGTIAGDDTVMLVARNEEAARN---------
+>gi|295429214|ref|ZP_06821836.1|(103-166:166) arginine repressor family protein [Staphylococcus aureus subsp. aureus EMRSA16] ArgR family transcriptional regulator [Staphylococcus aureus subsp. aureus MN8] ArgR family transcriptional regulator [Staphylococcus aureus subsp. aureus ATCC BAA-39] arginine repressor family protein [Staphylococcus aureus subsp. aureus EMRSA16] ArgR family transcriptional regulator [Staphylococcus aureus subsp. aureus MN8] ArgR family transcriptional regulator [Staphylococcus aureus subsp. aureus ATCC BAA-39] ArgR family transcriptional regulator [Staphylococcus aureus subsp. aureus TCH60]  E=4e-11 s/c=1.10 id=34% cov=82%
+------------GAYIIVKTSPGFAQGINYFIDQLNIEEILGTVSGNDTTLILTASNDMAEYVYAKLFK--
+>gi|333896035|ref|YP_004469909.1|(83-145:150) arginine repressor ArgR [Thermoanaerobacterium xylanolyticum LX-11] arginine repressor, ArgR [Thermoanaerobacterium xylanolyticum LX-11]  E=5e-11 s/c=1.11 id=31% cov=90%
+----SIVDIKCNGNIIVIKTLSGAASAVAEMIDLLKCDDIVGSVAGDNTIFVLVR--KAGSTVVKEIFK--
+>gi|381179339|ref|ZP_09888193.1|(94-159:165) arginine repressor, ArgR [Treponema saccharophilum DSM 2985] arginine repressor, ArgR [Treponema saccharophilum DSM 2985]  E=1e-10 s/c=1.04 id=27% cov=89%
+-----YVSIDWNEPIVVIKTFGGHADAVSNALDAFNFDEILGTIAGENCIFACLKKGVSGKDFMEKL----
+>gi|315639630|ref|ZP_07894770.1|(80-148:150) arginine repressor [Enterococcus italicus DSM 15952] arginine repressor [Enterococcus italicus DSM 15952]  E=3e-10 s/c=0.97 id=30% cov=89%
+-LKNAFIHVKKMDKFVLLQTIPGNAVAIAPLIDRQYNDDLFGILTDDDKVLMISNSQEACNNL--------
+>gi|170017358|ref|YP_001728277.1|(85-155:156) arginine repressor [Leuconostoc citreum KM20] Arginine repressor [Leuconostoc citreum KM20] Arginine repressor 2 [Leuconostoc citreum LBAE C10]  E=2e-09 s/c=0.91 id=17% cov=101%
+AIKEYAVFIQQVQFMTIIKTTDSTGNALAGVIDDADLPEVIATLAGFDTIYVTTPDDKSAAALTARWSALI
+>gi|373466053|ref|ZP_09557470.1|(87-150:163) arginine repressor protein [Lactobacillus kisonensis F0435] arginine repressor protein [Lactobacillus kisonensis F0435]  E=6e-09 s/c=0.98 id=23% cov=85%
+--------IRQIQFVNVIHTQPSYANPLAAVVDDLHLDDVAGTLAGYDTIVLFSPSVASAKSINDLF----
+>gi|332638332|ref|ZP_08417195.1|(80-147:149) arginine catabolic regulator [Weissella cibaria KACC 11862]  E=5e-08 s/c=0.88 id=22% cov=97%
+-LKESTTEIKTQANMVMIRVAPGTGPALKTALEEADLTDVFGLIGDDAGVLVILNEGVWAQQFATDLMA--
+>gi|328955878|ref|YP_004373211.1|(77-144:148) ArgR family transcriptional regulator [Coriobacterium glomerans PW2] transcriptional regulator, ArgR family [Coriobacterium glomerans PW2]  E=4e-05 s/c=0.74 id=22% cov=97%
+--SELLTRVLRSDSMVILKAQPGTAAGIAAAIDAAEIPLVMASIAGDDTVLIITDGSQSAQRLESYISKL-
+>gi|104773880|ref|YP_618860.1|(79-151:157) arginine repressor ArgR [Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842] arginine repressor [Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365] arginine repressor [Lactobacillus delbrueckii subsp. bulgaricus ND02] RecName: Full=Arginine repressor RecName: Full=Arginine repressor arginine repressor [Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842] transcriptional regulator, ArgR family [Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365] Arginine repressor [Lactobacillus delbrueckii subsp. bulgaricus ND02] Hypothetical conserved protein [Lactobacillus delbrueckii subsp. bulgaricus 2038] hypothetical protein LDBUL1519_01620 [Lactobacillus delbrueckii subsp. bulgaricus CNCM I-1519] hypothetical protein LDBUL1632_00801 [Lactobacillus delbrueckii subsp. bulgaricus CNCM I-1632]  E=0.0003 s/c=0.65 id=27% cov=93%
+AIRERVATVTAVQFTVVIQTSmkLTYAPILAGLIDDIDNDDVVGTIAGTDTLLVILKDAEAAASFAD------
+>gi|50914595|ref|YP_060567.1|(110-163:167) arginine repressor [Streptococcus pyogenes MGAS10394] arginine repressor [Streptococcus pyogenes MGAS6180] arginine repressor [Streptococcus pyogenes MGAS9429] argR1 gene product [Streptococcus pyogenes MGAS10270] argR1 gene product [Streptococcus pyogenes MGAS2096] arginine repressor, argR [Streptococcus pyogenes MGAS10750] Arginine repressor [Streptococcus pyogenes MGAS10394] arginine repressor [Streptococcus pyogenes MGAS6180] arginine repressor [Streptococcus pyogenes MGAS9429] Arginine repressor, argR [Streptococcus pyogenes MGAS10270] Arginine repressor, argR [Streptococcus pyogenes MGAS2096] Arginine repressor, argR [Streptococcus pyogenes MGAS10750]  E=0.0005 s/c=0.87 id=29% cov=73%
+-----------------LKVVPGNSKLIKRYLLADFSKAIFSLIADDDSLLLIAKSPSEADMIRQEIL---

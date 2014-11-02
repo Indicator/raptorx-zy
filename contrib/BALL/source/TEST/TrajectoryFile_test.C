@@ -1,0 +1,27 @@
+// -*- Mode: C++; tab-width: 2; -*-
+// vi: set ts=2:
+//
+// $Id: TrajectoryFile_test.C,v 1.3.32.1 2007-03-25 21:49:08 oliver Exp $
+#include <BALL/CONCEPT/classTest.h>
+
+///////////////////////////
+
+// insert includes here
+#include <BALL/FORMAT/trajectoryFile.h>
+
+///////////////////////////
+
+START_TEST(TrajectoryFile, "$Id: TrajectoryFile_test.C,v 1.3.32.1 2007-03-25 21:49:08 oliver Exp $")
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+using namespace BALL;
+
+///  insert tests for each member function here         
+///
+	
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+END_TEST

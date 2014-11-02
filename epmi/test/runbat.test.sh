@@ -1,0 +1,1 @@
+bash ../bin/run-epadmi-general.sh ./1b4bA.a3m ./1b4bA.tgt ./1b4bA.fasta

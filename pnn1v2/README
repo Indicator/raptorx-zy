@@ -1,0 +1,63 @@
+    Parallel Neuronal Network 0.1.0
+
+1. Introduction:
+
+This PNN package is a custom parallel artificial neuronal network for training and prediction the pairwise statistical energy of protein sequences.
+2. Features:
+
+2.1 Support multiple neuronal network layers
+2.2 Reading and writing features in HDF5 files
+2.3 Parallelization using MPI
+
+3. Installation
+
+3.1 Compilation
+Please make sure you have cmake package (version later than 2.4) installed on your system.
+
+$ mkdir build ; cd build ; cmake ..
+$ make 
+$ make install
+$ make doc
+
+3.2 To install to a user-defined folder, replace "cmake ." by
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=[your library folder] .
+
+3.3 Specify the directory of HDF5 library 
+
+You can change the variable of CMAKE_PREFIX_PATH in the CMakeLists.txt with your 
+packages path.
+
+set(CMAKE_PREFIX_PATH [your path to home of HDF5 library]
+      		[your path to home of other library]
+		)
+
+4. Running the program
+
+4.1 Training 
+
+Run Nnprtrain to see the usage and the definition of parameters.
+
+$ Nnpftrain -h [A file containing a list of hdf5 files, e.g. h5list.h10 ]
+            -m [The prefix of generated models, e.g. model/model-100-40-r0.1-withss-pre-cb-h100]
+            -s [Number of output lables, e.g. 13] 
+            -r [The regularization factor, e.g. 0.1]
+            -nn [The number of neuronal nodes in each layer, e.g. 100,40,30,20 stands for 100 nodes on the 
+		layer connected to the input features, and 40,30,20 are number of nodes for hidden layers]
+            -dn [The dimension of features, e.g. 1580]
+            -maxiter [The maximal iterations in the optimization, e.g. 3000]
+
+In the file of hdf5 files list, each line can have several hdf5 files for input, and all these
+files will be used in one process. Thus, you can distribute different number of samples to 
+each MPI process in order to balance the loading of each process. 
+
+4.2 Run Nnprpredict to see the usage.
+
+5. Contact information
+Zhiyong Wang 
+zywang at ttic.edu
+Toyota Technological Institute at Chicago 
+
+6. Version ID: 
+Please include this version ID when reporting any problems.
+$Header: https://bleu.uchicago.edu/svn/zywang/proj.dpln/pnn1v2/README 47450 2014-07-21 23:57:26Z zywang $

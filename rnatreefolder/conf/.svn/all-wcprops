@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf
+END
+std.lib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/std.lib
+END
+resfraglib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/resfraglib
+END
+anglecpc.lib
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/anglecpc.lib
+END
+crfs.conf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/crfs.conf
+END
+atoms.name
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/atoms.name
+END
+allchi.data
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/allchi.data
+END
+known_transition_r2
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/known_transition_r2
+END
+model.p0-120.1085474
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/model.p0-120.1085474
+END
+bbfraglib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/bbfraglib
+END
+bondcp.lib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/bondcp.lib
+END
+bondpc.lib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/bondpc.lib
+END
+labelmap100x5
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/labelmap100x5
+END
+anglepcp.lib
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/30494/zywang/proj.rna/rnasampler/release/conf/anglepcp.lib
+END

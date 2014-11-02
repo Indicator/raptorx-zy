@@ -1,0 +1,1018 @@
+<ui version="4.0" >
+ <class>StageSettingsData</class>
+ <widget class="QWidget" name="StageSettingsData" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>StageSettings</string>
+  </property>
+  <widget class="QStackedWidget" name="widget_stack" >
+   <property name="geometry" >
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>611</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="currentIndex" >
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Main" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>9</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="0" column="0" >
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>0</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="1" column="0" >
+        <widget class="QGroupBox" name="fob_box" >
+         <property name="toolTip" >
+          <string>The fog is currently not exported to POVRay</string>
+         </property>
+         <property name="title" >
+          <string>Fog</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="enable_fog" >
+            <property name="text" >
+             <string>Enable fog</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2" >
+           <widget class="QSlider" name="fog_slider" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="toolTip" >
+             <string>Intensity of fog</string>
+            </property>
+            <property name="whatsThis" >
+             <string>Intensity of fog</string>
+            </property>
+            <property name="maximum" >
+             <number>400</number>
+            </property>
+            <property name="value" >
+             <number>200</number>
+            </property>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickInterval" >
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" >
+           <widget class="QLabel" name="max_label" >
+            <property name="text" >
+             <string>max</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" >
+           <widget class="QLabel" name="min_label" >
+            <property name="text" >
+             <string>min</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QGroupBox" name="offscreen_group" >
+         <property name="toolTip" >
+          <string>Screenshots can also be created through offscreen rendering, which enables images larger than the screen resolution. Uncheck this if there are poblems with the resulting images.</string>
+         </property>
+         <property name="title" >
+          <string>Use offscreen rendering for PNGs</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignJustify</set>
+         </property>
+         <property name="checkable" >
+          <bool>true</bool>
+         </property>
+         <property name="checked" >
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="1" >
+           <widget class="QSpinBox" name="resolution_factor" >
+            <property name="maximum" >
+             <number>5</number>
+            </property>
+            <property name="minimum" >
+             <number>1</number>
+            </property>
+            <property name="value" >
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="factor_label" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>resolution factor</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2" >
+           <widget class="QLabel" name="max_label" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>(max width/height: 4096 pixels)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QGroupBox" name="lights_box" >
+         <property name="title" >
+          <string>Misc</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="2" column="0" >
+           <widget class="QCheckBox" name="use_preview" >
+            <property name="toolTip" >
+             <string>Show the lightsources in the 3D view for easier positioning.</string>
+            </property>
+            <property name="text" >
+             <string>Use faster preview models</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QCheckBox" name="show_fps" >
+            <property name="toolTip" >
+             <string>Show the lightsources in the 3D view for easier positioning.</string>
+            </property>
+            <property name="text" >
+             <string>Show frames per second (FPS)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="show_lights_" >
+            <property name="toolTip" >
+             <string>Show the lightsources in the 3D view for easier positioning.</string>
+            </property>
+            <property name="text" >
+             <string>Show lightsources in Scene</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="background_box" >
+         <property name="toolTip" >
+          <string>Set the background color of the Scene.</string>
+         </property>
+         <property name="title" >
+          <string>Background color</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="color_sample" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape" >
+             <enum>QFrame::Panel</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>1</number>
+            </property>
+            <property name="midLineWidth" >
+             <number>0</number>
+            </property>
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="margin" >
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QPushButton" name="color_button" >
+            <property name="text" >
+             <string>Edit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <widget class="QGroupBox" name="animation_box" >
+         <property name="toolTip" >
+          <string/>
+         </property>
+         <property name="title" >
+          <string>Animation Smoothness</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" colspan="2" >
+           <widget class="QSlider" name="animation_smoothness" >
+            <property name="toolTip" >
+             <string>Smoothness of the interpolation between stored 3D positions.</string>
+            </property>
+            <property name="whatsThis" >
+             <string/>
+            </property>
+            <property name="minimum" >
+             <number>1</number>
+            </property>
+            <property name="maximum" >
+             <number>100</number>
+            </property>
+            <property name="value" >
+             <number>25</number>
+            </property>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickInterval" >
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="min_label" >
+            <property name="text" >
+             <string>min</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QLabel" name="max_label" >
+            <property name="text" >
+             <string>max</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QGroupBox" name="capping_box" >
+         <property name="toolTip" >
+          <string>Capping planes work almost like clipping planes, but create a solid volume.</string>
+         </property>
+         <property name="title" >
+          <string>Capping</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="capping_color" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>7</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip" >
+             <string>Color for Caping planes</string>
+            </property>
+            <property name="frameShape" >
+             <enum>QFrame::Panel</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>1</number>
+            </property>
+            <property name="midLineWidth" >
+             <number>0</number>
+            </property>
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="margin" >
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2" >
+           <widget class="QPushButton" name="capping_color_button" >
+            <property name="text" >
+             <string>Edit</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="label" >
+            <property name="text" >
+             <string>Transparency</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2" >
+           <widget class="QSpinBox" name="capping_transparency" >
+            <property name="maximum" >
+             <number>255</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Mouse" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>9</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="0" column="1" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="0" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QGroupBox" name="groupBox1_2" >
+       <property name="maximumSize" >
+        <size>
+         <width>500</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>Change sensitivity of mouse wheel. Higher sensitivity means more movement with less moving the wheel.</string>
+       </property>
+       <property name="title" >
+        <string>Mouse wheel sensitivity</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignHCenter</set>
+       </property>
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" colspan="2" >
+         <widget class="QSlider" name="wheel_slider_" >
+          <property name="maximum" >
+           <number>10</number>
+          </property>
+          <property name="value" >
+           <number>5</number>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="TextLabel1_3" >
+          <property name="text" >
+           <string>min</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QLabel" name="TextLabel1_2_2" >
+          <property name="text" >
+           <string>max</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0" >
+      <widget class="QGroupBox" name="groupBox1" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>7</hsizetype>
+         <vsizetype>5</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>500</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>Change the mouse sensitivity. Greater sensitivity means greater mouse movement on the screen with less movement of the mouse.</string>
+       </property>
+       <property name="title" >
+        <string>Mouse sensitivity</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignHCenter</set>
+       </property>
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" colspan="2" >
+         <widget class="QSlider" name="slider_" >
+          <property name="maximum" >
+           <number>10</number>
+          </property>
+          <property name="value" >
+           <number>5</number>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QLabel" name="TextLabel1_2" >
+          <property name="text" >
+           <string>max</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="TextLabel1" >
+          <property name="text" >
+           <string>min</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Stereo" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>9</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="1" column="0" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0" >
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>0</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox1_2_2" >
+         <property name="maximumSize" >
+          <size>
+           <width>400</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="toolTip" >
+          <string/>
+         </property>
+         <property name="title" >
+          <string>Stereo: Eye points distance</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" colspan="2" >
+           <widget class="QSlider" name="eye_distance_slider" >
+            <property name="toolTip" >
+             <string>The greater the eye point distance is the greater is the stereo effect.</string>
+            </property>
+            <property name="maximum" >
+             <number>40</number>
+            </property>
+            <property name="singleStep" >
+             <number>5</number>
+            </property>
+            <property name="pageStep" >
+             <number>5</number>
+            </property>
+            <property name="value" >
+             <number>20</number>
+            </property>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickInterval" >
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QLabel" name="eye_distance_label" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize" >
+             <size>
+              <width>50</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>99.9</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QLabel" name="TextLabel1_2_2_2" >
+            <property name="text" >
+             <string>max</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="TextLabel1_3_2" >
+            <property name="text" >
+             <string>min</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox1_2_2_2" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>7</hsizetype>
+           <vsizetype>5</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>400</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="toolTip" >
+          <string/>
+         </property>
+         <property name="title" >
+          <string>Stereo: focal distance</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="1" column="1" >
+           <widget class="QLabel" name="TextLabel1_2_2_2_2" >
+            <property name="text" >
+             <string>max</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QLabel" name="focal_distance_label" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>0</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize" >
+             <size>
+              <width>50</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>99.9</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2" >
+           <widget class="QSlider" name="focal_distance_slider" >
+            <property name="minimum" >
+             <number>7</number>
+            </property>
+            <property name="maximum" >
+             <number>100</number>
+            </property>
+            <property name="singleStep" >
+             <number>5</number>
+            </property>
+            <property name="pageStep" >
+             <number>5</number>
+            </property>
+            <property name="value" >
+             <number>40</number>
+            </property>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickInterval" >
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="TextLabel1_3_2_2" >
+            <property name="text" >
+             <string>min</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="swap_sss_button" >
+         <property name="text" >
+          <string>Swap side by side stereo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="OpenGL" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>9</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="0" column="0" >
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="1" >
+        <widget class="QLabel" name="vendor_label" >
+         <property name="text" >
+          <string>undefined</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLabel" name="renderer_label" >
+         <property name="text" >
+          <string>undefined</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="textLabel1_2_3" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>0</hsizetype>
+           <vsizetype>5</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>160</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Renderer:</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QLabel" name="version_label" >
+         <property name="text" >
+          <string>undefined</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QLabel" name="textLabel1_2" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>0</hsizetype>
+           <vsizetype>5</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>160</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Version:</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QLabel" name="textLabel1" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>0</hsizetype>
+           <vsizetype>5</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>160</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Vendor:</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QCheckBox" name="use_vertex_buffers" >
+       <property name="toolTip" >
+        <string>Select to use OpenGL vertex buffer. Results in greater performance.</string>
+       </property>
+       <property name="text" >
+        <string>Use OpenGL Vertex Buffer Objects</string>
+       </property>
+       <property name="checked" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QListWidget" name="extensions_list" >
+       <property name="toolTip" >
+        <string>Extensions supported by your graphics card</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <tabstops>
+  <tabstop>color_button</tabstop>
+  <tabstop>enable_fog</tabstop>
+  <tabstop>fog_slider</tabstop>
+  <tabstop>capping_color_button</tabstop>
+  <tabstop>capping_transparency</tabstop>
+  <tabstop>animation_smoothness</tabstop>
+  <tabstop>show_lights_</tabstop>
+  <tabstop>resolution_factor</tabstop>
+  <tabstop>slider_</tabstop>
+  <tabstop>wheel_slider_</tabstop>
+  <tabstop>eye_distance_slider</tabstop>
+  <tabstop>focal_distance_slider</tabstop>
+  <tabstop>swap_sss_button</tabstop>
+  <tabstop>extensions_list</tabstop>
+  <tabstop>use_vertex_buffers</tabstop>
+ </tabstops>
+ <includes>
+  <include location="global" >BALL/COMMON/global.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>

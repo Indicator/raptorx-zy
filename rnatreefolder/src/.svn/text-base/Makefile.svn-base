@@ -1,0 +1,10 @@
+ANNFLAG= ann_1.1.1/lib/libANN.a -I./ann_1.1.1/include/ANN
+libANN.a:
+	cd ann_1.1.1
+	make linux-g++
+joint:	
+	g++  rmsdp.cpp -c -o rmsdp.o -O3 
+	g++  RNAbuilder.cpp -c -o RNAbuilder.o -O3 -I./ann_1.1.1/include/ANN/
+	g++  stdlinear.cpp -c -o stdlinear.o -O3
+	g++  crfsample.joint.cpp  RNAbuilder.o stdlinear.o $(ANNFLAG) rmsdp.o -o crfsample.joint -O3
+

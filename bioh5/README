@@ -1,0 +1,58 @@
+    Bioh5 
+
+1. Overview 
+
+Bioh5 is a package for reading and writing protein sequence and structure information
+in a fast and easy way. It uses Hdf5 format to store data, which is compatible with
+many programming languages and environments like Matlab and R.
+
+2. Features
+
+2.1 Hdf5 support: read and write protein features by one line in Matlab.
+2.2 Hassle-free compression: your data are stored compressed.
+
+3. Install
+
+3.1 Compilation
+Please make sure you have cmake package (version later than 2.4) installed on your system.
+
+$ mkdir build ; cd build ; cmake ..
+$ make 
+$ make install
+$ make doc
+
+3.2 To install to a user-defined folder, replace "cmake ." by
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=[your library folder] .
+
+3.3 Specify the directory of HDF5 library 
+
+You can change the variable of CMAKE_PREFIX_PATH in the CMakeLists.txt with your 
+packages path.
+
+set(CMAKE_PREFIX_PATH [your path to home of HDF5 library]
+      		[your path to home of other library]
+		)
+
+4. Dependency
+
+To build a Bioh5 file for a given sequence, you are required to install Sheng's gen_feature program.
+
+All functions require those packages
+
+MatrixLight (https://dl.dropbox.com/s/afc1vgw826po8r8/MatrixLight-0.1.0.tgz)
+HDF5 (www.hdfgroup.org/HDF5)
+GSL library with GSLCBLAS (www.gnu.org/s/gsl/‎)
+and BALL (http://www.ball-project.org/Downloads/index_html).
+
+
+9. Contacts
+
+Author:		Zhiyong Wang
+Institute: 	Toyota Technological Institute at Chicago
+Email:	     	zywang at ttic.edu
+
+10. Version ID: 
+
+Please include this version ID when reporting any problems.
+$Header: https://bleu.uchicago.edu/svn/zywang/proj.dpln/bioh5/br.allin1/README 47447 2014-07-21 22:47:29Z zywang $ 

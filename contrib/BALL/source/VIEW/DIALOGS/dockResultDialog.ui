@@ -1,0 +1,371 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>DockResultDialogData</class>
+ <widget class="QDialog" name="DockResultDialogData" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>518</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>3</hsizetype>
+    <vsizetype>7</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>Docking Results</string>
+  </property>
+  <property name="modal" >
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="3" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>234</width>
+       <height>44</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="7" column="1" >
+    <layout class="QGridLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item row="1" column="1" >
+      <widget class="QPushButton" name="downwardButton" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>1</hsizetype>
+         <vsizetype>0</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font" >
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Down</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QPushButton" name="upwardButton" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>1</hsizetype>
+         <vsizetype>0</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font" >
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Up</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2" >
+      <widget class="QPushButton" name="show_button" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>1</hsizetype>
+         <vsizetype>0</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text" >
+        <string>Show snapshot</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QPushButton" name="delete_score" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>1</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Delete Scoring</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="scoring_opt" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>1</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Scoring Options</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>234</width>
+       <height>43</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="9" column="1" >
+    <widget class="QPushButton" name="close_button" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>1</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" >
+    <widget class="QPushButton" name="redock" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>1</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Redock</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" >
+    <widget class="QPushButton" name="dock_opt_button" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>1</hsizetype>
+       <vsizetype>0</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Docking Options</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QGroupBox" name="reranking_group" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>0</hsizetype>
+       <vsizetype>1</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize" >
+      <size>
+       <width>234</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Reranking</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="2" column="0" >
+       <widget class="QPushButton" name="scoring_button" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>3</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>New Scoring</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QPushButton" name="advanced_button" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>3</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>Advanced...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QComboBox" name="scoring_functions" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>3</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>140</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="8" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>234</width>
+       <height>43</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item rowspan="10" row="0" column="0" >
+    <widget class="QTableWidget" name="result_table" >
+     <property name="enabled" >
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>7</hsizetype>
+       <vsizetype>5</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize" >
+      <size>
+       <width>216</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="mouseTracking" >
+      <bool>false</bool>
+     </property>
+     <property name="focusPolicy" >
+      <enum>Qt::WheelFocus</enum>
+     </property>
+     <property name="acceptDrops" >
+      <bool>false</bool>
+     </property>
+     <column>
+      <property name="text" >
+       <string>snapshot</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>result_table</tabstop>
+  <tabstop>scoring_functions</tabstop>
+  <tabstop>advanced_button</tabstop>
+  <tabstop>scoring_button</tabstop>
+  <tabstop>scoring_opt</tabstop>
+  <tabstop>delete_score</tabstop>
+  <tabstop>dock_opt_button</tabstop>
+  <tabstop>redock</tabstop>
+  <tabstop>show_button</tabstop>
+  <tabstop>upwardButton</tabstop>
+  <tabstop>downwardButton</tabstop>
+  <tabstop>close_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

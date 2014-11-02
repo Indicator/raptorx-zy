@@ -1,0 +1,1390 @@
+charmm.o: charmm.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmStretch.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticBondStretch.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmBend.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticAngleBend.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/cosineTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/residueTorsions.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmImproperTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticImproperTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmNonBonded.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/lennardJones.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/potential1210.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/charmmEEF1.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/support.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashGrid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/assignTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/templates.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/SYSTEM/path.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PTE.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PTE.iC
+charmmBend.o: charmmBend.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmBend.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticAngleBend.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC
+charmmImproperTorsion.o: charmmImproperTorsion.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmImproperTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticImproperTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/residueTorsions.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC
+charmmNonBonded.o: charmmNonBonded.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmNonBonded.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/lennardJones.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/potential1210.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/charmmEEF1.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/support.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashGrid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/limits.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PTE.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PTE.iC
+charmmStretch.o: charmmStretch.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmStretch.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/quadraticBondStretch.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/forEach.h
+charmmTorsion.o: charmmTorsion.C \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmmTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/common.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONFIG/config.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/create.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/version.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/exception.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/global.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/macros.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/constants.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/rtti.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+  /usr/include/bits/inf.h /usr/include/bits/nan.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.h \
+  /usr/include/sys/time.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/list \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/list.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/logStream.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/cosineTorsion.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameterSection.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/options.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/string.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/stringHashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/COMMON/hash.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/visitor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/processor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseFunctor.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashMap.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/forwardIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/baseIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/forEach.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/predicate.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/functional \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/utility \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_relops.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/vector3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/hashSet.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistentObject.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/autoDeletable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/bidirectionalIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/object.iC \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/x86_64-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iomanip \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/persistenceManager.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/angle.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/common.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.1.2/include/float.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/atomTypes.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/comparator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/selectable.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/timeStamp.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/composite.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/bitVector.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/property.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/CONCEPT/randomAccessIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atom.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bondIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/residueTorsions.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceFieldComponent.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/system.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/moleculeIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/iterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/predicate.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/proteinIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/protein.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chainIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/chain.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residue.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragment.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainer.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/atomContainerIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtomIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/PDBAtom.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/residueIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructureIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/secondaryStructure.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/molecule.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/fragmentIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcidIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleicAcid.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotide.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/nucleotideIterator.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/PARAMETER/forceFieldParameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/parameters.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/FORMAT/INIFile.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/DATATYPE/list.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/periodicBoundary.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MATHS/simpleBox3.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/atomVector.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/COMMON/forceField.iC \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/MOLMEC/CHARMM/charmm.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.h \
+  /home/zywang/work/allbio/contrib/BALL/include/BALL/KERNEL/bond.iC
