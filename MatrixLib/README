@@ -1,0 +1,46 @@
+    MatrixLight 0.1.0
+
+1. Introduction:
+
+This MatrixLight package provides basic operations for matrix in C++. It includes
+2D matrix and 3D matrix. It is designed for fast and easy used in your codes. Please
+see the online document or files in html/ for detail.
+
+2. Features:
+
+2.1 Support high dimensional matrices
+2.2 HDF5 files input and output, which enables convenient reading or writing in Matlab
+or other environments.
+2.3 Basic, and easy to use matrix algorithms 
+
+3. Installation
+
+3.1 Compilation
+Please make sure you have cmake package (version later than 2.4) installed on your system.
+
+$ mkdir build ; cd build ; cmake ..
+$ make 
+$ make install
+$ make doc
+
+3.2 To install to a user-defined folder, replace "cmake ." by
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=[your library folder] .
+
+3.3 Specify the directory of HDF5 library 
+
+You can change the variable of CMAKE_PREFIX_PATH in the CMakeLists.txt with your 
+packages path.
+
+set(CMAKE_PREFIX_PATH [your path to home of HDF5 library]
+      		[your path to home of other library]
+		)
+
+3. Contact information
+Zhiyong Wang 
+zywang at ttic.edu
+Toyota Technological Institute at Chicago 
+
+4. Version ID: 
+Please include this version ID when reporting any problems.
+$Header: https://svn.tti-c.org/svn/zywang/MaLe/MatrixLib/README 34174 2013-07-30 01:00:43Z zywang $
