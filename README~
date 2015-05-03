@@ -1,4 +1,0 @@
-This tarball contains 3 packages for bioinformatics.
-Please run ./setup.sh to compile them all, and see 
-the README files in each package folder, MatrixLib, bioh5, pnn1v2, and rnatreefolder
-for detail.
