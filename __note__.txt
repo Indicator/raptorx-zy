@@ -3,3 +3,9 @@ BALL and other bioh5 can be compiled with gcc 4.1. they can be linked to
 programs compiled with c++4.7 with c++11 enabled.
 Hdf5 and ball can be linked statically.
 
+
+## Loop train and test system
+1. feature generating
+2. training and model export
+3. test with logging model and feature version
+4. remove old model and features

@@ -1,3 +1,5 @@
 Compile using c++ 4.7 should with -static-libstdc++
 BALL and other bioh5 can be compiled with gcc 4.1. they can be linked to 
 programs compiled with c++4.7 with c++11 enabled.
+Hdf5 and ball can be linked statically.
+

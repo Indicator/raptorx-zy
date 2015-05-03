@@ -1,4 +1,6 @@
-This tarball contains 3 packages for bioinformatics.
 Please run ./setup.sh to compile them all, and see 
-the README files in each package folder, MatrixLib, bioh5, pnn1v2
+the README files in each package folder, MatrixLib, bioh5, pnn1v2, rnatreefolder, and epmi
 for detail.
+
+release.sh is used internally to make a release package from other source version 
+controlled folders.

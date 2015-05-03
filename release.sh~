@@ -21,23 +21,28 @@ mkdir -p ~/work/allbio/pdbtools
 cp -r *.sh *.pm math ~/work/allbio/pdbtools
 )
 
+( cd ~/work/proj.rna/release
+mkdir -p ~/work/allbio/rnatreefolder
+cp -r * ~/work/allbio/rnatreefolder
+)
+
 #make clean files and upload to github
 echo "Make test"
 #./setup.sh
 
 # Tarball 
-(cd ~/work ; tar czf zybio.tgz allbio )
+#(cd ~/work ; tar czf zybio.tgz allbio )
 
-exit 0
+#exit 0
 # Push remote Github
-rm -rf release
-mkdir -p release
-
-cd release
+mkdir  ~/work/allbio.release
+rm ~/work/allbio.release/* -rf 
+cd ~/work/allbio.release/
+cp -r ~/work/allbio/* . 
 git init
 git add *
 git commit -m 'init'
-git remote add zygithub git@github.com:Indicator/MatrixLight.git
+git remote add zygithub git@github.com:Indicator/raptorx-zy
 git push -f zygithub master
 
 
