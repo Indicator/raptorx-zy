@@ -10,13 +10,12 @@ set (Bioh5_VERSION_MINOR 1)
 set (Bioh5_VERSION_PATCH 0)
 
 set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
-		      /home/zywang/work/MatrixLib 
-		      /home/zywang/work//BALL-1.2/
+		      /home/zywang/work/allbio.re1/MatrixLib 
 		      /opt/cray/mpt/6.0.2/gni/mpich2-gnu/48
-		      /home/zywang/work/allbio/contrib/hdf5
-		      /home/zywang/work/allbio/contrib/BALL
-		      /home/zywang/work/dpln/src/bioh5/br.allin1/
+		      /home/zywang/work/allbio.re1/contrib/hdf5
+		      /home/zywang/work/allbio.re1/contrib/BALL
 		      	)
+include_directories(/home/zywang/work/allbio.re1/pdbtools)
 #--------------------------------------------------------------
 # global headers
 #--------------------------------------------------------------
@@ -28,7 +27,7 @@ set(Gsl_INCLUDE_DIRS $ENV{GSL_DIR}/include)
 set(Gsl_LIBRARY_DIRS $ENV{GSL_DIR}/lib)
 FIND_PACKAGE(GSL REQUIRED)
 
-include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS} $ENV{GSL_DIR}/include /home/zywang/work/pdbtools/)
+include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS} $ENV{GSL_DIR}/include)
 
 set(LIBS ${LIBS} $ENV{GSL_DIR}/lib /home/zywang/work/lapack-3.5.0/build/lib)
 link_directories(${LIBS})

@@ -8,19 +8,12 @@ set (Nnpf_VERSION_MAJOR 2)
 set (Nnpf_VERSION_MINOR 0)
 set (Nnpf_VERSION_PATCH 2)
 
-
-#set(CMAKE_PREFIX_PATH /home/wzy/program/hdf5-1.8.10-linux-x86_64-static/)
-set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
-		      /home/zywang/work/MatrixLib 
-		      /home/zywang/work/dpln/src/bioh5/br.allin1
-		      /home/zywang/work//BALL-1.2/
-		      /opt/cray/mpt/6.0.2/gni/mpich2-gnu/48
-		      /home/zywang/work/allbio/contrib/hdf5
-		      /home/zywang/work/allbio/contrib/BALL
-		      /home/zywang/work/allbio/bioh5
-		      /home/zywang/work/allbio/MatrixLib
-                      /share/apps/matlab
-		      	)
+set(CMAKE_PREFIX_PATH
+	/home/zywang/work/allbio.re1/MatrixLib
+	/home/zywang/work/allbio.re1/bioh5
+	/home/zywang/work/allbio.re1/contrib/hdf5
+	/home/zywang/work/allbio.re1/contrib/BALL
+)
 #--------------------------------------------------------------
 # global headers
 #--------------------------------------------------------------
@@ -75,6 +68,7 @@ if(MATLAB_FOUND)
    include_directories(${MATLAB_INCLUDE_DIR})
 link_directories(${MATLAB_LIBRARY_DIR} )
 add_definitions(-DMATLAB_ENGINE)
+add_library( ${MATLAB_LIBRARY})
 endif()
 
 #--------------------------------------------------------------
@@ -83,7 +77,7 @@ endif()
 
 add_executable (Nnpftrain.dbg nnpftrain.cpp ScoreMatrix.cpp optimizer.nompi.cpp pnnload_new.cpp Sequence.nompi.cpp Nnpf.cpp )
 set_target_properties(Nnpftrain.dbg PROPERTIES COMPILE_FLAGS "-g")
-target_link_libraries (Nnpftrain.dbg MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran ${MATLAB_LIBRARY}) 
+target_link_libraries (Nnpftrain.dbg MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran) 
 
 add_executable (Nnpftrain nnpftrain.cpp ScoreMatrix.cpp optimizer.cpp pnnload_new.cpp Sequence.cpp Nnpf.cpp )
 set_target_properties(Nnpftrain PROPERTIES COMPILE_FLAGS "-D_MPI -O3")
@@ -92,31 +86,31 @@ target_link_libraries (Nnpftrain MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.
 add_executable (Nnpftrain.nompi nnpftrain.cpp ScoreMatrix.cpp optimizer.nompi.cpp pnnload_new.cpp Sequence.nompi.cpp Nnpf.cpp )
 set_target_properties(Nnpftrain.nompi PROPERTIES COMPILE_FLAGS "-D_no_mpi -g " LINK_FLAGS "-D_no_mpi -g ")
 #set_target_properties(Nnpftrain.nompi PROPERTIES COMPILE_FLAGS "-D_no_mpi -O3" )
-target_link_libraries (Nnpftrain.nompi MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran ${MATLAB_LIBRARY}) 
+target_link_libraries (Nnpftrain.nompi MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran ) 
 
 
 add_executable (Nnpfpredict nnpfpredict.cpp optimizer.nompi.cpp  Sequence.nompi.cpp pnnload_new.cpp ScoreMatrix.cpp Nnpf.cpp)
 set_target_properties(Nnpfpredict PROPERTIES COMPILE_FLAGS "-O3 -D_no_mpi")
-target_link_libraries(Nnpfpredict MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran ${MATLAB_LIBRARY}) 
+target_link_libraries(Nnpfpredict MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran) 
 
 
 add_executable (Nnpfpredict.dbg nnpfpredict.cpp optimizer.nompi.cpp  Sequence.nompi.cpp pnnload_new.cpp ScoreMatrix.cpp Nnpf.cpp)
 set_target_properties(Nnpfpredict.dbg PROPERTIES COMPILE_FLAGS "-g -pg")
 set_target_properties(Nnpfpredict.dbg PROPERTIES LINK_FLAGS "-pg")
-target_link_libraries(Nnpfpredict.dbg MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran ${MATLAB_LIBRARY}) 
+target_link_libraries(Nnpfpredict.dbg MatrixLight gsl gslcblas ${HDF5_LIBS}  libBioh5.a BALL ${MPI_LIBRARY} lapack blas gfortran ) 
 
 
 
 #--------------------------------------------------------------
 # doxygen documentation
 #--------------------------------------------------------------
-find_package(Doxygen)
-if(DOXYGEN_FOUND)
-   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
-   add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
-      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-      COMMENT "Generating API documentation with Doxygen" VERBATIM)
-endif()
+#find_package(Doxygen)
+#if(DOXYGEN_FOUND)
+#   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+#   add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+#      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+#      COMMENT "Generating API documentation with Doxygen" VERBATIM)
+#endif()
 
 
 #--------------------------------------------------------------

@@ -157,9 +157,15 @@ public:
         file->close();
         return 0;
     }
+
+    typedef std::map<std::string,std::string> _string_map ;
+    void writeh5(std::string fn1, std::string datasetname){
+      _string_map  attribute = _string_map() ;
+      writeh5(fn1,datasetname, attribute);
+    }
     
     void writeh5(std::string fn1, std::string datasetname, 
-            std::map<std::string,std::string> attribute) {
+		 std::map<std::string,std::string> attribute ) {
         H5::H5File *file;
         try {
             file = new H5::H5File(fn1, H5F_ACC_EXCL);

@@ -645,7 +645,7 @@ void PairwiseSequence::ComputeTestAccuracy() {
 
 /////////////////////  implementation of the class ContactNumberSequence ///////////////////////////////////////
 
-void mpi_sum_bcast_double(const double *src, double* dest){
+void mpi_sum_bcast_double(double *src, double* dest){
     // Chang this for no_mpi
 #ifdef _no_mpi 
     *dest=*src;

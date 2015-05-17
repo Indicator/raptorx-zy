@@ -11,14 +11,10 @@ set (MatrixLight_VERSION_PATCH 2)
 # Use a low version compiler to compile library, in order to make it compatible with
 # application want to be compiled with latest compiler.
 set(CMAKE_PREFIX_PATH 
-    /share/apps/matlab
-  /home/zywang/work/allbio/contrib/hdf5/
-  /opt/cray/hdf5/1.8.11/CRAY/81/ 
-  /home/zywang/program/hdf5-1.8.10-linux-x86_64-static/
-  /home/zywang/program/hdf5-1.8.10-linux-x86_64-shared/
+  /home/zywang/work/allbio.re1/contrib/hdf5/
 )
 
-set (CMAKE_CXX_FLAGS "-g ")
+set (CMAKE_CXX_FLAGS "-O3 ")
 
 #--------------------------------------------------------------
 # global headers
@@ -36,17 +32,13 @@ link_directories(${LIBS})
 if(COMMAND cmake_policy)
    cmake_policy(SET CMP0003 NEW)
 endif(COMMAND cmake_policy)
-#--------------------------------------------------------------
-# source directory
-#--------------------------------------------------------------
-#add_subdirectory(src)
+
 #--------------------------------------------------------------
 # options
 #--------------------------------------------------------------
 
 #OPTION(WITH_HDF5 "Include HDF5" ON)
 
-#set(HDF5 
 #--------------------------------------------------------------
 # HDF5
 #--------------------------------------------------------------
@@ -63,56 +55,49 @@ else()
 endif()
 
 #Find matlab engine
-#include_directories("/share/apps/matlab/extern/include")
 find_package(MATLAB)
 if(MATLAB_FOUND)
    message(STATUS "Build with MATLAB ENGINE support")
     include_directories(${MATLAB_INCLUDE_DIR})
     link_directories(${MATLAB_LIBRARY_DIR})
-
-    #add_definitions(-DMATLAB_ENGINE)
+    add_definitions(-DMATLAB_ENGINE)
 endif()
-
 
 add_definitions("-O3")
 add_library (MatrixLight matrix.cpp) 
-set_target_properties(MatrixLight PROPERTIES COMPILE_FLAGS "-DMATLAB_ENGINE")
-
-add_library (MatrixLight_vanilla matrix.cpp) 
-
 
 #--------------------------------------------------------------
 # testing with CTest
 #--------------------------------------------------------------
-#add_executable (matrix_test matrix_test.cpp)
-#target_link_libraries (matrix_test MatrixLight gsl gslcblas ${HDF5_LIBS} ${MATLAB_LIBRARY}) 
+add_executable (matrix_test matrix_test.cpp)
+target_link_libraries(matrix_test MatrixLight gsl gslcblas ${HDF5_LIBS}) 
+#if(HDF5_FOUND)
+#add_definitions(-DH5_SUPPORT)
+#endif()
+#target_link_libraries(matrix_test MatrixLight gsl gslcblas ${HDF5_LIBS}) 
 #add_test(matrixtest matrix_test)
 
-#if(MATLAB_FOUND)
-#add_executable (matrix_test_matlab matrix_test.cpp)
-#target_link_libraries (matrix_test_matlab MatrixLight gsl gslcblas ${HDF5_LIBS} ${MATLAB_LIBRARY}) 
-#add_test(matrixtest matrix_test_matlab)
-#endif()
+if(MATLAB_FOUND)
+add_executable (matrix_test_matlab matrix_test.cpp)
+target_link_libraries (matrix_test_matlab MatrixLight gsl gslcblas ${HDF5_LIBS} ${MATLAB_LIBRARY}) 
+add_test(matrixtest matrix_test_matlab)
+endif()
 
 
 #--------------------------------------------------------------
 # doxygen documentation
 #--------------------------------------------------------------
-find_package(Doxygen)
-if(DOXYGEN_FOUND)
-   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
-   add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
-      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-      COMMENT "Generating API documentation with Doxygen" VERBATIM)
-endif()
-
-
-
+#find_package(Doxygen)
+#if(DOXYGEN_FOUND)
+#   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile @ONLY)
+#   add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+#      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+#      COMMENT "Generating API documentation with Doxygen" VERBATIM)
+#endif()
 
 #--------------------------------------------------------------
 # install
 #--------------------------------------------------------------
 
 install(TARGETS MatrixLight DESTINATION ${CMAKE_CURRENT_SOURCE_DIR} )
-install(TARGETS MatrixLight_vanilla DESTINATION ${CMAKE_CURRENT_SOURCE_DIR} )
 
