@@ -13,6 +13,8 @@ set(CMAKE_PREFIX_PATH
 	INSTALL_DIR/bioh5
 	INSTALL_DIR/contrib/hdf5
 	INSTALL_DIR/contrib/BALL
+	INSTALL_DIR/contrib/lib
+	#/home/zywang/work/lapack-3.5.0/build/lib
 )
 #--------------------------------------------------------------
 # global headers
@@ -33,7 +35,7 @@ FIND_PACKAGE(MPI REQUIRED)
 FIND_PACKAGE(Lapack REQUIRED)
 #message(STATUS ${MPI_INCLUDE_PATH})
 include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS} $ENV{GSL_DIR}/include ${MPI_INCLUDE_PATH} ${MatrixLight_INCLUDE_DIR} ${BALL_INCLUDE_DIR} ${BIOH5_INCLUDE_DIR})
-set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES} $ENV{GSL_DIR}/lib ${MatrixLight_LIBRARY_DIR} ${BALL_LIBRARY_DIRS} ${BIOH5_LIBRARY} ${MPI_LIBRARY} /home/zywang/work/lapack-3.5.0/build/lib)
+set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES} $ENV{GSL_DIR}/lib ${MatrixLight_LIBRARY_DIR} ${BALL_LIBRARY_DIRS} ${BIOH5_LIBRARY} ${MPI_LIBRARY} )
 #mark_as_advanced(MPI_INCLUDE_PATH MPI_COMPILE_FLAGS MPI_LINK_FLAGS MPI_LIBRARY 
   
 
