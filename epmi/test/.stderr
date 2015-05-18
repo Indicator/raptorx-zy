@@ -1,11 +1,22 @@
-Done Pnnloadmi read h51b4bA.h5
-[D0]Save feature
-D0 Finished Loaddatalisth5
+D0 Sun May 17 20:01:31 2015
+ Finished Loaddatalisth5
+D0 Sun May 17 20:01:31 2015
+ LoadH5 1b4bA...
+D0 Sun May 17 20:01:31 2015
+ length_seq 71 subsampling_mode 1 num_pair 2145
+
+D0 Sun May 17 20:01:31 2015
+ Finished Loaddatalisth5
 [d0] dim_feature1580
-D0 Layer 0 100
-D0 Layer 1 40
-D0 Layer 2 13
-D0 Allocate grad grad_sum weights
-D0 num train 1 1
+D0 Sun May 17 20:01:31 2015
+ Layer 0 100
+D0 Sun May 17 20:01:31 2015
+ Layer 1 40
+D0 Sun May 17 20:01:31 2015
+ Layer 2 13
+D0 Sun May 17 20:01:31 2015
+ Allocate grad grad_sum weights
+D0 Sun May 17 20:01:31 2015
+ num train 0 1
 
 [D0] Initialization Finished!

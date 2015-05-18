@@ -8,7 +8,7 @@ function checkret {
 }
 
 function run_epmi {
-instdir="/home/zywang/work/allbio/"
+instdir=/home/zywang/work/allbio.re1/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/soft/gsl/gnu/1.14/lib:/home/zywang/work/sdcp/src/BALL-1.2/lib/Linux-x86_64-g++_4.1.2/:/opt/gcc/4.8.1/snos/lib64:/share/apps/gcc/4.7.3/lib64:$instdir/contrib/BALL/lib:$instdir/contrib/hdf5/lib
 
 a3mfile=$1
@@ -40,7 +40,7 @@ checkret $? "get_pnn1inf_feature.pl error!"
 
 echo $pdb.h5 > $pdb.h5list
 model=$instdir/epmi/data/model-100-40-r0.1-withss-pre-120
-params="-i $pdb.pnn1 -h $pdb.h5list -loadmodel $model  -s 13 -r 0 -nn 100,40 -sr 0.6 -ft1 1 -dn 1580 "
+params="-i $pdb.pnn1 -h null -test_list $pdb.h5list -loadmodel $model  -s 13 -r 0 -nn 100,40 -sr 0.6 -ft1 1 -dn 1580 "
 $nnpfpredict $params
 checkret $? "Nnpfpredict error!"
 }
