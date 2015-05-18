@@ -5,3 +5,8 @@ for i in MatrixLib bioh5 pnn1v2 ; do
 ( cd $i ; mkdir -p build; cd build; cmake ../ ; make ; make install ; )
 done
 
+for i in epmi ; do
+    ( cd $i
+      ./setup.sh ${install_path} || echo "$i setup error"
+      )
+done
