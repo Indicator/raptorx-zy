@@ -11,14 +11,10 @@ set (Nnpf_VERSION_PATCH 2)
 
 #set(CMAKE_PREFIX_PATH /home/wzy/program/hdf5-1.8.10-linux-x86_64-static/)
 set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
-		      /home/zywang/work/MatrixLib 
-		      /home/zywang/work/dpln/src/bioh5/br.allin1
-		      /home/zywang/work//BALL-1.2/
-		      /opt/cray/mpt/6.0.2/gni/mpich2-gnu/48
-		      /home/zywang/work/allbio/contrib/hdf5
-		      /home/zywang/work/allbio/contrib/BALL
-		      /home/zywang/work/allbio/bioh5
-		      /home/zywang/work/allbio/MatrixLib
+		      /home/zywang/work/allbio.re1/contrib/hdf5
+		      /home/zywang/work/allbio.re1/contrib/BALL
+		      /home/zywang/work/allbio.re1/bioh5
+		      /home/zywang/work/allbio.re1/MatrixLib
 		      	)
 #--------------------------------------------------------------
 # global headers
@@ -40,7 +36,7 @@ FIND_PACKAGE(Lapack REQUIRED)
 #message(STATUS ${MPI_INCLUDE_PATH})
 include_directories(${GSL_INCLUDE_DIRS} ${GSLCBLAS_INCLUDE_DIRS} $ENV{GSL_DIR}/include 
 					 ${MatrixLight_INCLUDE_DIR} ${BALL_INCLUDE_DIR} ${BIOH5_INCLUDE_DIR})
-set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES} $ENV{GSL_DIR}/lib ${MatrixLight_LIBRARY_DIR} ${BALL_LIBRARY_DIRS} ${BIOH5_LIBRARY}  /home/zywang/work/lapack-3.5.0/build/lib)
+set(LIBS ${LIBS} ${GSL_LIBRARIES} ${GSLCBLAS_LIBRARIES} $ENV{GSL_DIR}/lib ${MatrixLight_LIBRARY_DIR} ${BALL_LIBRARY_DIRS} ${BIOH5_LIBRARY} )
 
 #OPTION(WITH_HDF5 "Include HDF5" ON)
 #--------------------------------------------------------------
