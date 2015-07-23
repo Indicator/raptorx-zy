@@ -198,6 +198,7 @@ class LocalCruncher(ComputingHost):
         self.qsub_and_wait(cmd,dryrun=False)
 
 class OpenScienceGrid(ComputingHost):
+    # Project status: passed testing of test_sample_casp10.py.
     def __init__(self,user="lfzhao",host="login.osgconnect.net",num_proc=1,finish_rate=0.9):
         self.remote_host=host
         self.remote_user=user
@@ -223,6 +224,8 @@ Log = {executable}.log
 +ProjectName="ProtFolding"
 Queue %d
 """ % self.num_proc
+    def test_osg(self):
+        self.runbatch_and_wait("w")
     def get_jobid_osg(self,output):
         buf = StringIO.StringIO(output)
         #print output
@@ -321,7 +324,7 @@ Queue %d
                 # pre run
                 self.computer.run_and_wait(self.rr.get_pre_run_string(),dryrun=self.dryrun)
                 self.output=self.computer.qsub_and_wait(self.cmd,self.rr,dryrun=self.dryrun)
-                print "begin copy back: "+self.rr.get_post_run_string()
+                print "Begin post run command: "+self.rr.get_post_run_string()
                 self.computer.run_and_wait(self.rr.get_post_run_string(),dryrun=self.dryrun)
                 # post run
             def join(self):
@@ -341,6 +344,17 @@ Queue %d
             res.append(t.output)
         return res
 
+    def runbatch_and_wait_test(self):
+        cmd_list = ["w > w.log"]
+        run_list = []
+        rr=[]
+        rr.input_tar="osg_test.input.tgz" # Will be copied to OSG from local
+        rr.output_tar="osg_test.output.tgz" # copied back
+        rr.
+        rr.get_pre_run_string = lambda : "echo pre_run"
+        rr.get_post_run_string = lambda : "echo post_run"
+
+        self.runbatch_and_wait(cmd_list,run_list,dryrun=True)
 
 class Beagle(OpenScienceGrid): # Beagle is modified version of osg
     def __init__(self,user="zywang",host="login.beagle.ci.uchicago.edu"):
@@ -472,7 +486,9 @@ def test_write_result_file():
     print readlist(filename)
 
 def main():
-    test_write_result_file()
+    #test_write_result_file()
+    c = OpenScienceGrid()
+    c.test_osg()
 
 if __name__ == '__main__':
     main()

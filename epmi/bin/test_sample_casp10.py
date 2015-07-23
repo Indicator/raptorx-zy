@@ -298,51 +298,51 @@ class ProteinSamplerCasp10(SampleTask, test_rank_rosetta.RankRosetta): # We need
 def run_and_analysis(**kwargs):
     pass
 
-def main(test_list_file="/home/zywang/work/casp10tplFull/casp10off.list",dryrun=False,parallel=False,**kwargs):
-    if dryrun=="True":
-        dryrun=True
-    test_list=readlist(test_list_file)
-    sample_list=[ Sample(s) for s in test_list]
-    workdir="/home/zywang/work/epmi/"
-    exprdir="test_sample_casp10"
-    exprdir_fullpath=workdir+"/" +exprdir
+    def main(test_list_file="/home/zywang/work/casp10tplFull/casp10off.list",dryrun=False,parallel=False,**kwargs):
+        if dryrun=="True":
+            dryrun=True
+        test_list=readlist(test_list_file)
+        sample_list=[ Sample(s) for s in test_list]
+        workdir="/home/zywang/work/epmi/"
+        exprdir="test_sample_casp10"
+        exprdir_fullpath=workdir+"/" +exprdir
 
-    for s in sample_list:
-        s.native_pdb="/home/zywang/work/casp10pdb/%s.pdb" % s.sample_id
-        s.epmifile=exprdir_fullpath + "/cnfsampling.epmi/%s/%s.epad.prob" % (s.sample_id,s.sample_id)
-        epad_file="/home/zywang/work/sdcp/data1/epad.casp10/%s.epad.prob" % s.sample_id
-        #rebalance_combine(s.epmifile,epad_file,1)
-        s.epmifile=exprdir_fullpath + "/cnfsampling.epmi/%s/%s.epad.prob.reb" % (s.sample_id,s.sample_id)
-    if parallel:
-        from joblib import Parallel, delayed
-        import multiprocessing
-        results = Parallel(n_jobs=32)(delayed(process_rebalance)(exprdir_fullpath,x,1,0.8,False
-                                                                # sub_epad_dir="cnfsampling.epad",
-                                                                # sub_epmi_dir="cnfsampling.epmi"
-                                                                ) for x in sample_list)
-        #results=[process_rebalance(self,x,rebalance_factor,mix_rate) for x in self.sample_list]
-    else:
-        #print "Serial run rebalance"
-        #[process_rebalance(exprdir_fullpath,x,1,0.8,False) for x in sample_list]
-        pass
+        for s in sample_list:
+            s.native_pdb="/home/zywang/work/casp10pdb/%s.pdb" % s.sample_id
+            s.epmifile=exprdir_fullpath + "/cnfsampling.epmi/%s/%s.epad.prob" % (s.sample_id,s.sample_id)
+            epad_file="/home/zywang/work/sdcp/data1/epad.casp10/%s.epad.prob" % s.sample_id
+            #rebalance_combine(s.epmifile,epad_file,1)
+            s.epmifile=exprdir_fullpath + "/cnfsampling.epmi/%s/%s.epad.prob.reb" % (s.sample_id,s.sample_id)
+        if parallel:
+            from joblib import Parallel, delayed
+            import multiprocessing
+            results = Parallel(n_jobs=32)(delayed(process_rebalance)(exprdir_fullpath,x,1,0.8,False
+                                                                    # sub_epad_dir="cnfsampling.epad",
+                                                                    # sub_epmi_dir="cnfsampling.epmi"
+                                                                    ) for x in sample_list)
+            #results=[process_rebalance(self,x,rebalance_factor,mix_rate) for x in self.sample_list]
+        else:
+            #print "Serial run rebalance"
+            #[process_rebalance(exprdir_fullpath,x,1,0.8,False) for x in sample_list]
+            pass
 
-    computer=OpenScienceGrid("lfzhao", "login.osgconnect.net",num_proc=200) # the queue
-    test_epmi=ProteinSamplerCasp10("compare-epmi-epad",
-                                   ProteinSampler(remote_workpath="work/epmi/test_sample_casp10/cnfsampling.epmi",
-                                                  computer=computer,no_ref=True),
-                                   sample_list,
-                                   computer,
-                                   workdir="/home/zywang/work/epmi/",
-                                   exprdir="test_sample_casp10",
-                                   progdir="cnfsampling.epmi",
-                                   progdir_list=["cnfsampling.epmi"]
-                                   )
-    #test_epmi.run_rebalance(1,0.8,True,1)
-    #test_epmi.run(dryrun=dryrun)
-    #test_epmi.progdir=["cnfsampling.epmi", "cnfsampling.epad"]
-    #test_epmi.progdir_list=["cnfsampling.epmi", "cnfsampling.epad"]
-    #test_epmi.analysis(redo=True)
-    test_epmi.folding_analysis(sample_list)
+        computer=OpenScienceGrid("lfzhao", "login.osgconnect.net",num_proc=200) # the queue
+        test_epmi=ProteinSamplerCasp10("compare-epmi-epad",
+                                       ProteinSampler(remote_workpath="work/epmi/test_sample_casp10/cnfsampling.epmi",
+                                                      computer=computer,no_ref=True),
+                                       sample_list,
+                                       computer,
+                                       workdir="/home/zywang/work/epmi/",
+                                       exprdir="test_sample_casp10",
+                                       progdir="cnfsampling.epmi",
+                                       progdir_list=["cnfsampling.epmi"]
+                                       )
+        #test_epmi.run_rebalance(1,0.8,True,1)
+        #test_epmi.run(dryrun=dryrun)
+        #test_epmi.progdir=["cnfsampling.epmi", "cnfsampling.epad"]
+        #test_epmi.progdir_list=["cnfsampling.epmi", "cnfsampling.epad"]
+        #test_epmi.analysis(redo=True)
+        test_epmi.folding_analysis(sample_list)
 def test1():
     main(test_list_file='test.list.h1',dryrun='False')
 if __name__ == '__main__':

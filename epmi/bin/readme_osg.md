@@ -27,6 +27,7 @@
     Queue {num_proc}
 
 3. Clustering
+
     After ProteinFolder successfully finishes, there will be many tar files contains
     decoys produced by ProteinFolder. Use the following command to get the clustering
     results of the decoys.
