@@ -151,9 +151,7 @@ class LocalCruncher(ComputingHost):
             self.queue="#$ -q all.q@"+node_address
         else:
             self.queue=""
-
-    def qsub_submit(self,cmd,qsub_cmd="cat - | qsub -sync y "):
-        header="""
+        self.header="""
 #$ -S /bin/bash
 #$ -cwd
 ##$ -v OMPI_MCA_plm_rsh_disable_qrsh=1
@@ -165,9 +163,9 @@ class LocalCruncher(ComputingHost):
 #$ -o  $HOME/work/qsub.log/qsub.o$JOB_ID
 #$ -V
 """.format(cpu_per_node=self.cpu_per_node,queue=self.queue)
-        #print header+cmd
-        #return
-        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
+
+    def qsub_submit(self,cmd,qsub_cmd="cat - | qsub -sync y "):
+        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
         buf = StringIO.StringIO(output)
         #print output
         jobid = re.split("\s+",buf.readline())[2]
@@ -196,6 +194,86 @@ class LocalCruncher(ComputingHost):
 
     def run_and_wait(self,cmd,dryrun=False):
         self.qsub_and_wait(cmd,dryrun=False)
+
+
+class Beagle(LocalCruncher): # Beagle is like LocalCruncher
+    def __init__(self,ncpu,ncpu_per_node,user="zywang",host="login.beagle.ci.uchicago.edu"):
+        self.remote_host=host
+        self.remote_user=user
+        self.remote_pipe_string="ssh {user}@{host}".format(user=self.remote_user,host=self.remote_host)
+        self.max_connect=10
+        self.qstat="qstat"
+        # No need to know local host, because every copy is started from local host.
+        self.ncpu=ncpu
+        self.ncpu_per_node=ncpu_per_node
+        self.submit_header_template="""
+#!/bin/bash
+#PBS -N epad-retrain
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -l mppwidth={ncpu}
+#PBS -l mppnppn={ncpu_per_node}
+#PBS -l walltime={walltime}
+#PBS -q {queue}
+#PBS -V
+. /opt/modules/default/init/bash
+export CRAY_ROOTFS=DSL
+cd $PBS_O_WORKDIR
+module load cray-mpich
+module load PrgEnv-gnu
+module load gsl
+module unload hdf5
+module load cray-hdf5
+LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/Linux-x86_64-g++_4.1.2/:/opt/gcc/4.8.1/snos/lib64
+"""
+        self.submit_header_development = self.submit_header_template.format(ncpu=32,ncpu_per_node=16,
+                                                                            walltime="0:0:29:0",queue="development")
+        self.submit_header_batch = self.submit_header_template.format(ncpu=self.ncpu,ncpu_per_node=self.ncpu_per_node,
+                                                                            walltime="0:1:29:0",queue="batch")
+        self.mpirun = "aprun -n {ncpu} -N {ncpu_per_node}".format(ncpu=self.ncpu, ncpu_per_node=self.ncpu_per_node)
+    def get_jobid(self,output):
+        # unfinished
+        return output.rstrip()
+    def runbatch_and_wait(self,cmd_list,run_list,dryrun=False):
+        # To maximize the node, we need to group jobs together to submit to one node.
+        #input: a list of command lines, each return one line , return stdout
+        if dryrun :
+            print "\n".join(cmd_list)
+            return
+        all_input=[rr.input_tar for rr in run_list]
+        all_input_string=all_input.join(" ")
+        runbat="runbat.%s.sh" % hash(run_list)
+        self.try_connect(lambda x:Popen(self.remote_pipe_string+" \" cd {path} ; cat - > {runbat}; batch.pl {runbat}\" ".
+                               format(path=run_list[0].remote_workpath,runbat=runbat)
+                                ).communicate(cmd_list.join("\n")))
+    def qsub_check(self,jobid):
+        cmd="qstat |tail -n +3 |cut -d' ' -f1|grep %s" % jobid
+        #
+        output=Popen(cmd,shell=True,stdout=PIPE).communicate()[0]
+        return re.match(jobid,output)!=None and re.match(jobid,output).group(0)==jobid
+
+    def qsub_submit(self,cmd,qsub_cmd="cat - | qsub "):
+        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
+        buf = StringIO.StringIO(output)
+        #print output
+        jobid = re.split("\s+",buf.readline())[2]
+        return jobid
+
+    def qsub_and_wait(self,cmd,dryrun=False):
+        if dryrun:
+            print cmd
+            return
+        # return : the first line in the stdout file
+        jobid=self.qsub_submit(cmd,qsub_cmd="cat - | qsub ")
+        #> tmp ; id=$(tail -n 1 tmp |cut -d' ' -f2) ; cat SimpleParallel.qsub_and_wait.o$id
+        while self.qsub_check(jobid):
+            time.sleep(5)
+        output_filename="%s/%s/work/qsub.log/qsub.o" % (os.environ['HOME'],os.environ['USER']) +jobid
+        output_file=open(output_filename,"r")
+        res=output_file.readline()
+        output_file.close()
+        return res
+
 
 class OpenScienceGrid(ComputingHost):
     # Project status: passed testing of test_sample_casp10.py.
@@ -350,38 +428,11 @@ Queue %d
         rr=[]
         rr.input_tar="osg_test.input.tgz" # Will be copied to OSG from local
         rr.output_tar="osg_test.output.tgz" # copied back
-        rr.
+        rr.output_
         rr.get_pre_run_string = lambda : "echo pre_run"
         rr.get_post_run_string = lambda : "echo post_run"
 
         self.runbatch_and_wait(cmd_list,run_list,dryrun=True)
-
-class Beagle(OpenScienceGrid): # Beagle is modified version of osg
-    def __init__(self,user="zywang",host="login.beagle.ci.uchicago.edu"):
-        self.remote_host=host
-        self.remote_user=user
-        self.remote_pipe_string="ssh {user}@{host}".format(user=self.remote_user,host=self.remote_host)
-        self.max_connect=10
-        self.qstat="qstat"
-        # No need to know local host, because every copy is started from local host.
-        self.ncpu=24
-
-    def get_jobid(self,output):
-        # unfinished
-        return output.rstrip()
-    def runbatch_and_wait(self,cmd_list,run_list,dryrun=False):
-        # To maximize the node, we need to group jobs together to submit to one node.
-        #input: a list of command lines, each return one line , return stdout
-        if dryrun :
-            print "\n".join(cmd_list)
-            return
-        all_input=[rr.input_tar for rr in run_list]
-        all_input_string=all_input.join(" ")
-        runbat="runbat.%s.sh" % hash(run_list)
-        self.try_connect(lambda x:Popen(self.remote_pipe_string+" \" cd {path} ; cat - > {runbat}; batch.pl {runbat}\" ".
-                               format(path=run_list[0].remote_workpath,runbat=runbat)
-                                ).communicate(cmd_list.join("\n")))
-
 
 class Job(object):
     def __init__(self,cmd,job_name="",mpi_job=False,input_file=[],output_file=[]):

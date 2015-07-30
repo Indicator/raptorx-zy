@@ -1,12 +1,12 @@
     README of OpenScienceGrid, ProteinFolder and Clustering
 
-1. Run ProteinFolder only requires 1 command.
+# 1. Run ProteinFolder only requires 1 command.
 
     cd {ProteinFolderInstallDir}
     ./bin/ProteinFolder -f ./DATA/proteinFolderCNFo2.conf -a REMC " \
                  "-A ./SEQ/EPAD/{EPadFILE}  -o {output_dir} {PDBID}
 
-2. Run ProteinFolder on OpenScienceGrid (OSG) nodes.
+# 2. Run ProteinFolder on OpenScienceGrid (OSG) nodes.
 
     One need such a shell script to run a program on OSG.
         * {input_tar} is a tar file required by the program to run on remote node.
@@ -26,7 +26,7 @@
     +ProjectName="ProtFolding"
     Queue {num_proc}
 
-3. Clustering
+# 3. Clustering
 
     After ProteinFolder successfully finishes, there will be many tar files contains
     decoys produced by ProteinFolder. Use the following command to get the clustering

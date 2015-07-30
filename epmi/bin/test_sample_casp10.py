@@ -298,7 +298,7 @@ class ProteinSamplerCasp10(SampleTask, test_rank_rosetta.RankRosetta): # We need
 def run_and_analysis(**kwargs):
     pass
 
-    def main(test_list_file="/home/zywang/work/casp10tplFull/casp10off.list",dryrun=False,parallel=False,**kwargs):
+def main(test_list_file="/home/zywang/work/casp10tplFull/casp10off.list",dryrun=False,parallel=False,**kwargs):
         if dryrun=="True":
             dryrun=True
         test_list=readlist(test_list_file)
