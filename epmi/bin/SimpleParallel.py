@@ -141,16 +141,38 @@ class ComputingHost(object): # The default localhost
             res.append(t.output)
         return res
 
+    def run(self,cmd,**kwargs):
+        if hasattr(cmd,'__iter__') : # cmd is a list
+            self.runbatch_and_wait(cmd,**kwargs)
+#        elif self.ncpu == 1: # cmd is a single string , ncpu > 1 , => mpi job
+#            self.run_and_wait(cmd,**kwargs)
+#        else: # cmd is a single string , ncpu=1
+#            self.qsub_and_wait(cmd,**kwargs)
+        else:
+            self.run_and_wait(cmd,**kwargs)
+
+    @staticmethod
+    def getComputer(cluster,**kwargs):
+        if cluster=="Cruncher":
+            return LocalCruncher(kwargs)
+        elif cluster == "Beagle":
+            return Beagle(kwargs)
+        elif cluster == "BeagleDevelopment":
+            return Beagle(ncpu=32,ncpu_per_node=16,walltime="0:0:29:59",queue="development")
+        else:
+            return ComputingHost(kwargs)
+
 class LocalCruncher(ComputingHost):
-    def __init__(self,cpu_per_node=30,node_address=""):
+    def __init__(self,ncpu = 20, cpu_per_node=32, queue=""):
         self.remote_user="zywang"
         self.remote_host="localhost"
-        self.ncpu=200
+        self.ncpu=ncpu
         self.cpu_per_node=cpu_per_node
-        if node_address != "" :
-            self.queue="#$ -q all.q@"+node_address
+        if queue!= "" : # specify a particular node
+            self.queue="#$ -q "+queue
         else:
             self.queue=""
+        self.mpirun_prefix = "mpirun "
         self.header="""
 #$ -S /bin/bash
 #$ -cwd
@@ -197,7 +219,7 @@ class LocalCruncher(ComputingHost):
 
 
 class Beagle(LocalCruncher): # Beagle is like LocalCruncher
-    def __init__(self,ncpu,ncpu_per_node,user="zywang",host="login.beagle.ci.uchicago.edu"):
+    def __init__(self,ncpu,ncpu_per_node,walltime,queue="batch",user="zywang",host="login.beagle.ci.uchicago.edu"):
         self.remote_host=host
         self.remote_user=user
         self.remote_pipe_string="ssh {user}@{host}".format(user=self.remote_user,host=self.remote_host)
@@ -206,6 +228,8 @@ class Beagle(LocalCruncher): # Beagle is like LocalCruncher
         # No need to know local host, because every copy is started from local host.
         self.ncpu=ncpu
         self.ncpu_per_node=ncpu_per_node
+        self.walltime=walltime
+        self.queue=queue
         self.submit_header_template="""
 #!/bin/bash
 #PBS -N epad-retrain
@@ -226,11 +250,10 @@ module unload hdf5
 module load cray-hdf5
 LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/Linux-x86_64-g++_4.1.2/:/opt/gcc/4.8.1/snos/lib64
 """
-        self.submit_header_development = self.submit_header_template.format(ncpu=32,ncpu_per_node=16,
-                                                                            walltime="0:0:29:0",queue="development")
-        self.submit_header_batch = self.submit_header_template.format(ncpu=self.ncpu,ncpu_per_node=self.ncpu_per_node,
-                                                                            walltime="0:1:29:0",queue="batch")
-        self.mpirun = "aprun -n {ncpu} -N {ncpu_per_node}".format(ncpu=self.ncpu, ncpu_per_node=self.ncpu_per_node)
+        self.submit_header = self.submit_header_template.format(ncpu=self.ncpu,ncpu_per_node=self.ncpu_per_node,
+                                                                            walltime=self.walltime,queue=self.queue)
+        self.mpirun_prefix = "aprun -n {ncpu} -N {ncpu_per_node}".format(ncpu=self.ncpu, ncpu_per_node=self.ncpu_per_node)
+
     def get_jobid(self,output):
         # unfinished
         return output.rstrip()
@@ -259,11 +282,14 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
         jobid = re.split("\s+",buf.readline())[2]
         return jobid
 
-    def qsub_and_wait(self,cmd,dryrun=False):
+    # Outside call
+    def run_and_wait(self,cmd,dryrun=False):
+        if self.ncpu > 1:
+            cmd = self.mpirun_header + " " +cmd
         if dryrun:
             print cmd
             return
-        # return : the first line in the stdout file
+
         jobid=self.qsub_submit(cmd,qsub_cmd="cat - | qsub ")
         #> tmp ; id=$(tail -n 1 tmp |cut -d' ' -f2) ; cat SimpleParallel.qsub_and_wait.o$id
         while self.qsub_check(jobid):
@@ -273,6 +299,10 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
         res=output_file.readline()
         output_file.close()
         return res
+
+    @staticmethod
+    def test():
+        ComputingHost().getComputer("BeagleDevelopment", ncpu=10,ncpu_per_node=5).run_and_wait("echo 123")
 
 
 class OpenScienceGrid(ComputingHost):
