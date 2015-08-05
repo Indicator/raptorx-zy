@@ -9,7 +9,7 @@
 #include <string>
 #include "H5Cpp.h"
 #include "matrix.h"
-
+#include "matrix3.h"
 /*
  * Bioh5 is a class to describe quantative features of a protein sequence and its
  * structure. This class is used for input and output data extracted from 
@@ -82,6 +82,10 @@ public:
     void writeBpsFeature(std::string fn); // need sequence information only
     void writeh5(std::string fn,std::string dataset); //Write all features to h5 file /Data/feature2d
     //Command line functions: generate a bps,moreev,mi files from a3m file.
+
+    // Compute pair position feature, and add it into h5 file.
+    Matrix3<double> & CalcPairPositionFeature(const std::vector<int> & seq, const Matrix & pairAminoAcidMatrix, const std::string & featureName);
+    void WritePairPositionFeature(int seqlen, std::string h5file, const Matrix3<double> & feature, std::string dataset, unsigned int startFeatureIndex);
     
     //For perl feature generating script, write the result into h5 file.
     //Combined with CNFsearch to generate h5 file directly.

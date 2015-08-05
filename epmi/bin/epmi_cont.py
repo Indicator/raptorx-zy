@@ -41,7 +41,9 @@ class EpmiCont(Runnable):
             "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools\n" 
             cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5, get_pnn1inf_feature = self.get_pnn1inf_feature, tgtfile = self.get_tgtfile(sample_id), a3mfile = self.get_a3mfile(sample_id), fastafile = self.get_fastafile(sample_id), sample_id = sample_id, instdir = self.instdir)
             print(cmd)
+            cmdlist.
             self.computer.run_and_wait(cmd)
+            # SimpleParallel.ComputingHost().getComputer("").run_and_wait(cmd)
 
     def training(self): # Assume epmi_cont is well configured.
 

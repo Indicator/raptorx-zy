@@ -540,7 +540,7 @@ def main():
     #test_write_result_file()
     c = OpenScienceGrid()
     c.test_osg()
-
+    
 if __name__ == '__main__':
     main()
 

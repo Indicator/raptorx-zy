@@ -903,6 +903,9 @@ void Nnpf::LoadDataListH5(string h5data_list_file,vector<Sequence*> & dest, bool
     ifstream fin(h5data_list_file, ifstream::in);
     int i = 0;
     bool print_pair_window_size=false;
+    if(fin.fail())cerr << "LoadDataListH5 Error: " << h5data_list_file <<" "<<strerror(errno);
+    
+    
     while (fin.good()) {
 
         string fnline;
@@ -938,7 +941,7 @@ void Nnpf::LoadDataListH5(string h5data_list_file,vector<Sequence*> & dest, bool
         if(dest.size()>0)
             testData.push_back(dest.back());
         else
-            throw "Empty Training node!!\n\n";
+	  throw string("Empty Training node!!\n\n");
     fin.close();
     eprint(0, "Finished Loaddatalisth5");
 }
