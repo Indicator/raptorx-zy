@@ -877,10 +877,11 @@ vector<vector<int> > Bioh5::readSimpleFasta(const string& fn) {
 /**
  * AddPairFeature will compute the feature for each pair of position, and write it into a dataset in the bioh5.
  */
-Matrix3<double> & readDopeMatrix(string fn, string atom)
+// Add condition atom is not available.
+Matrix3<double> & Bioh5::ReadDopeMatrix(string fn, string atom)
 {
   Matrix3<double> res(26,26,30);
-  ifstream fin(fn,std::ifstream::in);
+  ifstream fin(fn.c_str(), std::ifstream::in);
   while(fin.good())
   {
     string ll;
@@ -899,7 +900,7 @@ Matrix3<double> & readDopeMatrix(string fn, string atom)
 }
 
 
-Matrix3<double> & Bioh5::CalcPairPositionFeature(const vector<int> & seq, const Matrix3<double> & pairAminoAcidMatrix, const string & featureName)
+Matrix3<double> & Bioh5::CalcPairPositionFeature(const vector<int> & seq, Matrix3<double> & pairAminoAcidMatrix, const string & featureName)
 {
   // TODO: 1. find dope matrix, read it to mem. 2. read sequence, 3. how many features like this. 4. position and name in the whole feature3D.
   // Add feature len, and feature name in bioh5.
@@ -918,7 +919,7 @@ Matrix3<double> & Bioh5::CalcPairPositionFeature(const vector<int> & seq, const 
 
 // 300 reserved.
 // 0-29: dope
-void Bioh5::WritePairPositionFeature(int seqlen, string h5file, const Matrix3<double> & feature, string dataset, unsigned int startFeatureIndex)
+void Bioh5::WritePairPositionFeature(int seqlen, string h5file, Matrix3<double> & feature, string dataset, unsigned int startFeatureIndex)
 {
   Matrix3<double> buffer(seqlen,seqlen, 300);
   for(int i=0;i<seqlen;i++)
