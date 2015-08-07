@@ -15,6 +15,7 @@ class EpmiContSample(EpmiCont):
         self.reformat = "{instdir}/epmi/bin/reformat.pl".format(instdir = self.instdir)
         self.get_pnn1inf_feature = "{instdir}/epmi/bin/get_pnn1inf_feature.pl".format(instdir = self.instdir)
         self.fasta2hdf5 = "{instdir}/feature_util/fasta2hdf5".format(instdir = self.instdir)
+        self.add_pair_position_feature = "{instdir}/feature_util/add_pair_position_feature".format(instdir = self.instdir)
 
         ## [TESTING CONFIG] DO NOT REMOVE THIS LINE
         self.model='{instdir}/epmi/data/model-100-40-r0.1-withss-pre-120'.format(instdir=self.instdir)

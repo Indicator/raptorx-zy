@@ -32,16 +32,27 @@ class EpmiCont(Runnable):
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
         sample_list = readlist(sample_list_file)
+        cmd_list=[]
         for sample_id in sample_list:
             tgtfile = self.get_tgtfile(sample_id)
             fastafile =  self.get_fastafile(sample_id) # the multi sequence alignment
             seqfile = self.get_seqfile(sample_id) # sequence file
             cmd = "{reformat} -r -l 3000 -noss {a3mfile} {fastafile} && " + \
             "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {sample_id}.h5 && "+\
+            "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {sample_id}.h5 && "+\
             "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools\n" 
-            cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5, get_pnn1inf_feature = self.get_pnn1inf_feature, tgtfile = self.get_tgtfile(sample_id), a3mfile = self.get_a3mfile(sample_id), fastafile = self.get_fastafile(sample_id), sample_id = sample_id, instdir = self.instdir)
-            print(cmd)
-            self.computer.run_and_wait(cmd)
+            cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5,
+                             get_pnn1inf_feature = self.get_pnn1inf_feature,
+                             add_pair_position_feature = self.add_pair_position_feature,
+                             dopematrix = self.dopematrix,
+                             tgtfile = self.get_tgtfile(sample_id),
+                             a3mfile = self.get_a3mfile(sample_id),
+                             fastafile = self.get_fastafile(sample_id),
+                             seqfile = self.get_seqfile(sample_id),
+
+                             sample_id = sample_id, instdir = self.instdir)
+            cmd_list.append(cmd)
+        self.computer.runbatch_and_wait(cmd_list,dryrun=True)
 
     def training(self): # Assume epmi_cont is well configured.
 
