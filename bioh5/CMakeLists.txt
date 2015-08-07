@@ -62,7 +62,7 @@ endif()
 set(LIBS ${LIBS} ${HDF5_LIBRARY_DIRS} ${BALL_LIBRARY_DIRS})
 
 #add_definitions(" -static -std=c++11 -DCLS=64 -D_MPI")
-add_definitions(" -O3 ")
+add_definitions(" -g ")
 message(STATUS ${LIBS})
 link_directories(${LIBS})
 

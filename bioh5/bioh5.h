@@ -84,9 +84,9 @@ public:
     //Command line functions: generate a bps,moreev,mi files from a3m file.
 
     // Compute pair position feature, and add it into h5 file.
-    Matrix3<double> & ReadDopeMatrix(std::string fn, std::string atom);
+    void ReadDopeMatrix(std::string fn, std::string atom, Matrix3<double> &);
     
-    Matrix3<double> & CalcPairPositionFeature(const std::vector<int> & seq, Matrix3<double> & pairAminoAcidMatrix, const std::string & featureName);
+    void CalcPairPositionFeature(const std::vector<int> & seq, Matrix3<double> & pairAminoAcidMatrix, const std::string & featureName, Matrix3<double> & );
     void WritePairPositionFeature(int seqlen, std::string h5file, Matrix3<double> & feature, std::string dataset, unsigned int startFeatureIndex);
     
     //For perl feature generating script, write the result into h5 file.

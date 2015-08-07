@@ -73,7 +73,7 @@ link_directories(${LIBS} )
 add_executable (fasta2hdf5 fasta2hdf5.cpp protein.cpp)
 target_link_libraries (fasta2hdf5 MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran) 
 
-add_executable (add_pair_feature_to_bioh5 add_pair_feature_to_bioh5.cpp)
+add_executable (add_pair_feature_to_bioh5 add_pair_feature_to_bioh5.cpp protein.cpp)
 target_link_libraries (add_pair_feature_to_bioh5 MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran) 
 
 
