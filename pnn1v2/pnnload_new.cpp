@@ -1,4 +1,3 @@
-
 #include "pnn1.h"
 /**
  * Read pairwise frequence and compute mi and di from the pair-wise frequence
@@ -81,7 +80,9 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
     Matrix obs_feature(length_s, 128);
     Matrix3<double> savefeature(seq->length_seq, seq->length_seq, 2048, 0);
     //obs_pairwise_features = new Array3D<double>(length_seq, length_seq, dim_pairwise_features);
+    // obs_pairwise_features are from .pnn1 file.
     Matrix3<double> obs_pairwise_features(length_s, length_s, 512);
+    
     Matrix3<double> savelabel(seq->length_seq, seq->length_seq, 16, 0); //(*distances)(t, u)
     // From pnn1 file, we read features for each postion, and distance labels.
     for (int j = 0; j < length_s; j++) {
@@ -124,7 +125,7 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
             } //cerr << endl;
         }
     }
-
+    
     int padd = 0;
     //save to features to .h5 
     /* Search for the h5 file from fasta2hdf5 
@@ -146,9 +147,18 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
     } else {
         saveh5filename=pdbid + ".h5";
     }
+
+    seq->h5file = saveh5filename ;
+    // Read pair_position_feature from bioh5 file.
+    Matrix3<double> pair_position_feature;
+    pair_position_feature.readh5(seq->h5file,"/Data/pairPositionFeature");
+    int pair_position_feature_dimension=30; // Change this if more pair position features added.
+    
     
     bool feature_name_done=mp->feature_name_done;
+    // Prepare the feature3D
     try {
+      //seq is this
         seq->datah5 = new Bioh5;
         datah5->total_pair_window_feature=0;
 
@@ -160,6 +170,11 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
                 vector<pair<int, int> > wi1 = find_feature_window(i, j, mp->window_size, seq->length_seq);
                 int offset = 0;
                 int fp = 0;
+		//-----
+		// Start for position i and j
+		//-----
+
+		// Feature for position i and j independently
                 for (unsigned int k = 0; k < wi1.size(); k++) {
                     /*if (wi1[k].first < 0 || wi1[k].second<0) { //padding at 
                         for (int di = 0; di < mp->dim_one_pos; di++) {
@@ -181,9 +196,11 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
                     }
                     //}
                 }
+
+		// Feature for pair (i,j)
                 offset = fp;
                 wi1 = find_feature_window_pair(i, j, mp->pair_window_size, seq->length_seq);
-                int dim_allpair = 11 + 10 + 3 +1 ; // Add more pair feature here.
+                int dim_allpair = 11 + 10 + 3 +1 + pair_position_feature_dimension; // Add more pair feature here.
                 for (unsigned k = 0; k < wi1.size(); k++) {
                     if (wi1[k].first < 0) { //padding at 
                         for (int di = 0; di < dim_allpair; di++) { //miroot[k](i, j);0-10, mipow[k](i, j);0-9,miLocalMax[k](i, j);0-2
@@ -209,10 +226,21 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
                             savefeature[i][j][fp++] = seq->datah5->miLocalMax[di](a1, a2);
                             if(!feature_name_done)feature_name.push_back(get_pair_feature_name(k,wi1[k].first,wi1[k].second,"milocalmax",di));
                         }
-                        int a1 = wi1[k].first;
-                        int a2 = wi1[k].second;
-                        savefeature[i][j][fp++] = seq->datah5->direct_information(a1, a2);
-                        if(!feature_name_done)feature_name.push_back(get_pair_feature_name(k,wi1[k].first,wi1[k].second,"di",0));
+
+			{
+			  int a1 = wi1[k].first;
+			  int a2 = wi1[k].second;
+			  savefeature[i][j][fp++] = seq->datah5->direct_information(a1, a2);
+			  if(!feature_name_done)feature_name.push_back(get_pair_feature_name(k,wi1[k].first,wi1[k].second,"di",0));
+			}
+
+                        for (int di = 0; di < pair_position_feature_dimension; di++) {
+			  int a1 = wi1[k].first;
+			  int a2 = wi1[k].second;
+			  savefeature[i][j][fp++] = pair_position_feature[a1][a2][di];
+			  if(!feature_name_done)feature_name.push_back(get_pair_feature_name(k,wi1[k].first,wi1[k].second,"dope",di));
+			}
+			
                         // Add more pair feature here.
                     }
                 }
