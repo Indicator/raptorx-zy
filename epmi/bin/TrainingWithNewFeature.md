@@ -22,4 +22,7 @@ can be read and written by most platform, including matlab, R, python, perl, and
  Find a sequence loading part and load dope at the same time. 
  
  TODO:
- Add pair position feature to feature3D. 
+ [Done] Add pair position feature to feature3D.
+ Test a list feature generation config and training part on cruncher and beagle.Zygg2015
+ 
+  
