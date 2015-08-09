@@ -13,6 +13,7 @@ set (Nnpf_VERSION_PATCH 2)
 set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
 		      /home/zywang/work/allbio.re1/contrib/hdf5
 		      /home/zywang/work/allbio.re1/contrib/BALL
+		      /home/zywang/work/allbio.re1/contrib/Lapack
 		      /home/zywang/work/allbio.re1/bioh5
 		      /home/zywang/work/allbio.re1/MatrixLib
 		      	)
@@ -71,6 +72,10 @@ link_directories(${LIBS} )
 
 add_executable (fasta2hdf5 fasta2hdf5.cpp protein.cpp)
 target_link_libraries (fasta2hdf5 MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran) 
+
+add_executable (add_pair_feature_to_bioh5 add_pair_feature_to_bioh5.cpp protein.cpp)
+target_link_libraries (add_pair_feature_to_bioh5 MatrixLight gsl gslcblas ${HDF5_LIBS} libBioh5.a BALL lapack blas gfortran) 
+
 
 #--------------------------------------------------------------
 # doxygen documentation

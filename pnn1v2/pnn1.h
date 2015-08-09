@@ -68,6 +68,8 @@ public:
         return (Score) 1.0 / (1.0 + exp(-(double) sum));
     }
     string pdbid;
+    string h5file;
+    
     int length_seq;
     int nDataPoints;
     double Rg;

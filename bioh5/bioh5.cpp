@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "H5Cpp.h"
 #include "matrix.h"
+#include "matrix3.h"
 #include "protein_const.h"
 #include "bioh5.h"
 #include <gsl/gsl_linalg.h>
@@ -836,6 +837,7 @@ unsigned long Bioh5::getPos(int i, int j, int aa, int bb, int seqlen, int naa) {
 
 vector<vector<int> > Bioh5::readSimpleFasta(const string& fn) {
     //the returned alignment is represented by integer matrix.
+  // The amino acid returned is coded as chars.
     std::ifstream ifs(fn.c_str());
     int nseq = 0;
     vector<vector<int> > res;
@@ -871,3 +873,69 @@ vector<vector<int> > Bioh5::readSimpleFasta(const string& fn) {
     return res;
 
 }
+
+/**
+ * AddPairFeature will compute the feature for each pair of position, and write it into a dataset in the bioh5.
+ */
+// Add condition atom is not available.
+void Bioh5::ReadDopeMatrix(string fn, string atom, Matrix3<double> & res)
+{
+  res.resize(26,26,30);
+  ifstream fin(fn.c_str(), std::ifstream::in);
+  while(fin.good())
+  {
+    string ll;
+    std::getline(fin,ll) ;
+    if(ll=="")continue;
+    
+    vector<string> onepair = matrixStringSplit(ll," ");
+
+    int aa1,aa2;
+    //    cerr<<onepair[1]<<" "<<onepair[4]<<" "<<ll <<endl;
+    
+    if(onepair[1]!=atom or onepair[4] != atom)
+      continue;
+    aa1=AA3toAAcode(onepair[0].c_str());
+    aa2=AA3toAAcode(onepair[3].c_str());
+    for( int i=0 ;i< 30; i++)
+      res[aa1][aa2][i]=atof(onepair[i+6].c_str());
+  }
+  res.Dlmwrite("test-dope.txt");
+  
+}
+
+
+void Bioh5::CalcPairPositionFeature(const vector<int> & seq, Matrix3<double> & pairAminoAcidMatrix, const string & featureName, Matrix3<double>& pairPositionFeature)
+{
+  // TODO: 1. find dope matrix, read it to mem. 2. read sequence, 3. how many features like this. 4. position and name in the whole feature3D.
+  // Add feature len, and feature name in bioh5.
+  pairPositionFeature.resize(seq.size(),seq.size(),30);
+  for(int i=0;i<seq.size();i++)
+  {
+      for(int j=i;j<seq.size();j++)
+      {
+	for(int findex=0;findex<30;findex++)
+	  pairPositionFeature[i][j][findex]=pairAminoAcidMatrix[seq[i]][seq[j]][findex];
+      }
+  }
+}
+
+
+// 300 reserved.
+// 0-29: dope
+void Bioh5::WritePairPositionFeature(int seqlen, string h5file, Matrix3<double> & feature, string dataset, unsigned int startFeatureIndex)
+{
+  Matrix3<double> buffer(seqlen,seqlen, 300);
+  for(int i=0;i<seqlen;i++)
+  {
+      for(int j=i;j<seqlen;j++)
+      {
+	for(int findex=0;findex<feature.getd3();findex++)
+	  buffer[i][j][startFeatureIndex+findex]=feature[i][j][findex];
+      }
+  }
+  buffer.writeh5(h5file, "/Data/pairPositionFeature");
+}
+
+
+

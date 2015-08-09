@@ -1,3 +1,4 @@
+// DEPRECATED, DO NOT USE OR CHANGE.
 #include "pnn1.h"
 
 void Sequence::Pnnloadmi(string ss, string h5filename) {
@@ -104,6 +105,7 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
     }
 
     int padd = 0;
+    
     //save to features to .h5 
     try {
         seq->datah5 = new Bioh5;
@@ -113,6 +115,7 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
                 for (int di = 0; di < dim_pairwise_features; di++)
                     obs_pairwise_features[a1][a2][di] = seq->datah5->mipow[di](a1, a2);
 
+	// Expanding windowed feature.
         for (int i = 0; i < seq->length_seq; i++) {
             for (int j = i + 1; j < seq->length_seq; j++) {
                 vector<pair<int, int> > wi1 = find_feature_window(i, j, mp->window_size, seq->length_seq);

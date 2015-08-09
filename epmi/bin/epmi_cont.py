@@ -41,6 +41,7 @@ class EpmiCont(Runnable):
             "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {sample_id}.h5 && "+\
             "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {sample_id}.h5 && "+\
             "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools\n" 
+
             cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5,
                              get_pnn1inf_feature = self.get_pnn1inf_feature,
                              add_pair_position_feature = self.add_pair_position_feature,
