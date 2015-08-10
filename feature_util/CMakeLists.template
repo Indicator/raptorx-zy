@@ -55,7 +55,11 @@ if(HDF5_FOUND)
    # manually set hdf dirs if needed.
    # set(HDF5_LIBRARY_DIRS "/opt/cray/hdf5/1.8.11/GNU/47/lib")
    #   set(HDF5_LIBS hdf5 hdf5_hl hdf5_cpp hdf5_hl_cpp)
-   set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z sz)
+   if($ENV{WHEREAMI} EQUAL beagle)
+      set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z)
+   else($ENV{WHEREAMI} EQUAL beagle)
+      set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z sz)
+   endif($ENV{WHEREAMI} EQUAL beagle)
    #libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a
    include_directories(${HDF5_INCLUDE_DIR})
    add_definitions(${HDF5_CPPFLAGS})
