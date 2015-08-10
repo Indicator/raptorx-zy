@@ -10,17 +10,23 @@ set (Nnpf_VERSION_PATCH 2)
 
 
 #set(CMAKE_PREFIX_PATH /home/wzy/program/hdf5-1.8.10-linux-x86_64-static/)
-set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
+set(CMAKE_PREFIX_PATH 
 		      INSTALL_DIR/contrib/hdf5
 		      INSTALL_DIR/contrib/BALL
 		      INSTALL_DIR/contrib/lib
 		      INSTALL_DIR/bioh5
 		      INSTALL_DIR/MatrixLib
+		      $ENV{HDF5_DIR}
 		      	)
 #--------------------------------------------------------------
 # global headers
 #--------------------------------------------------------------
+# Walkaround for cruncher and any system where g++11 is in a customized position.
+FIND_PATH(CUSTOM_GCC  g++  /share/apps/gcc/4.7.3/bin/ NO_DEFAULT_PATH)
+IF(CUSTOM_GCC)
 set(CMAKE_CXX_COMPILER /share/apps/gcc/4.7.3/bin/g++)
+ENDIF(CUSTOM_GCC)
+
 set (CMAKE_CXX_FLAGS "-static-libstdc++ -g")
 file(GLOB_RECURSE headers include/*.hxx)
 include_directories(include)
