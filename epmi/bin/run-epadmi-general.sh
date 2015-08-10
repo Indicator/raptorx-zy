@@ -8,7 +8,7 @@ function checkret {
 }
 
 function run_epmi {
-    instdir=/home/zywang/work/allbio.re1
+instdir=/home/zywang/work/allbio.re1
     export PDBTOOLS_DIR=$instdir/pdbtools/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/soft/gsl/gnu/1.14/lib:/home/zywang/work/sdcp/src/BALL-1.2/lib/Linux-x86_64-g++_4.1.2/:/opt/gcc/4.8.1/snos/lib64:/share/apps/gcc/4.7.3/lib64:$instdir/contrib/BALL/lib:$instdir/contrib/hdf5/lib
 
