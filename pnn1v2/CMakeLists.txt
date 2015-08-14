@@ -14,12 +14,21 @@ set(CMAKE_PREFIX_PATH
 	/home/zywang/work/allbio.re1/contrib/hdf5
 	/home/zywang/work/allbio.re1/contrib/BALL
 	/home/zywang/work/allbio.re1/contrib/lib
+	$ENV{MPICH_DIR}
 	#/home/zywang/work/lapack-3.5.0/build/lib
 )
 #--------------------------------------------------------------
 # global headers
 #--------------------------------------------------------------
+
+# Walkaround for cruncher and any system where g++11 is in a customized position.
+FIND_PATH(CUSTOM_GCC  g++  /share/apps/gcc/4.7.3/bin/ NO_DEFAULT_PATH)
+IF(CUSTOM_GCC)
 set(CMAKE_CXX_COMPILER /share/apps/gcc/4.7.3/bin/g++)
+ENDIF(CUSTOM_GCC)
+	
+
+
 set (CMAKE_CXX_FLAGS "-static-libstdc++")
 file(GLOB_RECURSE headers include/*.hxx)
 include_directories(include)

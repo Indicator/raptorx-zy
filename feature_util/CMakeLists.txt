@@ -10,17 +10,23 @@ set (Nnpf_VERSION_PATCH 2)
 
 
 #set(CMAKE_PREFIX_PATH /home/wzy/program/hdf5-1.8.10-linux-x86_64-static/)
-set(CMAKE_PREFIX_PATH /opt/cray/hdf5/1.8.11/GNU/47 
+set(CMAKE_PREFIX_PATH 
 		      /home/zywang/work/allbio.re1/contrib/hdf5
 		      /home/zywang/work/allbio.re1/contrib/BALL
 		      /home/zywang/work/allbio.re1/contrib/lib
 		      /home/zywang/work/allbio.re1/bioh5
 		      /home/zywang/work/allbio.re1/MatrixLib
+		      $ENV{HDF5_DIR}
 		      	)
 #--------------------------------------------------------------
 # global headers
 #--------------------------------------------------------------
+# Walkaround for cruncher and any system where g++11 is in a customized position.
+FIND_PATH(CUSTOM_GCC  g++  /share/apps/gcc/4.7.3/bin/ NO_DEFAULT_PATH)
+IF(CUSTOM_GCC)
 set(CMAKE_CXX_COMPILER /share/apps/gcc/4.7.3/bin/g++)
+ENDIF(CUSTOM_GCC)
+
 set (CMAKE_CXX_FLAGS "-static-libstdc++ -g")
 file(GLOB_RECURSE headers include/*.hxx)
 include_directories(include)
@@ -49,7 +55,11 @@ if(HDF5_FOUND)
    # manually set hdf dirs if needed.
    # set(HDF5_LIBRARY_DIRS "/opt/cray/hdf5/1.8.11/GNU/47/lib")
    #   set(HDF5_LIBS hdf5 hdf5_hl hdf5_cpp hdf5_hl_cpp)
-   set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z sz)
+   if($ENV{WHEREAMI} EQUAL beagle)
+      set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z)
+   else($ENV{WHEREAMI} EQUAL beagle)
+      set(HDF5_LIBS libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a z sz)
+   endif($ENV{WHEREAMI} EQUAL beagle)
    #libhdf5_hl_cpp.a libhdf5_cpp.a libhdf5_hl.a libhdf5.a
    include_directories(${HDF5_INCLUDE_DIR})
    add_definitions(${HDF5_CPPFLAGS})
