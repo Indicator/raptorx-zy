@@ -27,7 +27,7 @@ class EpmiCont(Runnable):
     def config(self):
         # Implement this config in subclass.
         pass
-    def genfeature(self, sample_list_file = ""):
+    def genfeature(self, sample_list_file = "", dryrun=False):
         # run part of run-epadmi-general.sh multiple times using SimpleParallel.
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
@@ -38,9 +38,9 @@ class EpmiCont(Runnable):
             fastafile =  self.get_fastafile(sample_id) # the multi sequence alignment
             seqfile = self.get_seqfile(sample_id) # sequence file
             cmd = "{reformat} -r -l 3000 -noss {a3mfile} {fastafile} && " + \
-            "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {sample_id}.h5 && "+\
-            "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {sample_id}.h5 && "+\
-            "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools\n" 
+            "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {h5file} && "+\
+            "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {h5file} && "+\
+            "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools && scp {h5file} {remote_training_data_dir}\n" 
 
             cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5,
                              get_pnn1inf_feature = self.get_pnn1inf_feature,
@@ -50,13 +50,14 @@ class EpmiCont(Runnable):
                              a3mfile = self.get_a3mfile(sample_id),
                              fastafile = self.get_fastafile(sample_id),
                              seqfile = self.get_seqfile(sample_id),
-
-                             sample_id = sample_id, instdir = self.instdir)
+                             sample_id = sample_id, instdir = self.instdir,
+                             h5file = self.get_h5file(sample_id),
+                             remote_training_data_dir= self.remote_training_data_dir)
             cmd_list.append(cmd)
-        self.computer.runbatch_and_wait(cmd_list,dryrun=True)
-
-    def training(self): # Assume epmi_cont is well configured.
-
+        self.computer.runbatch_and_wait(cmd_list,dryrun=dryrun,ncpu=1)
+        #self.computer.runbatch_and_wait(["aaa"],dryrun=dryrun)
+    def training(self, dryrun=False): # Assume epmi_cont is well configured.
+        #TODO cmd_copy_list = "scp {genfeature_list} {training_list}".format(genfeature_list=self.
         # call NNpf training with list
         # run on cruncher queue or beagle queue.
         cmd = "{nnpftrain} -h {training_h5list} -m {model_prefix}  -s 13 -r 0.1 -nn 100,80,60,40 -sr {subsampling_rate} -op 0 -dn 1575 -maxiter {max_iter} -iter0 0 -norm_par {norm_par}"
@@ -66,7 +67,7 @@ class EpmiCont(Runnable):
                    max_iter=self.max_iter,
                    norm_par=self.norm_par,
                    training_h5list=self.training_h5list)
-        self.training_computer.qsub_and_wait(cmd, dryrun=True)
+        self.training_computer.qsub_and_wait(cmd, dryrun=dryrun)
         # Output sample file name format: model-test-config--9
         
         # Do we need a FP paradim and return model?

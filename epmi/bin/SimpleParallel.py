@@ -1,12 +1,16 @@
 __author__ = 'Zhiyong Wang\nToyota Technological Institute at Chicago\n zywang@ttic.edu \n 2014'
 
 from subprocess import Popen, PIPE
+import logging
 import StringIO
 import re
 import time
 import threading
 import os
 
+FORMAT = '%(message)s'
+logging.basicConfig(format=FORMAT)
+logger = logging.getLogger("SimpleParallel")
 
 # This library provides a universal interface of several computing clusters in the
 # community of Toyota Technological Institute at Chicago and the University of Chicago,
@@ -101,20 +105,20 @@ class ComputingHost(object): # The default localhost
         return res
 
     def runbatch_and_wait(self,cmd_list,run_list=list(),dryrun=False,ncpu=0):
+        logger.info("ComputingHost runbatch_and_wait")
         #input: a list of command lines, each return one line , return stdout
         # this function start a thread pool to run each command with size of ncpu
         # return list of output.
 
-        # Convert it to Runnable list
-        if isinstance(cmd_list[0],str):
-            cmd_list = [ Runnable(cmd,computer=self) for cmd in cmd_list ]
-
-        if ncpu==0:
-            ncpu=self.ncpu
-
         if dryrun :
             print "\n".join(cmd_list)
             return
+
+        # Convert it to Runnable list
+        if isinstance(cmd_list[0],str):
+            run_list = [ Runnable(cmd,computer=self) for cmd in cmd_list ]
+
+        max_scheduled_jobs=self.max_scheduled_jobs
         import threading
         import time
         allthread=[]
@@ -133,7 +137,7 @@ class ComputingHost(object): # The default localhost
             t=MyThread(cmd_list[i],self)
             allthread.append(t)
             t.start()
-            while threading.activeCount() > ncpu :
+            while threading.activeCount() > max_scheduled_jobs:
                 time.sleep(1)
         res=[]
         for t in allthread:
@@ -155,6 +159,8 @@ class ComputingHost(object): # The default localhost
     def getComputer(cluster,**kwargs):
         if cluster=="Cruncher":
             return LocalCruncher(kwargs)
+        if cluster=="CruncherBatch":
+            return LocalCruncher(kwargs,ncpu=2,cpu_per_node=32)
         elif cluster == "Beagle":
             return Beagle(kwargs)
         elif cluster == "BeagleDevelopment":
@@ -164,6 +170,7 @@ class ComputingHost(object): # The default localhost
 
 class LocalCruncher(ComputingHost):
     def __init__(self,ncpu = 20, cpu_per_node=32, queue=""):
+        # cpu_per_node is not supported by cruncher.
         self.remote_user="zywang"
         self.remote_host="localhost"
         self.ncpu=ncpu
@@ -173,18 +180,19 @@ class LocalCruncher(ComputingHost):
         else:
             self.queue=""
         self.mpirun_prefix = "mpirun "
+        self.max_scheduled_jobs = 100
         self.header="""
 #$ -S /bin/bash
 #$ -cwd
 ##$ -v OMPI_MCA_plm_rsh_disable_qrsh=1
 {queue}
-#$ -pe serial {cpu_per_node}
+#$ -pe serial {ncpu}
 #$ -N SimpleParallel.qsub_and_wait
 #$ -e  $HOME/work/qsub.log/qsub.e$JOB_ID
 ##              $JOB_NAME, $HOSTNAME, and $GE_TASK_ID
 #$ -o  $HOME/work/qsub.log/qsub.o$JOB_ID
 #$ -V
-""".format(cpu_per_node=self.cpu_per_node,queue=self.queue)
+""".format(queue=self.queue,ncpu=self.ncpu)
 
     def qsub_submit(self,cmd,qsub_cmd="cat - | qsub -sync y "):
         output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
@@ -208,7 +216,7 @@ class LocalCruncher(ComputingHost):
         #> tmp ; id=$(tail -n 1 tmp |cut -d' ' -f2) ; cat SimpleParallel.qsub_and_wait.o$id
         while self.qsub_check(jobid):
             time.sleep(5)
-        output_filename="%s/%s/work/qsub.log/qsub.o" % (os.environ['HOME'],os.environ['USER']) +jobid
+        output_filename="%s/work/qsub.log/qsub.o" % (os.environ['HOME']) +jobid
         output_file=open(output_filename,"r")
         res=output_file.readline()
         output_file.close()
