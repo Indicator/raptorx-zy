@@ -51,14 +51,17 @@ class EpmiContConfigTest(EpmiCont):
         self.get_a3mfile = lambda s: data_prefix + "/pdb25fasta/{sample_id}.a3m".format(sample_id=s)
         self.get_seqfile = lambda s: data_prefix + "/pdb25seq/{sample_id}.seq".format(sample_id=s)
         self.get_h5file = lambda s: data_prefix + "/pdb25h5/{sample_id}.h5".format(sample_id=s)
-        self.reformat = "/bin/true" #SKIPPED "{instdir}/epmi/bin/reformat.pl".format(instdir = self.instdir)
-        self.get_pnn1inf_feature = "/bin/true" #SKIPPED "{instdir}/epmi/bin/get_pnn1inf_feature.pl".format(instdir = self.instdir)
+        self.reformat = "{instdir}/epmi/bin/reformat.pl".format(instdir = self.instdir)
+        self.get_pnn1inf_feature = "{instdir}/epmi/bin/get_pnn1inf_feature.pl".format(instdir = self.instdir)
        
-        self.fasta2hdf5 = "/bin/true" # SKIPPED "{instdir}/feature_util/fasta2hdf5".format(instdir = self.instdir)
+        self.fasta2hdf5 = "{instdir}/feature_util/fasta2hdf5".format(instdir = self.instdir)
         self.add_pair_position_feature = "{instdir}/feature_util/build/add_pair_feature_to_bioh5".format(instdir = self.instdir)
-        self.remote_training_data_dir = "login.beagle.ci.uchicago.edu:work1/data/pdb25h5"
+        self.remote_training_data_dir = "login.beagle.ci.uchicago.edu:work1/data/"
         self.dopematrix = "{instdir}/epmi/data/dope-back.par_from_FengZhao".format(instdir=self.instdir)
-        
+        self.sample_list_weight = "{instdir}/epmi/data/sample_list_weight".format(instdir=self.instdir)
+        # TODO
+        self.post_genfeature_cmd = "scp {sample_list_weight} {remote_training_data_dir}".format(sample_list_weight = self.sample_list_weight, remote_training_data_dir = self.remote_training_data_dir);
+        self.max_length_for_training = 600
         ## [TESTING CONFIG] DO NOT REMOVE THIS LINE
         self.model='{instdir}/epmi/data/model-100-40-r0.1-withss-pre-120'.format(instdir=self.instdir)
         self.nnpfpredict='{instdir}/pnn1v2/Nnpfpredict'.format(instdir=self.instdir)
@@ -67,19 +70,32 @@ class EpmiContConfigTest(EpmiCont):
         ## [TRAINING CONFIG] DO NOT REMOVE THIS LINE
         # Fix the path on beagle.
         # Compute the training list from generate feature. Do the balance.
-        self.training_instdir="/lustre/beagle2/work/allbio.re1/"
-        self.model_prefix='{instdir}/epmi/data/model-test-config-'.format(instdir=self.training_instdir)
-        self.nnpftrain='{instdir}/pnn1v2/Nnpftrain'.format(instdir=self.training_instdir)
-        self.norm_par='{instdir}/epmi/data/subsampling_normpar.h5'.format(instdir=self.training_instdir)
-        self.training_h5list = '{instdir}/epmi/test/test-training.h5list'.format(instdir=self.training_instdir)
+        
+        self.training_instdir="/lustre/beagle2/zywang/work/allbio.re1/"
+        self.training_data_dir="/lustre/beagle2/zywang/work/allbio.re1/data/"
+        self.prepare_training_computer = \
+             "mkdir -p {training_instdir} && " + \
+             "{training_instdir}/epmi/bin/bala.pl {training_instdir}/train_list_weight.txt > {training_instdir}/train_list_balance.txt".format(training_instdir = self.training_instdir)
+
+        self.model_prefix='{training_instdir}/epmi/data/model-test-config-'.format(training_instdir=self.training_instdir)
+        self.nnpftrain='{training_instdir}/pnn1v2/build/Nnpftrain'.format(training_instdir=self.training_instdir)
+        self.nnpftrain_nompi='{instdir}/pnn1v2/build/Nnpftrain.nompi'.format(instdir=self.instdir)
+        
+        self.norm_par='{training_instdir}/epmi/data/subsampling_normpar.h5'.format(training_instdir=self.training_instdir)
+        self.training_h5list = '{training_instdir}/epmi/data/train_list_balance.txt'.format(training_instdir=self.training_instdir)
         self.subsampling_rate = 1
         self.max_iter = 10
         self.training_computer = ComputingHost.getComputer("BeagleDevelopment")
-
+# TODO: check subsample_normal.h5 and pair_window_feature in h5files.        
 
 def main(**kwargs):
-    chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
-    chain.genfeature()
-    #chain.training()
+    #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
+    chain = EpmiContConfigTest("/home/zywang/work/allbio.re1/epmi/test/test.pdb25.h1.list")
+    #chain.gen_sample_list_weight(chain.sample_list_file, chain.sample_list_weight)
+    chain.genfeature(dryrun=True)
+    #chain.training(dryrun=True)
 if __name__ == '__main__':
     main(**( dict(zip(sys.argv[1::2], sys.argv[2::2]))))
+
+    #TODO, find the fasta to generate feature, or h5 with pair_window_feature to start training 
+    # copy generated pnn1 to pnn1 folder.

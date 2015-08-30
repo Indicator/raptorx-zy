@@ -16,6 +16,7 @@ set(CMAKE_PREFIX_PATH
 	INSTALL_DIR/contrib/lib
 	$ENV{MPICH_DIR}
 	#/home/zywang/work/lapack-3.5.0/build/lib
+	/opt/openmpi
 )
 #--------------------------------------------------------------
 # global headers

@@ -5,6 +5,7 @@ import logging
 import StringIO
 import re
 import time
+import tempfile
 import threading
 import os
 
@@ -90,6 +91,9 @@ class ComputingHost(object): # The default localhost
                     raise ValueError("Shell command return non-zero")
                 return output
 
+    def sshrun(self, cmd, **kwargs):
+        self.runlocal_from_remote(self, cmd, **kwargs)
+    
     def runlocal_from_remote(self,cmd, dryrun=False,return_full=False):
         if dryrun :
             print cmd
@@ -260,8 +264,8 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
 """
         self.submit_header = self.submit_header_template.format(ncpu=self.ncpu,ncpu_per_node=self.ncpu_per_node,
                                                                             walltime=self.walltime,queue=self.queue)
-        self.mpirun_prefix = "aprun -n {ncpu} -N {ncpu_per_node}".format(ncpu=self.ncpu, ncpu_per_node=self.ncpu_per_node)
-
+        self.mpirun_prefix = "aprun -n {ncpu} -N {ncpu_per_node} ".format(ncpu=self.ncpu, ncpu_per_node=self.ncpu_per_node)
+        self.header=self.submit_header
     def get_jobid(self,output):
         # unfinished
         return output.rstrip()
@@ -283,22 +287,31 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
         output=Popen(cmd,shell=True,stdout=PIPE).communicate()[0]
         return re.match(jobid,output)!=None and re.match(jobid,output).group(0)==jobid
 
-    def qsub_submit(self,cmd,qsub_cmd="cat - | qsub "):
-        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
+    def qsub_submit(self,cmd,qsub_cmd="",dryrun=False):
+        # No std input for qsub, we need a tmep file.
+        fd, temp_path=tempfile.mkstemp()
+        cmd = self.mpirun_prefix + " "+ cmd
+        with open(temp_path,'w') as fh:
+            fh.write(self.header+ ("\n echo '%s' \n" % cmd) +cmd)
+        os.close(fd)
+        if dryrun:
+            print(self.header +("\n echo '%s' \n" % cmd) +cmd)
+            return
+        output=self.try_connect(lambda x:Popen("qsub "+temp_path, shell=True, stdout=PIPE).communicate()[0])
         buf = StringIO.StringIO(output)
         #print output
+        
         jobid = re.split("\s+",buf.readline())[2]
         return jobid
 
     # Outside call
+    def qsub_and_wait(self,cmd,dryrun=False):
+        self.run_and_wait(cmd,dryrun=dryrun)
     def run_and_wait(self,cmd,dryrun=False):
-        if self.ncpu > 1:
-            cmd = self.mpirun_header + " " +cmd
-        if dryrun:
-            print cmd
-            return
-
-        jobid=self.qsub_submit(cmd,qsub_cmd="cat - | qsub ")
+        #if self.ncpu > 1:
+        #    cmd = self.mpirun_header + " " +cmd
+        
+        jobid=self.qsub_submit(cmd,qsub_cmd="cat - | qsub ",dryrun=dryrun)
         #> tmp ; id=$(tail -n 1 tmp |cut -d' ' -f2) ; cat SimpleParallel.qsub_and_wait.o$id
         while self.qsub_check(jobid):
             time.sleep(5)

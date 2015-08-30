@@ -128,20 +128,8 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
     
     int padd = 0;
     //save to features to .h5 
-    /* Search for the h5 file from fasta2hdf5 
-                if (h5filename != "") {
-            if (mp->h5dir.size() > 0)
-                sprintf(h5file, "%s/%s.h5", mp->h5dir.c_str(), pdbid.c_str());
-            else
-                sprintf(h5file, "%s", h5filename.c_str());
-        } else
-            sprintf(h5file, "/lustre/beagle/zywang/work/data/pdb25bioh5/%s.h5", pdbid.c_str());
-        if (mp->par["-regen"] != "" || mp->par["-readh5file"] != "" ){
-            sprintf(h5file, "/lustre/beagle/zywang/work/data/pdb25bioh5/%s.h5", pdbid.c_str());
-            if ( mp->par["-readh5file"] != "" )
-                sprintf(h5file, "%s", mp->par["-readh5file"].c_str());
-        } */
     string saveh5filename; // Used when regenerating, the pair_window_feature will be stored to this file.
+    
     if (mp->h5dir != "") {
         saveh5filename=mp->h5dir + "/" + pdbid + ".h5";
     } else {
@@ -161,8 +149,7 @@ void Sequence::LoadData(string fn, bool bSavelabel) {
       //seq is this
         seq->datah5 = new Bioh5;
         datah5->total_pair_window_feature=0;
-
-        seq->Pnnloadmi(seq->pdbid, seq->pdbid + ".h5"); // read from current dir.
+        seq->Pnnloadmi(seq->pdbid, seq->h5file); // read from current dir.
         for (int i = 0; i < seq->length_seq; i++) {
             for (int j = i + 1; j < seq->length_seq; j++) {
                 vector<string> feature_name;
