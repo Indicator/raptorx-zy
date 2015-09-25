@@ -71,6 +71,7 @@ class ComputingHost(object): # The default localhost
         time.sleep(self.cooldown_time)
         self.connect_cooldown.release()
         return (stdout,stderr)
+    # Run and wait for the result, no qsub.
     def run_and_wait(self,cmd, dryrun=False,return_full=False):
         # Can be overlapped by qsub_and_wait in local cruncher subclass
         if isinstance(cmd,str):
@@ -91,11 +92,12 @@ class ComputingHost(object): # The default localhost
                     raise ValueError("Shell command return non-zero")
                 return output
 
+    # sshrun is another name of runlocal_from_remote
     def sshrun(self, cmd, **kwargs):
-        self.runlocal_from_remote(self, cmd, **kwargs)
+        self.runlocal_from_remote( cmd, **kwargs)
     
     def runlocal_from_remote(self,cmd, dryrun=False,return_full=False):
-        if dryrun :
+        if dryrun:
             print cmd
             return 0
         else:
@@ -103,10 +105,10 @@ class ComputingHost(object): # The default localhost
                 shellstr="cat - | {pipe_string} -T ".format(pipe_string=self.remote_pipe_string)
             else:
                 shellstr=os.environ['SHELL']
-            res=Popen(shellstr,shell=True,stdin=PIPE,stdout=PIPE).communicate(cmd)[0]
-        if not return_full:
-            res=res[0]
-        return res
+                res=Popen(shellstr,shell=True,stdin=PIPE,stdout=PIPE).communicate(cmd)[0]
+                if not return_full:
+                    res=res[0]
+                return res
 
     def runbatch_and_wait(self,cmd_list,run_list=list(),dryrun=False,ncpu=0):
         logger.info("ComputingHost runbatch_and_wait")

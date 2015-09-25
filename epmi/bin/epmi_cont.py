@@ -13,6 +13,7 @@ __author__ = 'zywang'
 FORMAT = '%(message)s'
 logging.basicConfig(format=FORMAT)
 logger = logging.getLogger("EpmiCont")
+logger.setLevel(logging.DEBUG)
 class EpmiCont(Runnable):
     def __init__(self, sample_list_file):
         # TODO, add a dir creator and file names builder here.
@@ -27,11 +28,27 @@ class EpmiCont(Runnable):
     def config(self):
         # Implement this config in subclass.
         pass
+    def check_h5_pair_window_feature(self,sample_id,h5file=""):
+        res=False
+        h5file=self.get_h5file(sample_id) if h5file == "" else h5file 
+        cmd = "h5dump -H {h5file} |grep pair_".format(h5file=h5file)
+        #logger.info("sample_id, "+sample_id+", h5file, "+h5file)
+        try:
+            output = ComputingHost().run_and_wait(cmd)
+            assert(output!="")
+            res=True
+        except(ValueError):
+            pass
+        return res
+
     def gen_sample_list_weight(self, sample_list_file, sample_list_weight):
+        logger.info("sample_list_weight, "+sample_list_weight)
         assert(sample_list_file != "");
         sample_list = readlist(sample_list_file)
         sample_list_weight_buffer = "";
         for sample_id in sample_list:
+            if not self.check_h5_pair_window_feature(sample_id):
+                continue
             seqfile = self.get_seqfile(sample_id) # sequence file
             weight = len(readlist(self.get_seqfile(sample_id))[0])
             if weight< self.max_length_for_training:
@@ -49,7 +66,6 @@ class EpmiCont(Runnable):
         cmd_list=[]
         # TODO get_list_weight_file(sample_list, get
 
-        self.gen_sample_list_weight(self.sample_list_file, self.sample_list_weight)
         for sample_id in sample_list:
             tgtfile = self.get_tgtfile(sample_id)
             fastafile =  self.get_fastafile(sample_id) # the multi sequence alignment
@@ -58,7 +74,7 @@ class EpmiCont(Runnable):
             cmd = "{reformat} -r -l 3000 -noss {a3mfile} {fastafile} && " + \
             "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {h5file} && "+\
             "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {h5file} && "+\
-            "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools && mkdir -p ./pnn1/ && cp {sample_id}.pnn1 ./pnn1/" +\
+            "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools && mkdir -p ./pnn1/ && cp {sample_id}.pnn1 ./pnn1/ && " +\
             "echo {h5file} > {sample_id}.h5list && {nnpftrain_nompi}  -h {sample_id}.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only  -h5dir h5/ && "+\
             "scp {h5file} {remote_training_data_dir}\n"
             # /home/zywang/work/dpln/src/pnn1v2/build/Nnpftrain.nompi -h $pdb.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only -save_di h5/$pdb.di-1.h5  -h5dir h5/
@@ -81,11 +97,11 @@ class EpmiCont(Runnable):
         #self.computer.runbatch_and_wait(["aaa"],dryrun=dryrun)
     def training(self, dryrun=False): # Assume epmi_cont is well configured.
 
-        self.training_computer.sshrun(self.prepare_training_computer)
+        self.training_computer.sshrun(self.prepare_training_computer,dryrun=dryrun)
         #TODO cmd_copy_list = "scp {genfeature_list} {training_list}".format(genfeature_list=self.
         # call NNpf training with list
         # run on cruncher queue or beagle queue.
-        cmd = "{nnpftrain} -h {training_h5list} -m {model_prefix}  -s 13 -r 0.1 -nn 100,80,60,40 -sr {subsampling_rate} -op 0 -dn 1575 -maxiter {max_iter} -iter0 0 -norm_par {norm_par}"
+        cmd = "{nnpftrain} -h {training_h5list} -m {model_prefix}  -s 13 -r 0.1 -nn 100,80,60,40 -sr {subsampling_rate} -op 0 -dn 1595 -maxiter {max_iter} -iter0 0 -norm_par {norm_par}"
         cmd = cmd.format(nnpftrain=self.nnpftrain,
                    model_prefix=self.model_prefix,
                    subsampling_rate=self.subsampling_rate,
@@ -100,6 +116,7 @@ class EpmiCont(Runnable):
         
     def testing(self, sample_list_file = ""):
         # run part of run-epadmi-general.sh multiple times using SimpleParallel.
+        # Run all prediction jobs.
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
         sample_list = readlist(sample_list_file)
@@ -117,6 +134,7 @@ class EpmiCont(Runnable):
         # Do we need an overview web to show all tasks?
         while True:
             self.genfeature(self.sample_list_file)
+            self.gen_sample_list_weight(self.sample_list_file, self.sample_list_weight)
             self.training(self.sample_list_file, self.model_output)
             self.testing(self.sample_list_file,self.model_output)
             self.analysis(self.model_output, self.analysis_output)
@@ -126,7 +144,8 @@ class EpmiCont(Runnable):
     
     # Run all analysis, return reports for each analysis.
     # Which program will check if the model can be used by prediction?
-    # 
+    #
+    # TODO: the analysis will know how to run the given model, and how the old benchmarks will be extracted for comparison.
     def analysis(self, model, data_set):
         self.testing(model, sample_list_file)
         
@@ -135,7 +154,8 @@ class EpmiCont(Runnable):
         # 
         return report
         # import test_rosetta and call the function.
-        
+    def analysis_sampling(self, model, data_set):
+        pass
 
 def test(**kwargs):
     a = EpmiCont("/home/zywang/work/allbio.re1/epmi/test/test.list")
