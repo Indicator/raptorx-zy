@@ -1039,7 +1039,8 @@ void Nnpf::Init(int argc, char** argv) {
         getline(ss, s0, ',');
         int x;
         stringstream(s0) >> x;
-	if(x <=0){ eprint(0," nnlayer <= 0");
+	if(x <=0){
+	  eprint(0," nnlayer <= 0");
 	  exit(-1);
 	}
         nnlayer.push_back(x);
