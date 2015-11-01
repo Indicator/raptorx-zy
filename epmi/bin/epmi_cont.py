@@ -58,7 +58,7 @@ class EpmiCont(Runnable):
         with open(sample_list_weight, "w") as output_file:
             output_file.write(sample_list_weight_buffer)
         
-    def genfeature(self, sample_list_file = "", dryrun=False):
+    def genfeature(self, sample_list_file = "", genfeature_dir="", dryrun=False):
         # run part of run-epadmi-general.sh multiple times using SimpleParallel.
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
@@ -77,6 +77,8 @@ class EpmiCont(Runnable):
             "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools && mkdir -p ./pnn1/ && cp {sample_id}.pnn1 ./pnn1/ && " +\
             "echo {h5file} > {sample_id}.h5list && {nnpftrain_nompi}  -h {sample_id}.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only  -h5dir h5/ && "+\
             "scp {h5file} {remote_training_data_dir}\n"
+            if genfeature_dir != "":
+                cmd = "cd " + genfeature_dir + " && " + cmd
             # /home/zywang/work/dpln/src/pnn1v2/build/Nnpftrain.nompi -h $pdb.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only -save_di h5/$pdb.di-1.h5  -h5dir h5/
             # Try generating pair_window_feature, and remote training at the same time.
             cmd = cmd.format(reformat = self.reformat, fasta2hdf5 = self.fasta2hdf5,
@@ -95,49 +97,53 @@ class EpmiCont(Runnable):
         self.computer.runbatch_and_wait(cmd_list,dryrun=dryrun,ncpu=1)
         self.computer.sshrun(self.post_genfeature_cmd)
         #self.computer.runbatch_and_wait(["aaa"],dryrun=dryrun)
-    def training(self, dryrun=False): # Assume epmi_cont is well configured.
 
+    def training(self, dryrun=False): # Assume epmi_cont is well configured.
         self.training_computer.sshrun(self.prepare_training_computer,dryrun=dryrun)
         #TODO cmd_copy_list = "scp {genfeature_list} {training_list}".format(genfeature_list=self.
         # call NNpf training with list
         # run on cruncher queue or beagle queue.
-        cmd = "{nnpftrain} -h {training_h5list} -m {model_prefix}  -s 13 -r 0.1 -nn 100,80,60,40 -sr {subsampling_rate} -op 0 -dn 1595 -maxiter {max_iter} -iter0 0 -norm_par {norm_par}"
+        cmd = "{nnpftrain} -h {training_h5list} -m {model_prefix}  -s 13 -r 0.1 -nn {neural_network_structure} -sr {subsampling_rate} -op 0 -dn 1595 -maxiter {max_iter} -iter0 0 -norm_par {norm_par}"
         cmd = cmd.format(nnpftrain=self.nnpftrain,
-                   model_prefix=self.model_prefix,
-                   subsampling_rate=self.subsampling_rate,
-                   max_iter=self.max_iter,
-                   norm_par=self.norm_par,
-                   training_h5list=self.training_h5list)
+                         model_prefix=self.model_prefix,
+                         subsampling_rate=self.subsampling_rate,
+                         max_iter=self.max_iter,
+                         norm_par=self.norm_par,
+                         training_h5list=self.training_h5list,
+                         neural_network_structure=self.neural_network_structure
+                     )
         self.training_computer.qsub_and_wait(cmd, dryrun=dryrun)
         # Output sample file name format: model-test-config--9
-        
         # Do we need a FP paradim and return model?
         # The training will return only after finish.
         
     def testing(self, sample_list_file = ""):
         # run part of run-epadmi-general.sh multiple times using SimpleParallel.
         # Run all prediction jobs.
+##self.genfeature(sample_list_file,self.testing_genfeature_dir)
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
         sample_list = readlist(sample_list_file)
+        cmd_list = []
         for sample_id in sample_list:
             cmd = 'echo {pdb}.h5 > {pdb}.h5list && ' + \
-            '{nnpfpredict} -i {pdb}.pnn1 -h null -test_list {pdb}.h5list -loadmodel {model}  -s 13 -r 0 -nn 100,40 -sr 0.6 -ft1 1 -dn 1580'
-            cmd=cmd.format(nnpfpredict=self.nnpfpredict, model=self.model, pdb=sample_id)
-            print cmd
+            '{nnpfpredict} -i {pdb}.pnn1 -h null -test_list {pdb}.h5list -loadmodel {model}  -s 13 -r 0 -nn ${neural_network_structure} -sr 0.6 -ft1 1 -dn 1595'
+            cmd=cmd.format(nnpfpredict=self.nnpfpredict, model=self.model, pdb=sample_id,
+                           neural_network_structure = self.neural_network_structure)
+            cmd_list.append(cmd)
         #run on cruncher queue or beagle queue.
-        print self.computer.run(cmd,dryrun=True)
-        
+        print cmd[0:4]
+        self.computer.runbatch_and_wait(cmd_list)
         # run-epadmi-general.sh
 
-    def start_cont():
-        # Do we need an overview web to show all tasks?
-        while True:
-            self.genfeature(self.sample_list_file)
-            self.gen_sample_list_weight(self.sample_list_file, self.sample_list_weight)
-            self.training(self.sample_list_file, self.model_output)
-            self.testing(self.sample_list_file,self.model_output)
-            self.analysis(self.model_output, self.analysis_output)
+def start_cont():
+    # Do we need an overview web to show all tasks?
+    while True:
+        self.genfeature(self.sample_list_file)
+        self.gen_sample_list_weight(self.sample_list_file, self.sample_list_weight)
+        self.training(self.sample_list_file, self.model_output)
+        self.testing(self.sample_list_file,self.model_output)
+        self.analysis(self.model_output, self.analysis_output)
 
     # Input: given model name, test list,
     # Output: a human readable/computer parsable report.
@@ -148,7 +154,8 @@ class EpmiCont(Runnable):
     # TODO: the analysis will know how to run the given model, and how the old benchmarks will be extracted for comparison.
     def analysis(self, model, data_set):
         self.testing(model, sample_list_file)
-        
+        #TODO test_rank_rosetta takes input of energy file, so we need to run prediction at this step.
+        # Then make the test_rank_rosetta know the output epad files.
         # Sampling command line: ./epmi/test_sample_casp10/run-freemodel-epmi.sh
         report = null
         # 

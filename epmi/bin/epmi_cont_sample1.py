@@ -19,12 +19,12 @@ class EpmiContSample(EpmiCont):
 
         ## [TESTING CONFIG] DO NOT REMOVE THIS LINE
         self.model='{instdir}/epmi/data/model-100-40-r0.1-withss-pre-120'.format(instdir=self.instdir)
-        self.nnpfpredict='{instdir}/pnn1v2/Nnpfpredict'.format(instdir=self.instdir)
+        self.nnpfpredict='{instdir}/pnn1v2/build/Nnpfpredict'.format(instdir=self.instdir)
         self.testing_output_dir='{working_dir}/testing/'.format(working_dir=self.working_dir)
             
         ## [TRAINING CONFIG] DO NOT REMOVE THIS LINE
         self.model_prefix='{instdir}/epmi/data/model-test-config-'.format(instdir=self.instdir)
-        self.nnpftrain='{instdir}/pnn1v2/Nnpftrain'.format(instdir=self.instdir)
+        self.nnpftrain='{instdir}/pnn1v2/build/Nnpftrain'.format(instdir=self.instdir)
         self.norm_par='{instdir}/epmi/data/subsampling_normpar.h5'.format(instdir=self.instdir)
         self.training_h5list = '{instdir}/epmi/test/test-training.h5list'.format(instdir=self.instdir)
         self.subsampling_rate = 1
@@ -64,7 +64,7 @@ class EpmiContConfigTest(EpmiCont):
         self.max_length_for_training = 300
         ## [TESTING CONFIG] DO NOT REMOVE THIS LINE
         self.model='{instdir}/epmi/data/model-100-40-r0.1-withss-pre-120'.format(instdir=self.instdir)
-        self.nnpfpredict='{instdir}/pnn1v2/Nnpfpredict'.format(instdir=self.instdir)
+        self.nnpfpredict='{instdir}/pnn1v2/build/Nnpfpredict'.format(instdir=self.instdir)
         self.testing_output_dir='{working_dir}/testing/'.format(working_dir=self.working_dir)
 
         ## [TRAINING CONFIG] DO NOT REMOVE THIS LINE
@@ -87,15 +87,30 @@ class EpmiContConfigTest(EpmiCont):
         self.training_h5list = '{training_instdir}/epmi/data/train_list_balance.txt'.format(training_instdir=self.training_instdir)
         self.subsampling_rate = 1
         self.max_iter = 10
-        self.training_computer = ComputingHost.getComputer("BeagleDevelopment")
-# Done. TODO: check subsample_normal.h5 and pair_window_feature in h5files.        
+        self.training_computer = ComputingHost.getClusterQueue("BeagleDevelopment")
+
+        self.testing_genfeature_dir = "/home/zywang/work/epmi/test_rank_itasser/rank.epmi/"
+        # Done. TODO: check subsample_normal.h5 and pair_window_feature in h5files.        
 # Make a list of h5 file with pair_window_feature, try the training againg.
 def main(**kwargs):
-    chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
+    #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
     #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.test.short.list")
     #chain.gen_sample_list_weight(chain.sample_list_file, chain.sample_list_weight)
     #chain.genfeature()
     #chain.training(dryrun=True)
+    chain = EpmiContConfigTest("/home/zywang/work/epmi/test_rank_itasser/rank.epmi/test.list")
+    chain.post_genfeature_cmd=""
+    data_prefix = "/home/zywang/work/data/"
+    chain.get_h5file = lambda s: "/home/zywang/work/epmi/test_rank_itasser/rank.epmi/h5/{sample_id}.h5".format(sample_id=s)
+    chain.get_tgtfile = lambda s: data_prefix + "/itasser_tgt/{sample_id}.tgt".format(sample_id=s)
+    # see pdb25moremi  for a2m.
+    chain.get_fastafile = lambda s: data_prefix + "/itasser_tgt/{sample_id}.fasta".format(sample_id=s)
+    chain.get_a3mfile = lambda s: data_prefix + "/itasser_tgt/{sample_id}.a3m".format(sample_id=s)
+    chain.get_seqfile = lambda s: data_prefix + "/itasser_seq/{sample_id}.fasta".format(sample_id=s)
+    chain.neural_network_structure = "100,80,60,40"
+
+    chain.model = "/home/zywang/work1/allbio-run/epmi/data/model-allbio-config--960"
+    chain.testing()  # Expect right epad.prob in the folder.
 if __name__ == '__main__':
     main(**( dict(zip(sys.argv[1::2], sys.argv[2::2]))))
 

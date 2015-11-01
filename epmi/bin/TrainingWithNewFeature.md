@@ -17,11 +17,15 @@ Bioh5 is a class to store feature about a protein, with various input and output
 can be read and written by most platform, including matlab, R, python, perl, and C++.
  
  
- Fasta2hdf5 is used to add those features derived from multiple sequence alignments.
+# Fasta2hdf5 is used to add those features derived from multiple sequence alignments.
  
  Find a sequence loading part and load dope at the same time. 
  
- TODO:
+# TODO:
+ Check the analysis pipeline by using the new module.
+
+
+
  [Done] Add pair position feature to feature3D.
  Test a list feature generation config and training part on cruncher and beagle.Zygg2015
  

@@ -162,11 +162,11 @@ class ComputingHost(object): # The default localhost
             self.run_and_wait(cmd,**kwargs)
 
     @staticmethod
-    def getComputer(cluster,**kwargs):
+    def getClusterQueue(cluster,**kwargs):
         if cluster=="Cruncher":
             return LocalCruncher(kwargs)
         if cluster=="CruncherBatch":
-            return LocalCruncher(kwargs,ncpu=2,cpu_per_node=32)
+            return LocalCruncher(ncpu=2,cpu_per_node=32)
         elif cluster == "Beagle":
             return Beagle(kwargs)
         elif cluster == "BeagleDevelopment":
@@ -175,6 +175,7 @@ class ComputingHost(object): # The default localhost
             return ComputingHost(kwargs)
 
 class LocalCruncher(ComputingHost):
+    """LocalCruncher is used when the scrip is running on cruncher."""
     def __init__(self,ncpu = 20, cpu_per_node=32, queue=""):
         # cpu_per_node is not supported by cruncher.
         self.remote_user="zywang"
@@ -230,7 +231,7 @@ class LocalCruncher(ComputingHost):
 
     def run_and_wait(self,cmd,dryrun=False):
         self.qsub_and_wait(cmd,dryrun=False)
-
+    # runbatch_and_wait of Cruncher is actually queue batch run and wait.
 
 class Beagle(LocalCruncher): # Beagle is like LocalCruncher
     def __init__(self,ncpu,ncpu_per_node,walltime,queue="batch",user="zywang",host="login.beagle.ci.uchicago.edu"):
@@ -325,7 +326,7 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
 
     @staticmethod
     def test():
-        ComputingHost().getComputer("BeagleDevelopment", ncpu=10,ncpu_per_node=5).run_and_wait("echo 123")
+        ComputingHost().getClusterQueue("BeagleDevelopment", ncpu=10,ncpu_per_node=5).run_and_wait("echo 123")
 
 
 class OpenScienceGrid(ComputingHost):
@@ -578,6 +579,8 @@ def readlist(filename):
     res=[ x.rstrip() for x in f.readlines() ]
     f.close()
     return res
+def read_list(filename):
+    return readlist(filename)
 
 def write_result_file(result_file,res,sort=True):
     res=sorted(res,key=lambda s:s[1])

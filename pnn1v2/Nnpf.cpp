@@ -1,4 +1,4 @@
-#include <sstream>
+xo#include <sstream>
 #include "matrix3.h"
 #include "pnn1.h"
 ofstream cerrstr;
@@ -101,6 +101,7 @@ void PairwiseSequence::LoadH5(string fn,string this_pdbid="") {
         d1=dist.getd1();
         d2=dist.getd2();
     }
+    eprint(0,"Read pair_window_feature, "+fn);
     
     feature3D.readh5(fn, "/pair_window_feature");
     label3D.resize(d1,d2, 1);
@@ -904,10 +905,7 @@ void Nnpf::LoadDataListH5(string h5data_list_file,vector<Sequence*> & dest, bool
     int i = 0;
     bool print_pair_window_size=false;
     if(fin.fail())cerr << "LoadDataListH5 Error: " << h5data_list_file <<" "<<strerror(errno);
-    
-    
     while (fin.good()) {
-
         string fnline;
         std::getline(fin, fnline);
         stringstream ss(fnline);
@@ -998,6 +996,8 @@ void Nnpf::Init(int argc, char** argv) {
         // Must be read before nninit and LoadDataListH5.
         norm_par.readh5(par["-norm_par"]);
     }
+    if(par["-m"]!="") par["-m"]="std";
+    
     cerrstr.open(par["-m"]+".stderr");
     coutstr.open(par["-m"]+".stdout");
     if(proc_id==0){
@@ -1039,6 +1039,9 @@ void Nnpf::Init(int argc, char** argv) {
         getline(ss, s0, ',');
         int x;
         stringstream(s0) >> x;
+	if(x <=0){ eprint(0," nnlayer <= 0");
+	  exit(-1);
+	}
         nnlayer.push_back(x);
     }
     nnlayer.push_back(num_labels);
@@ -1074,7 +1077,6 @@ void Nnpf::Init(int argc, char** argv) {
         if (i >= 0) os << weights[i] << " ";
     os << endl;
     //eprint(0, os.str());
-    initweight.resize(num_params, 0);
     for (int i = 0; i < num_params; i++)
         initweight[i] = weights[i];
     //LoadDataList
