@@ -41,6 +41,7 @@ class EpmiCont(Runnable):
             pass
         return res
 
+    # Generate the training list weight.
     def gen_sample_list_weight(self, sample_list_file, sample_list_weight):
         logger.info("sample_list_weight, "+sample_list_weight)
         assert(sample_list_file != "");
@@ -51,7 +52,7 @@ class EpmiCont(Runnable):
                 continue
             seqfile = self.get_seqfile(sample_id) # sequence file
             weight = len(readlist(self.get_seqfile(sample_id))[0])
-            if weight< self.max_length_for_training:
+            if weight < self.max_length_for_training:
                 sample_list_weight_buffer =  sample_list_weight_buffer +\
                                              "%s %d\n" % (sample_id,weight)
 
@@ -71,11 +72,12 @@ class EpmiCont(Runnable):
             fastafile =  self.get_fastafile(sample_id) # the multi sequence alignment
             seqfile = self.get_seqfile(sample_id) # sequence file
 
+            # TRY(Delete -h5dir h5/)
             cmd = "{reformat} -r -l 3000 -noss {a3mfile} {fastafile} && " + \
             "{fasta2hdf5} -act pairfreq -fasta {fastafile} -h5 {h5file} && "+\
             "{add_pair_position_feature} -dopematrix {dopematrix} -seq {seqfile} -fasta {fastafile} -h5 {h5file} && "+\
             "{get_pnn1inf_feature} -tgt {tgtfile} -out {sample_id}.pnn1 -pdbid {sample_id} -lib {instdir}/pdbtools && mkdir -p ./pnn1/ && cp {sample_id}.pnn1 ./pnn1/ && " +\
-            "echo {h5file} > {sample_id}.h5list && {nnpftrain_nompi}  -h {sample_id}.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only  -h5dir h5/ && "+\
+            "echo {h5file} > {sample_id}.h5list && {nnpftrain_nompi}  -h {sample_id}.h5list -m ./model  -s 13 -r 0.1 -nn 100,20 -sr 1 -op 0 -ft1 1 -dn 1580  -maxiter 1 -iter0 1  -regen only  && "+\
             "scp {h5file} {remote_training_data_dir}\n"
             if genfeature_dir != "":
                 cmd = "cd " + genfeature_dir + " && " + cmd

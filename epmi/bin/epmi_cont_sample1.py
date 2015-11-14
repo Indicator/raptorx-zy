@@ -92,12 +92,25 @@ class EpmiContConfigTest(EpmiCont):
         self.testing_genfeature_dir = "/home/zywang/work/epmi/test_rank_itasser/rank.epmi/"
         # Done. TODO: check subsample_normal.h5 and pair_window_feature in h5files.        
 # Make a list of h5 file with pair_window_feature, try the training againg.
-def main(**kwargs):
+def test_one_pairwise_feature():
     #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
-    #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.test.short.list")
+    chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list.1")
     #chain.gen_sample_list_weight(chain.sample_list_file, chain.sample_list_weight)
+    chain.genfeature()
+
+def test_more_pairwise_feature():
+    #chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
+    chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.test.nopairwise.list")
+    #chain.gen_sample_list_weight(chain.sample_list_file, chain.sample_list_weight)
+    chain.genfeature()
+
+def test_training_dryrun():
+    chain = EpmiContConfigTest("/home/zywang/work/data/pdb25.list")
+    chain.gen_sample_list_weight(chain.sample_list_file, chain.sample_list_weight)
     #chain.genfeature()
     #chain.training(dryrun=True)
+    
+def test_other(**kwargs):
     chain = EpmiContConfigTest("/home/zywang/work/epmi/test_rank_itasser/rank.epmi/test.list")
     chain.post_genfeature_cmd=""
     data_prefix = "/home/zywang/work/data/"
@@ -108,9 +121,14 @@ def main(**kwargs):
     chain.get_a3mfile = lambda s: data_prefix + "/itasser_tgt/{sample_id}.a3m".format(sample_id=s)
     chain.get_seqfile = lambda s: data_prefix + "/itasser_seq/{sample_id}.fasta".format(sample_id=s)
     chain.neural_network_structure = "100,80,60,40"
-
     chain.model = "/home/zywang/work1/allbio-run/epmi/data/model-allbio-config--960"
+    chain.model = "/home/zywang/work1/allbio-run/epmi/data/model-allbio-config--720-test2000"
     chain.testing()  # Expect right epad.prob in the folder.
+
+def main(**kwargs):
+    #test_more_pairwise_feature()
+    test_training_dryrun()
+
 if __name__ == '__main__':
     main(**( dict(zip(sys.argv[1::2], sys.argv[2::2]))))
 
