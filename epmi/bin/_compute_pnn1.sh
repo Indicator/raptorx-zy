@@ -41,7 +41,7 @@ function recompute_nnpffeature(){
 # need pnn1 file to regenerate data( filename derived from pdbid).
     # .pnn1 is no need for pdb25, since there is pnn1/ in the folder, and with -h, the program will read pnn1 from pnn1/ folder automatically.
     compute_pnn1 $tgtfile $pdb
-    checkret $? "get_pnn1inf_feature.pl error!"    
+    checkret $? "get_pnn1inf_feature.pl error!"
     mkdir -p pnn1
     cp $pdb.pnn1  pnn1
     echo "h5/$pdb.h5" > $pdb.h5list
@@ -87,9 +87,10 @@ function epmi_predict(){
 config_epmi
 
 pdb=$1
+shift
 a3mfile=$a3mpath/$pdb.a3m
 tgtfile=$tgtpath/$pdb.tgt
-modelfile=$2
+modelfile=($@)
 #pdb=`basename $tgtfile | cut -d'.' -f1`
 fastafile=`echo $a3mfile|replace '.a3m' '.fasta' '.a2m' '.fasta'`
 seqfile=$seqpath/$pdb$seqsuffix
@@ -109,21 +110,38 @@ recompute_nnpffeature $pdb
 
 ##run pnn1inf to produce epad.prob.
 #echo $pdb.h5 > $pdb.h5list
-model=$modelfile
-nnlayer=`head -n1 $modelfile|grep -o '\-nn [0-9,]*'|replace '\-nn ' ''`
+for i in ${!modelfile[@]} ; do
 
-params="-i $pdb.pnn1 -h $pdb.h5list -loadmodel $model  -dn 1595 -nn ${nnlayer} -norm_par /home/zywang/work/epmi/model/subsampling_normpar.h5  -h5dir ./h5/  -predict 1 -s 13"
-echo /home/zywang/work/allbio.re1/pnn1v2/build/Nnpfpredict $params
+    model=${modelfile[$i]}
+    nnlayer=`head -n1 $model|grep -o '\-nn [0-9,]*'|replace '\-nn ' ''`
+    nnparam_dn=`head -n1 $model|grep -o '\-dn [0-9,]*'|replace '\-dn ' ''`
+    
+    params="-i $pdb.pnn1 -h $pdb.h5list -loadmodel $model  -dn ${nnparam_dn} -nn ${nnlayer} -norm_par /home/zywang/work/epmi/model/subsampling_normpar.h5  -h5dir ./h5/  -predict 1 -s 13"
+    echo /home/zywang/work/allbio.re1/pnn1v2/build/Nnpfpredict $params
+    /home/zywang/work/allbio.re1/pnn1v2/build/Nnpfpredict $params
+    if [ ${#modelfile[@]} -ge 2 ] ; then
+	mv ${pdb}.epad.prob ${pdb}.epad.prob.model-$i
+    fi
+    rm core.*
+done
+}
 
-/home/zywang/work/allbio.re1/pnn1v2/build/Nnpfpredict $params
-rm core.*
+function combine_epad_prob {
+pdb=$1
+python ${instdir}/epmi/bin/combine_epad_prob.py ${pdb}.epad.prob ${pdb}.epad.prob.model-0 ${pdb}.epad.prob.model-1
+
 }
 
 # 
+if [[ ! -e ${instdir}/epmi/bin/combine_epad_prob.py ]] ; then
+    echo "Not found ${instdir}/epmi/bin/combine_epad_prob.py"
+    exit 1
+fi
 
+# Make sure $# > 0
 if [[ $# -ge 2 ]] ; then 
-    #config_test_rank_itasser
+    config_test_rank_itasser
     #config_test_rank_casp5-8
-    config_test_rank_rosetta
+    #config_test_rank_rosetta
     epmi_predict $@
 fi  

@@ -122,7 +122,9 @@ class EpmiCont(Runnable):
     def testing(self, sample_list_file = ""):
         # run part of run-epadmi-general.sh multiple times using SimpleParallel.
         # Run all prediction jobs.
-##self.genfeature(sample_list_file,self.testing_genfeature_dir)
+        ##self.genfeature(sample_list_file,self.testing_genfeature_dir)
+        # Require these variables. seqpath, seqsuffix, tgtpath, testlist.
+        # Run _compute_pnn1.sh.
         if(sample_list_file == ""):
             sample_list_file = self.sample_list_file
         sample_list = readlist(sample_list_file)

@@ -318,7 +318,7 @@ LD_LIBRARY_PATH=/soft/gsl/gnu/1.14/lib:/lustre/beagle/zywang/work/BALL-1.2/lib/L
         #> tmp ; id=$(tail -n 1 tmp |cut -d' ' -f2) ; cat SimpleParallel.qsub_and_wait.o$id
         while self.qsub_check(jobid):
             time.sleep(5)
-        output_filename="%s/%s/work/qsub.log/qsub.o" % (os.environ['HOME'],os.environ['USER']) +jobid
+        output_filename="%s/work/qsub.log/qsub.o" % (os.environ['HOME'],os.environ['USER']) +jobid
         output_file=open(output_filename,"r")
         res=output_file.readline()
         output_file.close()
@@ -519,7 +519,7 @@ class Gouda(ComputingHost): # as a template of SGE compute cluster
         self.max_queued_job=200
 
 
-class Task(object):
+class RankTask(object):
     """Apply a runnable to a sample on a machine"""
     # Which files need to copy
     # COmmand to run
@@ -538,13 +538,6 @@ class Task(object):
         self.exprdir_full=self.workdir+"/"+self.exprdir
         self.prof_file=prof_file
         self.pairwise_energy_mix_rate=pairwise_energy_mix_rate
-class RankTask(Task):
-    def __init__(self, *args, **kwargs):
-        super(RankTask, self).__init__(*args, **kwargs)
-    def compute_a_rank(self):
-        #Input a pdb and some decoys, energy evaluator,
-        #Return the string to run
-        pass
 
 class SampleTask(Task):
     # Return a folder or tar ball.
