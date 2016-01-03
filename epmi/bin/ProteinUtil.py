@@ -33,6 +33,7 @@ def process_rebalance1(exprdir_full,s,rebalance_factor,mix_rate,dryrun=False):
         print s.sample_id
     return 1
 def process_rebalance(exprdir_full,s,rebalance_factor,mix_rate,dryrun=False,balance_method="by_length",sub_epmi_dir="rank.epmi",sub_epad_dir="rank.epad"):
+    __doc__ = "Balance with input: .epad.prob and prob files, and output: epad.prob.reb."
     if dryrun:
         print s.sample_id
         return 1
@@ -216,8 +217,9 @@ class EvaluateEnergy(Runnable):
     def __init__(self):
         self.name="evaluate_pairprob"
         self.executable="/home/zywang/work/dpln/src/energy2nd/build/eval_energy"
-        self.computer=ComputingHost()
-    def get_run_string(self,sample,pdb_file,carbon="1",bincut="0,4,5,6,7,8,9,10,11,12,13,14",distcut="9999",seqcut="6"):
+        self.computer=LocalCruncher(cpu_per_node=1)
+    def get_run_string(self,sample,pdb_file,carbon="1",bincut="0,4,5,6,7,8,9,10,11,12,13,14",distcut="9999",seqcut="6", value_only=False):
+        __doc__ = "Build the command line to compute the energy. Override if needed."
         executable=self.executable
         #res="echo -n %s \" \" " % pdb_file + "; %s -act pp -pp %s -pdb %s -pdbid %s " \
         #    "-fasta %s  -bin 0,4,5,6,7,8,9,10,11,12,13,14 " \
@@ -233,10 +235,21 @@ class EvaluateEnergy(Runnable):
             " -seqcut " + seqcut + \
             " -norm 1 " +\
             " |tail -n1 ) ; echo \"\" "
+        if value_only:
+            res=" ( %s -act pp -pp %s -pdb %s -pdbid %s " \
+                " -fasta %s  " \
+                " -ref 1 " % (executable, sample.prob_file, pdb_file, sample.sample_id, sample.fasta_file) + \
+                " -bin " + bincut + \
+                " -carbon " + carbon + \
+                " -distcut " + distcut + \
+                " -seqcut " + seqcut + \
+                " -norm 1 " +\
+                " |tail -n1|awk '{print $NF}' )  "
 
         return res
-    # Get energy from database other than running the experiment.
-    def get_energy(self,native,decoy,method="",redo=False):
+    
+    def get_energy(self,sample, decoy,method="",redo=False, callback=None):
+        __doc__ = "Get energy from database or running the experiment."
         if not  os.path.isfile(decoy) :
             print decoy," not exist!\n"
             raise -1
@@ -246,10 +259,12 @@ class EvaluateEnergy(Runnable):
         res=c.find_one({"decoy":decoy,"method":method})
         #res=None
         def check_out_of_date():
-            # Add codes to test if native decoy are newer than the record.
+            __doc__ = " TODO: test if native decoy or model file are newer than the record."
             return False
         if res==None or redo==True or check_out_of_date():
-            cmd=self.get_run_string(sample="", pdb_file=decoy,value_only=True)
+            cmd=self.get_run_string(sample=sample, pdb_file=decoy,value_only=True)
+            db.logger.info(cmd)
+            # TODO, using callback,
             energy=float(self.computer.run_and_wait(cmd))
             res=dict()
             res.update({"decoy":decoy, "method":method, "energy":energy })
@@ -278,12 +293,38 @@ class EvaluateDope(Runnable): # deprecated.
             " -seqcut " + seqcut +\
             " -norm 0"
         return res
+    
+class EvaluateEpadLocal(EvaluateEnergy):
+    def __init__(self):
+        super(EvaluateEpadLocal,self).__init__()
+        self.name="epadlocal"
+        self.executable=db.pkg_config['epadlocal.executable'] 
+        self.workdir=db.pkg_config['epadlocal.workdir'] 
+    def get_run_string(self,sample,pdb_file,value_only=False,**kwargs):
+        executable=self.executable
+        res = """tmpdir=$(mktemp -d) && cd $tmpdir && 
+               mkdir -p SEQ/EPAD && mkdir -p DECOYS/{sample_id} &&
+               ln -s {epad_feature_file} SEQ/EPAD/{sample_id}.epad &&
+               cut -d' ' -f1-3,25-50 SEQ/EPAD/{sample_id}.epad > SEQ/EPAD/{sample_id}.epad_local &&
+               ln -s {pdb_file} DECOYS/{sample_id} &&
+               ls DECOYS/{sample_id}/ > DECOYS/{sample_id}.lst &&
+               ./bin/EPADCalc -e EPAD -A SEQ/EPAD/{sample_id}.epad -d DECOYS/{sample_id} -L DECOYS/{sample_id}.lst -p simple && res=$(grep -o   'EPADLocal=[-+\.0-9]*' err1|sed 's/EPADLocal=//' |head -n1) && echo {pdb_file} $res""".format(sample_id=sample.sample_id, pdb_file=pdb_file, epad_feature_file=sample.epad_feature_file)
+        if value_only:
+            res = "tmpdir=$(mktemp -d) && cd $tmpdir && " \
+            "mkdir -p SEQ/EPAD && mkdir -p DECOYS/{sample_id} && " \
+            "ln -s {epad_feature_file} SEQ/EPAD/{sample_id}.epad && " \
+            "cut -d' ' -f1-3,25-50 SEQ/EPAD/{sample_id}.epad > SEQ/EPAD/{sample_id}.epad_local && " \
+            "ln -s {pdb_file} DECOYS/{sample_id} && " \
+            "ln -s {workdir}/bin {workdir}/config ./ &&" \
+            "ls DECOYS/{sample_id}/ > DECOYS/{sample_id}.lst && " \
+            "./bin/EPADCalc -e EPAD -A SEQ/EPAD/{sample_id}.epad -d DECOYS/{sample_id} -L DECOYS/{sample_id}.lst -p simple 2>err1 1>{sample_id}.EPAD && res=$(grep -o 'EPADLocal=[-+\.0-9]*' err1|sed 's/EPADLocal=//' |head -n1) && echo $res".format(sample_id=sample.sample_id, pdb_file=pdb_file, epad_feature_file=sample.epad_feature_file, workdir=self.workdir)
+        return res
 
 class EvaluateOpus(EvaluateEnergy):
     # For a movable callback,
     def __init__(self):
         super(EvaluateOpus,self).__init__()
-        self.name="evaluate_opus"
+        self.name="opus"
         self.executable="/home/zywang/work/epmi/src/contrib/opus_psp_src/opus_psp"
         self.workdir="/home/zywang/work/epmi/src/contrib/opus_psp_src/" # only work in this folder
     def get_run_string(self,sample,pdb_file,value_only=False,**kwargs):
@@ -295,31 +336,39 @@ class EvaluateOpus(EvaluateEnergy):
 
 
 
-class EvaluateDfire(Runnable):
+class EvaluateDfire(EvaluateEnergy):
     # For a movable callback,
     def __init__(self):
+        super(EvaluateDfire,self).__init__()
         self.name="evaluate_dfire"
-        self.executable="/home/zywang/work/epmi/bin/dfire/dfire"
-        self.workdir="/home/zywang/work/epmi/bin/dfire/" # only work in this folder
-    def get_run_string(self,sample,pdb_file,**kwargs):
+        self.executable="/home/zywang/work/epmi/src/contrib/dfire/dfire"
+        self.workdir="/home/zywang/work/epmi/src/contrib/dfire/" # only work in this folder
+    def get_run_string(self,sample,pdb_file,value_only=False, **kwargs):
         executable=self.executable
-
         tempfilename=str(int(random.random()*1000000) % 1000000)+".pdb"
         res = "cd {workdir} ; ln -s {pdb_file} {tempfile} ; " \
               "echo -n {pdb_file} ' ' ; (echo 'filename 0' ; echo '{tempfile} 0') | ./dfire |tail -n1 | ".format(
                 tempfile=tempfilename,workdir=self.workdir,pdb_file=pdb_file) + \
               "awk '{print $2}' ; rm %s " % tempfilename
+        if value_only:
+            res = "cd {workdir} ; ln -s {pdb_file} {tempfile} ; " \
+                  " (echo 'filename 0' ; echo '{tempfile} 0') | ./dfire |tail -n1 | ".format(
+                      tempfile=tempfilename,workdir=self.workdir,pdb_file=pdb_file) + \
+                  "awk '{print $2}' ; rm %s " % tempfilename
         return res
 
-class EvaluateRw(Runnable):
+class EvaluateRw(EvaluateEnergy):
     # For a movable callback,
     def __init__(self):
-        self.name="evaluate_rw"
-        self.executable="/home/zywang/work/epmi/bin/rw/calRW"
-        self.workdir="/home/zywang/work/epmi/bin/rw/" # only work in this folder
-    def get_run_string(self,sample,pdb_file,**kwargs):
+        super(EvaluateRw,self).__init__()
+        self.name="rw"
+        self.executable="/home/zywang/work/epmi/src/contrib/rw/calRW"
+        self.workdir="/home/zywang/work/epmi/src/contrib/rw/" # only work in this folder
+    def get_run_string(self,sample,pdb_file,value_only=False, **kwargs):
         executable=self.executable
         res = "cd %s ; echo -n %s ' ';  ./calRW  %s |tail -n1 | awk '{print $4}' " % (self.workdir,pdb_file,pdb_file)
+        if value_only:
+            res = "cd %s ;  ./calRW  %s |tail -n1 | awk '{print $4}' " % (self.workdir,pdb_file)
         return res
 
 
@@ -342,11 +391,46 @@ class EvaluateDFire_0(Runnable):
             )
         return res
 
-
+def em_stateless(evaluate_method, sample, pdb_file, redo):
+    __doc__ = "Multi process runnable object."
+    em=evaluate_method()
+    return em.get_energy(sample,pdb_file, em.name, redo=redo)
 
 class RunARank(Runnable):
+    __doc__ = "Rank decoys from the same protein."
     def __init__(self,evaluate_method=EvaluateEnergy): # Can we pass the name of a class?
         self.evaluate_method=evaluate_method
+        
+    def evaluate_energy_for_all_decoys(self, sample, parallel="multithreads", db=None, redo=False):
+        __doc__ = "Return a map, decoy -> energy."
+        em=self.evaluate_method()
+        res={}
+        # Multiprocess call localcruncher to run get_energy.
+        if parallel=="multiprocesses":
+            from joblib import Parallel, delayed
+            import multiprocessing
+            res_list= Parallel(n_jobs=len(sample.decoy_list))(delayed(em_stateless)(self.evaluate_method, sample, pdb_file, redo)  for pdb_file in sample.decoy_list)
+            res = dict(zip(sample.decoy_list, res_list))
+        elif parallel=="multithreads":
+            import threading
+            import Queue
+            q=Queue.Queue()
+            def em_stateless_thread(q, evaluate_method, sample, pdb_file, redo):
+                em=evaluate_method()
+                res=em.get_energy(sample,pdb_file, em.name, redo=redo)
+                q.put((pdb_file, res))
+            for pdb_file in sample.decoy_list:
+                t =threading.Thread(target=em_stateless_thread, args=(q, self.evaluate_method, sample, pdb_file, redo))
+                t.start()
+            res_list=[]
+            for t in sample.decoy_list:
+                res_list.append(q.get(block=True))
+            res=dict(res_list)
+        else:
+            for pdb_file in sample.decoy_list :
+                res[pdb_file]=em.get_energy(sample=sample, decoy=pdb_file, method=em.name)
+        return res
+
     def get_run_string(self,sample, output_dir,debug=False,**kwargs):
         # input, energy function, native pdb, decoys
         # shell script based
@@ -382,7 +466,7 @@ class RunARank(Runnable):
             decoyfile = ss[0]
             e1 = float(ss[len(ss)-1]) # or 5 , depends on the energy result file
             #decoyfile=self.recover_fullpath(decoyfile,sample)
-            e2 = ee.get_energy(native="",decoy=decoyfile,method=ee.name)
+            e2 = ee.get_energy(sample="",decoy=decoyfile,method=ee.name)
             e3 = e2 * mix_rate + (1-mix_rate) * e1
             res.append([decoyfile, e3])
         write_result_file(result_file,res ,sort=True)
@@ -510,9 +594,36 @@ class Condor(ComputingHost):
 # 2. check if task is finished successfully.
 
 def test_evaluate_energy():
-    a=EvaluateOpus()
-    print a.get_energy(native="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateOpus")
+    __doc__ ="""
+    a=EvaluateOpus() 
+    print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateOpus", redo=True) 
+    a=EvaluateDfire() 
+    print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateDfire", redo=True)
+    a=EvaluateRw()
+    print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateRw", redo=True) """
+    db.pkg_config['epadlocal.workdir'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD'
+    db.pkg_config['epadlocal.executable'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD/runEPAD_example.sh'
+    a=EvaluateEpadLocal()
+    sample=Sample("1vcc")
+    sample.epad_feature_file = "/home/zywang/work/data/ros.epad/1vcc.pretag.ca"
+    print a.get_energy(sample, decoy="/home/zywang/work/data/rosetta_decoys_62proteins/low_score_decoys/1vcc__BOINC_ABRELAX_SAVE_ALL_OUT_BARCODE-1vcc_-frags83__1706_0.clean.out.9.pdb", method="EpadLocal", redo=True)
+    a=EvaluateEnergy()
+    #print a.get_energy(sample
 
+def test_evaluate_energy_for_all_decoys():
+    __doc__ = "Mock a RunARank."
+    db.pkg_config['epadlocal.workdir'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD'
+    db.pkg_config['epadlocal.executable'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD/runEPAD_example.sh'
+    sample=Sample("1vcc")
+    sample.epad_feature_file = "/home/zywang/work/data/ros.epad/1vcc.pretag.ca"
+    sample.decoy_list=[
+        "/home/zywang/work/data/rosetta_decoys_62proteins/low_score_decoys/1vcc__BOINC_ABRELAX_SAVE_ALL_OUT_BARCODE-1vcc_-frags83__1706_0.clean.out.9.pdb",
+        "/home/zywang/work/data/rosetta_decoys_62proteins/low_score_decoys/1vcc__BOINC_ABRELAX_SAVE_ALL_OUT_BARCODE-1vcc_-frags83__1706_0.clean.out.10.pdb"
+        ]
+    r=RunARank(evaluate_method=EvaluateEpadLocal)
+    print r.evaluate_energy_for_all_decoys(sample,redo=False)
+    
+    
 def test_modify_result_file():
     a=RunARank()
     a.modify_result_file("/home/zywang/work/epmi/test_rank_itasser/rank.epmi/1hbkA.test.res",0,EvaluateOpus)
@@ -544,4 +655,5 @@ if __name__ == '__main__':
     #main()
     #check_bin_prob("/home/zywang/work/epmi/test_rank_casp5-8/rank.epad/T0137.epad.prob","/home/zywang/work/epmi/test_rank_casp5-8/rank.epmi/epmi-model-regen-norm-par-390/T0137.epad.prob.reb")
     #test_evaluate_energy()
-    test_modify_result_file()
+    test_evaluate_energy_for_all_decoys()
+    #test_modify_result_file()
