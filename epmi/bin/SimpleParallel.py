@@ -105,10 +105,10 @@ class ComputingHost(object): # The default localhost
                 shellstr="cat - | {pipe_string} -T ".format(pipe_string=self.remote_pipe_string)
             else:
                 shellstr=os.environ['SHELL']
-                res=Popen(shellstr,shell=True,stdin=PIPE,stdout=PIPE).communicate(cmd)[0]
-                if not return_full:
-                    res=res[0]
-                return res
+            res=Popen(shellstr,shell=True,stdin=PIPE,stdout=PIPE).communicate(cmd)[0]
+        if not return_full:
+            res=res[0]
+        return res
 
     def runbatch_and_wait(self,cmd_list,run_list=list(),dryrun=False,ncpu=0):
         logger.info("ComputingHost runbatch_and_wait")
@@ -230,7 +230,7 @@ class LocalCruncher(ComputingHost):
         return res
 
     def run_and_wait(self,cmd,dryrun=False):
-        self.qsub_and_wait(cmd,dryrun=False)
+        return self.qsub_and_wait(cmd,dryrun=False)
     # runbatch_and_wait of Cruncher is actually queue batch run and wait.
 
 class Beagle(LocalCruncher): # Beagle is like LocalCruncher
@@ -519,7 +519,7 @@ class Gouda(ComputingHost): # as a template of SGE compute cluster
         self.max_queued_job=200
 
 
-class RankTask(object):
+class Task(object):
     """Apply a runnable to a sample on a machine"""
     # Which files need to copy
     # COmmand to run
