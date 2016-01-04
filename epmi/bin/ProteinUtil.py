@@ -255,8 +255,11 @@ class EvaluateEnergy(Runnable):
             raise -1
         method=method.lower()
         #c=db.db["tmscore"]
-        c=db.db["stat_energy"] # TODO create a table for this
-        res=c.find_one({"decoy":decoy,"method":method})
+        res=None
+        c=None
+        if db.db!=None:
+            c=db.db["stat_energy"] # TODO create a table for this
+            res=c.find_one({"decoy":decoy,"method":method})
         #res=None
         def check_out_of_date():
             __doc__ = " TODO: test if native decoy or model file are newer than the record."
@@ -268,8 +271,9 @@ class EvaluateEnergy(Runnable):
             energy=float(self.computer.run_and_wait(cmd))
             res=dict()
             res.update({"decoy":decoy, "method":method, "energy":energy })
-            c.insert(res)
-            c.ensure_index([("decoy",db.pm.HASHED)], background=True  )
+            if db.db!=None:
+                c.insert(res)
+                c.ensure_index([("decoy",db.pm.HASHED)], background=True  )
         return res["energy"]
 
 class EvaluateDope(Runnable): # deprecated.
@@ -452,7 +456,7 @@ class RunARank(Runnable):
     # using callback
     # final result = run_background(eval_energy(), result_prcess)
 
-    def modify_result_file(self,result_file,mix_rate,energy_method):
+    def modify_result_file(self,sample,result_file,mix_rate,energy_method):
         # read result_file
         # mix with dope
         # sort a gain
@@ -466,7 +470,7 @@ class RunARank(Runnable):
             decoyfile = ss[0]
             e1 = float(ss[len(ss)-1]) # or 5 , depends on the energy result file
             #decoyfile=self.recover_fullpath(decoyfile,sample)
-            e2 = ee.get_energy(sample="",decoy=decoyfile,method=ee.name)
+            e2 = ee.get_energy(sample=sample,decoy=decoyfile,method=ee.name)
             e3 = e2 * mix_rate + (1-mix_rate) * e1
             res.append([decoyfile, e3])
         write_result_file(result_file,res ,sort=True)
@@ -488,10 +492,11 @@ class TMscore(Runnable):
             print native," ",decoy," not exist!\n"
             raise -1
         method=method.lower()
-        #c=db.db["tmscore"]
-        c=db.tmscore
-        res=c.find_one({"native":native,"decoy":decoy})
-        #res=None
+        res=None
+        c=None
+        if db.db!=None :
+            c=db.tmscore
+            res=c.find_one({"native":native,"decoy":decoy})
         def check_out_of_date():
             # Add codes to test if native decoy are newer than the record.
             return False
@@ -503,8 +508,9 @@ class TMscore(Runnable):
             res_name=[s.lower() for s in ["TMscore","MaxSub","GDT","GDT-HA"]]
             res=dict(zip(res_name,res_val))
             res.update({"native":native,"decoy":decoy})
-            c.insert(res)
-            c.ensure_index([("native",db.pm.HASHED)], background=True  )
+            if db.db!=None:
+                c.insert(res)
+                c.ensure_index([("native",db.pm.HASHED)], background=True  )
         return res[method]
     def get_tmscore_list(self,native,decoy_list,method="TMscore"):
         res=[]
@@ -594,13 +600,12 @@ class Condor(ComputingHost):
 # 2. check if task is finished successfully.
 
 def test_evaluate_energy():
-    __doc__ ="""
     a=EvaluateOpus() 
     print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateOpus", redo=True) 
     a=EvaluateDfire() 
     print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateDfire", redo=True)
     a=EvaluateRw()
-    print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateRw", redo=True) """
+    print a.get_energy(sample="",decoy="/home/zywang/work/data/itasser_decoy_set/1vcc_/1vcc_-em_d10001.pdb",method="EvaluateRw", redo=True) 
     db.pkg_config['epadlocal.workdir'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD'
     db.pkg_config['epadlocal.executable'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD/runEPAD_example.sh'
     a=EvaluateEpadLocal()
@@ -621,7 +626,7 @@ def test_evaluate_energy_for_all_decoys():
         "/home/zywang/work/data/rosetta_decoys_62proteins/low_score_decoys/1vcc__BOINC_ABRELAX_SAVE_ALL_OUT_BARCODE-1vcc_-frags83__1706_0.clean.out.10.pdb"
         ]
     r=RunARank(evaluate_method=EvaluateEpadLocal)
-    print r.evaluate_energy_for_all_decoys(sample,redo=False)
+    print r.evaluate_energy_for_all_decoys(sample,redo=True)
     
     
 def test_modify_result_file():

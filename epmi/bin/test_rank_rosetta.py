@@ -2,39 +2,56 @@ import glob
 import scipy.stats
 import numpy as np
 import itertools
-
+import zydb as db
+import SimpleParallel as sp
 from ProteinUtil import *
 
 
 __author__ = 'zywang@ttic.edu'
-
-
 
 class RankRosetta(RankTask):
     def __init__(self,*args, **kwargs):
         super(RankRosetta, self).__init__(*args, **kwargs)
 
     def run(self,dryrun=False,**kwargs):
+        __doc__ = "Run the function defined by get_run_string."
         # create dirs
         for i in self.progdir :
             dir=self.workdir+"/"+self.exprdir+"/"+i
             if not os.path.isdir(dir) :
                 os.makedirs(dir)
         cmd_list=[]
-
+        # Change to calling get_energy
+        flag_use_get_energy = True
         for sample in self.sample_list :
             output_dir=self.workdir+"/"+self.exprdir+"/"+self.progdir[0]
             output_file=output_dir+"/"+sample.sample_id+".res"
-            cmd=self.runnable.get_run_string(sample,output_dir,**kwargs)
-            cmd_list.append(cmd)
-        self.computer.runbatch_and_wait(cmd_list,dryrun=dryrun)
+            if not flag_use_get_energy:
+                cmd=self.runnable.get_run_string(sample,output_dir,**kwargs)
+                cmd_list.append(cmd)
+                # Deprecate runbatch_and_wait.
+                self.computer.runbatch_and_wait(cmd_list,dryrun=dryrun)
+            else:
+                res = self.runnable.evaluate_energy_for_all_decoys(sample, db=db)
+                sp.write_result_file(output_file, res.items())
+                sp.write_result_file(output_file+".bak", res.items())
         for sample in self.sample_list :
             output_dir=self.workdir+"/"+self.exprdir+"/"+self.progdir[0]
             output_file=output_dir+"/"+sample.sample_id+".res"
-            RunARank().modify_result_file(output_file,self.pairwise_energy_mix_rate,EvaluateOpus)
+            RunARank().modify_result_file(sample, output_file,self.pairwise_energy_mix_rate,self.pairwise_energy_method)
+                
 
         # TO run the rank task, we need to define sample, runnable, computer, and run()
     def analysis(self,top_number=5):
+        __doc__ = "This function compares two results head to head. Results are stored in progdir[].\n"
+        "Input: top_number: number of model to be selected."
+        "self.progdir: folders of input energy evaluation results. This is to be replaced by a NONIO of the evaluation results."
+        "self.sample_list: a list of sample, which sample_id is used to locate evaluation results. This is to be replaced by a nonio design."
+        "self.workdir, self.exprdir: environment of the intermediate results."
+        
+        def mean_list(input_list):
+            return [np.mean(x) for x in input_list]
+        
         sample_list=self.sample_list
         number_native_identified=[0,0]
         average_rank=[0,0]
@@ -43,6 +60,19 @@ class RankRosetta(RankTask):
         corr_pair_tmscore=[[],[]]
 
         best_gdt_pair=[[],[]] # the top ranked gdt score
+        def apply_analysis_filter(progdir, sample_list, with_native, func):
+            res = np.zeros([len(sample_list),len(progdir)])
+            for i in range(len(sample_list)):
+                sample=sample_list[i]
+                for j in range(len(self.progdir)):
+                    result_file=self.workdir+"/"+self.exprdir+"/"+self.progdir[j]+"/"+sample.sample_id+".res"
+                    res[i,j] = func(result_file,sample, with_native=with_native)
+            return res
+        db.logger.info("compute best gdt without native.")
+        best_gdt_pair_native_free = apply_analysis_filter(progdir=self.progdir, sample_list=self.sample_list, with_native=False,func=self.compute_best_gdt)
+        db.logger.info("compute best TMscore without native.")
+        best_tmscore_pair_native_free = apply_analysis_filter(progdir=self.progdir, sample_list=self.sample_list, with_native=False,func=self.compute_best_gdt)
+       
         best_tmscore_pair=[[],[]] # the top ranked tmscore score
         zscore_pair=[[],[]]
         rank_lowest_energy_pair_in_gdt=[[],[]]
@@ -51,6 +81,7 @@ class RankRosetta(RankTask):
         num_highest_tmscore_identified_with_native=[[],[]]
         loglikelihood=[[],[]]
         decoy_average_quality=[]
+        num_sample = len(sample_list)
         for isample in range(len(sample_list)):
             sample=sample_list[isample]
             for i in range(len(self.progdir)) :  # boiler plate TODO merge it with previous Task
@@ -61,8 +92,8 @@ class RankRosetta(RankTask):
                 native_rank[i].append(res)
             for i in range(len(self.progdir)) :
                 result_file=self.workdir+"/"+self.exprdir+"/"+self.progdir[i]+"/"+sample.sample_id+".res"
-                corr_pair[i].append(self.compute_corr(result_file,sample))
-                corr_pair_tmscore[i].append(self.compute_corr(result_file,sample,method="TMscore"))
+                corr_pair[i].append(self.compute_corr(result_file,sample, with_native=False))
+                corr_pair_tmscore[i].append(self.compute_corr(result_file,sample,method="TMscore",with_native=False))
                 best_gdt_pair[i].append(self.compute_best_gdt(result_file,sample))
                 best_tmscore_pair[i].append(self.compute_best_gdt(result_file,sample,method="TMscore"))
                 zscore_pair[i].append(self.compute_native_zscore(result_file,sample))
@@ -86,7 +117,7 @@ class RankRosetta(RankTask):
         #print np.mean(best_gdt_pair[0]),np.mean(best_gdt_pair[1])
         #print [np.mean(x) for x in rank_lowest_energy_pair_in_gdt ]
         print "progdir\n",self.progdir
-        self.show_mean(number_native_identified=number_native_identified,
+        """self.show_mean(number_native_identified=number_native_identified,
                        native_rank=native_rank,
                        corr_pair_gdt=corr_pair,
                        corr_pair_tmscore=corr_pair_tmscore,
@@ -98,10 +129,10 @@ class RankRosetta(RankTask):
                        num_highest_tmscore_identified_without_native=num_highest_tmscore_identified_without_native,
                        zscore_pair=zscore_pair,
                        loglikelihood_native=loglikelihood,
-                       )
+                       )"""
         print "decoy_average_quality", np.mean(decoy_average_quality,0)
         # Figure the neff and length
-        average_rank=(np.mean(native_rank[0]),np.mean(native_rank[1]))
+        average_rank=mean_list(native_rank) #(np.mean(native_rank[0]),np.mean(native_rank[1]))
         res_doc={"progdir":self.progdir,
                 "native_rank":native_rank,
                  "average_native_rank":average_rank,
@@ -125,6 +156,35 @@ class RankRosetta(RankTask):
                 "loglikelihood_native":loglikelihood,
                 "decoy_average_quality":decoy_average_quality
         }
+        # Merge the following code into codebase later.
+        res_doc_1={"progdir":self.progdir,
+#                "native_rank":native_rank,
+                   "8, native-included, rank of the native structure":average_rank,
+#                 "native_identified":number_native_identified,
+#                 "correlation":corr_pair,
+#                 "mean of correlation":(np.mean(corr_pair[0]),np.mean(corr_pair[1])),
+#                 "gdt":best_gdt_pair,
+#                 "mean of best gdt":(np.mean(best_gdt_pair[0]),np.mean(best_gdt_pair[1])),
+                   "10, native-included, Z-score of the native structure energy value": mean_list(zscore_pair),
+                   #(np.mean(zscore_pair[0]),np.mean(zscore_pair[1])),
+                   "4, native-included, number of native structure identified in the top 5 models":number_native_identified,
+                   "0, native-free, correlation between GDT and energy value": mean_list(corr_pair),
+                   "1, native-free, correlation between TMscore and energy value": mean_list(corr_pair_tmscore),
+                   "2, native-included, GDT score of the top ranked decoy": mean_list(best_gdt_pair),
+                   "2.1, native-free, GDT score of the top ranked decoy": list(np.mean(best_gdt_pair_native_free,axis=0)),
+                   "9, native-included, TMscore of the top ranked decoy": mean_list(best_tmscore_pair),
+                   "9.1, native-free, TMscore of the top ranked decoy": list(np.mean(best_tmscore_pair_native_free,axis=0)),
+                   "6, native-included, place(rank) of the lowest energy decoy in the order of GDT": mean_list(rank_lowest_energy_pair_in_gdt),
+                   "7, native-free, place(rank) of the lowest energy decoy in the order of GDT": mean_list(rank_lowest_energy_pair_in_gdt_without_native),
+#                "num_highest_tmscore_identified_with_native":num_highest_tmscore_identified_with_native,
+                   "5, native-free, percentage of the decoy closest to the native identified in the top ranked model": [sum(x)/num_sample for x in num_highest_tmscore_identified_without_native] ,
+                   
+                   #                "zscore_pair":zscore_pair,
+#                "loglikelihood_native":loglikelihood,
+#                "decoy_average_quality":decoy_average_quality
+        }
+        import pprint
+        pprint.pprint(res_doc_1)
         return res_doc
     def show_mean(self,**kwargs):
         for x in kwargs:
@@ -300,6 +360,7 @@ class RankRosetta(RankTask):
             print "Serial run rebalance"
             [process_rebalance(self.exprdir_full,x,rebalance_factor,mix_rate,False) for x in self.sample_list]
     def run_epmi(self,rebalance_factor,distcut,seqcut,debug=False,dryrun=False):
+        __doc__ = "Gerenate .res file, and return all energy values."
         for s in self.sample_list:
             s.prob_file="%s/rank.epmi/%s.epad.prob" % (self.exprdir_full, s.sample_id)
             if rebalance_factor > 0 :
@@ -314,6 +375,7 @@ class RankRosetta(RankTask):
         print "distcut %d, seqcut %d reb %.2f" % (distcut,seqcut,rebalance_factor)
 
     def run_split_list(self, rebalance_factor, distcut, seqcut,  neff_cut=[0,20],length_cut=[0,2000]):
+        __doc__ = "Assemble all the results and print them out."
         self.progdir=["rank.epad","rank.epmi"]
         protein_prof=get_protein_prof(self.prof_file)
         # 0 mean all the pdb, 8 means all protein with neff > 8.
@@ -361,7 +423,21 @@ def main(test_list_file="/home/zywang/work/epmi/test_rank_rosetta/test.list",**k
     sample_list=init_sample_list()
 
     import zydb
-    test_epmi=RankRosetta("compare-rank-epmi-epad",
+    #for (distcut, seqcut, rebalance_factor) in itertools.product([9999],[6],[1]):
+
+    db.pkg_config['epadlocal.workdir'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD'
+    db.pkg_config['epadlocal.executable'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD/runEPAD_example.sh'
+
+    for (distcut, seqcut, rebalance_factor, mix_rate,
+         balance_method, pe_mix_rate, pairwise_energy_method) in \
+            itertools.product([9999],[6],[1 ],[0.5],
+                              ["by_length"], [0.2, 0.5, 0.8], [EvaluateEpadLocal]):
+        print "(distcut, seqcut, rebalance_factor, mix_rate, balance_method, pe_mix_rate, pairwise_energy_method)"
+        print (distcut, seqcut, rebalance_factor, mix_rate,
+         balance_method, pe_mix_rate, pairwise_energy_method)
+        #test_epmi.run_rebalance(rebalance_factor=rebalance_factor,mix_rate=0.8)
+        test_epmi=RankRosetta(
+            "compare-rank-epmi-epad",
             RunARank(),sample_list,
             #LocalCruncher(),
             ComputingHost(ncpu=64),
@@ -369,17 +445,13 @@ def main(test_list_file="/home/zywang/work/epmi/test_rank_rosetta/test.list",**k
             exprdir="test_rank_rosetta",
             progdir=["rank.epmi","rank.epad"],
             db=zydb.db,
-            prof_file="/home/zywang/work/data/rosetta.prof"
-            )
-    #for (distcut, seqcut, rebalance_factor) in itertools.product([9999],[6],[1]):
-    for (distcut, seqcut, rebalance_factor,mix_rate, balance_method) in \
-            itertools.product([9999],[6],[1 ],[0.8],["by_length"]):
-        #test_epmi.run_rebalance(rebalance_factor=rebalance_factor,mix_rate=0.8)
+            prof_file="/home/zywang/work/data/rosetta.prof",
+            pairwise_energy_mix_rate=pe_mix_rate,
+        )
+        test_epmi.pairwise_energy_method=pairwise_energy_method
         test_epmi.run_rebalance(rebalance_factor=rebalance_factor,mix_rate=mix_rate,parallel=True,ncpu=32,balance_method=balance_method)
         test_epmi.run_epmi(rebalance_factor,distcut,seqcut)
         test_epmi.run_split_list(rebalance_factor,distcut,seqcut,neff_cut=[0,20])
-
-
 
     test_dfire=RankRosetta("compare-rank-epmi-epad",
             RunARank(evaluate_method=EvaluateDfire),sample_list,

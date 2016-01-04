@@ -176,7 +176,7 @@ class ComputingHost(object): # The default localhost
 
 class LocalCruncher(ComputingHost):
     """LocalCruncher is used when the scrip is running on cruncher."""
-    def __init__(self,ncpu = 20, cpu_per_node=32, queue=""):
+    def __init__(self,ncpu = 1, cpu_per_node=32, queue=""):
         # cpu_per_node is not supported by cruncher.
         self.remote_user="zywang"
         self.remote_host="localhost"
@@ -202,7 +202,8 @@ class LocalCruncher(ComputingHost):
 """.format(queue=self.queue,ncpu=self.ncpu)
 
     def qsub_submit(self,cmd,qsub_cmd="cat - | qsub -sync y "):
-        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
+        #output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ ("\n echo '%s' \n" % cmd) +cmd)[0]
+        output=Popen(qsub_cmd,shell=True,stdin=PIPE,stdout=PIPE).communicate(self.header+ "\n" +cmd)[0]
         buf = StringIO.StringIO(output)
         #print output
         jobid = re.split("\s+",buf.readline())[2]
@@ -226,11 +227,12 @@ class LocalCruncher(ComputingHost):
         output_filename="%s/work/qsub.log/qsub.o" % (os.environ['HOME']) +jobid
         output_file=open(output_filename,"r")
         res=output_file.readline()
+        logger.info("qsub_and_wait result: "+res)
         output_file.close()
         return res
 
     def run_and_wait(self,cmd,dryrun=False):
-        return self.qsub_and_wait(cmd,dryrun=False)
+        return self.qsub_and_wait(cmd,dryrun=dryrun)
     # runbatch_and_wait of Cruncher is actually queue batch run and wait.
 
 class Beagle(LocalCruncher): # Beagle is like LocalCruncher
@@ -519,7 +521,7 @@ class Gouda(ComputingHost): # as a template of SGE compute cluster
         self.max_queued_job=200
 
 
-class Task(object):
+class RankTask(object):
     """Apply a runnable to a sample on a machine"""
     # Which files need to copy
     # COmmand to run
@@ -539,7 +541,7 @@ class Task(object):
         self.prof_file=prof_file
         self.pairwise_energy_mix_rate=pairwise_energy_mix_rate
 
-class SampleTask(Task):
+class SampleTask(RankTask):
     # Return a folder or tar ball.
     def __init__(self, *args, **kwargs):
         super(SampleTask, self).__init__(*args, **kwargs)

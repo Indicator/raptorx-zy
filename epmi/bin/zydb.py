@@ -1,4 +1,12 @@
 import pymongo as pm
+import logging
+
+def init_logging():
+    logging.basicConfig(level=logging.DEBUG, filename="./log", filemode="a+",
+                        format="%(asctime)-15s %(levelname)-8s %(message)s")
+init_logging()
+logger = logging.getLogger("general")
+
 
 client = pm.MongoClient('cruncher.ttic.edu', 27017)
 db = client['zydb']
@@ -19,6 +27,8 @@ tmscore.ensure_index([("native",pm.HASHED)], background=True  )
 # use zydb
 # db.auth("zywang","pwd")
 
+# Global package config.
+pkg_config = {}
 
 def testmongodb():
     c=db.test2

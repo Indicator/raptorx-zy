@@ -31,6 +31,8 @@ def main(test_list_file="/home/zywang/work/data/itasser.list",**kwargs):
 
     import zydb
     # Write down all the parameters of runarank to the document.
+    db.pkg_config['epadlocal.workdir'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD'
+    db.pkg_config['epadlocal.executable'] = '/home/zywang/work/allbio.re1/contrib/epad/EPAD/runEPAD_example.sh'
 
     for (distcut, seqcut, rebalance_factor,mix_rate, balance_method,subset_decoy,pe_mix_rate) in \
         itertools.product([9999],[6],[1],[0.8],['by_length'],[-1],[0]) :
