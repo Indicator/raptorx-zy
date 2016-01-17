@@ -408,6 +408,7 @@ class RunARank(Runnable):
     def evaluate_energy_for_all_decoys(self, sample, parallel="multithreads", db=None, redo=False):
         __doc__ = "Return a map, decoy -> energy."
         em=self.evaluate_method()
+        db.logger.info("Evaluate energy for all decoys of "+sample.sample_id)
         res={}
         # Multiprocess call localcruncher to run get_energy.
         if parallel=="multiprocesses":

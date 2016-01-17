@@ -35,10 +35,12 @@ class RankRosetta(RankTask):
                 res = self.runnable.evaluate_energy_for_all_decoys(sample, db=db)
                 sp.write_result_file(output_file, res.items())
                 sp.write_result_file(output_file+".bak", res.items())
+        assert len(self.pairwise_energy_mix_rate) == len(self.pairwise_energy_method), 'self.pairwise_energy_mix_rate has different length with self.pairwise_energy_method {0} {1}'.format(len(self.pairwise_energy_mix_rate) , len(self.pairwise_energy_method))
         for sample in self.sample_list :
             output_dir=self.workdir+"/"+self.exprdir+"/"+self.progdir[0]
             output_file=output_dir+"/"+sample.sample_id+".res"
-            RunARank().modify_result_file(sample, output_file,self.pairwise_energy_mix_rate,self.pairwise_energy_method)
+            for i in range(len(self.pairwise_energy_mix_rate)):
+                RunARank().modify_result_file(sample, output_file,self.pairwise_energy_mix_rate[i],self.pairwise_energy_method[i])
                 
 
         # TO run the rank task, we need to define sample, runnable, computer, and run()
@@ -431,7 +433,7 @@ def main(test_list_file="/home/zywang/work/epmi/test_rank_rosetta/test.list",**k
     for (distcut, seqcut, rebalance_factor, mix_rate,
          balance_method, pe_mix_rate, pairwise_energy_method) in \
             itertools.product([9999],[6],[1 ],[0.5],
-                              ["by_length"], [0.2, 0.5, 0.8], [EvaluateEpadLocal]):
+                              ["by_length"], [[0.8, 0.1, 0.01, 0.1],[0.8, 0.1, 0.01, 0.2], [0.8, 0.1, 0.01, 0.5] ], [ [EvaluateEpadLocal, EvaluateOpus, EvaluateRw, EvaluateDfire] ]):
         print "(distcut, seqcut, rebalance_factor, mix_rate, balance_method, pe_mix_rate, pairwise_energy_method)"
         print (distcut, seqcut, rebalance_factor, mix_rate,
          balance_method, pe_mix_rate, pairwise_energy_method)
